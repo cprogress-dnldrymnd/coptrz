@@ -452,15 +452,16 @@ function query_products()
 	while ($products->have_posts()) {
 		$products->the_post();
 
-		echo '<li class="mb-3"> <a href="'.get_permalink( ).'">';
+		echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
 
 		echo get_the_title();
 
 		echo '<br>';
 
-		echo catch_that_image();
+		if (catch_that_image()) {
 
-		echo attachment_url_to_postid(catch_that_image());
+			echo attachment_url_to_postid(catch_that_image());
+		}
 
 		echo '</a><hr></li>';
 	}
