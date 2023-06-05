@@ -2,7 +2,6 @@
 $DisplayData = new DisplayData;
 $suggested_articles = get__theme_option('suggested_articles');
 $categories = get_the_category(get_the_ID());
-echo $categories;
 ?>
 
 <section class="product-slider lg-padding">
@@ -12,11 +11,16 @@ echo $categories;
                 <span class="text text-uppercase">
                     RELATED POSTS
                 </span>
+
                 <span class="line"></span>
             </div>
         </div>
     </div>
     <div class="container">
+        
+                <?php
+                echo $categories;
+                ?>
         <div class="product-slider-box">
             <div class="swiper mySwiper-productSwiper mySwiper-productSwiper-medium mySwiper-PostSlider">
                 <div class="swiper-wrapper product-holder post-box-PostSlider align-items-stretch">
