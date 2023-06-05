@@ -58,6 +58,7 @@ function archive_ajax()
 	$args = array(
 		'post_type'      => $post_type,
 		'posts_per_page' => $posts_per_page,
+		'post_status' => 'publish'
 	);
 
 	if ($offset) {
