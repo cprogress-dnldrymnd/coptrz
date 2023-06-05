@@ -368,9 +368,9 @@ function vendors_submenu()
 {
 	add_submenu_page(
 		'edit.php?post_type=product',
-		__('Books Shortcode Reference', 'textdomain'),
-		__('Shortcode Reference', 'textdomain'),
+		__('Vendors', 'textdomain'),
+		__('Vendors', 'textdomain'),
 		'manage_options',
-		'https://coptrz.theprogressteam.com/wp-admin/edit-tags.php?taxonomy=pa_vendors&post_type=product',
+		'/wp-admin/edit-tags.php?taxonomy=pa_vendors&post_type=product',
 	);
 }
