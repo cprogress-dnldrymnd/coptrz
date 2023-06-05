@@ -429,7 +429,7 @@ function query_products()
 
 		'posts_per_page' => -1,
 
-		'post_type'      => array('product'),
+		'post_type'      => array('posts'),
 
 		'post_status'    => 'any',
 
@@ -438,19 +438,14 @@ function query_products()
 	echo '<ul>';
 
 	while ($products->have_posts()) {
-		$btn = get__post_meta('change_btn_cb');
-		$button_type = get__post_meta('button_type');
+		$products->the_post();
 
-		if ($btn) {
-			carbon_set_post_meta(get_the_ID(), 'button_type', 'replace_enquire_button');
-		} else {
-			carbon_set_post_meta(get_the_ID(), 'button_type', '');
-		}
+		$btn = get__post_meta('change_btn_cb');
+
 
 		echo '<li>';
 
-		$products->the_post();
-		echo get_the_title() . ' - ' . $btn . ' - ' . $button_type;
+		echo get_the_title();
 
 		echo '</li>';
 	}
