@@ -137,8 +137,9 @@ if (is_active_sidebar('top_bar_left') || is_active_sidebar('top_bar_right')) {
                             </div>
                             <div class="button-box button-accent button-small d-none d-lg-block">
                                 <button
-                                    onclick="window.dispatchEvent(new CustomEvent('heyflow-modal-element:open', { detail: { modalId: 'uXa4D8wfqygIKfamkEoOY' }}))">Enquire
-                                    now</button>
+                                    onclick="window.dispatchEvent(new CustomEvent('heyflow-modal-element:open', { detail: { modalId: 'uXa4D8wfqygIKfamkEoOY' }}))">
+                                    ENQUIRE NOW
+                                </button>
 
                             </div>
                         </div>
