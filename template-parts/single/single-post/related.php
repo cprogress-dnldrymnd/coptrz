@@ -27,7 +27,7 @@ $categories = get_the_category(get_the_ID());
 
                     <?php
                     $args = array(
-                        'posts_per_page' => -1,
+                        'posts_per_page' => 10,
 
                         'post_type'      => array('post'),
 
@@ -39,8 +39,9 @@ $categories = get_the_category(get_the_ID());
                     ?>
                     <?php if ($query->have_posts()) { ?>
 
-                        <?php while ($products->have_posts()) { ?>
+                        <?php while ($query->have_posts()) { ?>
                             <?php
+                            $query->the_post();
                             $post_id = get_the_ID();
                             ?>
                             <div class="swiper-slide product-box">
