@@ -92,7 +92,7 @@ else if (is_tax()) {
                     $display_type = 'grid';
                 }
 
-                echo display_filter($products->found_posts, $display_type, 'col-auto');
+                echo display_filter($products->found_posts, $display_type, 'col-auto mb-0');
                 ?>
              
             <?php } ?>
