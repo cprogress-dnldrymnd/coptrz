@@ -1147,7 +1147,7 @@ Container::make('term_meta', __('Category Properties'))
 	->add_fields(
 		array(
 			Field::make('checkbox', 'display_in_shop', __('Display in Shop Page')),
-			Field::make('text', 'menu_order', __('Menu Order')),
+			Field::make('text', 'menu_order', __('Menu Order'))->set_default_value(0),
 			Field::make('select', 'display_type', 'Display Type')
 				->set_options(
 					array(
