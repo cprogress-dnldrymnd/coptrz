@@ -250,19 +250,7 @@ function product_slider($is_shop = false)
 
             $products = new WP_Query($args);
 
-            echo $products->found_posts;
-
-            if ($products->found_posts > 4) {
-                if (!isset($_GET['display'])) {
-                    $display_type = $display_type;
-                }
-                else {
-                    $display_type = $_GET['display'];
-                }
-            }
-            else {
-                $display_type = 'grid';
-            }
+            $display_type = $display_type;
 
             if ($display_type == 'grid' || !$display_type) {
                 $wrapper_class_1 = 'product-grid';
