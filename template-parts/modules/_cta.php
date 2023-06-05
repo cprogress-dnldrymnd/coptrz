@@ -78,7 +78,7 @@ if ($post_is_global) {
                                 $module['cta_' . $module['cta_button_type']],
                                 $module['cta_button_action'],
                                 $module['cta_button_icon'],
-                                ($style == 'style-1') ? 'button-accent' : 'button-secondary',
+                                ($style == 'style-1') ? 'button-accent' : 'button-secondary', false, $module['cta_button_attribute']
                             );
                         }
                     }
