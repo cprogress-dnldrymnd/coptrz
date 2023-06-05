@@ -40,6 +40,7 @@ $DisplayData = new DisplayData;
 		if (current_user_can('administrator')) {
 			$Helpers = new Helpers;
 			echo $Helpers->get_edit_url('edit.php?post_type=product&page=crb_carbon_fields_container_vendor_settings.php', 'Edit Vendor Description');
+			echo $Helpers->get_edit_url('edit-tags.php?taxonomy=pa_vendors&post_type=product', 'Manage Vendors');
 		}
 		?>
 		<div class="container ">
