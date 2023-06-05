@@ -76,6 +76,7 @@ else if (is_tax()) {
 
 
                 $products = new WP_Query($args);
+                $display_type = get__term_meta($term->term_id, 'display_type');
 
 
 
