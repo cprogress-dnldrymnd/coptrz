@@ -429,7 +429,7 @@ function query_products()
 
 		'posts_per_page' => -1,
 
-		'post_type'      => array('posts'),
+		'post_type'      => array('post'),
 
 		'post_status'    => 'any',
 
@@ -439,9 +439,6 @@ function query_products()
 
 	while ($products->have_posts()) {
 		$products->the_post();
-
-		$btn = get__post_meta('change_btn_cb');
-
 
 		echo '<li>';
 
