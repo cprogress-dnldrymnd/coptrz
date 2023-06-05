@@ -28,8 +28,6 @@ $heading = $module['heading'];
             <div class="swiper mySwiper-productSwiper">
                 <div class="product-holder post-box-PostSlider post-box-Slider swiper-wrapper align-items-stretch">
                     <?php foreach ($slider_items as $slider_item) { ?>
-
-
                         <div class="product-box swiper-slide">
                             <div class="inner background-white d-block ">
                                 <?php
