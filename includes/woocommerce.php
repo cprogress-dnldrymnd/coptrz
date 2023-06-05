@@ -373,7 +373,7 @@ function product_slider($is_shop = false)
 
                                         ?>
 
-                                        <div class="<?= $wrapper_class_3 ?>">
+                                        <div class="product-box <?= $wrapper_class_3 ?>">
 
                                             <div class="inner background-white d-block content-margin"
                                                 href="<?= get_permalink(get_the_ID()) ?>">
