@@ -2771,6 +2771,15 @@ heyflow-modal-element {
                     }
                 }
             }
+            &.display-slider {
+                &.active {
+                    svg {
+                        #Rectangle_255 {
+                            fill: var(--accent-color);
+                        }
+                    }
+                }
+            }
         }
     }
 }

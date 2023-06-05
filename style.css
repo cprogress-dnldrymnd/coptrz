@@ -12299,6 +12299,8 @@ heyflow-modal-element {
 
 .display-filter ul li.display-grid.active svg #Rectangle_256 {
   fill: var(--accent-color); }
+.display-filter ul li.display-slider.active svg #Rectangle_255 {
+  fill: var(--accent-color); }
 
 @font-face {
   font-family: "HKNovaR";
