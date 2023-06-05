@@ -12291,6 +12291,7 @@ heyflow-modal-element {
   height: 55px;
   margin-right: 1rem; }
   .button-quick-view button svg {
+    border: none;
     border: none; }
 
 @font-face {
