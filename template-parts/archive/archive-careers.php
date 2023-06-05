@@ -13,13 +13,13 @@ $SVG = new SVG;
 
     <div class="product-slider-box">
 
-      <div class="mySwiper-productSwiperPost post-box-PostSlider">
+      <div class="mySwiper-productSwiperPost ">
 
         <div id="results">
 
           <div class="results-holder">
 
-            <div class="row gy-3">
+            <div class="product-holder post-box-PostSlider row gy-3">
               <?php
               if (have_posts()) {
                 while (have_posts()) {
@@ -27,7 +27,7 @@ $SVG = new SVG;
                   $salary_and_location = get__post_meta('salary_and_location');
                   $duration = get__post_meta('duration');
                   ?>
-                  <div class="col-lg-4 col-sm-6 post-item">
+                  <div class="product-box col-lg-4 col-sm-6 post-item">
                     <div class="swiper-slide">
                       <div class="inner background-white d-block ">
                         <div class="image-holder position-relative">

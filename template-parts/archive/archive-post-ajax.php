@@ -159,7 +159,7 @@ else {
 
         <div class="product-slider-box">
 
-            <div class="mySwiper-productSwiperPost post-box-PostSlider">
+            <div class="mySwiper-productSwiperPost">
 
                 <div id="results">
 

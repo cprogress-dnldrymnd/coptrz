@@ -19,7 +19,7 @@ $categories = get_the_category(get_the_ID());
     <div class="container extend-right">
 
         <div class="product-slider-box">
-            <div class="swiper mySwiper-productSwiper mySwiper-productSwiper-medium post-box-PostSlider">
+            <div class="swiper mySwiper-productSwiper mySwiper-productSwiper-medium ">
                 <div class="swiper-wrapper product-holder post-box-PostSlider align-items-stretch">
 
                     <?php
