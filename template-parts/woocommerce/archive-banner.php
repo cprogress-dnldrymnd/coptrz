@@ -76,6 +76,22 @@ else if (is_tax()) {
 
 
                 $products = new WP_Query($args);
+
+
+
+                if ($products->found_posts > 4) {
+                    if (!isset($_GET['display'])) {
+                        $display_type = $display_type;
+                    }
+                    else {
+                        $display_type = $_GET['display'];
+                    }
+                }
+                else {
+                    $display_type = 'grid';
+                }
+
+
                 ?>
                 <?php if ($products->found_posts > 4) { ?>
                     <div class="col-auto display-filter">
