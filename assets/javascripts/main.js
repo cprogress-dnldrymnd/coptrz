@@ -657,7 +657,7 @@ function swiper_slider() {
 
 	});
 
-	var vendorProductMedium = new Swiper(".mySwiper-productSwiper-small", {
+	var vendorProductSmall = new Swiper(".mySwiper-productSwiper-small", {
 		loop: false,
 		spaceBetween: 20,
 		autoplay: false,

@@ -76,9 +76,9 @@ else if (is_post_type_archive('events')) {
 
         <div class="product-slider-box">
 
-            <div class="swiper mySwiper-productSwiper mySwiper-productSwiper-medium">
+            <div class="swiper product-holder mySwiper-productSwiper mySwiper-productSwiper-medium">
 
-                <div class="swiper-wrapper product-holder post-box-PostSlider align-items-stretch">
+                <div class="swiper-wrapper  post-box-PostSlider align-items-stretch">
 
                     <?php foreach ($items as $key => $item) { ?>
 
