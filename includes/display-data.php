@@ -10,7 +10,7 @@ class DisplayData {
 		include locate_template('template-parts/components/description.php');
 		echo ob_get_clean();
 	}
-	function button($button_text, $button_type, $button_action, $button_icon = false, $button_class = 'accent-button', $data_aos = false) {
+	function button($button_text, $button_type, $button_action, $button_icon = false, $button_class = 'accent-button', $data_aos = false, $button_attribute = false) {
 		ob_start();
 		include locate_template('template-parts/components/button.php');
 		echo ob_get_clean();
