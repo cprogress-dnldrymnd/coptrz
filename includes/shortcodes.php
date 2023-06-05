@@ -462,7 +462,7 @@ function query_products()
 
 			echo attachment_url_to_postid(catch_that_image());
 
-			echo '</a><hr></ol>';
+			echo '</a><hr></li>';
 		}
 	}
 
