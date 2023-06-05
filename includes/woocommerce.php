@@ -518,9 +518,9 @@ function product_slider_category($is_category = false)
 
         <section class="product-slider md-padding">
             <?php if ($is_category) { ?>
-                <div class="container filter">
+                <div class="container display-filter">
                     <ul class="list-inline d-flex justify-content-end">
-                        <li class="me-2 <?= $display_type == 'grid' ? 'active' :'' ?>">
+                        <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' :'' ?>">
                             <a href="?display=grid">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                                     <g id="grid" transform="translate(0.114)">
@@ -538,7 +538,7 @@ function product_slider_category($is_category = false)
                                 </svg>
                             </a>
                         </li>
-                        <li class="<?= $display_type != 'grid' ? 'active' : '' ?>">
+                        <li class="display-slider <?= $display_type != 'grid' ? 'active' : '' ?>">
                             <a href="?display=slider">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48"
                                     height="48" viewBox="0 0 48 48">

@@ -2741,16 +2741,35 @@ heyflow-modal-element {
         min-width: 55px;
         height: 55px;
         margin-right: 1rem;
+
         .icon {
             svg {
                 margin-left: 0 !important;
             }
         }
+
         .text {
             svg {
                 border: none !important;
                 width: 30px !important;
                 height: 30px !important;
+
+            }
+        }
+    }
+}
+
+.display-filter {
+    ul {
+        li {
+            &.display-grid {
+                &.active {
+                    svg {
+                        #Rectangle_256 {
+                            fill: var(--accent-color);
+                        }
+                    }
+                }
             }
         }
     }

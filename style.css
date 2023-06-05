@@ -12297,6 +12297,9 @@ heyflow-modal-element {
     width: 30px !important;
     height: 30px !important; }
 
+.display-filter ul li.display-grid.active svg #Rectangle_256 {
+  fill: var(--accent-color); }
+
 @font-face {
   font-family: "HKNovaR";
   src: url("./assets/fonts/hknova/HKNovaR-Light.eot");
