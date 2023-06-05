@@ -13545,8 +13545,7 @@ header {
     header .col-right .header-icons ul li a svg {
       width: 22px;
       height: 22px;
-      opacity: 0.6;
-      margin-right: 1.5rem; }
+      opacity: 0.6; }
       @media screen and (max-width: 991px) {
         header .col-right .header-icons ul li a svg {
           width: 25px;
