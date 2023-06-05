@@ -13974,9 +13974,6 @@ body.hero-banner-revealing_heading header .header-main:before {
 #mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after {
   height: 5px !important; }
 
-#mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-slider .mega-toggle-animated-inner::before {
-  left: 10px !important; }
-
 #mega-menu-wrap-header-menu #mega-menu-header-menu a.mega-menu-link .mega-description-group .mega-menu-description {
   display: none !important; }
 
