@@ -359,3 +359,17 @@ function costumer_type_not_logged_in()
 }
 
 add_action('init', 'costumer_type_not_logged_in');
+
+
+add_action('admin_menu', 'vendors_url');
+function vendors_url()
+{
+	add_menu_page('vendors_url', 'External link', 'read', 'my_slug', '', 'dashicons-text', 1);
+}
+
+add_action('admin_menu', 'linkedurl_function');
+function linkedurl_function()
+{
+	global $menu;
+	$menu[1][2] = "http://www.example.com";
+}
