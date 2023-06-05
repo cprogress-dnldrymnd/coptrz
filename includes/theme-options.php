@@ -4,26 +4,6 @@ class Theme_Options extends Helpers
 	function __construct()
 	{
 		$SVG = new SVG;
-
-		$logo_ext = wp_check_filetype(wp_get_attachment_url(get__theme_option('logo')))['ext'];
-		$alt_logo_ext = wp_check_filetype(wp_get_attachment_url(get__theme_option('alt_logo')))['ext'];
-
-		if ($logo_ext != 'svg') {
-			$logo_image = '<img src="' . wp_get_attachment_image_url(get__theme_option('logo'), 'medium') . '" alt="' . get_bloginfo('name') . '">';
-		}
-		else {
-			$logo_image = '<span class="svg-image" src="' . wp_get_attachment_image_url(get__theme_option('logo'), 'medium') . '" alt="' . get_bloginfo('name') . '"></span>';
-		}
-
-
-
-		if ($alt_logo_ext != 'svg') {
-			$alt_logo_image = '<img src="' . wp_get_attachment_image_url(get__theme_option('logo'), 'medium') . '" alt="' . get_bloginfo('name') . '">';
-		}
-		else {
-			$alt_logo_image = '<span class="svg-image" src="' . wp_get_attachment_image_url(get__theme_option('logo'), 'medium') . '" alt="' . get_bloginfo('name') . '"></span>';
-		}
-
 		$this->site_logo = wp_get_attachment_image_url(get__theme_option('logo'), 'large');
 		$this->alt_logo_url = wp_get_attachment_image_url(get__theme_option('alt_logo'), 'large');
 		$this->disable_gutenberg = get__theme_option('disable_gutenberg');
@@ -33,15 +13,15 @@ class Theme_Options extends Helpers
 
 
 
-		$this->logo = '<a class="site-logo full-logo" href="' . get_site_url() . '"> ' . $logo_image . ' </a>';
-		$this->alt_logo = '<a class="site-logo alt-logo" href="' . get_site_url() . '"> ' . $alt_logo_image . ' </a>';
-		$this->contact_number_text = get__theme_option('contact_number');
+		$this->logo = '<a class="site-logo full-logo" href="' . get_site_url() . '"> <img src="' . wp_get_attachment_image_url(get__theme_option('logo'), 'medium') . '" alt="' . get_bloginfo('name') . '"> </a>';
+		$this->alt_logo = '<a class="site-logo alt-logo" href="' . get_site_url() . '"> <img src="' . wp_get_attachment_image_url(get__theme_option('alt_logo'), 'large') . '" alt="' . get_bloginfo('name') . '"></a>';
+		$this->contact_number_text  = get__theme_option('contact_number');
 		$this->contact_number_url = 'tel:' . $this->clean_string($this->contact_number_text, '');
-		$this->contact_number = '<a href="' . $this->contact_number_url . '">' . $this->contact_number_text . '</a>';
+		$this->contact_number  = '<a href="' . $this->contact_number_url . '">' . $this->contact_number_text . '</a>';
 
-		$this->email_address_text = get__theme_option('email_address');
+		$this->email_address_text  = get__theme_option('email_address');
 		$this->email_address_url = 'mailto:' . $this->email_address_text;
-		$this->email_address = '<a href="' . $this->email_address_url . '">' . $this->email_address_text . '</a>';
+		$this->email_address  = '<a href="' . $this->email_address_url . '">' . $this->email_address_text . '</a>';
 
 		$this->facebook = get__theme_option('facebook_url');
 		$this->twitter = get__theme_option('twitter_url');
