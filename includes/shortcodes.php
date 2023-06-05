@@ -468,6 +468,8 @@ function query_products()
 
 					echo wp_get_attachment_image($image);
 
+					set_post_thumbnail(get_the_ID(), $image);
+
 					echo '</a><hr></li>';
 				}
 			}
