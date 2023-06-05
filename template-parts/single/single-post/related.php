@@ -19,7 +19,7 @@ $categories = get_the_category(get_the_ID());
     <div class="container">
         
                 <?php
-                echo $categories;
+                var_dump($categories);
                 ?>
         <div class="product-slider-box">
             <div class="swiper mySwiper-productSwiper mySwiper-productSwiper-medium mySwiper-PostSlider">
@@ -32,22 +32,7 @@ $categories = get_the_category(get_the_ID());
                         'post_type'      => array('post'),
 
                         'post_status'    => 'publish',
-
-                        'tax_query'      => array(
-
-                            array(
-
-                                'taxonomy' => 'product_cat',
-
-                                'field'    => 'slug',
-
-                                'terms'    => array($category->slug),
-
-                                'operator' => 'IN',
-
-                            )
-
-                        )
+                        
 
                     );
                     $query = new WP_Query($args);
