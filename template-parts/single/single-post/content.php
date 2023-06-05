@@ -8,13 +8,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-image col-right">
-                <div class="column-holder ">
-                    <div class="image-box">
-                        <?php the_post_thumbnail( 'full' ) ?>
+
+            <?php if (get_the_post_thumbnail()) { ?>
+                <div class="col-lg-6 col-image col-right">
+                    <div class="column-holder ">
+                        <div class="image-box">
+                            <?php the_post_thumbnail('full') ?>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+            <?php } ?>
         </div>
     </div>
 </section>
