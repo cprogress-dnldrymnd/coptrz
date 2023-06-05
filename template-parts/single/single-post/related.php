@@ -33,7 +33,9 @@ $categories = get_the_category(get_the_ID());
 
                         'post_status'    => 'publish',
 
-                        'category__and ' => $categories
+                        'category__and ' => $categories,
+                        
+                        'orderby' => 'rand'
 
                     );
                     $query = new WP_Query($args);
