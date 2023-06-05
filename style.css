@@ -13545,12 +13545,22 @@ header {
     header .col-right .header-icons ul li a svg {
       width: 22px;
       height: 22px;
-      opacity: 0.6; }
+      opacity: 0.6;
+      margin-right: 1.5rem; }
+      @media screen and (max-width: 991px) {
+        header .col-right .header-icons ul li a svg {
+          width: 25px;
+          height: 25px; } }
+    header .col-right .header-icons ul li a:hover, header .col-right .header-icons ul li a:active, header .col-right .header-icons ul li a:focus {
+      opacity: 1; }
   header .col-right .header-icons ul li:not(:last-child) {
     margin-right: 1.5vw; }
     @media (max-width: 1699px) {
       header .col-right .header-icons ul li:not(:last-child) {
         margin-right: 8px; } }
+    @media screen and (max-width: 991px) {
+      header .col-right .header-icons ul li:not(:last-child) {
+        margin-right: 1.5rem; } }
   @media screen and (max-width: 1199px) {
     header .col-right .button-box.button-box a {
       padding-left: 1rem;
