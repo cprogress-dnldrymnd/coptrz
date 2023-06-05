@@ -394,9 +394,9 @@ function product_slider($is_shop = false)
                                                 ?>
 
                                                 <div class="button-group-box justify-content-center align-items-center">
-                                                    <div class="button-quick-view d-flex align-items-center justify-content-center">
+                                                    <div class="button-quick-view">
                                                         <button type="button"
-                                                            class="product-modal-trigger product-modal-trigger-open d-flex align-items-center"
+                                                            class="product-modal-trigger product-modal-trigger-open d-flex align-items-center justify-content-center"
                                                             product="<?= get_the_ID() ?>">
 
                                                             <span class="text">
