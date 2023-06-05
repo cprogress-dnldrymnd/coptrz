@@ -422,6 +422,21 @@ function add_to_cart_form_shortcode($atts)
 }
 add_shortcode('add_to_cart_form', 'add_to_cart_form_shortcode');
 
+
+function catch_that_image()
+{
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+?src=[\'"]([^\'"]+)[\'"].*?>/i', $post->post_content, $matches);
+	$first_img = $matches[1][0];
+
+	if (empty($first_img)) {
+		$first_img = "/path/to/default.png";
+	}
+	return $first_img;
+}
 function query_products()
 {
 
@@ -443,6 +458,10 @@ function query_products()
 		echo '<li>';
 
 		echo get_the_title();
+
+		echo '<br>';
+
+		echo catch_that_image();
 
 		echo '</li>';
 	}
