@@ -6,14 +6,6 @@ header {
 	z-index: 9999;
 
 
-	.site-logo-holder {
-		.alt-logo {
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
-	}
-
 	@include transition(500ms);
 
 	.header-inner {
@@ -435,8 +427,10 @@ header {
 		}
 
 		&.background-transparent {
-			.alt-logo {
-				opacity: 0;
+			.site-logo {
+				svg {
+					fill: var(--white-color);
+				}
 			}
 		}
 
