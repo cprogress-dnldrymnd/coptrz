@@ -12290,7 +12290,9 @@ heyflow-modal-element {
   min-width: 55px;
   height: 55px;
   margin-right: 1rem; }
-  .button-quick-view.button-quick-view button.product-modal-trigger svg {
+  .button-quick-view.button-quick-view button.product-modal-trigger .icon svg {
+    margin-left: 0 !important; }
+  .button-quick-view.button-quick-view button.product-modal-trigger .text svg {
     border: none !important;
     width: 30px !important;
     height: 30px !important; }
