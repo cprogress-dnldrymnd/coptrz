@@ -13938,8 +13938,8 @@ body.hero-banner-revealing_heading header .header-main:before {
   .header-background-transparent header .header-main {
     background-color: var(--white-color);
     color: var(--primary-color); }
-    .header-background-transparent header .header-main .alt-logo {
-      opacity: 1; } }
+    .header-background-transparent header .header-main .site-logo svg {
+      fill: var(--white-color); } }
 
 .mega-menu-toggle {
   background-color: transparent !important; }

@@ -974,10 +974,12 @@ body {
 			@include responsive(xs-sm) {
 				background-color: var(--white-color);
 				color: var(--primary-color);
-
-				.alt-logo {
-					opacity: 1;
+				.site-logo {
+					svg {
+						fill: var(--white-color)
+					}
 				}
+			
 			}
 		}
 	}
