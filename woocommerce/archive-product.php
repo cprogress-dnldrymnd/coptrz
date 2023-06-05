@@ -44,9 +44,7 @@ $DisplayData = new DisplayData;
 					<span class="line"></span>
 				</div>
 				<div class="col text-content">
-					<p>
-						Create your 360° drone solution from the largest range of partners in the UK.
-					</p>
+					<?= wpautop( get__theme_option('vendor_description') ) ?>
 				</div>
 			</div>
 		</div>
