@@ -14384,13 +14384,13 @@ section.product-slider .product-holder .product-box {
       font-weight: 400; }
       section.product-slider .product-holder .product-box .inner .price-box .woocommerce-price-suffix {
         font-size: 12px; }
-    section.product-slider .product-holder .product-box .inner > .button-box {
+    section.product-slider .product-holder .product-box .inner > .button-group-box {
       position: absolute;
       bottom: 2.625rem;
       left: 2.625rem;
       right: 2.625rem; }
       @media screen and (max-width: 767px) {
-        section.product-slider .product-holder .product-box .inner > .button-box {
+        section.product-slider .product-holder .product-box .inner > .button-group-box {
           bottom: 1.5rem;
           left: 1.5rem;
           right: 1.5rem; } }

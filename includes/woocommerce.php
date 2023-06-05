@@ -596,18 +596,25 @@ function product_slider_category()
 
                                         ?>
 
-                                        <div class="button-box text-center button-accent button-small">
+                                        <div class="button-group-box justify-content-center align-items-center">
+                                            <div class="button-quick-view">
+                                                <button type="button"
+                                                    class="product-modal-trigger product-modal-trigger-open d-flex align-items-center justify-content-center"
+                                                    product="<?= get_the_ID() ?>">
 
-                                            <button type="button"
-                                                class="product-modal-trigger product-modal-trigger-open d-flex align-items-center"
-                                                product="<?= get_the_ID() ?>">
+                                                    <span class="text">
+                                                        <?= $SVG->eye ?>
+                                                    </span>
 
-                                                <span class="text">EXPLORE</span>
+                                                    <span class="icon"><?= $SVG->ellipsis ?></span>
 
-                                                <span class="icon"><?= $SVG->ellipsis ?></span>
-
-                                            </button>
-
+                                                </button>
+                                            </div>
+                                            <div class="button-box button-accent button-small">
+                                                <a href="<?php the_permalink() ?>">
+                                                    <span class="text">EXPLORE</span>
+                                                </a>
+                                            </div>
                                         </div>
 
                                     </div>
