@@ -12282,6 +12282,17 @@ heyflow-modal-element {
   .shop_table.cart .product-price {
     white-space: nowrap; } }
 
+.button-quick-view button {
+  border-radius: 50%;
+  padding: 10px;
+  border: none;
+  background-color: var(--light-color);
+  width: 55px;
+  height: 55px;
+  margin-right: 1rem; }
+  .button-quick-view button svg {
+    border: none; }
+
 @font-face {
   font-family: "HKNovaR";
   src: url("./assets/fonts/hknova/HKNovaR-Light.eot");

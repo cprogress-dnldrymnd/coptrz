@@ -2729,3 +2729,19 @@ heyflow-modal-element {
         }
     }
 }
+
+.button-quick-view {
+    button {
+        border-radius: 50%;
+        padding: 10px;
+        border: none;
+        background-color: var(--light-color);
+        width: 55px;
+        height: 55px;
+        margin-right: 1rem;
+
+        svg {
+            border: none;
+        }
+    }
+}
