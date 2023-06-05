@@ -33,7 +33,7 @@ $categories = get_the_category(get_the_ID());
 
                         'post_status'    => 'publish',
 
-                        'cat' => $categories
+                        'category__and ' => $categories
 
                     );
                     $query = new WP_Query($args);
