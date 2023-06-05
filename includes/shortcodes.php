@@ -455,21 +455,26 @@ function query_products()
 			$image = attachment_url_to_postid(catch_that_image());
 			$post_thumb = get_the_post_thumbnail_url(get_the_ID());
 
-			if (!$post_thumb && $image) {
-				echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
-				if (!$image) {
-					echo 'no-image';
+			if (!$post_thumb) {
+				if ($image) {
+					echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
+
+					echo '<br>';
+
+
+					echo get_the_title();
+
+					echo '<br>';
+
+					echo wp_get_attachment_image($image);
+
+					echo '</a><hr></li>';
 				}
-				echo '<br>';
-
-
-				echo get_the_title();
-
-				echo '<br>';
-
-				echo wp_get_attachment_image($image);
-
-				echo '</a><hr></li>';
+				else {
+					echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
+					echo get_the_title() . ' no-image';
+					echo '</a><hr></li>';
+				}
 			}
 		}
 	}
