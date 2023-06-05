@@ -643,8 +643,10 @@ body {
 				color: var(--white-color);
 			}
 
-			.alt-logo {
-				opacity: 0;
+			.site-logo {
+				svg {
+					fill: var(--black-color);
+				}
 			}
 		}
 
@@ -920,8 +922,10 @@ body {
 			.header-main {
 				background-color: var(--white-color);
 
-				.alt-logo {
-					opacity: 1 !important;
+				.site-logo {
+					svg {
+						fill: var(--black-color);
+					}
 				}
 
 				#mega-menu-wrap-header-menu #mega-menu-header-menu>li.mega-menu-item>a.mega-menu-link {
@@ -950,8 +954,10 @@ body {
 	}
 
 	header {
-		.site-logo-holder .alt-logo {
-			opacity: 0;
+		.site-logo {
+			svg {
+				fill: var(--white-color);
+			}
 		}
 	}
 
