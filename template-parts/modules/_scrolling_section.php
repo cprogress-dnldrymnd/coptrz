@@ -67,7 +67,7 @@ else {
 
                                             <div class="image-box d-block d-lg-none">
 
-                                                <img src="<?= content_url() ?>/uploads/2022/12/dark-bg.png" alt="">
+                                                <img src="<?= get_the_post_thumbnail_url($featured_post['id'], 'large') ?>" alt="<?= get_the_title($featured_post['id']) ?>">
 
                                             </div>
 
