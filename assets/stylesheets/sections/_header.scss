@@ -360,11 +360,7 @@ header {
 
 						}
 
-						@include on-event {
-							svg {
-								opacity: 1;
-							}
-						}
+				
 					}
 
 					@include not-last-child {
