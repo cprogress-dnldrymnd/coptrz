@@ -353,8 +353,7 @@ function product_slider($is_shop = false)
 
                         <div class="product-slider-box">
 
-                            <div
-                                class="<?= $wrapper_class_1 ?>">
+                            <div class="<?= $wrapper_class_1 ?>">
 
                                 <div class="product-holder <?= $wrapper_class_2 ?>">
 
@@ -459,7 +458,12 @@ function product_slider($is_shop = false)
                                 </div>
 
 
-                                <?= product_slider_nav('slider') ?>
+                                <?php
+                                if ($products->found_posts > 4) {
+                                    product_slider_nav('slider');
+
+                                }
+                                ?>
 
 
                             </div>
