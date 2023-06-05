@@ -13550,7 +13550,7 @@ header {
         header .col-right .header-icons ul li a svg {
           width: 25px;
           height: 25px; } }
-    header .col-right .header-icons ul li a:hover, header .col-right .header-icons ul li a:active, header .col-right .header-icons ul li a:focus {
+    header .col-right .header-icons ul li a:hover svg, header .col-right .header-icons ul li a:active svg, header .col-right .header-icons ul li a:focus svg {
       opacity: 1; }
   header .col-right .header-icons ul li:not(:last-child) {
     margin-right: 1.5vw; }

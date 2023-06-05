@@ -359,8 +359,11 @@ header {
 							}
 
 						}
+
 						@include on-event {
-							opacity: 1;
+							svg {
+								opacity: 1;
+							}
 						}
 					}
 
