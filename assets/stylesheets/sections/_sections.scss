@@ -1217,6 +1217,12 @@ section.add-to-cart-section {
 
         .add-to-cart-box .cart {
             flex-wrap: wrap;
+            flex-direction: column;
+            align-items: flex-start;
+
+            >* {
+                width: 100%;
+            }
 
             .variations {
                 margin-top: 1.5rem;
