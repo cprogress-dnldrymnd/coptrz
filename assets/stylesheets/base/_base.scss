@@ -2734,11 +2734,11 @@ heyflow-modal-element {
 
 .button-quick-view.button-quick-view {
     button.product-modal-trigger {
-        border-radius: 50%;
-        padding: 10px;
+        border-radius: 50px;
+        padding: 10px ;
         border: none;
-        background-color: var(--light-color);
-        width: 55px;
+        background-color: #EEEEF3;
+        min-width: 55px;
         height: 55px;
         margin-right: 1rem;
 
