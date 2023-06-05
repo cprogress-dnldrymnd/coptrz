@@ -10797,7 +10797,8 @@ select option {
     @media screen and (max-width: 575px) {
       .line-title .text {
         flex: 0 0 auto;
-        width: auto; } }
+        width: auto;
+        max-width: 80%; } }
   .line-title .line {
     flex: 1 0 0%;
     height: 1px;

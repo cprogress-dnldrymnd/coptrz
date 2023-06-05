@@ -915,6 +915,7 @@ select option {
         @include responsive(mobile) {
             flex: 0 0 auto;
             width: auto;
+            max-width: 80%;
         }
     }
 
