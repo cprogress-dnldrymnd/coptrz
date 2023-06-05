@@ -18,7 +18,7 @@ class PostMeta extends GetData
 
 		$buttons = array(
 			Field::make('select', $id . '_button_type', __('Button Type'))
-				->set_width(20)
+				->set_width(10)
 				->set_options($link_type),
 			Field::make('text', $id . '_button_text', 'Button Text')
 				->set_help_text('Leave blank to use post title. Does not work with custom button')
@@ -92,6 +92,8 @@ class PostMeta extends GetData
 						)
 					)
 				),
+			Field::make('select', $id . '_button_attribute', 'Button Attribute')
+				->set_width(15),
 			Field::make('select', $id . '_button_icon', 'Button Icon')
 				->set_conditional_logic(
 					array(
@@ -104,17 +106,17 @@ class PostMeta extends GetData
 				)
 				->set_options(svg_list())
 				->set_classes('select-button-icon ')
-				->set_width(20),
+				->set_width(10),
 			/*Field::make('html',  $id . '_button_select_icon', 'Select Icon')
-																																								 ->set_html('<a class="button button-primary button-large thickbox select-icon" href="#TB_inline?width=600&height=550&inlineId=modal-svg-" >SELECT ICON</a>')
-																																								 ->set_conditional_logic(array(
-																																								 array(
-																																								 'field' => $id . '_button_type',
-																																								 'value' => array('page_button', 'post_button', 'services_button', 'custom_button'),
-																																								 'compare' => 'IN'
-																																								 )
-																																								 ))
-																																								 ->set_width(20)*/
+																																													->set_html('<a class="button button-primary button-large thickbox select-icon" href="#TB_inline?width=600&height=550&inlineId=modal-svg-" >SELECT ICON</a>')
+																																													->set_conditional_logic(array(
+																																													array(
+																																													'field' => $id . '_button_type',
+																																													'value' => array('page_button', 'post_button', 'services_button', 'custom_button'),
+																																													'compare' => 'IN'
+																																													)
+																																													))
+																																													->set_width(20)*/
 
 		);
 
@@ -856,7 +858,7 @@ Container::make('post_meta', 'Page Options')
 	);
 
 
-	Container::make('post_meta', 'Tag Options')
+Container::make('post_meta', 'Tag Options')
 	->where('post_type', '=', 'page')
 	->or_where('post_type', '=', 'product')
 	->or_where('post_type', '=', 'solutions')
@@ -869,7 +871,7 @@ Container::make('post_meta', 'Page Options')
 	);
 
 
-	
+
 
 /*-----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
@@ -1192,7 +1194,7 @@ Container::make('post_meta', 'Product Components')
 						'link_to_form'           => 'Link to a form within the page',
 					)
 				),
-				
+
 			Field::make('text', 'cst_btn_link', 'Button Text')->set_width(50)
 				->set_conditional_logic(
 					array(
@@ -1467,4 +1469,3 @@ Container::make('theme_options', __('Settings'))
 		)
 
 	);
-
