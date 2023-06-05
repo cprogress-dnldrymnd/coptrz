@@ -339,7 +339,7 @@ function product_slider($is_shop = false)
 
                         </div>
 
-                        <?= display_filter($products->found_posts, $display_type, 'col-auto mt-3', 'term-' . $category->slug); ?>
+                        <?= display_filter($products->found_posts, $display_type, 'col-auto mt-3', '#term-' . $category->slug); ?>
 
                     </div>
 
