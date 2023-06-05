@@ -311,7 +311,7 @@ class Shortcodes
 $Shortcodes = new Shortcodes;
 add_shortcode('contact_number', array($Shortcodes, 'contact_number'));
 add_shortcode('email_address', array($Shortcodes, 'email_address'));
-add_shortcode('button', array($Shortcodes, 'button'));
+//add_shortcode('button', array($Shortcodes, 'button'));
 add_shortcode('accordion', array($Shortcodes, 'accordion'));
 add_shortcode('post_title', array($Shortcodes, 'post_title'));
 add_shortcode('post_title_html', array($Shortcodes, 'post_title_html'));

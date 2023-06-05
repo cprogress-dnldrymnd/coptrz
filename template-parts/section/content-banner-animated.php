@@ -7,6 +7,7 @@ $cta_button_text = get__post_meta('cta_button_text');
 $cta_button_type = get__post_meta('cta_button_type');
 $cta_button_action = get__post_meta('cta_button_action');
 $cta_button_icon = get__post_meta('cta_button_icon');
+$cta_button_attribute = get__post_meta('cta_button_attribute');
 $cta_button_link = get__post_meta('cta_' . $cta_button_type);
 
 $floating_image_1 = get__post_meta('floating_image_1');
@@ -43,7 +44,7 @@ $vide_background = get__post_meta('vide_background');
                         $cta_button_link,
                         $cta_button_action,
                         $cta_button_icon,
-                        'button-accent',
+                        'button-accent', false, $cta_button_attribute
                     );
                 }
                 ?>

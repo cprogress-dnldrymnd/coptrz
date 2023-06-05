@@ -41,7 +41,7 @@ $image = $module['image'];
                         $module['two_col_1_' . $module['two_col_1_button_type']],
                         $module['two_col_1_button_action'],
                         $module['two_col_1_button_icon'],
-                        'button-accent',
+                        'button-accent', false, $module['two_col_1_button_attribute']
                     );
                 }
                 ?>
