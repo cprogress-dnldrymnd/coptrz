@@ -339,7 +339,7 @@ function product_slider($is_shop = false)
 
                         </div>
 
-                        <?= display_filter($products->found_posts, $display_type, 'col-auto mt-3'); ?>
+                        <?= display_filter($products->found_posts, $display_type, 'col-auto mt-3', 'term-' . $category->slug); ?>
 
                     </div>
 
@@ -909,14 +909,14 @@ function bbloomer_display_dropdown_variation_add_cart()
     }
 }
 
-function display_filter($post_count, $display_type, $class = '')
+function display_filter($post_count, $display_type, $class = '', $param = '')
 {
     ob_start();
     ?>
     <div class="display-filter <?= $class ?>">
         <ul class="list-inline d-flex justify-content-end">
             <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' : '' ?>">
-                <a href="?display=grid" title="Grid View">
+                <a href="?display=grid<?= $param ?>" title="Grid View">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                         <g id="grid" transform="translate(0.114)">
                             <rect id="Rectangle_256" data-name="Rectangle 256" width="48" height="48" rx="5"
