@@ -26,11 +26,11 @@ $heading = $module['heading'];
     <div class="container extend-right">
         <div class="product-slider-box">
             <div class="swiper mySwiper-productSwiper mySwiper-PostSlider mySwiper-Slider">
-                <div class="swiper-wrapper align-items-stretch">
+                <div class="product-holder swiper-wrapper align-items-stretch">
                     <?php foreach ($slider_items as $slider_item) { ?>
 
 
-                        <div class="swiper-slide">
+                        <div class="product-box swiper-slide">
                             <div class="inner background-white d-block ">
                                 <?php
                                 $DisplayData->image(
