@@ -347,9 +347,9 @@ function product_slider($is_shop = false)
 
                         <div class="product-slider-box">
 
-                            <div class="<?= $wrapper_class_1 ?>">
+                            <div class="product-holder <?= $wrapper_class_1 ?>">
 
-                                <div class="product-holder <?= $wrapper_class_2 ?>">
+                                <div class="<?= $wrapper_class_2 ?>">
 
                                     <?php while ($products->have_posts()) { ?>
 
@@ -373,7 +373,7 @@ function product_slider($is_shop = false)
 
                                         ?>
 
-                                        <div class="product-box <?= $wrapper_class_3 ?>">
+                                        <div class="<?= $wrapper_class_3 ?>">
 
                                             <div class="inner background-white d-block content-margin"
                                                 href="<?= get_permalink(get_the_ID()) ?>">
