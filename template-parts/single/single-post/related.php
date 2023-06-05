@@ -19,8 +19,7 @@ $categories = get_the_category(get_the_ID());
     <div class="container">
 
         <?php
-        var_dump($categories);
-        echo wp_get_post_categories(get_the_ID());
+         var_dump(wp_get_post_categories(get_the_ID()));
         ?>
         <div class="product-slider-box">
             <div class="swiper mySwiper-productSwiper mySwiper-productSwiper-medium mySwiper-PostSlider">
