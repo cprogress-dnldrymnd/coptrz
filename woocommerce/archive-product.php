@@ -34,7 +34,14 @@ $DisplayData = new DisplayData;
 	<?php
 	get_template_part('template-parts/woocommerce/archive', 'banner');
 	?>
-	<section class="vendors-slider">
+	<section class="vendors-slider has-edit">
+
+		<?php
+		if (current_user_can('administrator')) {
+			$Helpers = new $Helpers;
+			echo $Helpers->get_edit_url('edit.php?post_type=product&page=crb_carbon_fields_container_vendor_settings.php', 'Edit Vendor Description');
+		}
+		?>
 		<div class="container ">
 			<div class="row line-title line-title-v2 d-flex align-items-start fw-medium">
 				<div class="col d-flex align-items-center pt-3">
@@ -44,7 +51,7 @@ $DisplayData = new DisplayData;
 					<span class="line"></span>
 				</div>
 				<div class="col text-content">
-					<?= wpautop( get__theme_option('vendor_description') ) ?>
+					<?= wpautop(get__theme_option('vendor_description')) ?>
 				</div>
 			</div>
 		</div>
