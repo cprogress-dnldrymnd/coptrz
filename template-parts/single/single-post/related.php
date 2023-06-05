@@ -17,12 +17,12 @@ $suggested_articles = get__theme_option('suggested_articles');
     <div class="container">
         <div class="product-slider-box">
             <div class="swiper mySwiper-productSwiper mySwiper-PostSlider">
-                <div class="swiper-wrapper align-items-stretch">
+                <div class="swiper-wrapper product-holder post-box-PostSlider align-items-stretch">
                     <?php foreach ($suggested_articles as $article) { ?>
                         <?php
                         $post_id = $article['id'];
                         ?>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide product-box">
                             <div class="inner background-white d-block ">
                                 <?php
                                 $DisplayData->image(
