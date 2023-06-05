@@ -92,7 +92,7 @@ class PostMeta extends GetData
 						)
 					)
 				),
-			Field::make('select', $id . '_button_attribute', 'Button Attribute')
+			Field::make('text', $id . '_button_attribute', 'Button Attribute')
 				->set_width(15),
 			Field::make('select', $id . '_button_icon', 'Button Icon')
 				->set_conditional_logic(
