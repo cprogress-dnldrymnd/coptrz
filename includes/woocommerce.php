@@ -536,7 +536,7 @@ function product_slider_category($is_category = false)
                 <div class="container display-filter">
                     <ul class="list-inline d-flex justify-content-end">
                         <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' : '' ?>">
-                            <a href="?display=grid">
+                            <a href="?display=grid" title="Grid View">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                                     <g id="grid" transform="translate(0.114)">
                                         <rect id="Rectangle_256" data-name="Rectangle 256" width="48" height="48" rx="5"
@@ -554,7 +554,7 @@ function product_slider_category($is_category = false)
                             </a>
                         </li>
                         <li class="display-slider <?= $display_type != 'grid' ? 'active' : '' ?>">
-                            <a href="?display=slider">
+                            <a href="?display=slider" title="Slider View">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48"
                                     height="48" viewBox="0 0 48 48">
                                     <defs>
