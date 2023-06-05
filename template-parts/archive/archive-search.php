@@ -66,7 +66,7 @@ $SVG = new SVG;
                 <div class="column-holder">
                     <div class="product-slider-box">
 
-                        <div class="mySwiper-productSwiperPost mySwiper-PostSlider">
+                        <div class="mySwiper-productSwiperPost post-box-PostSlider">
 
                             <div id="results">
 

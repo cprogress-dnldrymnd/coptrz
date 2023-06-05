@@ -49,7 +49,7 @@ if (!empty($eventscategory)) {
 
                 <div class="container">
                     <div class="product-slider-box">
-                        <div class="mySwiper-productSwiperPost mySwiper-PostSlider">
+                        <div class="mySwiper-productSwiperPost post-box-PostSlider">
                             <div class="row">
                                 <?php
                                 while ($the_query->have_posts()) {

@@ -76,7 +76,7 @@ else if (is_post_type_archive('events')) {
 
         <div class="product-slider-box">
 
-            <div class="swiper mySwiper-productSwiper mySwiper-PostSlider mySwiper-productSwiper-medium">
+            <div class="swiper mySwiper-productSwiper post-box-PostSlider mySwiper-productSwiper-medium">
 
                 <div class="swiper-wrapper product-holder post-box-PostSlider align-items-stretch">
 
