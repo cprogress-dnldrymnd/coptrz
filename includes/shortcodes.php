@@ -454,7 +454,9 @@ function query_products()
 		if (catch_that_image()) {
 			$image = attachment_url_to_postid(catch_that_image());
 			$post_thumb = get_the_post_thumbnail_url(get_the_ID());
-
+			if(!$image) {
+				echo 'no-image';
+			}
 			if (!$post_thumb && $image) {
 				echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
 
