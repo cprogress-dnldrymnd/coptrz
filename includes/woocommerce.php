@@ -252,7 +252,7 @@ function product_slider($is_shop = false)
 
                 ?>
 
-                <section class="product-slider md-padding">
+                <section class="product-slider md-padding" id="term-<?= $category->slug ?>">
 
                     <div class="container mb-7">
 
