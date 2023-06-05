@@ -29,9 +29,17 @@ jQuery(document).ready(function ($) {
 	open_enquire_tab();
 
 	sidecart();
-
+	
+	heyflow();
 });
 
+function heyflow() {
+
+	jQuery('a[heyflow="true"]').click(function (e) {
+		e.preventDefault();
+
+	});
+}
 
 
 
