@@ -33,8 +33,6 @@ $suggested_articles = get__theme_option('suggested_articles');
                                     ),
                                     'position-relative image-cover-transform'
                                 );
-
-
                                 ?>
 
                                 <?php
@@ -71,8 +69,16 @@ $suggested_articles = get__theme_option('suggested_articles');
 
                     <?php } ?>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-nav-holder d-none d-sm-inline-flex">
+
+                    <div class="swiper-button-prev"></div>
+
+                    <div class="swiper-button-next"></div>
+
+                </div>
+                <div class="swiper-pagination-holder d-flex d-sm-none">
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </div>
