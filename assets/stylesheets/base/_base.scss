@@ -911,6 +911,11 @@ select option {
         @include responsive(xs) {
             flex: 1 0 0%;
         }
+
+        @include responsive(mobile) {
+            flex: 0 0 auto;
+            width: auto;
+        }
     }
 
     .line {
@@ -919,6 +924,8 @@ select option {
         background-color: var(--white-color);
         opacity: 0.1;
         margin-left: 2rem;
+
+
     }
 }
 
@@ -2771,6 +2778,7 @@ heyflow-modal-element {
                     }
                 }
             }
+
             &.display-slider {
                 &.active {
                     svg {
