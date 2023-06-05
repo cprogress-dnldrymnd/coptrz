@@ -371,20 +371,6 @@ function vendors_submenu()
 		__('Books Shortcode Reference', 'textdomain'),
 		__('Shortcode Reference', 'textdomain'),
 		'manage_options',
-		'books-shortcode-ref',
-		'vendors_submenu_callback'
+		'https://coptrz.theprogressteam.com/wp-admin/edit-tags.php?taxonomy=pa_vendors&post_type=product',
 	);
-}
-
-/**
- * Display callback for the submenu page.
- */
-function vendors_submenu_callback()
-{
-	?>
-	<div class="wrap">
-		<h1><?php _e('Books Shortcode Reference', 'textdomain'); ?></h1>
-		<p><?php _e('Helpful stuff here', 'textdomain'); ?></p>
-	</div>
-	<?php
 }
