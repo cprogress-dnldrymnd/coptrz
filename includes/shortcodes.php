@@ -456,7 +456,7 @@ function query_products()
 
 			echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
 
-			echo get_post_thumbnail_id() . 'post-thumb';
+			echo get_the_post_thumbnail_url(get_the_ID());
 
 			echo get_the_title();
 
