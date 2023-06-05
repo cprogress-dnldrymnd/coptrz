@@ -463,7 +463,41 @@ function product_slider_category($is_category = false)
 
     $term = get_queried_object();
 
+
+    if (isset($_GET['vendor'])) {
+        $vendor = $_GET['vendor'];
+    }
+    else {
+        $vendor = $_GET['vendors'];
+    }
+
+    if ($vendor) {
+        $tax_query[] = array(
+
+            'taxonomy' => 'pa_vendors',
+
+            'field'    => 'slug',
+
+            'terms'    => array($vendor),
+
+            'operator' => 'IN',
+        );
+    }
+
+    $tax_query[] = array(
+
+        'taxonomy' => 'product_cat',
+
+        'field'    => 'slug',
+
+        'terms'    => array($term->slug),
+
+        'operator' => 'IN',
+
+    );
+
     $args = array(
+
 
         'post_type'      => array('product'),
 
@@ -471,26 +505,9 @@ function product_slider_category($is_category = false)
 
         'posts_per_page' => -1,
 
-        'tax_query'      => array(
-
-            array(
-
-                'taxonomy' => 'product_cat',
-
-                'field'    => 'slug',
-
-                'terms'    => array($term->slug),
-
-                'operator' => 'IN',
-
-            )
-
-        )
+        'tax_query'      => $tax_query
 
     );
-
-
-
 
 
     $products = new WP_Query($args);
@@ -500,15 +517,14 @@ function product_slider_category($is_category = false)
 
 
     if ($products->found_posts > 4) {
-            
-
         if (!isset($_GET['display'])) {
             $display_type = $display_type;
         }
         else {
             $display_type = $_GET['display'];
         }
-    } else {
+    }
+    else {
         $display_type = 'grid';
     }
 
