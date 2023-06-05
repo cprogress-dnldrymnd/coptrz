@@ -463,6 +463,8 @@ function query_products()
 
 		echo catch_that_image();
 
+		echo attachment_url_to_postid(catch_that_image());
+
 		echo '</li>';
 	}
 	echo '</ul>';
