@@ -453,20 +453,22 @@ function query_products()
 		$products->the_post();
 		if (catch_that_image()) {
 			$image = attachment_url_to_postid(catch_that_image());
+			$post_thumb = get_the_post_thumbnail_url(get_the_ID());
 
-			echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
+			if (!$post_thumb) {
+				echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
 
-			echo get_the_post_thumbnail_url(get_the_ID());
-			echo '<br>';
+				echo '<br>';
 
 
-			echo get_the_title();
+				echo get_the_title();
 
-			echo '<br>';
+				echo '<br>';
 
-			echo wp_get_attachment_image($image);
+				echo wp_get_attachment_image($image);
 
-			echo '</a><hr></li>';
+				echo '</a><hr></li>';
+			}
 		}
 	}
 
