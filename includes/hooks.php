@@ -359,17 +359,30 @@ function costumer_type_not_logged_in()
 }
 
 add_action('init', 'costumer_type_not_logged_in');
-
-
-add_action('admin_menu', 'vendors_url');
-function vendors_url()
+/**
+ * Adds a submenu page under a custom post type parent.
+ */
+function vendors_submenu()
 {
-	add_menu_page('vendors_url', 'External link', 'read', 'my_slug', '', 'dashicons-text', 1);
+	add_submenu_page(
+		'edit.php?post_type=book',
+		__('Books Shortcode Reference', 'textdomain'),
+		__('Shortcode Reference', 'textdomain'),
+		'manage_options',
+		'books-shortcode-ref',
+		'vendors_submenu_callback'
+	);
 }
 
-add_action('admin_menu', 'linkedurl_function');
-function linkedurl_function()
+/**
+ * Display callback for the submenu page.
+ */
+function vendors_submenu_callback()
 {
-	global $menu;
-	$menu[1][2] = "http://www.example.com";
+	?>
+	<div class="wrap">
+		<h1><?php _e('Books Shortcode Reference', 'textdomain'); ?></h1>
+		<p><?php _e('Helpful stuff here', 'textdomain'); ?></p>
+	</div>
+	<?php
 }
