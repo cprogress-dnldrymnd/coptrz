@@ -10217,6 +10217,9 @@ select option {
     transform: translateX(0);
     color: var(--white-color); }
 
+.edit-holder-box .edit-holder:nth-child(2) {
+  top: 30px; }
+
 .edit-holder {
   position: absolute;
   left: 0;
