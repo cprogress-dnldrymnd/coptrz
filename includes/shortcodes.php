@@ -447,13 +447,13 @@ function query_products()
 
 	);
 	$products = new WP_Query($args);
-	echo '<ul>';
+	echo '<ol>';
 
 	while ($products->have_posts()) {
 		$products->the_post();
 		if (catch_that_image()) {
 
-			echo '<ol class="mb-3"> <a href="' . get_permalink() . '">';
+			echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
 
 			echo get_the_title();
 
