@@ -290,7 +290,7 @@ function get_time_diff($post_id)
 	return $difference;
 }
 
-
+/*
 function my_update_posts() {
     //$myposts = get_posts('showposts=-1');//Retrieve the posts you are targeting
     $args = array(
@@ -303,4 +303,4 @@ function my_update_posts() {
         wp_update_post( $mypost );
     }
 }
-add_action( 'wp_loaded', 'my_update_posts' );
+add_action( 'wp_loaded', 'my_update_posts' );*/
