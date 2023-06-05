@@ -362,6 +362,8 @@ add_action('init', 'costumer_type_not_logged_in');
 /**
  * Adds a submenu page under a custom post type parent.
  */
+add_action('admin_menu', 'vendors_submenu');
+
 function vendors_submenu()
 {
 	add_submenu_page(
