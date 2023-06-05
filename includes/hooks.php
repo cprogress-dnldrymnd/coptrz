@@ -365,7 +365,7 @@ add_action('init', 'costumer_type_not_logged_in');
 function vendors_submenu()
 {
 	add_submenu_page(
-		'edit.php?post_type=book',
+		'edit.php?post_type=product',
 		__('Books Shortcode Reference', 'textdomain'),
 		__('Shortcode Reference', 'textdomain'),
 		'manage_options',
