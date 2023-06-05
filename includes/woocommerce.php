@@ -349,7 +349,7 @@ function product_slider($is_shop = false)
 
                     </div>
 
-                    <div class="container <?= $wrapper_class_3 ?>">
+                    <div class="container <?= $wrapper_class_4 ?>">
 
                         <div class="product-slider-box">
 
