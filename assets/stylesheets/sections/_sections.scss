@@ -466,13 +466,14 @@ section.page-banner {
 
 section.product-slider {
 
-    .mySwiper-productSwiper-medium {
-        padding-right: 3vw;
-    }
 
     .product-holder {
         &:not(.product-grid) {
             padding-right: 13vw;
+        }
+
+        &:not(.mySwiper-productSwiper-medium) {
+            padding-right: 3vw;
         }
 
         &.product-grid {
