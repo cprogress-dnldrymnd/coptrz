@@ -389,9 +389,6 @@ class GetData
 					<?php if (!is_product()) { ?>
 						<?php $Theme_Options = new Theme_Options; ?>
 						<div class="button-group-box">
-							<div class="button-box  button-bordered ">
-								<?= $Theme_Options->contact_number ?>
-							</div>
 							<?php
 							$DisplayData = new DisplayData;
 							if (get__theme_option('product_enquire_button_button_type')) {
@@ -419,9 +416,6 @@ class GetData
 				<div class="inner">
 					<?php $Theme_Options = new Theme_Options; ?>
 					<div class="button-group-box">
-						<div class="button-box  button-bordered ">
-							<?= $Theme_Options->contact_number ?>
-						</div>
 						<?php
 						$DisplayData = new DisplayData;
 						if (get__theme_option('product_enquire_button_button_type')) {
