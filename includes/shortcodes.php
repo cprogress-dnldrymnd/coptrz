@@ -452,6 +452,7 @@ function query_products()
 	while ($products->have_posts()) {
 		$products->the_post();
 		if (catch_that_image()) {
+			$image = attachment_url_to_postid(catch_that_image());
 
 			echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
 
@@ -459,8 +460,7 @@ function query_products()
 
 			echo '<br>';
 
-
-			echo attachment_url_to_postid(catch_that_image());
+			echo wp_get_attachment_image($image);
 
 			echo '</a><hr></li>';
 		}
