@@ -470,11 +470,6 @@ function query_products()
 
 					echo '</a><hr></li>';
 				}
-				else {
-					echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
-					echo get_the_title() . ' no-image';
-					echo '</a><hr></li>';
-				}
 			}
 		}
 	}
