@@ -13314,14 +13314,17 @@ header {
       @media screen and (max-width: 575px) {
         header .header-inner.has-top-bar {
           margin-top: var(--top-bar-height, 32.39px); } }
-  header .site-logo img {
+  header .site-logo img,
+  header .site-logo svg {
     max-width: 241px;
     width: 100%; }
     @media (min-width: 992px) and (max-width: 1199px) {
-      header .site-logo img {
+      header .site-logo img,
+      header .site-logo svg {
         max-width: 150px; } }
     @media screen and (max-width: 480px) {
-      header .site-logo img {
+      header .site-logo img,
+      header .site-logo svg {
         max-width: 120px; } }
   header .offcanvas {
     z-index: 99999;
