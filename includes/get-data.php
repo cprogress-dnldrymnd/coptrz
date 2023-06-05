@@ -476,7 +476,8 @@ class GetData
 							get__theme_option('product_enquire_button_' . get__theme_option('product_enquire_button_button_type')),
 							get__theme_option('product_enquire_button_button_action'),
 							get__theme_option('product_enquire_button_button_icon'),
-							'button-secondary button-small',
+							'button-secondary button-small', false,
+									get__theme_option('product_enquire_button_button_attribute'),
 						);
 					}
 				}
