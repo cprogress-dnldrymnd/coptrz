@@ -343,6 +343,8 @@ header {
 		}
 
 		.header-icons {
+			position: relative;
+			z-index: 1;
 			ul {
 				li {
 					a {
