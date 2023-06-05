@@ -334,7 +334,7 @@ class GetData
 		}
 		?>
 		<?php if ($stock_status == 'instock') { ?>
-			<div class="inner product-add-to-cart-holder">
+			<div class="inner product-add-to-cart-holder product-<?= $type ?>">
 				<?php if ($price) { ?>
 					<div
 						class="row g-3 align-items-center justify-content-between <?= $variation_radio ? 'is-variation-radio' : 'is-not-variation-radio' ?>">

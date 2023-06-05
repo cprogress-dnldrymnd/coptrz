@@ -1217,14 +1217,12 @@ section.add-to-cart-section {
 
         .add-to-cart-box .cart {
             flex-wrap: wrap;
-            flex-direction: column;
-            align-items: flex-start;
+
             .woocommerce-variation-description {
                 margin-bottom: 2rem;
             }
-            .single_variation_wrap {
-                width: 100%;
-            }
+
+
 
             .variations {
                 margin-top: 1.5rem;
@@ -1234,6 +1232,17 @@ section.add-to-cart-section {
 
             &:not(.variations_form) {
                 @include justify-content(flex-start);
+            }
+        }
+
+        &.product-add-to-cart-holder {
+            .add-to-cart-box .cart {
+                flex-direction: column;
+                align-items: flex-start;
+
+                .single_variation_wrap {
+                    width: 100%;
+                }
             }
         }
     }
