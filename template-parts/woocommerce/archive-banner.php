@@ -95,7 +95,7 @@ else if (is_tax()) {
 
                 ?>
                 <?php if ($products->found_posts > 4) { ?>
-                    <div class="col-auto display-filter">
+                    <div class="col-auto display-filter mb-0">
                         <ul class="list-inline d-flex justify-content-end">
                             <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' : '' ?>">
                                 <a href="?display=grid" title="Grid View">
