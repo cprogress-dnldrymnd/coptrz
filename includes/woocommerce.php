@@ -882,11 +882,11 @@ function bbloomer_display_dropdown_variation_add_cart()
     }
 }
 
-function display_filter($post_count, $display_type, $class = false)
+function display_filter($post_count, $display_type, $class = '')
 {
     ob_start();
     ?>
-    <div class="col-auto display-filter mb-0">
+    <div class="display-filter <?= $class ?> mb-0">
         <ul class="list-inline d-flex justify-content-end">
             <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' : '' ?>">
                 <a href="?display=grid" title="Grid View">
