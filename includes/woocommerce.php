@@ -497,7 +497,12 @@ function product_slider_category($is_category = false)
     $product_slider_items_width = get__term_meta($term->term_id, 'product_slider_items_width');
     $display_type = get__term_meta($term->term_id, 'display_type');
 
-
+    if (!isset($_GET['display'])) {
+        $display_type = $display_type;
+    }
+    else {
+        $display_type = $_GET['display'];
+    }
 
     if ($display_type == 'grid' || !$display_type) {
         $wrapper_class_1 = 'product-grid';
@@ -512,11 +517,7 @@ function product_slider_category($is_category = false)
         $wrapper_class_4 = 'extend-right';
     }
 
-    if(!isset($_GET['display'])) {
-        $display_type = $display_type;
-    } else {
-        $display_type = $_GET['display'];
-    }
+
 
     if ($products->have_posts()) {
 
@@ -526,7 +527,7 @@ function product_slider_category($is_category = false)
             <?php if ($is_category) { ?>
                 <div class="container display-filter">
                     <ul class="list-inline d-flex justify-content-end">
-                        <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' :'' ?>">
+                        <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' : '' ?>">
                             <a href="?display=grid">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                                     <g id="grid" transform="translate(0.114)">
