@@ -10,6 +10,9 @@ class Theme_Options extends Helpers
 		if ($logo_ext != 'svg') {
 			$image = '<img src="' . wp_get_attachment_image_url(get__theme_option('logo'), 'medium') . '" alt="' . get_bloginfo('name') . '">';
 		}
+		else {
+			$image = '<span class="svg-image" src="' . wp_get_attachment_image_url(get__theme_option('logo'), 'medium') . '" alt="' . get_bloginfo('name') . '"></span>';
+		}
 
 		$this->site_logo = wp_get_attachment_image_url(get__theme_option('logo'), 'large');
 		$this->alt_logo_url = wp_get_attachment_image_url(get__theme_option('alt_logo'), 'large');
@@ -20,7 +23,7 @@ class Theme_Options extends Helpers
 
 
 
-		$this->logo = '<a class="site-logo full-logo" href="' . get_site_url() . '"> <img src="' . wp_get_attachment_image_url(get__theme_option('logo'), 'medium') . '" alt="' . get_bloginfo('name') . '"> </a>';
+		$this->logo = '<a class="site-logo full-logo" href="' . get_site_url() . '"> ' . $image . ' </a>';
 		$this->alt_logo = '<a class="site-logo alt-logo" href="' . get_site_url() . '"> <img src="' . wp_get_attachment_image_url(get__theme_option('alt_logo'), 'large') . '" alt="' . get_bloginfo('name') . '"></a>';
 		$this->contact_number_text = get__theme_option('contact_number');
 		$this->contact_number_url = 'tel:' . $this->clean_string($this->contact_number_text, '');
