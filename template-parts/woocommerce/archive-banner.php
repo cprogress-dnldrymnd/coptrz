@@ -16,7 +16,7 @@ else if (is_tax()) {
 
 <section class="page-banner md-padding">
     <div class="container">
-        <div class="row justify-content-between g-4">
+        <div class="row justify-content-between g-4 align-items-end">
             <div class="col-auto">
                 <div class="column-holder col-text">
                     <?php if (is_tax()) { ?>
@@ -78,7 +78,7 @@ else if (is_tax()) {
                 $products = new WP_Query($args);
                 ?>
                 <?php if ($products->found_posts > 4) { ?>
-                    <div class="container display-filter mb-5">
+                    <div class="col-auto display-filter">
                         <ul class="list-inline d-flex justify-content-end">
                             <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' : '' ?>">
                                 <a href="?display=grid" title="Grid View">
@@ -130,7 +130,7 @@ else if (is_tax()) {
                 <?php } ?>
             <?php } ?>
 
-            <?php if (isset($image)) { ?>
+            <?php if ($image) { ?>
                 <div class="col-auto col-image text-end">
                     <div class="column-holder">
                         <?php
