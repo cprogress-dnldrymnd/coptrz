@@ -141,12 +141,18 @@ function product_slider($is_shop = false)
         foreach ($product_categories as $key => $category) {
 
             $display_in_shop = get__term_meta($category->term_id, 'display_in_shop');
+            $display_type = get__term_meta($category->term_id, 'display_type');
+
 
             if ($display_in_shop) {
 
                 $array[] = $category->term_id;
 
             }
+
+
+
+
 
         }
 
@@ -246,6 +252,30 @@ function product_slider($is_shop = false)
 
 
 
+            if ($products->found_posts > 4) {
+                if (!isset($_GET['display'])) {
+                    $display_type = $display_type;
+                }
+                else {
+                    $display_type = $_GET['display'];
+                }
+            }
+            else {
+                $display_type = 'grid';
+            }
+
+            if ($display_type == 'grid' || !$display_type) {
+                $wrapper_class_1 = 'product-grid';
+                $wrapper_class_2 = 'row g-4';
+                $wrapper_class_3 = 'col-xl-3 col-lg-4 col-md-6';
+                $wrapper_class_4 = '';
+            }
+            else {
+                $wrapper_class_1 = 'swiper mySwiper-productSwiper' . ($product_slider_items_width ? '-' . $product_slider_items_width : '');
+                $wrapper_class_2 = 'swiper-wrapper';
+                $wrapper_class_3 = 'swiper-slide';
+                $wrapper_class_4 = 'extend-right';
+            }
 
 
             if ($products->have_posts()) {
@@ -319,14 +349,14 @@ function product_slider($is_shop = false)
 
                     </div>
 
-                    <div class="container extend-right">
+                    <div class="container <?= $wrapper_class_3 ?>">
 
                         <div class="product-slider-box">
 
                             <div
-                                class="swiper mySwiper-productSwiper<?= $product_slider_items_width ? '-' . $product_slider_items_width : '' ?>">
+                                class="<?= $wrapper_class_1 ?>">
 
-                                <div class="product-holder swiper-wrapper">
+                                <div class="product-holder <?= $wrapper_class_2 ?>">
 
                                     <?php while ($products->have_posts()) { ?>
 
@@ -346,9 +376,11 @@ function product_slider($is_shop = false)
 
                                         );
 
+
+
                                         ?>
 
-                                        <div class="product-box swiper-slide">
+                                        <div class="product-box swiper-slide <?= $wrapper_class_3 ?>">
 
                                             <div class="inner background-white d-block content-margin"
                                                 href="<?= get_permalink(get_the_ID()) ?>">
