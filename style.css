@@ -12282,7 +12282,7 @@ heyflow-modal-element {
   .shop_table.cart .product-price {
     white-space: nowrap; } }
 
-.button-quick-view button {
+.button-quick-view.button-quick-view button.product-modal-trigger {
   border-radius: 50%;
   padding: 10px;
   border: none;
@@ -12290,8 +12290,10 @@ heyflow-modal-element {
   width: 55px;
   height: 55px;
   margin-right: 1rem; }
-  .button-quick-view button svg {
-    border: none !important; }
+  .button-quick-view.button-quick-view button.product-modal-trigger svg {
+    border: none !important;
+    width: 30px !important;
+    height: 30px !important; }
 
 @font-face {
   font-family: "HKNovaR";
