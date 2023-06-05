@@ -1443,7 +1443,7 @@ Container::make('theme_options', __('Vendor Settings'))
 	->set_page_parent('edit.php?post_type=product')
 	->add_fields(
 		array(
-			Field::make('text', 'vendor_description', 'Vendor Description'),
+			Field::make('rich_text', 'vendor_description', 'Vendor Description'),
 		
 		)
 	);
