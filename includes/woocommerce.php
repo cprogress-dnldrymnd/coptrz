@@ -512,6 +512,12 @@ function product_slider_category($is_category = false)
         $wrapper_class_4 = 'extend-right';
     }
 
+    if(!isset($_GET['display'])) {
+        $display_type = $display_type;
+    } else {
+        $display_type = $_GET['display'];
+    }
+
     if ($products->have_posts()) {
 
         ?>
