@@ -13911,7 +13911,7 @@ body.hero-banner-revealing_heading header .header-main:before {
   header.mega-menu-opened .header-main {
     background-color: var(--white-color); }
     header.mega-menu-opened .header-main .site-logo svg {
-      fill: var(--black-color); }
+      fill: var(--black-color) !important; }
     header.mega-menu-opened .header-main #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
       color: var(--black-color);
       opacity: 1; }
