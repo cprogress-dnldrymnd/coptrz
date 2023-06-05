@@ -392,6 +392,20 @@ class GetData
 							<div class="button-box  button-bordered ">
 								<?= $Theme_Options->contact_number ?>
 							</div>
+							<?php
+							$DisplayData = new DisplayData;
+							if (get__theme_option('product_enquire_button_button_type')) {
+								$DisplayData->button(
+									get__theme_option('product_enquire_button_button_text'),
+									get__theme_option('product_enquire_button_' . get__theme_option('product_enquire_button_button_type')),
+									get__theme_option('product_enquire_button_button_action'),
+									get__theme_option('product_enquire_button_button_icon'),
+									'button-secondary ',
+									false,
+									get__theme_option('product_enquire_button_button_attribute'),
+								);
+							}
+							?>
 							<div class="button-box button-accent">
 								<a href="<?= get_permalink($product_id) ?>">LEARN MORE</a>
 							</div>
