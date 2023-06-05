@@ -497,11 +497,19 @@ function product_slider_category($is_category = false)
     $product_slider_items_width = get__term_meta($term->term_id, 'product_slider_items_width');
     $display_type = get__term_meta($term->term_id, 'display_type');
 
-    if (!isset($_GET['display'])) {
-        $display_type = $display_type;
-    }
-    else {
-        $display_type = $_GET['display'];
+
+
+    if ($products->found_posts > 4) {
+            
+
+        if (!isset($_GET['display'])) {
+            $display_type = $display_type;
+        }
+        else {
+            $display_type = $_GET['display'];
+        }
+    } else {
+        $display_type = 'grid';
     }
 
     if ($display_type == 'grid' || !$display_type) {
@@ -524,7 +532,7 @@ function product_slider_category($is_category = false)
         ?>
 
         <section class="product-slider md-padding">
-            <?php if ($is_category) { ?>
+            <?php if ($is_category && $products->found_posts > 4) { ?>
                 <div class="container display-filter">
                     <ul class="list-inline d-flex justify-content-end">
                         <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' : '' ?>">
