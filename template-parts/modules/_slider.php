@@ -25,8 +25,8 @@ $heading = $module['heading'];
     </div>
     <div class="container extend-right">
         <div class="product-slider-box">
-            <div class="swiper mySwiper-productSwiper post-box-Slider">
-                <div class="product-holder post-box-PostSlider swiper-wrapper align-items-stretch">
+            <div class="swiper mySwiper-productSwiper ">
+                <div class="product-holder post-box-Slider swiper-wrapper align-items-stretch">
                     <?php foreach ($slider_items as $slider_item) { ?>
 
 
