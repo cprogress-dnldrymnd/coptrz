@@ -451,20 +451,21 @@ function query_products()
 
 	while ($products->have_posts()) {
 		$products->the_post();
-
-		echo '<li class="mb-3"> <a href="' . get_permalink() . '">';
-
-		echo get_the_title();
-
-		echo '<br>';
-
 		if (catch_that_image()) {
 
-			echo attachment_url_to_postid(catch_that_image());
-		}
+			echo '<ol class="mb-3"> <a href="' . get_permalink() . '">';
 
-		echo '</a><hr></li>';
+			echo get_the_title();
+
+			echo '<br>';
+
+
+			echo attachment_url_to_postid(catch_that_image());
+
+			echo '</a><hr></ol>';
+		}
 	}
+
 	echo '</ul>';
 
 	wp_reset_postdata();
