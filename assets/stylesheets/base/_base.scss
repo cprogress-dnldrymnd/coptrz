@@ -1763,14 +1763,16 @@ section.featured-boxes {
         .icon {
             margin-left: 1rem !important;
             width: 24px;
+
+            svg {
+                animation-name: spin;
+                animation-duration: 5000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
         }
 
-        svg {
-            animation-name: spin;
-            animation-duration: 5000ms;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
+
     }
 }
 

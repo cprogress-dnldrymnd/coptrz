@@ -11537,11 +11537,11 @@ section.featured-boxes .featured-boxes-holder .column-holder {
   .product-modal-trigger:not(.close-button).loading .icon {
     margin-left: 1rem !important;
     width: 24px; }
-  .product-modal-trigger:not(.close-button).loading svg {
-    animation-name: spin;
-    animation-duration: 5000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; }
+    .product-modal-trigger:not(.close-button).loading .icon svg {
+      animation-name: spin;
+      animation-duration: 5000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
 
 .product-gallery .image-box {
   position: relative;
