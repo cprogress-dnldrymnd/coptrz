@@ -13934,12 +13934,12 @@ body.hero-banner-revealing_heading header .header-main:before {
 .header-background-black #mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after {
   background-color: var(--white-color); }
 
+.header-background-transparent header .header-main .site-logo svg {
+  fill: var(--white-color); }
 @media screen and (max-width: 991px) {
   .header-background-transparent header .header-main {
     background-color: var(--white-color);
-    color: var(--primary-color); }
-    .header-background-transparent header .header-main .site-logo svg {
-      fill: var(--white-color); } }
+    color: var(--primary-color); } }
 
 .mega-menu-toggle {
   background-color: transparent !important; }

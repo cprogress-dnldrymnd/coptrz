@@ -971,15 +971,16 @@ body {
 .header-background-transparent {
 	header {
 		.header-main {
+			.site-logo {
+				svg {
+					fill: var(--white-color);
+				}
+			}
+
 			@include responsive(xs-sm) {
 				background-color: var(--white-color);
 				color: var(--primary-color);
-				.site-logo {
-					svg {
-						fill: var(--white-color)
-					}
-				}
-			
+
 			}
 		}
 	}
