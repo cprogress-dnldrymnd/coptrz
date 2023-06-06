@@ -12305,6 +12305,32 @@ heyflow-modal-element {
     width: 30px !important;
     height: 30px !important; }
 
+.display-filter ul li a {
+  position: relative; }
+  .display-filter ul li a .tooltip-text {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 12px;
+    position: absolute;
+    top: -20px;
+    width: 100px;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -100%);
+    -moz-transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -100%);
+    -o-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms; }
+  .display-filter ul li a:hover .tooltip-text, .display-filter ul li a:active .tooltip-text, .display-filter ul li a:focus .tooltip-text {
+    opacity: 1; }
 .display-filter ul li.display-grid.active svg #Rectangle_256 {
   fill: var(--accent-color); }
 .display-filter ul li.display-slider.active svg #Rectangle_255 {

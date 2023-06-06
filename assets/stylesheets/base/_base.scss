@@ -2778,6 +2778,30 @@ heyflow-modal-element {
 .display-filter {
     ul {
         li {
+            a {
+                position: relative;
+                .tooltip-text {
+                    background-color: var(--secondary-color);
+                    color: var(--white-color);
+                    padding: 5px 10px;
+                    text-align: center;
+                    border-radius: 3px;
+                    font-size: 12px;
+                    position: absolute;
+                    top: -20px;
+                    width: 100px;
+                    left: 50%;
+                    opacity: 0;
+                    @include transform(translate(-50%, -100%));
+                    @include transition(300ms);
+                }
+                @include on-event {
+                    .tooltip-text {
+                        opacity: 1;
+                    }
+                }
+            }
+
             &.display-grid {
                 &.active {
                     svg {
