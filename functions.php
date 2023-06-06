@@ -85,8 +85,8 @@ function action_after_setup_theme()
 		),
 
 		array(
-			'id'    => 'vendors',
-			'label' => 'Vendors'
+			'id'    => 'vendor',
+			'label' => 'Vendor'
 		),
 
 	);
