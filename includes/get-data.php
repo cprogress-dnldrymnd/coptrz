@@ -347,7 +347,7 @@ class GetData
 								<div class="column-holder">
 									<?php if (is_product()) { ?>
 										<div class="price-box">
-											<?= $price ?>sss
+											<?= $price ?>
 										</div>
 									<?php } ?>
 
@@ -365,6 +365,12 @@ class GetData
 									</div>
 								</div>
 							</div>
+						<?php }
+						else { ?>
+				<div class="price-box">
+											<?= $price ?>
+										</div>
+									<?php } ?>
 						<?php } ?>
 						<div class="<?= $variation_radio ? $class2 : 'col' ?> col-add-to-cart">
 							<?php if (!is_product()) { ?>
