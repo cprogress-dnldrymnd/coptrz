@@ -684,7 +684,7 @@ class ModulesFields extends GetData
 			$this->before_module_fields(),
 			$this->module_fields(
 				array(
-					Field::make('html', 'seperator_1')->set_html('<label>THIS WILL DISPLAY THE VENDOR SLIDER</label>')->set_classes('seperator '),
+					Field::make('html', 'seperator_1')->set_html('<h3>THIS WILL DISPLAY THE VENDOR SLIDER</h3>'),
 				)
 			)
 		);
