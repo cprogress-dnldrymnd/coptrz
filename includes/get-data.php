@@ -379,7 +379,7 @@ class GetData
 										echo do_shortcode('[add_to_cart_form id="' . $product_id . '"]');
 									}
 									else {
-										echo do_shortcode('[add_to_cart_form show_price="false" id="' . $product_id . '"]');
+										echo do_shortcode('[add_to_cart_form  id="' . $product_id . '"]');
 									}
 									?>
 								</div>
