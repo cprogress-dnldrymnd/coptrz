@@ -368,7 +368,7 @@ class GetData
 						<?php }
 						else { ?>
 							<?php if (is_product()) { ?>
-								<div class="price-box">
+								<div class="price-box mb-0">
 									<?= $price ?>
 								</div>
 							<?php } ?>
