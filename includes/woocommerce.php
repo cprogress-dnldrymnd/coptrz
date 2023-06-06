@@ -914,6 +914,9 @@ function display_filter($post_count, $display_type, $class = '', $param = '')
     if ($post_count > 4) {
         ob_start();
         ?>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js">
+
+        </script>
         <div class="display-filter <?= $class ?>">
             <ul class="list-inline d-flex justify-content-end">
                 <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' : '' ?>">
