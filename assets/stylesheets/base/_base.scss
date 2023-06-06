@@ -2780,6 +2780,7 @@ heyflow-modal-element {
         li {
             a {
                 position: relative;
+
                 .tooltip-text {
                     background-color: var(--secondary-color);
                     color: var(--white-color);
@@ -2788,16 +2789,31 @@ heyflow-modal-element {
                     border-radius: 3px;
                     font-size: 12px;
                     position: absolute;
-                    top: -20px;
+                    top: -23px;
                     width: 100px;
                     left: 50%;
                     opacity: 0;
                     @include transform(translate(-50%, -100%));
                     @include transition(300ms);
+
+                    @include after {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                        border-top: 8px solid var(--secondary-color);
+                        position: absolute;
+                        bottom: -7px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
                 }
+
                 @include on-event {
                     .tooltip-text {
                         opacity: 1;
+
                     }
                 }
             }

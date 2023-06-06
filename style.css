@@ -12315,7 +12315,7 @@ heyflow-modal-element {
     border-radius: 3px;
     font-size: 12px;
     position: absolute;
-    top: -20px;
+    top: -23px;
     width: 100px;
     left: 50%;
     opacity: 0;
@@ -12329,6 +12329,17 @@ heyflow-modal-element {
     -ms-transition: 300ms;
     -o-transition: 300ms;
     transition: 300ms; }
+    .display-filter ul li a .tooltip-text:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 8px solid var(--secondary-color);
+      position: absolute;
+      bottom: -7px;
+      left: 50%;
+      transform: translateX(-50%); }
   .display-filter ul li a:hover .tooltip-text, .display-filter ul li a:active .tooltip-text, .display-filter ul li a:focus .tooltip-text {
     opacity: 1; }
 .display-filter ul li.display-grid.active svg #Rectangle_256 {
