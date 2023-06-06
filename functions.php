@@ -84,6 +84,11 @@ function action_after_setup_theme()
 			'label' => 'Slider'
 		),
 
+		array(
+			'id'    => 'vendors',
+			'label' => 'Vendors'
+		),
+
 	);
 
 	$theme_settings = array(
@@ -184,7 +189,7 @@ function enqueue_scripts()
 	wp_enqueue_style('tissue-paper-swiper-css', vendor_dir . 'swiper/swiper-bundle.min.css');
 	wp_enqueue_style('tissue-paper-data-fancybox-css', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css');
 	wp_enqueue_style('tissue-paper-style', theme_dir . 'style.css');
-	
+
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('tissue-paper-bootstrap-js', vendor_dir . 'bootstrap/bootstrap.min.js');
 	wp_enqueue_script('tissue-paper-swiper-js', vendor_dir . 'swiper/swiper-bundle.min.js');
@@ -193,7 +198,7 @@ function enqueue_scripts()
 	wp_enqueue_script('tissue-paper-gsap-js', vendor_dir . 'gsap/gsap.min.js');
 	wp_enqueue_script('tissue-paper-data-fancybox-js', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js');
 	wp_enqueue_script('tissue-paper-js', assets_dir . 'javascripts/main.js');
-	
+
 	$Theme_Options = new Theme_Options();
 	if ($Theme_Options->disable_gutenberg) {
 		wp_dequeue_style('wp-block-library');
@@ -292,15 +297,15 @@ function get_time_diff($post_id)
 
 /*
 function my_update_posts() {
-    //$myposts = get_posts('showposts=-1');//Retrieve the posts you are targeting
-    $args = array(
-        'post_type' => 'post',
-        'numberposts' => -1
-    );
-    $myposts = get_posts($args);
-    foreach ($myposts as $mypost){
-        $mypost->post_title = $mypost->post_title.'';
-        wp_update_post( $mypost );
-    }
+		//$myposts = get_posts('showposts=-1');//Retrieve the posts you are targeting
+		$args = array(
+				'post_type' => 'post',
+				'numberposts' => -1
+		);
+		$myposts = get_posts($args);
+		foreach ($myposts as $mypost){
+				$mypost->post_title = $mypost->post_title.'';
+				wp_update_post( $mypost );
+		}
 }
 add_action( 'wp_loaded', 'my_update_posts' );*/

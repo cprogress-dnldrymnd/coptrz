@@ -108,15 +108,15 @@ class PostMeta extends GetData
 				->set_classes('select-button-icon ')
 				->set_width(10),
 			/*Field::make('html',  $id . '_button_select_icon', 'Select Icon')
-																																																->set_html('<a class="button button-primary button-large thickbox select-icon" href="#TB_inline?width=600&height=550&inlineId=modal-svg-" >SELECT ICON</a>')
-																																																->set_conditional_logic(array(
-																																																array(
-																																																'field' => $id . '_button_type',
-																																																'value' => array('page_button', 'post_button', 'services_button', 'custom_button'),
-																																																'compare' => 'IN'
-																																																)
-																																																))
-																																																->set_width(20)*/
+																																																			->set_html('<a class="button button-primary button-large thickbox select-icon" href="#TB_inline?width=600&height=550&inlineId=modal-svg-" >SELECT ICON</a>')
+																																																			->set_conditional_logic(array(
+																																																			array(
+																																																			'field' => $id . '_button_type',
+																																																			'value' => array('page_button', 'post_button', 'services_button', 'custom_button'),
+																																																			'compare' => 'IN'
+																																																			)
+																																																			))
+																																																			->set_width(20)*/
 
 		);
 
@@ -672,6 +672,19 @@ class ModulesFields extends GetData
 					Field::make('text', 'heading', 'Heading'),
 					Field::make('select', 'contact_form', 'Contact Form')
 						->set_options($this->get_contact_forms())
+				)
+			)
+		);
+	}
+
+	function vendor_fields()
+	{
+
+		return array_merge(
+			$this->before_module_fields(),
+			$this->module_fields(
+				array(
+					Field::make('html', 'seperator_1')->set_html('<label>THIS WILL DISPLAY THE VENDOR SLIDER</label>')->set_classes('seperator '),
 				)
 			)
 		);
@@ -1444,7 +1457,7 @@ Container::make('theme_options', __('Vendor Settings'))
 	->add_fields(
 		array(
 			Field::make('rich_text', 'vendor_description', 'Vendor Description'),
-		
+
 		)
 	);
 
