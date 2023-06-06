@@ -436,7 +436,7 @@ function product_slider($is_shop = false)
                                                     </div>
                                                     <div class="button-box button-accent button-small">
                                                         <a href="<?php the_permalink() ?>">
-                                                            <span class="text">EXPLORE</span>
+                                                            <span class="text">VIEW PRODUCT</span>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -667,7 +667,7 @@ function product_slider_category($is_category = false)
                                             </div>
                                             <div class="button-box button-accent button-small">
                                                 <a href="<?php the_permalink() ?>">
-                                                    <span class="text">EXPLORE</span>
+                                                    <span class="text">VIEW PRODUCT</span>
                                                 </a>
                                             </div>
                                         </div>
