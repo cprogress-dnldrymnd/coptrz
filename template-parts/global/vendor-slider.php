@@ -1,3 +1,6 @@
+<?php 
+$DisplayData = new DisplayData;
+?>
 <section class="vendors-slider has-edit">
   <?php
   if (current_user_can('administrator')) {
