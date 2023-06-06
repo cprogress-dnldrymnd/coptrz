@@ -333,8 +333,10 @@ class GetData
 			$class1 = 'justify-content-between align-items-center';
 			$class2 = 'col-lg-6';
 		}
+		echo $stock_status;
 		?>
 		<?php if ($stock_status == 'instock') { ?>
+
 			<div class="inner product-add-to-cart-holder product-<?= $type ?>">
 				<?php if ($price) { ?>
 					<div
