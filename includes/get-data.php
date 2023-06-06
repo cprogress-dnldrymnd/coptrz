@@ -413,7 +413,7 @@ class GetData
 							}
 							?>
 							<div class="button-box button-accent">
-								<a href="<?= get_permalink($product_id) ?>">LEARN MORE</a>
+								<a href="<?= get_permalink($product_id) ?>">VIEW PRODUCT</a>
 							</div>
 						</div>
 					<?php } ?>
@@ -440,7 +440,7 @@ class GetData
 						}
 						?>
 						<div class="button-box button-accent">
-							<a href="<?= get_permalink($product_id) ?>">LEARN MORE</a>
+							<a href="<?= get_permalink($product_id) ?>">VIEW PRODUCT</a>
 						</div>
 					</div>
 				</div>
