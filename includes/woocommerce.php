@@ -918,7 +918,7 @@ function display_filter($post_count, $display_type, $class = '', $param = '')
         <div class="display-filter <?= $class ?>">
             <ul class="list-inline d-flex justify-content-end">
                 <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' : '' ?>">
-                    <a href="?display=grid<?= $param ?>" >
+                    <a href="?display=grid<?= $param ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                             <g id="grid" transform="translate(0.114)">
                                 <rect id="Rectangle_256" data-name="Rectangle 256" width="48" height="48" rx="5"
@@ -940,7 +940,7 @@ function display_filter($post_count, $display_type, $class = '', $param = '')
                     </a>
                 </li>
                 <li class="display-slider <?= $display_type != 'grid' ? 'active' : '' ?>">
-                    <a href="?display=slider" title="Slider View">
+                    <a href="?display=slider">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48"
                             height="48" viewBox="0 0 48 48">
                             <defs>
@@ -964,6 +964,9 @@ function display_filter($post_count, $display_type, $class = '', $param = '')
                                 </g>
                             </g>
                         </svg>
+                        <div class="tooltip-text">
+                            Slider View
+                        </div>
                     </a>
                 </li>
             </ul>
