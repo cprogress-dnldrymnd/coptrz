@@ -733,7 +733,6 @@ function swiper_slider() {
 	var FeaturedProducts = new Swiper(".mySwiper-FeaturedProducts", {
 		loop: true,
 		spaceBetween: 0,
-		autoHeight: true,
 		slidesPerView: 1,
 		freeMode: true,
 		autoplay: {
