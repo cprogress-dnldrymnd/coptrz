@@ -1442,3 +1442,30 @@ section.search-section {
         border-radius: 20px;
     }
 }
+
+.login-form {
+    .nav-tabs {
+
+
+        .nav-link {
+            padding: 10px;
+            border-radius: 0;
+
+
+            h2 {
+                margin-bottom: 0;
+            }
+
+            @include on-event {
+                background-color: var(--secondary-color);
+                color: var(--white-color);
+            }
+
+            &.active {
+                background-color: var(--secondary-color);
+                color: var(--white-color);
+            }
+
+        }
+    }
+}

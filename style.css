@@ -15105,4 +15105,16 @@ section.careers .inner {
 section.search-section .filter-holder {
   border-radius: 20px; }
 
+.login-form .nav-tabs .nav-link {
+  padding: 10px;
+  border-radius: 0; }
+  .login-form .nav-tabs .nav-link h2 {
+    margin-bottom: 0; }
+  .login-form .nav-tabs .nav-link:hover, .login-form .nav-tabs .nav-link:active, .login-form .nav-tabs .nav-link:focus {
+    background-color: var(--secondary-color);
+    color: var(--white-color); }
+  .login-form .nav-tabs .nav-link.active {
+    background-color: var(--secondary-color);
+    color: var(--white-color); }
+
 /*# sourceMappingURL=style.css.map */
