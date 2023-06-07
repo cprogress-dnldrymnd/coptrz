@@ -8,12 +8,12 @@ $GetData = new GetData;
 
 $featured_products = $module['featured_products'];
 ?>
-<?php if ($featured_product) { ?>
+<?php if ($featured_products) { ?>
     <div class="container-fluid p-0">
         <div class="featured-product-slider-box">
             <div class="swiper mySwiper-FeaturedProducts">
                 <div class="swiper-wrapper align-items-center">
-                    <?php foreach ($featured_product as $key => $featured_product) { ?>
+                    <?php foreach ($featured_products as $key => $featured_product) { ?>
                         <div class="swiper-slide">
                             <div class="container">
                                 <div class="row gy-4">
