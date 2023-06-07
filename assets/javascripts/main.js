@@ -53,7 +53,9 @@ function sidecart() {
 	});
 
 	jQuery('body').on('added_to_cart', function () {
-		show_sidecart();
+		if (!jQuery('body').hasClass('elementor-editor-active')) {
+			show_sidecart();
+		}
 	});
 }
 
