@@ -123,6 +123,10 @@ section.featured-product-slider {
         }
     }
 
+    .swiper-slide {
+        height: auto;
+    }
+
     .product-add-to-cart-holder {
         .col-add-to-cart {
             >.column-holder {
@@ -137,6 +141,7 @@ section.featured-product-slider {
                         margin-top: 1rem;
                         margin-bottom: 2rem;
                     }
+
                     .price-box {
                         color: var(--white-color) !important;
                     }
