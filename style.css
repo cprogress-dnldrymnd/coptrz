@@ -15105,6 +15105,8 @@ section.careers .inner {
 section.search-section .filter-holder {
   border-radius: 20px; }
 
+.login-form .nav-tabs .nav-item {
+  width: 50%; }
 .login-form .nav-tabs .nav-link {
   padding: 10px;
   border-radius: 0; }
@@ -15112,11 +15114,11 @@ section.search-section .filter-holder {
     margin-bottom: 0 !important; }
   .login-form .nav-tabs .nav-link:hover, .login-form .nav-tabs .nav-link:active, .login-form .nav-tabs .nav-link:focus {
     background-color: var(--accent-color); }
-    .login-form .nav-tabs .nav-link:hover h2, .login-form .nav-tabs .nav-link:active h2, .login-form .nav-tabs .nav-link:focus h2 {
+    .login-form .nav-tabs .nav-link:hover h3, .login-form .nav-tabs .nav-link:active h3, .login-form .nav-tabs .nav-link:focus h3 {
       color: var(--white-color); }
   .login-form .nav-tabs .nav-link.active {
     background-color: var(--accent-color); }
-    .login-form .nav-tabs .nav-link.active h2 {
+    .login-form .nav-tabs .nav-link.active h3 {
       color: var(--white-color); }
 
 /*# sourceMappingURL=style.css.map */
