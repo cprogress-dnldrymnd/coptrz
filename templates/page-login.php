@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-lg-4">
         <div class="column-holder">
-          <?php get_template_part('woocoomerce/globals/form-login'); ?>
+          <?php get_template_part('woocommerce/globals/form-login'); ?>
         </div>
       </div>
     </div>
