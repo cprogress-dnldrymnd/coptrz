@@ -1444,6 +1444,9 @@ section.search-section {
 }
 
 .login-form {
+    .woocommerce-form-register {
+        height: auto !important;
+    }
     .nav-tabs {
         .nav-item {
             width: 50%;
