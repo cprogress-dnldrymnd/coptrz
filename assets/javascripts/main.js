@@ -29,16 +29,17 @@ jQuery(document).ready(function ($) {
 	open_enquire_tab();
 
 	sidecart();
-	
-	heyflow();
+
+	heyflow_button();
 });
 
-function heyflow() {
+function heyflow_button() {
+	if (jQuery('a[heyflow="true"]').length > 0) {
+		jQuery('a[heyflow="true"]').click(function (e) {
+			e.preventDefault();
 
-	jQuery('a[heyflow="true"]').click(function (e) {
-		e.preventDefault();
-
-	});
+		});
+	}
 }
 
 
