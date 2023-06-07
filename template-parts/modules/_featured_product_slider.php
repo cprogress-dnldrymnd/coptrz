@@ -16,8 +16,8 @@ $featured_products = $module['featured_products'];
                     <?php foreach ($featured_products as $key => $featured_product) { ?>
                         <?php
                         $product = wc_get_product($featured_product['id']);
-                        $vendor_id = get_the_terms($product->get_id(), array('pa_vendors'))[0]->term_id;
-                        $vendor_image = get__term_meta($vendor_id, 'image');
+                        $vendor_id = get_the_terms($product->get_id(), array('pa_vendors'))[0];
+                        $vendor_image = get__term_meta($vendor_id, 'featured_product_image');
                         ?>
                         <div class="swiper-slide">
                             <div class="container">
@@ -27,8 +27,8 @@ $featured_products = $module['featured_products'];
                                             <div class="image-box">
                                                 <img src="<?= get_the_post_thumbnail_url($featured_product['id'], 'large') ?>"
                                                     alt="<?= $product->get_name() ?>">
-                                                <img src="<?= wp_get_attachment_image_url($vendor_image, 'medium') ?>"
-                                                    class="image-icon" alt="">
+                                                <img src="<?= content_url() ?>/uploads/2022/12/dji-icon.png" class="image-icon"
+                                                    alt="">
                                             </div>
                                         </div>
                                     </div>
