@@ -1151,7 +1151,8 @@ Container::make('term_meta', __('Category Properties'))
 						Field::make('text', 'prefix', 'Prefix'),
 						Field::make('text', 'heading', 'Heading'),
 						Field::make('textarea', 'description', 'Description'),
-						Field::make('image', 'image', 'Image'),
+						Field::make('image', 'image', 'Logo'),
+						Field::make('image', 'featured_product_image', 'Featured Product Logo'),
 
 					)
 				)
