@@ -130,6 +130,10 @@ section.featured-product-slider {
                 flex-direction: column;
                 align-items: flex-start !important;
 
+                .price-box {
+                    color: var(--white-color) !important;
+                }
+
                 .cart {
                     flex-direction: column;
                     align-items: flex-start !important;
@@ -139,9 +143,6 @@ section.featured-product-slider {
                         margin-bottom: 2rem;
                     }
 
-                    .price-box {
-                        color: var(--white-color) !important;
-                    }
 
                 }
             }
