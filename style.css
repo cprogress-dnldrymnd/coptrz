@@ -15105,6 +15105,8 @@ section.careers .inner {
 section.search-section .filter-holder {
   border-radius: 20px; }
 
+.login-form .woocommerce-form-register {
+  height: auto !important; }
 .login-form .nav-tabs .nav-item {
   width: 50%; }
 .login-form .nav-tabs .nav-link {
