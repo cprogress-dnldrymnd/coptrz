@@ -56,7 +56,7 @@ $featured_products = $module['featured_products'];
 
                                             <?= $GetData->add_to_cart($featured_product['id']) ?>
                                             <div class="button-box button-accent">
-                                                <a href="<?= get_permalink($featured_product['id']) ?>">SHOP NOW</a>
+                                                <a href="<?= get_permalink($featured_product['id']) ?>">VIEW PRODUCT</a>
                                             </div>
                                         </div>
                                     </div>
