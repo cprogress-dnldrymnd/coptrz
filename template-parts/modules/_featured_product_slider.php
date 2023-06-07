@@ -16,7 +16,7 @@ $featured_products = $module['featured_products'];
                     <?php foreach ($featured_products as $key => $featured_product) { ?>
                         <?php
                         $product = wc_get_product($featured_product['id']);
-                        $terms = get_the_terms($product->get_id(), array('pa_vendors'));
+                        $terms = get_the_terms($product->get_id(), array('pa_vendors'))[0];
                         var_dump($terms);
                         ?>
                         <div class="swiper-slide">
