@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-lg-4">
         <div class="column-holder">
-          <?= do_shortcode( '[woocommerce_my_account ]' ) ?>
+          <?php get_template_part('woocoomerce/globals/form-login'); ?>
         </div>
       </div>
     </div>
