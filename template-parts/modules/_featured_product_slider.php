@@ -17,6 +17,7 @@ $featured_products = $module['featured_products'];
                         <?php
                         $product = wc_get_product($featured_product['id']);
                         $vendor_id = get_the_terms($product->get_id(), array('pa_vendors'))[0];
+                        $vendor_image = get__term_meta($vendor_id, 'image');
                         ?>
                         <div class="swiper-slide">
                             <div class="container">
