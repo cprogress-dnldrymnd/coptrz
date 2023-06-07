@@ -14,13 +14,17 @@ $featured_products = $module['featured_products'];
             <div class="swiper mySwiper-FeaturedProducts">
                 <div class="swiper-wrapper align-items-center">
                     <?php foreach ($featured_products as $key => $featured_product) { ?>
+                        <?php
+                        $product = wc_get_product($featured_product['id']);
+                        ?>
                         <div class="swiper-slide">
                             <div class="container">
                                 <div class="row gy-4">
                                     <div class="col-lg-7">
                                         <div class="column-holder">
                                             <div class="image-box">
-                                                <img src="<?= get_the_post_thumbnail_url($featured_product['id'], 'large') ?>" alt="<?= get_the_title($featured_product['id']) ?>">
+                                                <img src="<?= get_the_post_thumbnail_url($featured_product['id'], 'large') ?>"
+                                                    alt="<?= $product->get_name() ?>">
                                                 <img src="<?= content_url() ?>/uploads/2022/12/dji-icon.png" class="image-icon"
                                                     alt="">
                                             </div>
@@ -31,7 +35,7 @@ $featured_products = $module['featured_products'];
                                             <div class="heading-box small-width small-heading">
                                                 <span class="prefix white-color">FEATURED PRODUCT</span>
                                                 <h2>
-                                                    DJI Mavic 3 Thermal
+                                                    <?= $product->get_name() ?>
                                                 </h2>
                                             </div>
                                             <div class="description-box content-margin">
@@ -54,8 +58,10 @@ $featured_products = $module['featured_products'];
                                                     </li>
                                                 </ul>
                                             </div>
+
+                                            <?= $GetData->add_to_cart($featured_product['id']) ?>
                                             <div class="button-box button-accent">
-                                                <a href="#">SHOP NOW</a>
+                                                <a href="<?= get_permalink($featured_product['id']) ?>">SHOP NOW</a>
                                             </div>
                                         </div>
                                     </div>
