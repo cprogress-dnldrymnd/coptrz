@@ -374,3 +374,14 @@ function vendors_submenu()
 		'/edit-tags.php?taxonomy=pa_vendors&post_type=product',
 	);
 }
+
+
+
+function custom_login_redirect()
+{
+
+	return '/my-account';
+
+}
+
+add_filter('login_redirect', 'custom_login_redirect');
