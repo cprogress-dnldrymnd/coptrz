@@ -32,19 +32,12 @@ $featured_products = $module['featured_products'];
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="column-holder content-margin extra-small-width">
-                                            <div class="heading-box small-width small-heading">
-                                                <span class="prefix white-color">FEATURED PRODUCT</span>
-                                                <h2>
-                                                    <?= $product->get_name() ?>
-                                                </h2>
-                                            </div>
-
                                             <?php
                                             $DisplayData->heading(
                                                 array(
                                                     'heading' => $product->get_name(),
-                                                    'prefix'  => 'FEATURED PRODUCT'
-                                                )
+                                                    'heading_small'  => 'FEATURED PRODUCT'
+                                                ), 'small-width small-heading'
                                             );
                                             $DisplayData->description(
                                                 array(
