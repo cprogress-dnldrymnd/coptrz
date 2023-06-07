@@ -261,7 +261,6 @@ select option {
 
 #wpadminbar {
     z-index: 9999999;
-    overflow: hidden;
 
     @media screen and (max-width: 600px) {
         position: fixed;
