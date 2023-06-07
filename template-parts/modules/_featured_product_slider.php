@@ -41,7 +41,7 @@ $featured_products = $module['featured_products'];
                                             );
                                             $DisplayData->description(
                                                 array(
-                                                    'heading' => $product->get_short_description(),
+                                                    'description' => $product->get_short_description(),
                                                     'prefix'  => 'FEATURED PRODUCT'
                                                 ), 'content-margin'
                                             );
