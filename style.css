@@ -10194,8 +10194,7 @@ select option {
   color: var(--text-color); }
 
 #wpadminbar {
-  z-index: 9999999;
-  overflow: hidden; }
+  z-index: 9999999; }
   @media screen and (max-width: 600px) {
     #wpadminbar {
       position: fixed; } }
