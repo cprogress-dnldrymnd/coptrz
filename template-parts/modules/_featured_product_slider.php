@@ -38,26 +38,21 @@ $featured_products = $module['featured_products'];
                                                     <?= $product->get_name() ?>
                                                 </h2>
                                             </div>
-                                            <div class="description-box content-margin">
-                                                <p>
-                                                    Image above everything! The Mavic 3 is finally here, set to be the ultimate
-                                                    compact drone for high-end photography and videography.
-                                                </p>
-                                                <ul>
-                                                    <li>
-                                                        20 Megapixel, 4/3 CMOS Sensor
-                                                    </li>
-                                                    <li>
-                                                        100 Megapixel Panorama mode
-                                                    </li>
-                                                    <li>
-                                                        4K video up to 120 fps or 5.1K up to 50 fps
-                                                    </li>
-                                                    <li>
-                                                        200Mbps H.264 or 140Mbps H.265 video recording
-                                                    </li>
-                                                </ul>
-                                            </div>
+
+                                            <?php
+                                            $DisplayData->heading(
+                                                array(
+                                                    'heading' => $product->get_name(),
+                                                    'prefix'  => 'FEATURED PRODUCT'
+                                                )
+                                            );
+                                            $DisplayData->description(
+                                                array(
+                                                    'heading' => $product->get_short_description(),
+                                                    'prefix'  => 'FEATURED PRODUCT'
+                                                ), 'content-margin'
+                                            );
+                                            ?>
 
                                             <?= $GetData->add_to_cart($featured_product['id']) ?>
                                             <div class="button-box button-accent">
