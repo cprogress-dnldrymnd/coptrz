@@ -108,15 +108,15 @@ class PostMeta extends GetData
 				->set_classes('select-button-icon ')
 				->set_width(10),
 			/*Field::make('html',  $id . '_button_select_icon', 'Select Icon')
-																																																			->set_html('<a class="button button-primary button-large thickbox select-icon" href="#TB_inline?width=600&height=550&inlineId=modal-svg-" >SELECT ICON</a>')
-																																																			->set_conditional_logic(array(
-																																																			array(
-																																																			'field' => $id . '_button_type',
-																																																			'value' => array('page_button', 'post_button', 'services_button', 'custom_button'),
-																																																			'compare' => 'IN'
-																																																			)
-																																																			))
-																																																			->set_width(20)*/
+																																																				 ->set_html('<a class="button button-primary button-large thickbox select-icon" href="#TB_inline?width=600&height=550&inlineId=modal-svg-" >SELECT ICON</a>')
+																																																				 ->set_conditional_logic(array(
+																																																				 array(
+																																																				 'field' => $id . '_button_type',
+																																																				 'value' => array('page_button', 'post_button', 'services_button', 'custom_button'),
+																																																				 'compare' => 'IN'
+																																																				 )
+																																																				 ))
+																																																				 ->set_width(20)*/
 
 		);
 
@@ -415,6 +415,15 @@ class ModulesFields extends GetData
 			$this->module_fields(
 				array(
 					Field::make('html', 'seperator_1')->set_html('<label>CONTENTS</label>')->set_classes('seperator '),
+					Field::make('association', 'featured_products', 'Featured Products')
+						->set_types(
+							array(
+								array(
+									'type'      => 'post',
+									'post_type' => 'product',
+								)
+							)
+						)
 				),
 			)
 		);
