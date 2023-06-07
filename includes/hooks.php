@@ -384,4 +384,4 @@ function custom_login_redirect()
 
 }
 
-add_filter('login_redirect', 'custom_login_redirect');
+add_filter('woocommerce_login_redirect', 'custom_login_redirect');
