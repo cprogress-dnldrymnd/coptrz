@@ -17,6 +17,7 @@ $featured_products = $module['featured_products'];
                         <?php
                         $product = wc_get_product($featured_product['id']);
                         $vendors = $product->get_attribute('pa_vendors');
+                        echo $vendors;
                         echo wc_attribute_taxonomy_id_by_name($vendors);
 
 
