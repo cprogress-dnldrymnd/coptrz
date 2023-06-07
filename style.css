@@ -14224,6 +14224,8 @@ section.featured-product-slider .product-add-to-cart-holder .col-add-to-cart > .
     section.featured-product-slider .product-add-to-cart-holder .col-add-to-cart > .column-holder .cart .variations {
       margin-top: 1rem;
       margin-bottom: 2rem; }
+    section.featured-product-slider .product-add-to-cart-holder .col-add-to-cart > .column-holder .cart .price-box {
+      color: var(--white-color) !important; }
 
 section.cta .cta-inner {
   border-radius: 20px;
