@@ -14215,8 +14215,6 @@ section.featured-product-slider .image-box {
     position: absolute;
     top: 0;
     right: 0; }
-section.featured-product-slider .swiper-slide {
-  height: auto; }
 section.featured-product-slider .product-add-to-cart-holder .col-add-to-cart > .column-holder {
   flex-direction: column;
   align-items: flex-start !important; }
