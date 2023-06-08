@@ -16,12 +16,23 @@ class Shortcodes
 	}
 	function post_title()
 	{
-		$alt_title = carbon_get_the_post_meta('alt_title');
+		global $product_id_global;
+		if ($product_id_global) {
+			$alt_title = get__post_meta('alt_title');
+		}
+		else {
+			$alt_title = get__post_meta_by_id($product_id_global, 'alt_title');
+		}
 		if ($alt_title) {
 			return $alt_title;
 		}
 		else {
-			return get_the_title();
+			if ($product_id_global) {
+				return get_the_title($product_id_global);
+			}
+			else {
+				return get_the_title();
+			}
 		}
 	}
 
