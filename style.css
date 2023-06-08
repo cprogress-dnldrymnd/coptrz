@@ -14248,7 +14248,8 @@ section.featured-product-slider .product-add-to-cart-holder.product-variable {
         margin-top: 1rem;
         margin-bottom: 1rem; }
 section.featured-product-slider .product-add-to-cart-holder.product-simple .col-add-to-cart > .column-holder {
-  justify-content: flex-start !important; }
+  justify-content: flex-start !important;
+  flex-wrap: wrap; }
 
 section.cta .cta-inner {
   border-radius: 20px;
