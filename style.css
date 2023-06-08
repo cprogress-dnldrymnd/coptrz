@@ -14211,7 +14211,10 @@ section.logo-slider .logo-slider-box .swiper-wrapper {
   transition-timing-function: linear; }
 
 @media screen and (max-width: 991px) {
-  section.featured-product-slider .row {
+  section.featured-product-slider .swiper-wrapper .row {
+    align-items: flex-start !important; } }
+@media screen and (max-width: 991px) {
+  section.featured-product-slider .swiper-wrapper {
     align-items: flex-start !important; } }
 section.featured-product-slider .image-box {
   display: block;

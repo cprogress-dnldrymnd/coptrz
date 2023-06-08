@@ -112,7 +112,13 @@ section.logo-slider {
 }
 
 section.featured-product-slider {
-    .row {
+    .swiper-wrapper {
+        .row {
+            @include responsive(xs-sm) {
+                align-items: flex-start !important;
+            }
+        }
+
         @include responsive(xs-sm) {
             align-items: flex-start !important;
         }
