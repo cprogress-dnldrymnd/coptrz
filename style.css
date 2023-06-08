@@ -14233,6 +14233,8 @@ section.featured-product-slider .product-add-to-cart-holder.product-variable {
   section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder {
     align-items: flex-start !important;
     flex-direction: column !important; }
+    section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .reset_variations {
+      color: var(--white-color) !important; }
     section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .single_variation_wrap {
       display: -webkit-box;
       display: -moz-box;
