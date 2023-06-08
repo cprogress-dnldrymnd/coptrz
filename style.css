@@ -14491,7 +14491,7 @@ section.product-slider .product-holder.post-box-PostSlider .product-box .inner {
     padding: 38%;
     border-radius: 20px 20px 0 0;
     overflow: hidden; }
-    section.product-slider .product-holder.post-box-PostSlider .product-box .inner .image-box.placeholder-image {
+    section.product-slider .product-holder.post-box-PostSlider .product-box .inner .image-box.placeholder-image img {
       filter: brightness(0) invert(1); }
   section.product-slider .product-holder.post-box-PostSlider .product-box .inner .bottom-box {
     padding: 0 3rem;
