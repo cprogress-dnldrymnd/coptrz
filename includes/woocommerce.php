@@ -107,6 +107,7 @@ function product_slider($is_shop = false)
 {
 
     $DisplayData = new DisplayData;
+    $GetData = new GetData;
 
     $SVG = new SVG;
 
@@ -405,6 +406,8 @@ function product_slider($is_shop = false)
                                                     'position-relative image-contain-transform mb-3'
 
                                                 );
+
+                                                $GetData->product_price($product_id);
 
                                                 $DisplayData->description(
 
