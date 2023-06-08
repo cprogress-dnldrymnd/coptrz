@@ -14238,7 +14238,7 @@ section.featured-product-slider .product-add-to-cart-holder.product-variable .co
       margin-top: 1rem;
       margin-bottom: 2rem; }
 section.featured-product-slider .product-add-to-cart-holder.product-simple .col-add-to-cart > .column-holder {
-  align-items: flex-start !important; }
+  justify-content: flex-start !important; }
 
 section.cta .cta-inner {
   border-radius: 20px;

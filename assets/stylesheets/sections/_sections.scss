@@ -167,8 +167,7 @@ section.featured-product-slider {
         &.product-simple {
             .col-add-to-cart {
                 >.column-holder {
-                    align-items: flex-start !important;
-
+                    justify-content: flex-start !important;
                 }
             }
         }
