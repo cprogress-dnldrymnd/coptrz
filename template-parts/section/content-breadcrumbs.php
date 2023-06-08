@@ -30,6 +30,9 @@ else {
 
     $title = get_the_title();
 
+} 
+if ( is_checkout() && !empty( is_wc_endpoint_url('order-received') ) ) {
+   $title = 'Order Received';
 }
 
 ?>
