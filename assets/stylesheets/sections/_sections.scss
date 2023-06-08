@@ -117,6 +117,7 @@ section.featured-product-slider {
             align-items: flex-start !important;
         }
     }
+
     .image-box {
         display: block;
         padding: 40%;
@@ -139,6 +140,10 @@ section.featured-product-slider {
             top: 0;
             right: 0;
         }
+
+        @include responsive(xs-sm) {
+            padding: 50%;
+        }
     }
 
 
@@ -154,9 +159,11 @@ section.featured-product-slider {
                 >.column-holder {
                     align-items: flex-start !important;
                     flex-direction: column !important;
+
                     .reset_variations {
                         color: var(--white-color) !important;
                     }
+
                     .single_variation_wrap {
                         @include display-flex;
                         flex-direction: column-reverse;
