@@ -27,7 +27,7 @@ $featured_products = $module['featured_products'];
                                     <div class="col-lg-5">
                                         <div class="column-holder">
                                             <div class="image-box">
-                                                <img class="main-image" src="<?= $image_url ?>"
+                                                <img class="main-image <?= $$image ? '' : 'image-cover' ?> src="<?= $image_url ?>"
                                                     alt="<?= $product->get_name() ?>">
                                                 <img class="image-icon"
                                                     src="<?= wp_get_attachment_image_url($vendor_image, 'medium') ?>">
