@@ -14217,7 +14217,7 @@ section.featured-product-slider .image-box {
     top: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: contain; }
   section.featured-product-slider .image-box .image-icon {
     position: absolute;
     top: 0;
