@@ -14241,7 +14241,11 @@ section.featured-product-slider .product-add-to-cart-holder.product-variable .co
   section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .cart {
     align-items: flex-start !important;
     margin-top: 1rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    flex-wrap: wrap; }
+    section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .cart > * {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
 section.featured-product-slider .product-add-to-cart-holder.product-simple .col-add-to-cart > .column-holder {
   justify-content: flex-start !important; }
 

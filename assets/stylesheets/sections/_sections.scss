@@ -151,14 +151,18 @@ section.featured-product-slider {
                     .single_variation_wrap {
                         @include display-flex;
                         flex-direction: column-reverse;
+
                     }
 
                     .cart {
                         align-items: flex-start !important;
                         margin-top: 1rem;
                         margin-bottom: 2rem;
-
-                        .variations {}
+                        flex-wrap: wrap;
+                        > * {
+                            margin-top: 1rem;
+                            margin-bottom: 1rem;
+                        }
 
 
                     }
