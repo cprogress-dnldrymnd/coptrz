@@ -307,7 +307,7 @@ class GetData
 		}
 	}
 
-	function add_to_cart($product_id, $view_product = false)
+	function add_to_cart($product_id)
 	{
 		ob_start();
 		$product = wc_get_product($product_id);
@@ -384,20 +384,12 @@ class GetData
 									<?php
 									if ($type == 'variable') {
 										echo do_shortcode('[add_to_cart_form id="' . $product_id . '"]');
-										?>
-										<?php if ($view_product) { ?>
-											<div class="button-box button-accent">
-												<a href="<?= get_permalink($product_id) ?>">VIEW PRODUCT</a>
-											</div>
-										<?php } ?>
-										<?php
 									}
 									else {
 										echo do_shortcode('[add_to_cart_form  id="' . $product_id . '"]');
 									}
 									?>
 								</div>
-
 							</div>
 						</div>
 					</div>

@@ -14229,8 +14229,14 @@ section.featured-product-slider .image-box {
 section.featured-product-slider .product-add-to-cart-holder .price-box {
   color: var(--white-color) !important; }
 section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder {
-  flex-direction: column;
   align-items: flex-start !important; }
+  section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .single_variation_wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column-reverse; }
   section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .cart {
     flex-direction: column;
     align-items: flex-start !important; }

@@ -145,9 +145,11 @@ section.featured-product-slider {
         &.product-variable {
             .col-add-to-cart {
                 >.column-holder {
-                    flex-direction: column;
                     align-items: flex-start !important;
-
+                    .single_variation_wrap {
+                        @include display-flex;
+                        flex-direction: column-reverse;
+                    }
 
                     .cart {
                         flex-direction: column;
