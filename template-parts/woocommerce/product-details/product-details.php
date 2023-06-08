@@ -1,4 +1,5 @@
 <?php
+global $product_id_global;
 $DisplayData = new DisplayData;
 $product_modal_description = get__post_meta_by_id($product_id, 'product_modal_description');
 $product_id_global = $product_id;
