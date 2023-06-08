@@ -23,7 +23,7 @@ $featured_products = $module['featured_products'];
                         ?>
                         <div class="swiper-slide">
                             <div class="container">
-                                <div class="row gy-4">
+                                <div class="row gy-4 align-items-center">
                                     <div class="col-lg-5">
                                         <div class="column-holder">
                                             <div class="image-box">
