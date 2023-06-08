@@ -407,7 +407,7 @@ function product_slider($is_shop = false)
 
                                                 );
 
-                                                $GetData->product_price($product_id);
+                                                $GetData->product_price(get_the_ID());
 
                                                 $DisplayData->description(
 
