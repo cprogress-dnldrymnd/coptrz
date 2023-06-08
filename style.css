@@ -11828,6 +11828,8 @@ body:not(.elementor-editor-active) .swiper-light .swiper-pagination-elementor .s
   margin-right: 5px !important;
   background-color: var(--secondary-color); }
 
+body.elementor-editor-active .the-content.d-none {
+  display: block !important; }
 body.elementor-editor-active .elementor-swiper-slider > div {
   flex-direction: column !important;
   flex-wrap: wrap; }

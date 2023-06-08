@@ -2204,6 +2204,9 @@ body:not(.elementor-editor-active) {
 }
 
 body.elementor-editor-active {
+    .the-content.d-none {
+        display: block !important;
+    }
     .elementor-swiper-slider {
         >div {
             flex-direction: column !important;
