@@ -154,6 +154,12 @@ section.featured-product-slider {
 
 
     .product-add-to-cart-holder {
+        .variation-radio {
+            border-radius: 0 !important;
+            label {
+                border-radius: 0 !important;
+            }
+        }
         .price-box {
             color: var(--white-color) !important;
         }
