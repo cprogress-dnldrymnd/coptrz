@@ -14209,8 +14209,15 @@ section.logo-slider .logo-slider-box .swiper-wrapper {
   transition-timing-function: linear; }
 
 section.featured-product-slider .image-box {
-  display: inline-block;
-  padding-top: 5rem; }
+  display: block;
+  padding-top: 40%; }
+  section.featured-product-slider .image-box .main-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
   section.featured-product-slider .image-box .image-icon {
     position: absolute;
     top: 0;

@@ -113,9 +113,16 @@ section.logo-slider {
 
 section.featured-product-slider {
     .image-box {
-        display: inline-block;
-        padding-top: 5rem;
-
+        display: block;
+        padding-top: 40%;
+        .main-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
         .image-icon {
             position: absolute;
             top: 0;
@@ -1447,6 +1454,7 @@ section.search-section {
     .woocommerce-form-register {
         height: auto !important;
     }
+
     .nav-tabs {
         .nav-item {
             width: 50%;
