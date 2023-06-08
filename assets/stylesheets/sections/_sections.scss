@@ -599,7 +599,9 @@ section.product-slider {
                         overflow: hidden;
 
                         &.placeholder-image {
-                            filter: brightness(0) invert(1);
+                            img {
+                                filter: brightness(0) invert(1);
+                            }
                         }
                     }
 
