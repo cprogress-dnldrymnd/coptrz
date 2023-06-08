@@ -146,19 +146,19 @@ section.featured-product-slider {
             .col-add-to-cart {
                 >.column-holder {
                     align-items: flex-start !important;
+                    flex-direction: column !important;
+
                     .single_variation_wrap {
                         @include display-flex;
                         flex-direction: column-reverse;
                     }
 
                     .cart {
-                        flex-direction: column;
                         align-items: flex-start !important;
+                        margin-top: 1rem;
+                        margin-bottom: 2rem;
 
-                        .variations {
-                            margin-top: 1rem;
-                            margin-bottom: 2rem;
-                        }
+                        .variations {}
 
 
                     }
