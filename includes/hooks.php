@@ -283,38 +283,6 @@ function action_wp_footer_scripts()
 {
 
 
-	$ms_tag = get__post_meta('use_microsoft_ads_uet_tag');
-	$linkedin_tag = get__post_meta('use_linkedin_insight_tag');
-	if ($ms_tag) {
-		?>
-		<script>
-			(function (w, d, t, r, u) { var f, n, i; w[u] = w[u] || [], f = function () { var o = { ti: "17167185" }; o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad") }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () { var s = this.readyState; s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null) }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i) })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
-		</script>
-		<?php
-	}
-	if ($linkedin_tag) {
-		echo 'linkedin_tag';
-			?>
-		<script type="text/javascript">
-			_linkedin_partner_id = "498138";
-			window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-			window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-		</script>
-		<script type="text/javascript">
-			(function () {
-				var s = document.getElementsByTagName("script")[0];
-				var b = document.createElement("script");
-				b.type = "text/javascript"; b.async = true;
-				b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-				s.parentNode.insertBefore(b, s);
-			})();
-		</script>
-		<noscript>
-			<img height="1" width="1" style="display:none;" alt=""
-				src="https://px.ads.linkedin.com/collect/?pid=498138&fmt=gif" />
-		</noscript>
-		<?php
-	}
 	?>
 	<script>
 		jQuery(document).ready(function () {
