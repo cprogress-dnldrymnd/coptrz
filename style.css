@@ -14228,24 +14228,25 @@ section.featured-product-slider .image-box {
     right: 0; }
 section.featured-product-slider .product-add-to-cart-holder .price-box {
   color: var(--white-color) !important; }
-section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder {
-  align-items: flex-start !important;
-  flex-direction: column !important; }
-  section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .single_variation_wrap {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column-reverse; }
-  section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .cart {
+section.featured-product-slider .product-add-to-cart-holder.product-variable {
+  margin-bottom: 0 !important; }
+  section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder {
     align-items: flex-start !important;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap; }
-    section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .cart > * {
+    flex-direction: column !important; }
+    section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .single_variation_wrap {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column-reverse; }
+    section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .cart {
+      align-items: flex-start !important;
       margin-top: 1rem;
-      margin-bottom: 1rem; }
+      flex-wrap: wrap; }
+      section.featured-product-slider .product-add-to-cart-holder.product-variable .col-add-to-cart > .column-holder .cart > * {
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
 section.featured-product-slider .product-add-to-cart-holder.product-simple .col-add-to-cart > .column-holder {
   justify-content: flex-start !important; }
 

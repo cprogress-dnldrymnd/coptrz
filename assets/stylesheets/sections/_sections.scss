@@ -143,6 +143,7 @@ section.featured-product-slider {
         }
 
         &.product-variable {
+            margin-bottom: 0 !important;
             .col-add-to-cart {
                 >.column-holder {
                     align-items: flex-start !important;
@@ -157,7 +158,6 @@ section.featured-product-slider {
                     .cart {
                         align-items: flex-start !important;
                         margin-top: 1rem;
-                        margin-bottom: 2rem;
                         flex-wrap: wrap;
                         > * {
                             margin-top: 1rem;
