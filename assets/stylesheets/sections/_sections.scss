@@ -138,15 +138,16 @@ section.featured-product-slider {
 
 
     .product-add-to-cart-holder {
+        .price-box {
+            color: var(--white-color) !important;
+        }
+
         &.product-variable {
             .col-add-to-cart {
                 >.column-holder {
                     flex-direction: column;
                     align-items: flex-start !important;
 
-                    .price-box {
-                        color: var(--white-color) !important;
-                    }
 
                     .cart {
                         flex-direction: column;
