@@ -53,7 +53,7 @@ $featured_products = $module['featured_products'];
                                             global $product_id_global;
                                             $product_id_global = $featured_product['id'];
                                             ?>
-                                            <?= $GetData->add_to_cart($featured_product['id'], true) ?>
+                                            <?= $GetData->add_to_cart($featured_product['id']) ?>
                                             <div class="button-box button-accent">
                                                 <a href="<?= get_permalink($featured_product['id']) ?>">VIEW PRODUCT</a>
                                             </div>
