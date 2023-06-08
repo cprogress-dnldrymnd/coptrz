@@ -24,7 +24,7 @@ $featured_products = $module['featured_products'];
                         <div class="swiper-slide">
                             <div class="container">
                                 <div class="row gy-4">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-5">
                                         <div class="column-holder">
                                             <div class="image-box">
                                                 <img class="main-image" src="<?= $image_url ?>"
@@ -34,7 +34,7 @@ $featured_products = $module['featured_products'];
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-7">
                                         <div class="column-holder content-margin ">
                                             <?php
                                             $DisplayData->heading(
