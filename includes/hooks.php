@@ -293,7 +293,8 @@ function action_wp_footer_scripts()
 		<?php
 	}
 	if ($linkedin_tag) {
-		?>
+		echo 'linkedin_tag';
+			?>
 		<script type="text/javascript">
 			_linkedin_partner_id = "498138";
 			window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
