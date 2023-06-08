@@ -112,6 +112,11 @@ section.logo-slider {
 }
 
 section.featured-product-slider {
+    .row {
+        @include responsive(xs-sm) {
+            align-items: flex-start !important;
+        }
+    }
     .image-box {
         display: block;
         padding: 40%;

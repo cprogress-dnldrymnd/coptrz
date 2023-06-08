@@ -14210,6 +14210,9 @@ section.logo-slider .logo-slider-box .image-box {
 section.logo-slider .logo-slider-box .swiper-wrapper {
   transition-timing-function: linear; }
 
+@media screen and (max-width: 991px) {
+  section.featured-product-slider .row {
+    align-items: flex-start !important; } }
 section.featured-product-slider .image-box {
   display: block;
   padding: 40%; }
