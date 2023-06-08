@@ -121,7 +121,7 @@ section.featured-product-slider {
             top: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
         .image-icon {
             position: absolute;
