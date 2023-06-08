@@ -56,7 +56,6 @@ $featured_products = $module['featured_products'];
                                             $product_id_global = $featured_product['id'];
                                             ?>
                                             <?= $GetData->add_to_cart($featured_product['id']) ?>
-                                            <?php if(!$product->get_price_html()) { ?>
                                
                                         </div>
                                     </div>
