@@ -307,7 +307,7 @@ class GetData
 		}
 	}
 
-	function add_to_cart($product_id)
+	function add_to_cart($product_id, $view_product = false)
 	{
 		ob_start();
 		$product = wc_get_product($product_id);
@@ -390,6 +390,12 @@ class GetData
 									}
 									?>
 								</div>
+
+								<?php if ($view_product) { ?>
+									<div class="button-box button-accent">
+										<a href="<?= get_permalink($product_id) ?>">VIEW PRODUCT</a>
+									</div>
+								<?php } ?>
 							</div>
 						</div>
 					</div>
