@@ -29,13 +29,15 @@ $featured_products = $module['featured_products'];
                                             <div class="image-box">
                                                 <img class="main-image <?= $image ? '' : 'image-cover' ?>" src="<?= $image_url ?>"
                                                     alt="<?= $product->get_name() ?>">
-                                                <img class="image-icon"
-                                                    src="<?= wp_get_attachment_image_url($vendor_image, 'medium') ?>">
+                                             
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-7">
+                                        
                                         <div class="column-holder content-margin ">
+                                               <img class="image-icon"
+                                                    src="<?= wp_get_attachment_image_url($vendor_image, 'medium') ?>">
                                             <?php
                                             $DisplayData->heading(
                                                 array(
