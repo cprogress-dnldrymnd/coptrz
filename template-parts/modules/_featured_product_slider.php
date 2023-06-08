@@ -16,7 +16,11 @@ $featured_products = $module['featured_products'];
                     <?php foreach ($featured_products as $key => $featured_product) { ?>
                         <?php
                         $product = wc_get_product($featured_product['id']);
-                        $vendor_id = get_the_terms($product->get_id(), array('pa_vendors'))[0]->term_id;
+                        $vendor = get_the_terms($product->get_id(), array('pa_vendors'));
+
+                        if($vendor) {
+                           $vendor_id = $vendor[0]->term_id;
+                        }
                         $vendor_image = get__term_meta($vendor_id, 'featured_product_image');
                         $image = get_the_post_thumbnail_url($featured_product['id'], 'large');
                         $image_url = $image ? $image : wp_get_attachment_image_url(get__theme_option('placeholder_image'), 'large');
