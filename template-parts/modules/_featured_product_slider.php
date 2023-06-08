@@ -16,8 +16,7 @@ $featured_products = $module['featured_products'];
                     <?php foreach ($featured_products as $key => $featured_product) { ?>
                         <?php
                         $product = wc_get_product($featured_product['id']);
-                        $vendor = get_the_terms($featured_product['id'], array('pa_vendors'));
-                        var_dump($vendor);
+                        $vendor = get_the_terms($product->get_id(), array('pa_vendors'));
                         if($vendor) {
                            $vendor_id = $vendor[0]->term_id;
                         }
