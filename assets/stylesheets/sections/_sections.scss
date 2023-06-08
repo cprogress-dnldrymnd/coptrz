@@ -149,7 +149,9 @@ section.featured-product-slider {
                 >.column-holder {
                     align-items: flex-start !important;
                     flex-direction: column !important;
-
+                    .reset_variations {
+                        color: var(--white-color) !important;
+                    }
                     .single_variation_wrap {
                         @include display-flex;
                         flex-direction: column-reverse;
