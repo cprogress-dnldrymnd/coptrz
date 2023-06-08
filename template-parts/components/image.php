@@ -11,7 +11,7 @@ if ($image_url) {
 }
 else {
 	if ($placeholder) {
-		$logo = get__theme_option('logo');
+		$logo = get__theme_option('alt_logo');
 		$image_url = wp_get_attachment_image_url($logo);
 		$image_alt = $GetData->get_image_alt($logo);
 		$img_class = 'placeholder-image image-contain-transform';
