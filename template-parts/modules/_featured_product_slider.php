@@ -18,6 +18,8 @@ $featured_products = $module['featured_products'];
                         $product = wc_get_product($featured_product['id']);
                         $vendor_id = get_the_terms($product->get_id(), array('pa_vendors'))[0]->term_id;
                         $vendor_image = get__term_meta($vendor_id, 'featured_product_image');
+                        $image = get_the_post_thumbnail_url($featured_product['id'], 'large');
+                        $image_url = $image ? $image : get__theme_option('placeholder_image');
                         ?>
                         <div class="swiper-slide">
                             <div class="container">
@@ -25,9 +27,9 @@ $featured_products = $module['featured_products'];
                                     <div class="col-lg-7">
                                         <div class="column-holder">
                                             <div class="image-box">
-                                                <img src="<?= get_the_post_thumbnail_url($featured_product['id'], 'large') ?>"
+                                                <img class="main-image" src="<?= get_the_post_thumbnail_url($featured_product['id'], 'large') ?>"
                                                     alt="<?= $product->get_name() ?>">
-                                                <img src="<?= wp_get_attachment_image_url( $vendor_image, 'medium' ) ?>" class="image-icon"
+                                                <img class="image-icon" src="<?= wp_get_attachment_image_url( $vendor_image, 'medium' ) ?>" 
                                                     >
                                             </div>
                                         </div>
