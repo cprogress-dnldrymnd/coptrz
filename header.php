@@ -28,6 +28,21 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+	<?php if (current_user_can('administrator')) { ?>
+		<style>
+			.payment_method_wpfi_test {
+				display: block !important;
+			}
+		</style>
+	<?php }
+	else { ?>
+	<style>
+			.payment_method_wpfi_test {
+				display: none !important;
+			}
+		</style>
+	<?php } ?>
+
 </head>
 
 <?php
@@ -59,6 +74,6 @@ if (is_page()) {
 	?>
 	<main id="main" class="<?= $page_theme ?>">
 
-	<?= single_product_summary(get_the_ID()) ?>
+		<?= single_product_summary(get_the_ID()) ?>
 
-	<?php do_action('after_open_main') ?>
+		<?php do_action('after_open_main') ?>
