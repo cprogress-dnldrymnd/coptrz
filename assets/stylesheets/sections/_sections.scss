@@ -138,25 +138,27 @@ section.featured-product-slider {
 
 
     .product-add-to-cart-holder {
-        .col-add-to-cart {
-            >.column-holder {
-                flex-direction: column;
-                align-items: flex-start !important;
-
-                .price-box {
-                    color: var(--white-color) !important;
-                }
-
-                .cart {
+        &.product-variable {
+            .col-add-to-cart {
+                >.column-holder {
                     flex-direction: column;
                     align-items: flex-start !important;
 
-                    .variations {
-                        margin-top: 1rem;
-                        margin-bottom: 2rem;
+                    .price-box {
+                        color: var(--white-color) !important;
                     }
 
+                    .cart {
+                        flex-direction: column;
+                        align-items: flex-start !important;
 
+                        .variations {
+                            margin-top: 1rem;
+                            margin-bottom: 2rem;
+                        }
+
+
+                    }
                 }
             }
         }
