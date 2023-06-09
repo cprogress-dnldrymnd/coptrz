@@ -4,9 +4,24 @@ section.tabs-center-content {
     }
 
     .accordion-box {
+        .accordion-button {
+            .icon-heading-holder {
+                .icon-box {
+                    flex: 0 0 55px;
+                }
+
+                .heading-box {
+                    h4 {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
         .accordion-body {
             padding-left: 0;
         }
+
         .image-center {
             margin-top: 5rem;
         }

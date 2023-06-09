@@ -14148,6 +14148,10 @@ footer {
 /*-----------------------------------------------------------------------------------*/
 section.tabs-center-content .section-heading {
   margin-bottom: 6vw; }
+section.tabs-center-content .accordion-box .accordion-button .icon-heading-holder .icon-box {
+  flex: 0 0 55px; }
+section.tabs-center-content .accordion-box .accordion-button .icon-heading-holder .heading-box h4 {
+  margin-bottom: 0; }
 section.tabs-center-content .accordion-box .accordion-body {
   padding-left: 0; }
 section.tabs-center-content .accordion-box .image-center {
