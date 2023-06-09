@@ -46,7 +46,7 @@ $items = $module['items'];
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-<?= $key ?>"
                         data-bs-parent="#accordionImageCenter">
-                        <div class="accordion-body content-margin text-left">
+                        <div class="accordion-body content-margin text-start">
                             <?php
                             $DisplayData->description(
                                 array(
