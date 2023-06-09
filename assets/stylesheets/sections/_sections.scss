@@ -13,6 +13,9 @@ section.tabs-center-content {
                 .heading-box {
                     h4 {
                         margin-bottom: 0;
+                        @include responsive(mobile) {
+                            font-size: 19px;
+                        }
                     }
                 }
             }

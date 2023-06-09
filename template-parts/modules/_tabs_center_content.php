@@ -19,7 +19,7 @@ $items = $module['items'];
     );
     ?>
 
-    <div class="accordion-box d-block d-lg-n<?= $key ?>">
+    <div class="accordion-box mt-5 d-block d-lg-n<?= $key ?>">
         <div class="accordion accordion-flush" id="accordionImageCenter">
             <?php foreach ($items as $key => $item) { ?>
                 <div class="accordion-item">
