@@ -318,8 +318,10 @@ function action_wp_footer_scripts()
 	<script>
 		jQuery(document).ready(function () {
 			mega_menu();
-			<?php if (!isset($_GET['customer_type'])) { ?>
-				customer_type_modal();
+			<?php if (is_user_logged_in()) { ?>
+				<?php if (!isset($_GET['customer_type'])) { ?>
+					customer_type_modal();
+				<?php } ?>
 			<?php } ?>
 		});
 
