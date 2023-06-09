@@ -4,6 +4,9 @@ section.tabs-center-content {
     }
 
     .accordion-box {
+        .accordion-body {
+            padding-left: 0;
+        }
         .image-center {
             margin-top: 5rem;
         }
