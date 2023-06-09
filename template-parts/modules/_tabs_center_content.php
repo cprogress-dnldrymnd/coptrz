@@ -57,7 +57,7 @@ $items = $module['items'];
                             <div class="image-box image-center">
                                 <img src="<?= wp_get_attachment_image_url($item['image'], 'large') ?>" alt="">
                                 <img src="<?= wp_get_attachment_image_url($item['image_top_right'], 'large') ?>" alt=""
-                                    class="dr<?= $key ?>-image">
+                                    class="drone-image">
                             </div>
                         </div>
                     </div>
