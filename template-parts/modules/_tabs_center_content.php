@@ -67,13 +67,18 @@ $items = $module['items'];
                                 'mb-2'
                             );
 
-                            $DisplayData->description(
-                                array(
-                                    'description' => $items[1]['description'],
-                                ),
-                            );
                             ?>
                         </div>
+
+                        <?php
+
+                        $DisplayData->description(
+                            array(
+                                'description' => $items[1]['description'],
+                            ),
+                        );
+                        ?>
+
                     </button>
                 </div>
             </div>
@@ -82,10 +87,12 @@ $items = $module['items'];
             <div class="column-holder">
                 <div class="tab-content" id="tab-center-tabContent">
                     <?php foreach ($items as $key => $item) { ?>
-                        <div class="tab-pane fade <?= $key == 0 ? 'show active' : '' ?>" id="nav-<?= $key ?>" role="tabpanel" aria-labelledby="nav-0-tab">
+                        <div class="tab-pane fade <?= $key == 0 ? 'show active' : '' ?>" id="nav-<?= $key ?>"
+                            role="tabpanel" aria-labelledby="nav-<?= $key ?>-tab">
                             <div class="image-box">
-                                <img src="<?= wp_get_attachment_image_url( $item['image'], 'large' ) ?>" alt="">
-                                <img src="<?= wp_get_attachment_image_url($item['image_top_right'], 'large') ?>" alt="" class="drone-image">
+                                <img src="<?= wp_get_attachment_image_url($item['image'], 'large') ?>" alt="">
+                                <img src="<?= wp_get_attachment_image_url($item['image_top_right'], 'large') ?>" alt=""
+                                    class="drone-image">
                             </div>
                         </div>
                     <?php } ?>
@@ -97,21 +104,24 @@ $items = $module['items'];
                 <div class="nav nav-tabs" role="tablist">
                     <button class="nav-link text-start" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2"
                         type="button" role="tab" aria-controls="nav-2" aria-selected="false">
+                        <div class="icon-heading-holder">
+                            <?php
+                            $DisplayData->image(
+                                array(
+                                    'image_id' => $items[2]['icon']
+                                ),
+                                'icon-box mb-4'
+                            );
+                            $DisplayData->heading(
+                                array(
+                                    'heading' => $items[2]['heading'],
+                                    'tag'     => 'h4'
+                                ),
+                                'mb-2'
+                            );
+                            ?>
+                        </div>
                         <?php
-                        $DisplayData->image(
-                            array(
-                                'image_id' => $items[2]['icon']
-                            ),
-                            'icon-box mb-4'
-                        );
-                        $DisplayData->heading(
-                            array(
-                                'heading' => $items[2]['heading'],
-                                'tag'     => 'h4'
-                            ),
-                            'mb-2'
-                        );
-
                         $DisplayData->description(
                             array(
                                 'description' => $items[2]['description'],
@@ -121,21 +131,25 @@ $items = $module['items'];
                     </button>
                     <button class="nav-link text-start" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-3"
                         type="button" role="tab" aria-controls="nav-3" aria-selected="false">
-                        <?php
-                        $DisplayData->image(
-                            array(
-                                'image_id' => $items[3]['icon']
-                            ),
-                            'icon-box mb-4'
-                        );
-                        $DisplayData->heading(
-                            array(
-                                'heading' => $items[3]['heading'],
-                                'tag'     => 'h4'
-                            ),
-                            'mb-2'
-                        );
+                        <div class="icon-heading-holder">
+                            <?php
+                            $DisplayData->image(
+                                array(
+                                    'image_id' => $items[3]['icon']
+                                ),
+                                'icon-box mb-4'
+                            );
+                            $DisplayData->heading(
+                                array(
+                                    'heading' => $items[3]['heading'],
+                                    'tag'     => 'h4'
+                                ),
+                                'mb-2'
+                            );
+                            ?>
+                        </div>
 
+                        <?php
                         $DisplayData->description(
                             array(
                                 'description' => $items[3]['description'],
