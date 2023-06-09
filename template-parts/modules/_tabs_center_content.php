@@ -41,13 +41,16 @@ $items = $module['items'];
                                 'mb-2'
                             );
 
-                            $DisplayData->description(
-                                array(
-                                    'description' => $items[0]['description'],
-                                ),
-                            );
                             ?>
                         </div>
+                        <?php
+
+                        $DisplayData->description(
+                            array(
+                                'description' => $items[0]['description'],
+                            ),
+                        );
+                        ?>
                     </button>
                     <button class="nav-link text-start" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-1"
                         type="button" role="tab" aria-controls="nav-1" aria-selected="false">
