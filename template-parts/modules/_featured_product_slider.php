@@ -71,6 +71,7 @@ $featured_products = $module['featured_products'];
                         </div>
                     <?php } ?>
                 </div>
+                <?= product_slider_nav('slider'); ?>
             </div>
         </div>
     </div>
