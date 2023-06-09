@@ -66,7 +66,7 @@ $items = $module['items'];
         </div>
     </div>
 
-    <div class="tab-box d-n<?= $key ?> d-lg-block">
+    <div class="tab-box d-none d-lg-block">
         <div class="row gy-3 av-tabs align-items-center" id="tab-center">
             <div class="col-12 col-lg col-left">
                 <div class="column-holder py-5">
