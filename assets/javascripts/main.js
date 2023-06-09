@@ -33,6 +33,12 @@ jQuery(document).ready(function ($) {
 	heyflow_button();
 });
 
+function image_center_tab() {
+	if(window.innerWidth < 992) {
+
+	}
+}
+
 function heyflow_button() {
 	if (jQuery('a[heyflow="true"]').length > 0) {
 		jQuery('a[heyflow="true"]').click(function (e) {

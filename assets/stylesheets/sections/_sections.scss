@@ -3,21 +3,21 @@ section.tabs-center-content {
         margin-bottom: 6vw;
     }
 
-    .tab-pane {
-        .image-box {
-            position: relative;
-            padding: 40%;
 
-            img:not(.drone-image) {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
+    .image-center {
+        position: relative;
+        padding: 40%;
+
+        img:not(.drone-image) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
     }
+
 
 
     .nav-tabs.nav-tabs {
