@@ -333,19 +333,20 @@ function action_wp_footer_scripts()
 			});
 		}
 
-
-		function customer_type_modal() {
-			if (jQuery('#customerType').length > 0) {
-				var customerType = new bootstrap.Modal(document.getElementById('customerType'), {
-					keyboard: false
-				});
-				setTimeout(function () {
-					customerType.show();
-				}, 1000);
+		<?php if (is_user_logged_in()) { ?>
+			function customer_type_modal() {
+				if (jQuery('#customerType').length > 0) {
+					var customerType = new bootstrap.Modal(document.getElementById('customerType'), {
+						keyboard: false
+					});
+					setTimeout(function () {
+						customerType.show();
+					}, 1000);
+				}
 			}
-		}
-	</script>
-	<?php
+		</script>
+	<?php } ?>
+<?php
 }
 
 add_action('wp_footer_scripts', 'action_wp_footer_scripts');
