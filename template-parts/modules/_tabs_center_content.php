@@ -30,7 +30,8 @@ $items = $module['items'];
                             $DisplayData->image(
                                 array(
                                     'image_id' => $items[0]['icon']
-                                ), 'icon-box'
+                                ),
+                                'icon-box'
                             );
                             $DisplayData->heading(
                                 array(
@@ -50,19 +51,28 @@ $items = $module['items'];
                     </button>
                     <button class="nav-link text-start" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2"
                         type="button" role="tab" aria-controls="nav-2" aria-selected="false">
-                        <div class="icon-box mb-4">
-                            <?= $SVG->education ?>
-                        </div>
-                        <div class="heading-box mb-2">
-                            <h4>
-                                Education & research
-                            </h4>
-                        </div>
-                        <div class="description-box">
-                            <p>
-                                The drone industry is advancing every single day. Find out how you can get yourself
-                                airborne.
-                            </p>
+                        <div class="icon-heading-holder">
+                            <?php
+                            $DisplayData->image(
+                                array(
+                                    'image_id' => $items[1]['icon']
+                                ),
+                                'icon-box'
+                            );
+                            $DisplayData->heading(
+                                array(
+                                    'heading' => $items[1]['heading'],
+                                    'tag'     => 'h4'
+                                ),
+                                'mb-2'
+                            );
+
+                            $DisplayData->description(
+                                array(
+                                    'description' => $items[1]['description'],
+                                ),
+                            );
+                            ?>
                         </div>
                     </button>
                 </div>
@@ -104,37 +114,51 @@ $items = $module['items'];
                 <div class="nav nav-tabs" role="tablist">
                     <button class="nav-link text-start" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-3"
                         type="button" role="tab" aria-controls="nav-3" aria-selected="false">
-                        <div class="icon-box mb-4">
-                            <?= $SVG->inspection ?>
-                        </div>
-                        <div class="heading-box mb-2">
-                            <h4>
-                                Inspection
-                            </h4>
-                        </div>
-                        <div class="description-box">
-                            <p>
-                                Reduce risk, lower costs and save time by using an integrated drone solution in your
-                                organisation.
-                            </p>
-                        </div>
+                        <?php
+                        $DisplayData->image(
+                            array(
+                                'image_id' => $items[2]['icon']
+                            ),
+                            'icon-box'
+                        );
+                        $DisplayData->heading(
+                            array(
+                                'heading' => $items[2]['heading'],
+                                'tag'     => 'h4'
+                            ),
+                            'mb-2'
+                        );
+
+                        $DisplayData->description(
+                            array(
+                                'description' => $items[2]['description'],
+                            ),
+                        );
+                        ?>
                     </button>
                     <button class="nav-link text-start" id="nav-4-tab" data-bs-toggle="tab" data-bs-target="#nav-4"
                         type="button" role="tab" aria-controls="nav-4" aria-selected="false">
-                        <div class="icon-box mb-4">
-                            <?= $SVG->surveying ?>
-                        </div>
-                        <div class="heading-box mb-2">
-                            <h4>
-                                Surveying & construction
-                            </h4>
-                        </div>
-                        <div class="description-box">
-                            <p>
-                                Drones are helping surveyors to carry out operations faster, safer and more cost
-                                effective.
-                            </p>
-                        </div>
+                        <?php
+                        $DisplayData->image(
+                            array(
+                                'image_id' => $items[3]['icon']
+                            ),
+                            'icon-box'
+                        );
+                        $DisplayData->heading(
+                            array(
+                                'heading' => $items[3]['heading'],
+                                'tag'     => 'h4'
+                            ),
+                            'mb-2'
+                        );
+
+                        $DisplayData->description(
+                            array(
+                                'description' => $items[3]['description'],
+                            ),
+                        );
+                        ?>
                     </button>
                 </div>
             </div>
