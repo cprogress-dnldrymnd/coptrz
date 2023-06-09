@@ -737,7 +737,6 @@ function swiper_slider() {
 		loop: true,
 		spaceBetween: 0,
 		slidesPerView: 1,
-		freeMode: true,
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: true,
