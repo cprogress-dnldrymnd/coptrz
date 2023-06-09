@@ -29,7 +29,7 @@ $items = $module['items'];
                             <?php
                             $DisplayData->image(
                                 array(
-                                    $image_id => $items[0]['icon']
+                                    'image_id' => $items[0]['icon']
                                 )
                             );
                             $DisplayData->heading(
