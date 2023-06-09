@@ -14148,6 +14148,8 @@ footer {
 /*-----------------------------------------------------------------------------------*/
 section.tabs-center-content .section-heading {
   margin-bottom: 6vw; }
+section.tabs-center-content .accordion-box .image-center {
+  margin-top: 5rem; }
 section.tabs-center-content .image-center {
   position: relative;
   padding: 40%; }
