@@ -30,13 +30,13 @@ $items = $module['items'];
                                 <?php
                                 $DisplayData->image(
                                     array(
-                                        'image_id' => $items[0]['icon']
+                                        'image_id' => $item['icon']
                                     ),
                                     'icon-box me-3'
                                 );
                                 $DisplayData->heading(
                                     array(
-                                        'heading' => $items[0]['heading'],
+                                        'heading' => $item['heading'],
                                         'tag'     => 'h4'
                                     ),
                                 );
@@ -50,7 +50,7 @@ $items = $module['items'];
                             <?php
                             $DisplayData->description(
                                 array(
-                                    'description' => $items[0]['description'],
+                                    'description' => $item['description'],
                                 ),
                             );
                             ?>
