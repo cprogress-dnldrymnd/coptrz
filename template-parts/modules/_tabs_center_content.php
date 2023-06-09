@@ -25,7 +25,7 @@ $items = $module['items'];
                 <div class="nav nav-tabs" role="tablist">
                     <button class="nav-link text-start active" id="nav-0-tab" data-bs-toggle="tab"
                         data-bs-target="#nav-0" type="button" role="tab" aria-controls="nav-0" aria-selected="true">
-                        <div class="icon-heading-holder">
+                        <div class="icon-heading-holder d-flex align-items-center d-lg-block">
                             <?php
                             $DisplayData->image(
                                 array(
@@ -51,7 +51,7 @@ $items = $module['items'];
                     </button>
                     <button class="nav-link text-start" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-1"
                         type="button" role="tab" aria-controls="nav-1" aria-selected="false">
-                        <div class="icon-heading-holder">
+                        <div class="icon-heading-holder d-flex align-items-center d-lg-block">
                             <?php
                             $DisplayData->image(
                                 array(
@@ -104,7 +104,7 @@ $items = $module['items'];
                 <div class="nav nav-tabs" role="tablist">
                     <button class="nav-link text-start" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2"
                         type="button" role="tab" aria-controls="nav-2" aria-selected="false">
-                        <div class="icon-heading-holder">
+                        <div class="icon-heading-holder d-flex align-items-center d-lg-block">
                             <?php
                             $DisplayData->image(
                                 array(
@@ -131,7 +131,7 @@ $items = $module['items'];
                     </button>
                     <button class="nav-link text-start" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-3"
                         type="button" role="tab" aria-controls="nav-3" aria-selected="false">
-                        <div class="icon-heading-holder">
+                        <div class="icon-heading-holder d-flex align-items-center d-lg-block">
                             <?php
                             $DisplayData->image(
                                 array(
