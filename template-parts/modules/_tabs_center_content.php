@@ -19,13 +19,13 @@ $items = $module['items'];
     );
     ?>
 
-    <div class="accordion-box d-block d-lg-none">
+    <div class="accordion-box d-block d-lg-n<?= $key ?>">
         <div class="accordion accordion-flush" id="accordionImageCenter">
             <?php foreach ($items as $key => $item) { ?>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-<?= $key ?>">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            data-bs-target="#flush-collapse<?= $key ?>" aria-expanded="false" aria-controls="flush-collapse<?= $key ?>">
                             <div class="icon-heading-holder col d-flex align-items-center d-lg-block">
                                 <?php
                                 $DisplayData->image(
@@ -44,7 +44,7 @@ $items = $module['items'];
                             </div>
                         </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-<?= $key ?>"
+                    <div id="flush-collapse<?= $key ?>" class="accordion-collapse collapse" aria-labelledby="flush-<?= $key ?>"
                         data-bs-parent="#accordionImageCenter">
                         <div class="accordion-body content-margin text-start">
                             <?php
@@ -57,7 +57,7 @@ $items = $module['items'];
                             <div class="image-box image-center">
                                 <img src="<?= wp_get_attachment_image_url($item['image'], 'large') ?>" alt="">
                                 <img src="<?= wp_get_attachment_image_url($item['image_top_right'], 'large') ?>" alt=""
-                                    class="drone-image">
+                                    class="dr<?= $key ?>-image">
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ $items = $module['items'];
         </div>
     </div>
 
-    <div class="tab-box d-none d-lg-block">
+    <div class="tab-box d-n<?= $key ?> d-lg-block">
         <div class="row gy-3 av-tabs align-items-center" id="tab-center">
             <div class="col-12 col-lg col-left">
                 <div class="column-holder py-5">
@@ -143,7 +143,7 @@ $items = $module['items'];
                                 <div class="image-box image-center">
                                     <img src="<?= wp_get_attachment_image_url($item['image'], 'large') ?>" alt="">
                                     <img src="<?= wp_get_attachment_image_url($item['image_top_right'], 'large') ?>" alt=""
-                                        class="drone-image">
+                                        class="dr<?= $key ?>-image">
                                 </div>
                             </div>
                         <?php } ?>
