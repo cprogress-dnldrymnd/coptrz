@@ -82,7 +82,7 @@ $items = $module['items'];
             <div class="column-holder">
                 <div class="tab-content" id="tab-center-tabContent">
                     <?php foreach ($items as $key => $item) { ?>
-                        <div class="tab-pane fade show active" id="nav-<?= $key ?>" role="tabpanel" aria-labelledby="nav-0-tab">
+                        <div class="tab-pane fade <?= $key == 0 ? 'show active' : '' ?>" id="nav-<?= $key ?>" role="tabpanel" aria-labelledby="nav-0-tab">
                             <div class="image-box">
                                 <img src="<?= wp_get_attachment_image_url( $item['image'], 'large' ) ?>" alt="">
                                 <img src="<?= wp_get_attachment_image_url($item['image_top_right'], 'large') ?>" alt="" class="drone-image">
