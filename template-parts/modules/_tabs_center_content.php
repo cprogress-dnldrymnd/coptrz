@@ -4,6 +4,7 @@ $DisplayData = new DisplayData;
 $module['heading'];
 $heading = $module['heading'];
 $heading_prefix = $module['heading_prefix'];
+$items = $module['items'];
 
 ?>
 
@@ -11,12 +12,13 @@ $heading_prefix = $module['heading_prefix'];
     <?php
     $DisplayData->heading(
         array(
-            'heading' => $heading,
+            'heading'       => $heading,
             'heading_small' => $heading_prefix
-        ),'small-width mb-6 section-heading ms-auto me-auto'
+        ),
+        'small-width mb-6 section-heading ms-auto me-auto'
     );
     ?>
-   
+
     <div class="row gy-3 av-tabs align-items-center" id="tab-center">
         <div class="col-12 col-lg col-left">
             <div class="column-holder py-5">
@@ -24,20 +26,26 @@ $heading_prefix = $module['heading_prefix'];
                     <button class="nav-link text-start active" id="nav-1-tab" data-bs-toggle="tab"
                         data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1" aria-selected="true">
                         <div class="icon-heading-holder">
-                            <div class="icon-box mb-4">
-                                <?= $SVG->public_safety ?>
-                            </div>
-                            <div class="heading-box mb-2">
-                                <h4>
-                                    Public Safety
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="description-box">
-                            <p>
-                                Studying with Coptrz Academy gives you access to the largest number of flight test
-                                centres across the UK.
-                            </p>
+                            <?php
+                            $DisplayData->image(
+                                array(
+                                    $image_id => $items[0]['icon']
+                                )
+                            );
+                            $DisplayData->heading(
+                                array(
+                                    'heading' => $items[0]['heading'],
+                                    'tag'     => 'h4'
+                                ),
+                                'mb-2'
+                            );
+
+                            $DisplayData->description(
+                                array(
+                                    'description' => $items[0]['description'],
+                                ),
+                            );
+                            ?>
                         </div>
                     </button>
                     <button class="nav-link text-start" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2"
