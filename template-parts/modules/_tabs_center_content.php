@@ -1,27 +1,37 @@
 <?php
 $SVG = new SVG;
+$DisplayData = new DisplayData;
+$module['heading'];
+$heading = $module['heading'];
+$heading_prefix = $module['heading_prefix'];
+
 ?>
 
-<div class="container  text-center">
-    <div class="heading-box small-width mb-6 section-heading ms-auto me-auto">
-        <span class="prefix">COMPLETE 360° DRONE SOLUTIONS</span>
-        <h2>
-            Revolutionalising Organisations Using Drones
-        </h2>
-    </div>
+<div class="container text-center">
+    <?php
+    $DisplayData->heading(
+        array(
+            'heading' => $heading,
+            'heading_small' => $heading_prefix
+        ),'small-width mb-6 section-heading ms-auto me-auto'
+    );
+    ?>
+   
     <div class="row gy-3 av-tabs align-items-center" id="tab-center">
         <div class="col-12 col-lg col-left">
             <div class="column-holder py-5">
                 <div class="nav nav-tabs" role="tablist">
                     <button class="nav-link text-start active" id="nav-1-tab" data-bs-toggle="tab"
                         data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1" aria-selected="true">
-                        <div class="icon-box mb-4">
-                            <?= $SVG->public_safety ?>
-                        </div>
-                        <div class="heading-box mb-2">
-                            <h4>
-                                Public Safety
-                            </h4>
+                        <div class="icon-heading-holder">
+                            <div class="icon-box mb-4">
+                                <?= $SVG->public_safety ?>
+                            </div>
+                            <div class="heading-box mb-2">
+                                <h4>
+                                    Public Safety
+                                </h4>
+                            </div>
                         </div>
                         <div class="description-box">
                             <p>
