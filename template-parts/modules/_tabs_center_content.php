@@ -26,7 +26,7 @@ $items = $module['items'];
                     <h2 class="accordion-header" id="flush-<?= $key ?>">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <div class="icon-heading-holder d-flex align-items-center d-lg-block">
+                            <div class="icon-heading-holder col d-flex align-items-center d-lg-block">
                                 <?php
                                 $DisplayData->image(
                                     array(
