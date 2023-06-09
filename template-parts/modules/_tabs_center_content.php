@@ -26,14 +26,22 @@ $items = $module['items'];
                     <h2 class="accordion-header" id="flush-<?= $key ?>">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <?php
-                            $DisplayData->heading(
-                                array(
-                                    'heading' => $item['heading'],
-                                    'tag'     => 'h4'
-                                ),
-                            );
-                            ?>
+                            <div class="icon-heading-holder d-flex align-items-center d-lg-block">
+                                <?php
+                                $DisplayData->image(
+                                    array(
+                                        'image_id' => $items[0]['icon']
+                                    ),
+                                    'icon-box me-3'
+                                );
+                                $DisplayData->heading(
+                                    array(
+                                        'heading' => $items[0]['heading'],
+                                        'tag'     => 'h4'
+                                    ),
+                                );
+                                ?>
+                            </div>
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-<?= $key ?>"
