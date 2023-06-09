@@ -84,8 +84,6 @@ function tab_columns() {
 	jQuery('.tabs-center-content .nav-link').click(function (e) {
 		jQuery('.tabs-center-content .nav-link').removeClass('active');
 		jQuery(this).addClass('active');
-		console.log('sdsds');
-
 	});
 }
 
