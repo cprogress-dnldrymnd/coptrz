@@ -366,6 +366,7 @@ class ModulesFields extends GetData
 						)
 						->set_layout('tabbed-vertical')
 						->set_header_template('<%- heading  %>')
+						->set_max(4)
 				),
 			)
 		);
