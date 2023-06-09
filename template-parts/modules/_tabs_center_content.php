@@ -30,7 +30,7 @@ $items = $module['items'];
                             $DisplayData->image(
                                 array(
                                     'image_id' => $items[0]['icon']
-                                )
+                                ), 'icon-box'
                             );
                             $DisplayData->heading(
                                 array(
