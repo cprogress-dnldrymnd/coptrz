@@ -31,7 +31,7 @@ $items = $module['items'];
                                 array(
                                     'image_id' => $items[0]['icon']
                                 ),
-                                'icon-box mb-4'
+                                'icon-box mb-4 me-3'
                             );
                             $DisplayData->heading(
                                 array(
@@ -60,7 +60,7 @@ $items = $module['items'];
                                 array(
                                     'image_id' => $items[1]['icon']
                                 ),
-                                'icon-box mb-4'
+                                'icon-box mb-4 me-3'
                             );
                             $DisplayData->heading(
                                 array(
@@ -113,7 +113,7 @@ $items = $module['items'];
                                 array(
                                     'image_id' => $items[2]['icon']
                                 ),
-                                'icon-box mb-4'
+                                'icon-box mb-4 me-3'
                             );
                             $DisplayData->heading(
                                 array(
@@ -140,7 +140,7 @@ $items = $module['items'];
                                 array(
                                     'image_id' => $items[3]['icon']
                                 ),
-                                'icon-box mb-4'
+                                'icon-box mb-4 me-3'
                             );
                             $DisplayData->heading(
                                 array(
