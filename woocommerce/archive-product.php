@@ -41,11 +41,7 @@ $DisplayData = new DisplayData;
 	$post_is_global = true;
 	include(locate_template('/template-parts/modules/_cta.php'));
 	?>
-	<?php
-	echo 'sdsdsds';
-	product_slider(true); 
-	
-	?>
+	<?= product_slider(true); ?>
 
 	<section class="two-columns two-columns-v2 xl-padding-bottom">
 		<div class="container">
@@ -93,9 +89,11 @@ else { ?>
 	get_template_part('template-parts/woocommerce/archive', 'banner');
 	if (is_product_category()) {
 		echo product_slider_category(true);
+		echo 'product-cat';
 	}
 	else {
 		echo product_slider();
+		echo 'product-vendrs';
 	}
 	get_template_part('template-parts/woocommerce/archive', 'modules');
 ?>
