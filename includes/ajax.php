@@ -227,23 +227,30 @@ function product_modal_ajax()
 	</div>
 	<div class="product-modal-footer d-none d-xl-block">
 		<div class="container background-white">
+			<?php
+			if (get_current_user_id() == 1) {
+				foreach ($variation['attributes'] as $attributes) {
+					echo '<pre>';
+					var_dump($attributes);
+					echo '</pre>';
+				}
+			}
+			?>
 			<?= $GetData->add_to_cart($product_id) ?>
 		</div>
 	</div>
 	<?php
 	if ($type == 'variable') {
 		$variations = $product->get_available_variations();
-		if(get_current_user_id(  ) ==1) {
-				foreach ($variations as $variation) {
-					echo '<pre>';
-					var_dump($variation);
-					echo '</pre>';
-			}
-		}
+
 		?>
 		<script>
 			<?php foreach ($variations as $variation) { ?>
-				var $variation_name = '<?= $variation['attributes'][0] ?>';
+				<?php foreach ($variation['attributes'] as $attributes) { ?>
+
+
+				<?php } ?>
+				var $variation_name = '<?= $variation['attributes']['attribute_course-type'] ?>';
 				var $variation_id = '<?= $variation['variation_id']; ?>';
 
 				console.log($variation_name);
