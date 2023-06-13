@@ -254,9 +254,7 @@ function ajax_product($product_id, $button) {
 			$result_holder.html(response);
 			image_to_svg();
 
-			if (window.innerWidth > 1199) {
-				jQuery('.product-add-to-cart-holder').appendTo('.product-modal-footer .container');
-			} else {
+			if (window.innerWidth < 1200) {
 				jQuery('.product-add-to-cart-holder').appendTo('.product-summary .col-lg-7 .column-holder');
 			}
 
