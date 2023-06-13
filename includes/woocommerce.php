@@ -360,6 +360,7 @@ function product_slider($is_shop = false)
 
                                         $main_image = $product->get_image_id() ? $product->get_image_id() : get__theme_option('placeholder_image');
 
+                                        $image_class = $product->get_image_id() ? 'image-contain-transform' : 'image-cover-transform';
 
                                         ?>
 
@@ -392,7 +393,7 @@ function product_slider($is_shop = false)
 
                                                     ),
 
-                                                    'position-relative image-contain-transform mb-3'
+                                                    'position-relative mb-3 ' . $image_class
 
                                                 );
 
@@ -586,6 +587,7 @@ function product_slider_category($is_category = false)
 
                                 $main_image = $product->get_image_id() ? $product->get_image_id() : get__theme_option('placeholder_image');
 
+                                $image_class = $product->get_image_id() ? 'image-contain-transform' : 'image-cover-transform';
 
                                 ?>
 
@@ -618,7 +620,7 @@ function product_slider_category($is_category = false)
 
                                             ),
 
-                                            'position-relative image-contain-transform mb-3'
+                                            'position-relative mb-3 ' . $image_class
 
                                         );
 
