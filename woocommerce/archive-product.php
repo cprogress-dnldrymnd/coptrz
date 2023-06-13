@@ -89,11 +89,9 @@ else { ?>
 	get_template_part('template-parts/woocommerce/archive', 'banner');
 	if (is_product_category()) {
 		echo product_slider_category(true);
-		echo 'product-cat';
 	}
 	else {
 		echo product_slider(false);
-		echo 'product-vendrs';
 	}
 	get_template_part('template-parts/woocommerce/archive', 'modules');
 ?>
