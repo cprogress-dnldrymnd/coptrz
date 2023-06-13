@@ -339,7 +339,6 @@ class GetData
 		}
 		?>
 		<?php if ($stock_status == 'instock') { ?>
-
 			<div
 				class="inner product-add-to-cart-holder product-<?= $type ?> <?= $product->is_sold_individually() ? 'sold-individually' : '' ?> <?= $product->is_downloadable('yes') ? 'downloadable' : '' ?>">
 				<?php if ($price) { ?>
@@ -445,7 +444,7 @@ class GetData
 					</div>
 				</div>
 			<?php }
-			else { ?>
+			else if($stock_status == 'outofstock') { ?>
 				<div class="out-of-stock">
 					<p>
 						OUT OF STOCK
