@@ -30,7 +30,7 @@ else {
 		}
 		?>
 		<?php if ($ext != 'svg') { ?>
-			<img src="<?= $image_url ?>" alt="<?= $image_alt ?>">
+			<img decoding="async" src="<?= $image_url ?>" alt="<?= $image_alt ?>" class="jetpack-lazy-image">
 		<?php }
 		else { ?>
 			<span class="svg-image" src="<?= $image_url ?>" alt="<?= $image_alt ?>"></span>
