@@ -982,10 +982,8 @@ section.product-modal {
         }
     }
 
-    .ajax_add_to_cart {
-        &+.button-box {
-            display: none !important;
-        }
+    .button-secondary {
+        display: none !important;
     }
 
 }
