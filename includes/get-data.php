@@ -488,34 +488,36 @@ class GetData
 					<?= $Theme_Options->contact_number ?>
 				</div>
 				<?php
-				if ($button_type && !$product->get_price()) {
-					if ($button_type == 'replace_enquire_button') {
-						$button_link = $cst_btn_link;
-						$button_text = $cst_btn_text;
+				if ($product->get_price()) {
+					if ($button_type) {
+						if ($button_type == 'replace_enquire_button') {
+							$button_link = $cst_btn_link;
+							$button_text = $cst_btn_text;
+						}
+						else {
+							$button_link = '#product-tabs';
+							$button_text = 'REQUEST INFO';
+						}
+						?>
+						<div class="button-box  button-secondary button-small">
+							<a href="<?= $button_link ?>" class="<?= $button_type == 'link_to_form' ? 'open-enquire-tab' : '' ?>">
+								<span class="text"><?= $button_text ?></span>
+							</a>
+						</div>
+						<?php
 					}
 					else {
-						$button_link = '#product-tabs';
-						$button_text = 'REQUEST INFO';
-					}
-					?>
-					<div class="button-box  button-secondary button-small">
-						<a href="<?= $button_link ?>" class="<?= $button_type == 'link_to_form' ? 'open-enquire-tab' : '' ?>">
-							<span class="text"><?= $button_text ?></span>
-						</a>
-					</div>
-					<?php
-				}
-				else {
-					if (get__theme_option('product_enquire_button_button_type')) {
-						$DisplayData->button(
-							get__theme_option('product_enquire_button_button_text'),
-							get__theme_option('product_enquire_button_' . get__theme_option('product_enquire_button_button_type')),
-							get__theme_option('product_enquire_button_button_action'),
-							get__theme_option('product_enquire_button_button_icon'),
-							'button-secondary button-small',
-							false,
-							get__theme_option('product_enquire_button_button_attribute'),
-						);
+						if (get__theme_option('product_enquire_button_button_type')) {
+							$DisplayData->button(
+								get__theme_option('product_enquire_button_button_text'),
+								get__theme_option('product_enquire_button_' . get__theme_option('product_enquire_button_button_type')),
+								get__theme_option('product_enquire_button_button_action'),
+								get__theme_option('product_enquire_button_button_icon'),
+								'button-secondary button-small',
+								false,
+								get__theme_option('product_enquire_button_button_attribute'),
+							);
+						}
 					}
 				}
 				?>
