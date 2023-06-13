@@ -255,9 +255,9 @@ function ajax_product($product_id, $button) {
 			image_to_svg();
 
 			if (window.innerWidth > 1199) {
-				jQuery('.product-modal-footer').addClass('d-none').appendTo('#productModalDetails');
+				jQuery('.product-add-to-cart-holder').appendTo('.product-modal-footer .container');
 			} else {
-				jQuery('.product-modal-footer').removeClass('d-none').appendTo('.product-summary .col-lg-7 .column-holder');
+				jQuery('.product-add-to-cart-holder').appendTo('.product-summary .col-lg-7 .column-holder');
 			}
 
 			setTimeout(function () {
