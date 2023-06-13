@@ -34,7 +34,7 @@ jQuery(document).ready(function ($) {
 });
 
 function image_center_tab() {
-	if(window.innerWidth < 992) {
+	if (window.innerWidth < 992) {
 
 	}
 }
@@ -226,6 +226,8 @@ function ajax($offset, $event_type = 'html') {
 
 function ajax_product($product_id, $button) {
 
+
+
 	$button.addClass('loading');
 
 
@@ -251,6 +253,12 @@ function ajax_product($product_id, $button) {
 		success: function (response) {
 			$result_holder.html(response);
 			image_to_svg();
+
+			if (window.innerWidth > 1199) {
+			} else {
+				jQuery('.product-modal-footer').appendTo('.product-summary .col-lg-7 .column-holder');
+			}
+
 			setTimeout(function () {
 				thumb_swiper();
 				variation_radio();
