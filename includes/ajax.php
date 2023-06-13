@@ -229,10 +229,15 @@ function product_modal_ajax()
 		<div class="container background-white">
 			<?php
 			if (get_current_user_id() == 1) {
-				foreach ($variation['attributes'] as $attributes) {
-					echo '<pre>';
-					var_dump($attributes);
-					echo '</pre>';
+				if ($type == 'variable') {
+					$variations = $product->get_available_variations();
+					foreach ($variations as $variation) {
+						foreach ($variation['attributes'] as $attributes) {
+							echo '<pre>';
+							var_dump($attributes);
+							echo '</pre>';
+						}
+					}
 				}
 			}
 			?>
