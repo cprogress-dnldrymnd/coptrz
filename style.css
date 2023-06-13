@@ -14073,6 +14073,9 @@ body.hero-banner-revealing_heading header .header-main:before {
   @media (max-width: 1499px) {
     #mega-menu-wrap-header-menu #mega-menu-header-menu li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator {
       margin-left: 5px !important; } }
+  @media (max-width: 110px) {
+    #mega-menu-wrap-header-menu #mega-menu-header-menu li.mega-menu-item-has-children > a.mega-menu-link > span.mega-indicator {
+      margin-left: 4px !important; } }
 
 footer {
   position: relative;
