@@ -352,69 +352,71 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
         ob_start();
         ?>
         <section class="product-slider md-padding">
+            <?php if ($category) { ?>
+                <div class="container mb-7">
 
-            <div class="container mb-7">
+                    <div class="row line-title line-title-v2 d-flex align-items-start fw-medium">
 
-                <div class="row line-title line-title-v2 d-flex align-items-start fw-medium">
+                        <div class="col d-flex align-items-center pt-3">
 
-                    <div class="col d-flex align-items-center pt-3">
+                            <span class="text text-uppercase">
 
-                        <span class="text text-uppercase">
+                                <?= $category->name ?>
 
-                            <?= $category->name ?>
+                            </span>
 
-                        </span>
-
-                        <span class="line"></span>
-
-                    </div>
-
-                    <?php if ($is_shop) { ?>
-
-                        <?php
-
-                        if ($category->parent) {
-
-                            $term_link = get_term_link($category->parent);
-
-                            $name = get_term($category->parent)->name;
-
-                            $descripion = get_term($category->parent)->description;
-
-                        }
-                        else {
-
-                            $term_link = get_term_link($category->term_id);
-
-                            $name = $category->name;
-
-                            $descripion = $category->description;
-
-                        }
-
-                        ?>
-
-
-
-                        <div class="col text-content">
-
-                            <?= wpautop($descripion) ?>
-
-                            <p>
-
-                                <a href="<?= $term_link ?>" class="link-underline">View all <?= $name ?></a>
-
-                            </p>
+                            <span class="line"></span>
 
                         </div>
 
-                    <?php } ?>
+                        <?php if ($is_shop) { ?>
+
+                            <?php
+
+                            if ($category->parent) {
+
+                                $term_link = get_term_link($category->parent);
+
+                                $name = get_term($category->parent)->name;
+
+                                $descripion = get_term($category->parent)->description;
+
+                            }
+                            else {
+
+                                $term_link = get_term_link($category->term_id);
+
+                                $name = $category->name;
+
+                                $descripion = $category->description;
+
+                            }
+
+                            ?>
+
+
+
+                            <div class="col text-content">
+
+                                <?= wpautop($descripion) ?>
+
+                                <p>
+
+                                    <a href="<?= $term_link ?>" class="link-underline">View all <?= $name ?></a>
+
+                                </p>
+
+                            </div>
+
+                        <?php } ?>
+
+                    </div>
+
+                    <?= display_filter($products->found_posts, $display_type, 'col-auto mt-3', '#term-' . $category->slug); ?>
 
                 </div>
 
-                <?= display_filter($products->found_posts, $display_type, 'col-auto mt-3', '#term-' . $category->slug); ?>
-
-            </div>
+            <?php } ?>
 
             <div class="container <?= $wrapper_class_4 ?>">
 
