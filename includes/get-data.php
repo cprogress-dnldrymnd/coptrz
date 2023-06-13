@@ -444,12 +444,19 @@ class GetData
 					</div>
 				</div>
 			<?php }
-			else if($stock_status == 'outofstock') { ?>
-				<div class="out-of-stock">
-					<p>
-						OUT OF STOCK
-					</p>
-				</div>
+			else if ($stock_status == 'outofstock') { ?>
+					<div class="out-of-stock">
+						<p>
+							OUT OF STOCK
+						</p>
+					</div>
+			<?php }
+			else { ?>
+					<div class="out-of-stock">
+						<p>
+							ON BACKORDER
+						</p>
+					</div>
 			<?php } ?>
 
 		<?php } ?>
