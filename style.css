@@ -14748,6 +14748,8 @@ section.product-modal {
   section.product-modal .product-modal-body {
     position: fixed;
     left: 0; }
+  section.product-modal .ajax_add_to_cart * + .button-box {
+    display: none !important; }
 
 .product-add-to-cart-holder.product-add-to-cart-holder.sold-individually .quantity {
   display: none !important; }
