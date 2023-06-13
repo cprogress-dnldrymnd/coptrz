@@ -241,7 +241,7 @@ function product_slider($is_shop = false)
 
 
 
-            echo product_slider_section($args, $product_slider_items_width, $display_type);
+            echo product_slider_section($args, $product_slider_items_width, $display_type, $is_shop, $category);
 
             ?>
 
@@ -310,11 +310,11 @@ function product_slider_category($is_category = false)
 
     $product_slider_items_width = get__term_meta($term->term_id, 'product_slider_items_width');
     $display_type = get__term_meta($term->term_id, 'display_type');
-    echo product_slider_section($args, $product_slider_items_width, $display_type);
+    echo product_slider_section($args, $product_slider_items_width, $display_type, false, false);
 }
 
 
-function product_slider_section($args, $product_slider_items_width, $display_type)
+function product_slider_section($args, $product_slider_items_width, $display_type, $is_shop, $category)
 {
 
     $DisplayData = new DisplayData;
@@ -358,6 +358,69 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
         ob_start();
         ?>
         <section class="product-slider md-padding">
+
+            <div class="container mb-7">
+
+                <div class="row line-title line-title-v2 d-flex align-items-start fw-medium">
+
+                    <div class="col d-flex align-items-center pt-3">
+
+                        <span class="text text-uppercase">
+
+                            <?= $category->name ?>
+
+                        </span>
+
+                        <span class="line"></span>
+
+                    </div>
+
+                    <?php if ($is_shop) { ?>
+
+                        <?php
+
+                        if ($category->parent) {
+
+                            $term_link = get_term_link($category->parent);
+
+                            $name = get_term($category->parent)->name;
+
+                            $descripion = get_term($category->parent)->description;
+
+                        }
+                        else {
+
+                            $term_link = get_term_link($category->term_id);
+
+                            $name = $category->name;
+
+                            $descripion = $category->description;
+
+                        }
+
+                        ?>
+
+
+
+                        <div class="col text-content">
+
+                            <?= wpautop($descripion) ?>
+
+                            <p>
+
+                                <a href="<?= $term_link ?>" class="link-underline">View all <?= $name ?></a>
+
+                            </p>
+
+                        </div>
+
+                    <?php } ?>
+
+                </div>
+
+                <?= display_filter($products->found_posts, $display_type, 'col-auto mt-3', '#term-' . $category->slug); ?>
+
+            </div>
 
             <div class="container <?= $wrapper_class_4 ?>">
 
