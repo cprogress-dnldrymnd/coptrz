@@ -326,6 +326,7 @@ header {
 
 					@include on-event {
 						color: var(--accent-color);
+						text-decoration: underline !important;
 					}
 				}
 			}

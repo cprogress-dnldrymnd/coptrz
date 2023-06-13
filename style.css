@@ -13582,7 +13582,8 @@ header {
     header .col-right .column-holder .button-box button:hover,
     header .col-right .column-holder .button-box button:active,
     header .col-right .column-holder .button-box button:focus {
-      color: var(--accent-color); }
+      color: var(--accent-color);
+      text-decoration: underline !important; }
   header .col-right .column-holder > div:not(:last-child) {
     margin-right: 2rem; }
     @media (max-width: 1250px) {
