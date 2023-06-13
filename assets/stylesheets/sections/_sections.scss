@@ -653,6 +653,10 @@ section.product-slider {
                     @include responsive(xs) {
                         padding: 1.5rem 1.5rem calc(60px + 1.5rem);
                     }
+
+                    @include on-event {
+                        @include transform(translateY(-10px));
+                    }
                 }
 
                 &.style-2 {
