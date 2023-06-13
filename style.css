@@ -15030,6 +15030,8 @@ section.add-to-cart-section .single_add_to_cart_button.single_add_to_cart_button
 .single-post .description-box img {
   height: auto; }
 
+.single-product .product-add-to-cart-holder.product-add-to-cart-holder #wc-stripe-payment-request-wrapper, .single-product .product-add-to-cart-holder.product-add-to-cart-holder .wc-stripe-payment-request-button {
+  display: none !important; }
 .single-product .product-add-to-cart-holder.product-add-to-cart-holder .quantity {
   border: 2px solid var(--gray-color); }
 .single-product .product-add-to-cart-holder.product-add-to-cart-holder .col-add-to-cart,
