@@ -255,7 +255,7 @@ class GetData
 		$product = wc_get_product($product_id);
 
 		if ($product->get_price()) {
-			
+
 
 			if ($customer_type == 'consumer') {
 				if ($product->get_type() == 'simple') {
@@ -283,7 +283,7 @@ class GetData
 				$price = $product->get_price_html();
 
 			}
-			if($product->get_price() == '0.00') {
+			if ($product->get_price() == '0.00') {
 				$price = 'FREE';
 			}
 			return $price;
@@ -387,13 +387,7 @@ class GetData
 								<?php } ?>
 								<div class="add-to-cart-box">
 									<?php
-									if ($product->is_downloadable('yes')) {
-										echo do_shortcode('[add_to_cart id="' . $product_id . '"]');
-
-									}
-									else {
-										echo do_shortcode('[add_to_cart_form id="' . $product_id . '"]');
-									}
+									echo do_shortcode('[add_to_cart_form id="' . $product_id . '"]');
 									?>
 								</div>
 							</div>
