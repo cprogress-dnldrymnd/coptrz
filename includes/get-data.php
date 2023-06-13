@@ -395,7 +395,6 @@ class GetData
 				<?php }
 				else { ?>
 					<?php if (!is_product()) { ?>
-						<?php $Theme_Options = new Theme_Options; ?>
 						<div class="button-group-box">
 							<?php
 							$DisplayData = new DisplayData;
