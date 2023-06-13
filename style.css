@@ -14750,6 +14750,10 @@ section.product-modal {
     left: 0; }
   section.product-modal .ajax_add_to_cart + .button-box {
     display: none !important; }
+  section.product-modal .woocommerce-variation-add-to-cart {
+    flex-wrap: wrap !important; }
+    section.product-modal .woocommerce-variation-add-to-cart > * {
+      margin-bottom: 1rem; }
 
 .product-add-to-cart-holder.product-add-to-cart-holder.sold-individually .quantity {
   display: none !important; }
@@ -14838,10 +14842,7 @@ section.product-modal {
     -moz-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center;
-    flex-wrap: wrap; }
-    .product-add-to-cart-holder.product-add-to-cart-holder .add-to-cart-box .cart.variations_form .woocommerce-variation-add-to-cart > * {
-      margin-bottom: 1rem; }
+    align-items: center; }
 
 html.product-modal-active {
   overflow: hidden; }

@@ -945,8 +945,15 @@ section.product-modal {
     }
 
     .ajax_add_to_cart {
-        & + .button-box {
+        &+.button-box {
             display: none !important;
+        }
+    }
+
+    .woocommerce-variation-add-to-cart {
+        flex-wrap: wrap !important;
+        >* {
+            margin-bottom: 1rem;
         }
     }
 }
@@ -1063,10 +1070,7 @@ section.product-modal {
                 .woocommerce-variation-add-to-cart {
                     @include display-flex;
                     @include align-items(center);
-                    flex-wrap: wrap;
-                    > * {
-                        margin-bottom: 1rem;
-                    }
+
                 }
             }
         }
