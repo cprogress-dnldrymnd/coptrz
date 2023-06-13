@@ -672,6 +672,9 @@ section.product-slider {
                     .image-box {
                         padding: 30%;
                         border-bottom: 1px solid var(--light-gray);
+                        img {
+                            @include transition(300ms);
+                        }
                     }
 
                     .content-box {
@@ -685,7 +688,11 @@ section.product-slider {
 
 
                 @include on-event {
-                    @include transform(translateY(-10px));
+                    .image-box {
+                        img {
+                            @include transform(translate(-50%, -50%) scale(1.2));
+                        }
+                    }
                 }
             }
         }
