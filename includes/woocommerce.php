@@ -436,7 +436,6 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                                 $main_image = $product->get_image_id() ? $product->get_image_id() : get__theme_option('placeholder_image');
 
-                                $image_class = $product->get_image_id() ? 'image-contain-transform' : 'image-cover-transform';
 
                                 ?>
 
@@ -455,7 +454,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                                             ),
 
-                                            'position-relative ' . $image_class
+                                            'position-relative image-cover-transform'
 
                                         );
                                         ?>
