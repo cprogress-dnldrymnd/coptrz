@@ -1522,6 +1522,7 @@ section.featured-boxes {
         letter-spacing: 1px;
         padding: 1.25rem 2rem !important;
         color: var(--white-color);
+
         @include on-event {
             background-color: var(--white-color) !important;
             border-color: var(--accent-color) !important;
@@ -2206,6 +2207,7 @@ body.elementor-editor-active {
     .the-content.d-none {
         display: block !important;
     }
+
     .elementor-swiper-slider {
         >div {
             flex-direction: column !important;
@@ -2584,6 +2586,11 @@ heyflow-modal-element {
 
 .out-of-stock {
     color: #c00000;
+    font-weight: bold;
+}
+
+.on-backorder {
+    color: #07a01f;
     font-weight: bold;
 }
 

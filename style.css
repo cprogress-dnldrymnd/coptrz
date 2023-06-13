@@ -12183,6 +12183,10 @@ heyflow-modal-element {
   color: #c00000;
   font-weight: bold; }
 
+.on-backorder {
+  color: #07a01f;
+  font-weight: bold; }
+
 .need-help {
   padding-top: 3rem;
   margin-top: 3rem;
