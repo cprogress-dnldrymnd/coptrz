@@ -488,7 +488,7 @@ class GetData
 					<?= $Theme_Options->contact_number ?>
 				</div>
 				<?php
-				if ($product->get_price()) {
+				if (!$product->get_price()) {
 					if ($button_type) {
 						if ($button_type == 'replace_enquire_button') {
 							$button_link = $cst_btn_link;
