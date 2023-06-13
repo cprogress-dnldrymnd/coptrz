@@ -11303,6 +11303,7 @@ section.featured-boxes .featured-boxes-holder .column-holder {
       width: 100%; } }
 
 .woocommerce .ajax_add_to_cart.ajax_add_to_cart {
+  margin-right: 1rem;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -14835,7 +14836,8 @@ section.product-modal {
     -moz-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
 
 html.product-modal-active {
   overflow: hidden; }
