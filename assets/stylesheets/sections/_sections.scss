@@ -899,11 +899,14 @@ section.product-modal {
             background-color: var(--white-color);
 
             >.inner {
-                margin-top: 65px;
-                padding-top: 120px;
-                padding-bottom: 200px;
                 padding-left: 2.5vw;
                 padding-right: 2.5vw;
+
+                @include responsive(xs-md) {
+                    margin-top: 65px;
+                    padding-bottom: 200px;
+                    padding-top: 120px;
+                }
             }
         }
 

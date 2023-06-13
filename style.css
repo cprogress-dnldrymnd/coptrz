@@ -14718,11 +14718,13 @@ section.product-modal {
       min-height: calc(100vh - 65px);
       background-color: var(--white-color); }
       section.product-modal .product-modal-body > .container > .inner {
-        margin-top: 65px;
-        padding-top: 120px;
-        padding-bottom: 200px;
         padding-left: 2.5vw;
         padding-right: 2.5vw; }
+        @media screen and (max-width: 1199px) {
+          section.product-modal .product-modal-body > .container > .inner {
+            margin-top: 65px;
+            padding-bottom: 200px;
+            padding-top: 120px; } }
     section.product-modal .product-modal-body .product-modal-backdrop {
       position: fixed;
       left: 0;
