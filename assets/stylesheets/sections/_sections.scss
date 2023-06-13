@@ -661,6 +661,7 @@ section.product-slider {
                         bottom: 2rem;
                         left: 2vw;
                         right: 2vw;
+
                         @include responsive(xs) {
                             bottom: 1.5rem;
                             left: 1.5rem;
@@ -1393,11 +1394,11 @@ section.add-to-cart-section {
 
         .add-to-cart-box .cart {
             flex-wrap: wrap;
-            > * {
-                @include not-last-child {
-                    margin-bottom: 1rem;
-                }
+
+            >* {
+                margin-bottom: 1rem;
             }
+
             .woocommerce-variation-description {
                 margin-bottom: 2rem;
             }
