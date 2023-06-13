@@ -1058,6 +1058,9 @@ section.product-modal {
                     @include display-flex;
                     @include align-items(center);
                     flex-wrap: wrap;
+                    > * {
+                        margin-bottom: 1rem;
+                    }
                 }
             }
         }
