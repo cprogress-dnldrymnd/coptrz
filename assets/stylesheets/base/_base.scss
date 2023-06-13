@@ -1521,7 +1521,7 @@ section.featured-boxes {
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.25rem 2rem !important;
-
+        color: var(--white-color);
         @include on-event {
             background-color: var(--white-color) !important;
             border-color: var(--accent-color) !important;
