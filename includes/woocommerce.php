@@ -447,17 +447,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                                         <?php
 
-                                        $DisplayData->heading(
 
-                                            array(
-
-                                                'heading' => $product->get_name(),
-
-                                                'tag'     => 'h4'
-
-                                            )
-
-                                        );
 
                                         $DisplayData->image(
 
@@ -472,20 +462,33 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
                                             'position-relative mb-3 ' . $image_class
 
                                         );
-
-                                        $DisplayData->description(
-
-                                            array(
-
-                                                'description' => $product->get_short_description()
-
-                                            ),
-
-                                            false
-
-                                        );
-
                                         ?>
+                                        <div class="content-box">
+                                            <?php
+                                            $DisplayData->heading(
+
+                                                array(
+
+                                                    'heading' => $product->get_name(),
+
+                                                    'tag'     => 'h4'
+
+                                                )
+
+                                            );
+                                            $DisplayData->description(
+
+                                                array(
+
+                                                    'description' => $product->get_short_description()
+
+                                                ),
+
+                                                false
+
+                                            );
+                                            ?>
+                                        </div>
 
                                         <div class="button-group-box justify-content-center align-items-center">
                                             <div class="button-quick-view">
