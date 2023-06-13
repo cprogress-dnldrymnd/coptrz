@@ -619,7 +619,7 @@ section.product-slider {
                 position: relative;
 
                 .image-box {
-                    padding: 30%;
+                    padding: 40%;
                 }
 
                 h4 {
@@ -652,6 +652,11 @@ section.product-slider {
                 }
 
                 &.style-2 {
+                    .image-box {
+                        padding: 30%;
+                        border-bottom: 1px solid var(--light-gray);
+                    }
+
                     .content-box {
                         padding: 2.625rem 2.625rem calc(60px + 2.625rem);
 

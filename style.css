@@ -14496,7 +14496,7 @@ section.product-slider .product-holder .product-box {
     height: 100%;
     position: relative; }
     section.product-slider .product-holder .product-box .inner .image-box {
-      padding: 30%; }
+      padding: 40%; }
     section.product-slider .product-holder .product-box .inner h4 {
       font-size: 1.625rem; }
     section.product-slider .product-holder .product-box .inner .price-box {
@@ -14515,6 +14515,9 @@ section.product-slider .product-holder .product-box {
           right: 1.5rem; } }
     section.product-slider .product-holder .product-box .inner:not(.style-2) {
       padding: 2.625rem 2.625rem calc(60px + 2.625rem); }
+    section.product-slider .product-holder .product-box .inner.style-2 .image-box {
+      padding: 30%;
+      border-bottom: 1px solid var(--light-gray); }
     section.product-slider .product-holder .product-box .inner.style-2 .content-box {
       padding: 2.625rem 2.625rem calc(60px + 2.625rem); }
       @media screen and (max-width: 767px) {
