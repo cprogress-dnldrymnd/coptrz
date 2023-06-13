@@ -244,7 +244,7 @@ function product_slider($is_shop = false)
 
 
             }
-         
+
 
 
             $products = new WP_Query($args);
@@ -358,6 +358,8 @@ function product_slider($is_shop = false)
 
                                         $product = wc_get_product(get_the_ID());
 
+                                        $main_image = $product->get_image_id() ? $product->get_image_id() : get__theme_option('placeholder_image');
+
                                         $products_array = array(
 
                                             'product_id'          => get_the_ID(),
@@ -395,7 +397,7 @@ function product_slider($is_shop = false)
 
                                                     array(
 
-                                                        'image_id' => $product->get_image_id(),
+                                                        'image_id' => $main_image,
 
                                                         'size'     => 'medium'
 
