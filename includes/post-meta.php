@@ -916,6 +916,7 @@ Container::make('post_meta', 'Tag Options')
 Container::make('post_meta', 'Page Banner')
 	->where('post_type', '=', 'page')
 	->where('post_template', '!=', 'elementor_header_footer')
+	->set_priority('high')
 	->add_fields(
 		array_merge(
 			array(
