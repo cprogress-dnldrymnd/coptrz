@@ -851,4 +851,4 @@ function request_info_button()
 }
 
 
-add_action('woocommerce_after_add_to_cart_form', 'request_info_button');
+add_action('woocommerce_after_add_to_cart_button', 'request_info_button');
