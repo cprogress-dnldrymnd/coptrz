@@ -13564,15 +13564,6 @@ header {
       header .col-right .column-holder .button-box button {
         padding-left: 10px;
         padding-right: 10px; } }
-    @media (max-width: 1250px) {
-      header .col-right .column-holder .button-box a,
-      header .col-right .column-holder .button-box button {
-        letter-spacing: 0;
-        font-size: 13px;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 10px;
-        padding-bottom: 10px; } }
     @media screen and (max-width: 1199px) {
       header .col-right .column-holder .button-box a,
       header .col-right .column-holder .button-box button {
