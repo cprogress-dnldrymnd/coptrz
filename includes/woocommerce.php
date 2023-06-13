@@ -442,19 +442,16 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                                 <div class="product-box <?= $wrapper_class_3 ?>">
 
-                                    <div class="inner background-white d-block style-2 overflow-hidden"
-                                        href="<?= get_permalink(get_the_ID()) ?>">
-
+                                    <div class="inner background-white d-block style-2 overflow-hidden">
                                         <?php
-
-
                                         $DisplayData->image(
-
                                             array(
 
                                                 'image_id' => $main_image,
 
-                                                'size'     => 'large'
+                                                'size'     => 'large',
+
+                                                'link' => get_permalink(get_the_ID())
 
                                             ),
 
