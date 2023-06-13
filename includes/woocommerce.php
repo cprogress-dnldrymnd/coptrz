@@ -316,6 +316,7 @@ function product_slider_category($is_category = false)
 
 function product_slider_section($args, $product_slider_items_width, $display_type)
 {
+    ob_start();
     $DisplayData = new DisplayData;
     $SVG = new SVG;
     $GetData = new GetData;
