@@ -474,7 +474,7 @@ class GetData
 		$cst_btn_text = get__post_meta_by_id($product_id, 'cst_btn_link');
 		$finance_available = get__post_meta_by_id($product_id, 'finance_available');
 		$business_invoicing = get__post_meta_by_id($product_id, 'business_invoicing');
-
+		$product = wc_get_product($product_id);
 		?>
 		<div class="need-help text-center content-margin">
 			<div class="heading-box">
@@ -488,7 +488,7 @@ class GetData
 					<?= $Theme_Options->contact_number ?>
 				</div>
 				<?php
-				if ($button_type) {
+				if ($button_type && !$product->get_price()) {
 					if ($button_type == 'replace_enquire_button') {
 						$button_link = $cst_btn_link;
 						$button_text = $cst_btn_text;
@@ -506,7 +506,6 @@ class GetData
 					<?php
 				}
 				else {
-
 					if (get__theme_option('product_enquire_button_button_type')) {
 						$DisplayData->button(
 							get__theme_option('product_enquire_button_button_text'),
