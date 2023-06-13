@@ -12318,6 +12318,9 @@ heyflow-modal-element {
     border: none !important;
     width: 30px !important;
     height: 30px !important; }
+  .button-quick-view.button-quick-view button.product-modal-trigger:hover, .button-quick-view.button-quick-view button.product-modal-trigger:active, .button-quick-view.button-quick-view button.product-modal-trigger:focus {
+    background-color: var(--secondary-color);
+    color: var(--white-color); }
 
 .display-filter ul li a {
   position: relative; }
