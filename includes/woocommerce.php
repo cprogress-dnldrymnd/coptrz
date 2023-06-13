@@ -187,7 +187,12 @@ function product_slider($is_shop = false)
 
         foreach ($product_categories as $key => $category) {
 
+
+
             $product_slider_items_width = get__term_meta($category->term_id, 'product_slider_items_width');
+
+
+
 
             $args = array(
 
@@ -212,6 +217,7 @@ function product_slider($is_shop = false)
                 )
 
             );
+
 
 
             if ($is_shop) {
@@ -241,9 +247,218 @@ function product_slider($is_shop = false)
 
 
 
-            echo product_slider_section($args, $product_slider_items_width, $display_type);
-            
-            ?>
+            $products = new WP_Query($args);
+
+
+            if ($products->found_posts > 4) {
+                $display_type = 'slider';
+            }
+            else {
+                $display_type = 'grid';
+            }
+
+            if ($display_type == 'grid' || !$display_type) {
+                $wrapper_class_1 = 'product-grid';
+                $wrapper_class_2 = 'row g-4';
+                $wrapper_class_3 = 'col-xl-3 col-lg-4 col-md-6';
+                $wrapper_class_4 = '';
+            }
+            else {
+                $wrapper_class_1 = 'swiper mySwiper-productSwiper' . ($product_slider_items_width ? '-' . $product_slider_items_width : '');
+                $wrapper_class_2 = 'swiper-wrapper';
+                $wrapper_class_3 = 'swiper-slide';
+                $wrapper_class_4 = 'extend-right';
+            }
+
+
+            if ($products->have_posts()) {
+
+                ?>
+
+                <section class="product-slider md-padding" id="term-<?= $category->slug ?>">
+
+                    <div class="container mb-7">
+
+                        <div class="row line-title line-title-v2 d-flex align-items-start fw-medium">
+
+                            <div class="col d-flex align-items-center pt-3">
+
+                                <span class="text text-uppercase">
+
+                                    <?= $category->name ?>
+
+                                </span>
+
+                                <span class="line"></span>
+
+                            </div>
+
+                            <?php if ($is_shop) { ?>
+
+                                <?php
+
+                                if ($category->parent) {
+
+                                    $term_link = get_term_link($category->parent);
+
+                                    $name = get_term($category->parent)->name;
+
+                                    $descripion = get_term($category->parent)->description;
+
+                                }
+                                else {
+
+                                    $term_link = get_term_link($category->term_id);
+
+                                    $name = $category->name;
+
+                                    $descripion = $category->description;
+
+
+
+                                }
+
+                                ?>
+
+
+
+                                <div class="col text-content">
+
+                                    <?= wpautop($descripion) ?>
+
+                                    <p>
+
+                                        <a href="<?= $term_link ?>" class="link-underline">View all <?= $name ?></a>
+
+                                    </p>
+
+                                </div>
+
+                            <?php } ?>
+
+                        </div>
+
+                        <?= display_filter($products->found_posts, $display_type, 'col-auto mt-3', '#term-' . $category->slug); ?>
+
+                    </div>
+
+                    <div class="container <?= $wrapper_class_4 ?>">
+
+                        <div class="product-slider-box">
+
+                            <div class="product-holder <?= $wrapper_class_1 ?>">
+
+                                <div class="<?= $wrapper_class_2 ?>">
+
+                                    <?php while ($products->have_posts()) { ?>
+
+                                        <?php
+
+                                        $products->the_post();
+
+                                        $product = wc_get_product(get_the_ID());
+
+                                        $main_image = $product->get_image_id() ? $product->get_image_id() : get__theme_option('placeholder_image');
+
+                                        $image_class = $product->get_image_id() ? 'image-contain-transform' : 'image-cover-transform';
+
+                                        ?>
+
+                                        <div class="product-box <?= $wrapper_class_3 ?>">
+
+                                            <div class="inner background-white d-block content-margin"
+                                                href="<?= get_permalink(get_the_ID()) ?>">
+
+                                                <?php
+
+                                                $DisplayData->heading(
+
+                                                    array(
+
+                                                        'heading' => $product->get_name(),
+
+                                                        'tag'     => 'h4'
+
+                                                    )
+
+                                                );
+
+                                                $DisplayData->image(
+
+                                                    array(
+
+                                                        'image_id' => $main_image,
+
+                                                        'size'     => 'medium'
+
+                                                    ),
+
+                                                    'position-relative mb-3 ' . $image_class
+
+                                                );
+
+                                                echo $GetData->product_price(get_the_ID());
+
+                                                $DisplayData->description(
+
+                                                    array(
+
+                                                        'description' => $product->get_short_description()
+
+                                                    ),
+
+                                                    false
+
+                                                );
+
+                                                ?>
+
+                                                <div class="button-group-box justify-content-center align-items-center">
+                                                    <div class="button-quick-view">
+                                                        <button type="button"
+                                                            class="product-modal-trigger product-modal-trigger-open d-flex align-items-center justify-content-center"
+                                                            product="<?= get_the_ID() ?>">
+
+                                                            <span class="text">
+                                                                <?= $SVG->eye ?>
+                                                            </span>
+
+                                                            <span class="icon"><?= $SVG->ellipsis ?></span>
+
+                                                        </button>
+                                                    </div>
+                                                    <div class="button-box button-accent button-small">
+                                                        <a href="<?php the_permalink() ?>">
+                                                            <span class="text">VIEW PRODUCT</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    <?php } ?>
+
+                                </div>
+
+
+                                <?= product_slider_nav($display_type); ?>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+            <?php } ?>
 
         <?php } ?>
 
@@ -261,7 +476,13 @@ function product_slider($is_shop = false)
 
 function product_slider_category($is_category = false)
 {
+
+    $DisplayData = new DisplayData;
+
+    $SVG = new SVG;
+
     $term = get_queried_object();
+
 
     if (isset($_GET['vendor'])) {
         $vendor = $_GET['vendor'];
@@ -308,20 +529,12 @@ function product_slider_category($is_category = false)
 
     );
 
-    $product_slider_items_width = get__term_meta($term->term_id, 'product_slider_items_width');
-    $display_type = get__term_meta($term->term_id, 'display_type');
-    echo product_slider_section($args, $product_slider_items_width, $display_type);
-}
-
-
-function product_slider_section($args, $product_slider_items_width, $display_type)
-{
-    ob_start();
-    $DisplayData = new DisplayData;
-    $SVG = new SVG;
-    $GetData = new GetData;
 
     $products = new WP_Query($args);
+    $product_slider_items_width = get__term_meta($term->term_id, 'product_slider_items_width');
+    $display_type = get__term_meta($term->term_id, 'display_type');
+
+
 
     if ($products->found_posts > 4) {
         if (!isset($_GET['display'])) {
@@ -348,14 +561,12 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
         $wrapper_class_4 = 'extend-right';
     }
 
-    if (get_current_user_id() == 1) {
-        echo '<pre>';
-        var_dump($args);
-        echo '</pre>';
-    }
+
 
     if ($products->have_posts()) {
+
         ?>
+
         <section class="product-slider md-padding">
 
             <div class="container <?= $wrapper_class_4 ?>">
@@ -366,94 +577,100 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                         <div class="<?= $wrapper_class_2 ?>">
 
-                            <?php
+                            <?php while ($products->have_posts()) { ?>
 
-                            $products->the_post();
+                                <?php
 
-                            $product = wc_get_product(get_the_ID());
+                                $products->the_post();
 
-                            $main_image = $product->get_image_id() ? $product->get_image_id() : get__theme_option('placeholder_image');
+                                $product = wc_get_product(get_the_ID());
 
-                            $image_class = $product->get_image_id() ? 'image-contain-transform' : 'image-cover-transform';
+                                $main_image = $product->get_image_id() ? $product->get_image_id() : get__theme_option('placeholder_image');
 
-                            ?>
+                                $image_class = $product->get_image_id() ? 'image-contain-transform' : 'image-cover-transform';
 
-                            <div class="product-box <?= $wrapper_class_3 ?>">
+                                ?>
 
-                                <div class="inner background-white d-block content-margin"
-                                    href="<?= get_permalink(get_the_ID()) ?>">
+                                <div class="product-box <?= $wrapper_class_3 ?>">
 
-                                    <?php
+                                    <div class="inner background-white d-block content-margin"
+                                        href="<?= get_permalink(get_the_ID()) ?>">
 
-                                    $DisplayData->heading(
+                                        <?php
 
-                                        array(
+                                        $DisplayData->heading(
 
-                                            'heading' => $product->get_name(),
+                                            array(
 
-                                            'tag'     => 'h4'
+                                                'heading' => $product->get_name(),
 
-                                        )
+                                                'tag'     => 'h4'
 
-                                    );
+                                            )
 
-                                    $DisplayData->image(
+                                        );
 
-                                        array(
+                                        $DisplayData->image(
 
-                                            'image_id' => $main_image,
+                                            array(
 
-                                            'size'     => 'medium'
+                                                'image_id' => $main_image,
 
-                                        ),
+                                                'size'     => 'medium'
 
-                                        'position-relative mb-3 ' . $image_class
+                                            ),
 
-                                    );
+                                            'position-relative mb-3 ' . $image_class
 
-                                    echo $GetData->product_price(get_the_ID());
+                                        );
 
-                                    $DisplayData->description(
+                                        $DisplayData->description(
 
-                                        array(
+                                            array(
 
-                                            'description' => $product->get_short_description()
+                                                'description' => $product->get_short_description()
 
-                                        ),
+                                            ),
 
-                                        false
+                                            false
 
-                                    );
+                                        );
 
-                                    ?>
+                                        ?>
 
-                                    <div class="button-group-box justify-content-center align-items-center">
-                                        <div class="button-quick-view">
-                                            <button type="button"
-                                                class="product-modal-trigger product-modal-trigger-open d-flex align-items-center justify-content-center"
-                                                product="<?= get_the_ID() ?>">
+                                        <div class="button-group-box justify-content-center align-items-center">
+                                            <div class="button-quick-view">
+                                                <button type="button"
+                                                    class="product-modal-trigger product-modal-trigger-open d-flex align-items-center justify-content-center"
+                                                    product="<?= get_the_ID() ?>">
 
-                                                <span class="text">
-                                                    <?= $SVG->eye ?>
-                                                </span>
+                                                    <span class="text">
+                                                        <?= $SVG->eye ?>
+                                                    </span>
 
-                                                <span class="icon"><?= $SVG->ellipsis ?></span>
+                                                    <span class="icon"><?= $SVG->ellipsis ?></span>
 
-                                            </button>
+                                                </button>
+                                            </div>
+                                            <div class="button-box button-accent button-small">
+                                                <a href="<?php the_permalink() ?>">
+                                                    <span class="text">VIEW PRODUCT</span>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="button-box button-accent button-small">
-                                            <a href="<?php the_permalink() ?>">
-                                                <span class="text">VIEW PRODUCT</span>
-                                            </a>
-                                        </div>
+
                                     </div>
 
                                 </div>
 
-                            </div>
+
+
+                            <?php } ?>
 
                         </div>
                         <?= product_slider_nav($display_type) ?>
+
+
 
                     </div>
 
@@ -466,8 +683,10 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
         <?php
 
     }
-    return ob_get_clean();
+
 }
+
+
 
 function product_slider_nav($display_type)
 {
