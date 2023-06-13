@@ -781,7 +781,7 @@ function display_filter($post_count, $display_type, $class = '', $param = '')
                     </a>
                 </li>
                 <li class="display-slider <?= $display_type != 'grid' ? 'active' : '' ?>">
-                    <a href="?display=slider">
+                    <a href="?display=slider<?= $param ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48"
                             height="48" viewBox="0 0 48 48">
                             <defs>
