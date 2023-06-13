@@ -810,3 +810,10 @@ function display_filter($post_count, $display_type, $class = '', $param = '')
         return ob_get_clean();
     }
 }
+
+function action_woocommerce_after_add_to_cart_form() {
+    echo '1';
+}
+
+
+add_action( 'woocommerce_after_add_to_cart_form', 'action_woocommerce_after_add_to_cart_form' );
