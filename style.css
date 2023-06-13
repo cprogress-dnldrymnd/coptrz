@@ -13978,8 +13978,9 @@ body.hero-banner-revealing_heading header .header-main:before {
         height: auto; }
 
 @media screen and (min-width: 992px) {
-  header.mega-menu-opened .col-right .column-holder .button-box a,
-  header.mega-menu-opened .col-right .header-icons ul li a {
+  header.mega-menu-opened .col-right .column-holder .button-box a, header.mega-menu-opened .col-right .column-holder .button-box button,
+  header.mega-menu-opened .col-right .header-icons ul li a,
+  header.mega-menu-opened .col-right .header-icons ul li button {
     color: var(--primary-color); }
   header.mega-menu-opened .header-main {
     background-color: var(--white-color); }
