@@ -255,6 +255,7 @@ class GetData
 		$product = wc_get_product($product_id);
 
 		if ($product->get_price()) {
+			echo $product->get_price();
 
 			if ($customer_type == 'consumer') {
 				if ($product->get_type() == 'simple') {
