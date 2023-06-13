@@ -813,7 +813,7 @@ function single_product_summary($product_id)
         $product_id = get_the_ID();
         $product = wc_get_product($product_id);
         $name = $product->get_name();
-        $main_image = $product->get_image_id();
+        $main_image = $product->get_image_id() ? $product->get_image_id() : get__theme_option('placeholder_image');
         $images = $product->get_gallery_image_ids();
         $type = $product->get_type();
         $price = $product->get_price_html();

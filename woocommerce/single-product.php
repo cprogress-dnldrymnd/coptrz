@@ -34,7 +34,6 @@ do_action('woocommerce_before_main_content');
 <?php while (have_posts()): ?>
 	<?php the_post(); ?>
 	<div class="product-details">
-
 		<div class="modules lg-padding-bottom">
 			<?php 
 			$Modules = new Modules;
