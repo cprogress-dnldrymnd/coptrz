@@ -943,6 +943,12 @@ section.product-modal {
         position: fixed;
         left: 0;
     }
+
+    .ajax_add_to_cart {
+        * + .button-box {
+            display: none !important;
+        }
+    }
 }
 
 .product-add-to-cart-holder.product-add-to-cart-holder {
