@@ -14640,6 +14640,39 @@ section.product-modal {
   -ms-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms; }
+  @media screen and (max-width: 1199px) {
+    section.product-modal #productModalDetails {
+      height: 100vh;
+      background-color: var(--white-color);
+      overflow: auto; }
+      section.product-modal #productModalDetails::-webkit-scrollbar {
+        width: 13px;
+        height: 13px; }
+      section.product-modal #productModalDetails::-webkit-scrollbar-button {
+        width: 0px;
+        height: 0px; }
+      section.product-modal #productModalDetails::-webkit-scrollbar-thumb {
+        background: #e1e1e1;
+        border: 0px none #ffffff;
+        border-radius: 0px; }
+      section.product-modal #productModalDetails::-webkit-scrollbar-thumb:hover {
+        background: #ffffff; }
+      section.product-modal #productModalDetails::-webkit-scrollbar-thumb:active {
+        background: #000000; }
+      section.product-modal #productModalDetails::-webkit-scrollbar-track {
+        background: #4c4c4c;
+        border: 0px none #ffffff;
+        border-radius: 0px; }
+      section.product-modal #productModalDetails::-webkit-scrollbar-track:hover {
+        background: #666666; }
+      section.product-modal #productModalDetails::-webkit-scrollbar-track:active {
+        background: #333333; }
+      section.product-modal #productModalDetails::-webkit-scrollbar-corner {
+        background: transparent; } }
+  @media screen and (max-width: 1199px) and (min-width: 992px) {
+    section.product-modal #productModalDetails.modal-open {
+      padding-right: 13px !important; } }
+
   section.product-modal .product-modal-header h2 {
     font-size: 2.625rem; }
     @media screen and (max-width: 991px) {
@@ -14685,6 +14718,9 @@ section.product-modal {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8); }
+    @media screen and (max-width: 1199px) {
+      section.product-modal .product-modal-backdrop {
+        z-index: -1; } }
   section.product-modal .product-summary {
     padding-top: 0 !important; }
   @media screen and (min-width: 1200px) {

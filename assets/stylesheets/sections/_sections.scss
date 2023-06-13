@@ -849,7 +849,14 @@ section.product-modal {
     visibility: hidden;
     @include transition(500ms);
 
-    #productModalDetails {}
+    #productModalDetails {
+        @include responsive(xs-md) {
+            height: 100vh;
+            background-color: var(--white-color);
+            @include scrollbar_style;
+            overflow: auto;
+        }
+    }
 
     .product-modal-header {
         h2 {
@@ -882,14 +889,20 @@ section.product-modal {
             @include transform(translateY(100%));
         }
     }
-  .product-modal-backdrop {
-      position: fixed;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.8);
-  }
+
+    .product-modal-backdrop {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        @include responsive(xs-md) {
+            z-index: -1;
+        }
+    }
+
     .product-summary {
         padding-top: 0 !important;
     }
@@ -921,7 +934,7 @@ section.product-modal {
             }
         }
 
-      
+
 
         .container {
             @include responsive(xs-md) {
