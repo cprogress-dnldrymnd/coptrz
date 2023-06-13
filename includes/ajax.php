@@ -58,7 +58,7 @@ function archive_ajax()
 	$args = array(
 		'post_type'      => $post_type,
 		'posts_per_page' => $posts_per_page,
-		'post_status' => 'publish'
+		'post_status'    => 'publish'
 	);
 
 	if ($offset) {
@@ -200,6 +200,8 @@ function product_modal_ajax()
 	$type = $product->get_type();
 
 	?>
+	<div class="product-modal-backdrop product-modal-trigger"></div>
+
 	<div class="product-modal-header">
 		<div class="container background-white">
 			<div class="inner d-flex justify-content-between align-items-center">
@@ -212,7 +214,6 @@ function product_modal_ajax()
 		</div>
 	</div>
 	<div class="product-modal-body">
-		<div class="product-modal-backdrop product-modal-trigger"></div>
 		<div class="container position-relative">
 			<div class="inner">
 				<?php
