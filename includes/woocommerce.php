@@ -352,7 +352,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
         ob_start();
         ?>
         <section class="product-slider md-padding">
-            <?php if ($category) { ?>
+            <?php if ($category != false) { ?>
                 <div class="container mb-7">
 
                     <div class="row line-title line-title-v2 d-flex align-items-start fw-medium">
