@@ -216,7 +216,6 @@ function product_modal_ajax()
 		<div class="product-modal-backdrop d-none d-lg-block product-modal-trigger close-button"></div>
 		<div class="container position-relative">
 			<div class="inner">
-		
 				<?php
 				include(get_stylesheet_directory() . '/template-parts/woocommerce/product-details/product-details.php');
 				include(get_stylesheet_directory() . '/template-parts/woocommerce/product-details/product-featured-video.php');
