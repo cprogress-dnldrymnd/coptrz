@@ -13660,8 +13660,10 @@ header {
       header .header-main {
         padding-top: 1rem;
         padding-bottom: 1rem; } }
-    header .header-main.background-transparent .site-logo svg {
-      fill: var(--white-color); }
+    header .header-main.background-transparent {
+      color: var(--white-color); }
+      header .header-main.background-transparent .site-logo svg {
+        fill: var(--white-color); }
     header .header-main.background-white .navbar-toggler.navbar-toggler .navbar-toggler-icon .icon-bar {
       background-color: var(--black-color); }
 
