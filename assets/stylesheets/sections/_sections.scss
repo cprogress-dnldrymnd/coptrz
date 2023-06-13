@@ -850,12 +850,6 @@ section.product-modal {
     @include transition(500ms);
 
     .product-modal-header {
-        @include transition(700ms);
-        @include transform(translateY(-100%));
-        top: 15px;
-        right: 13px;
-        z-index: 2;
-
         h2 {
             font-size: 2.625rem;
 
@@ -867,16 +861,24 @@ section.product-modal {
                 font-size: 1.5rem;
             }
         }
+
+        @include responsive(lg) {
+            @include transition(700ms);
+            @include transform(translateY(-100%));
+            top: 15px;
+            right: 13px;
+            z-index: 2;
+        }
     }
 
     .product-modal-footer {
-        bottom: 15px;
-        z-index: 1;
-        right: 13px;
-        @include transition(700ms);
-        @include transform(translateY(100%));
-
-
+        @include responsive(lg) {
+            bottom: 15px;
+            z-index: 1;
+            right: 13px;
+            @include transition(700ms);
+            @include transform(translateY(100%));
+        }
     }
 
     .product-summary {

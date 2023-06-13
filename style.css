@@ -14640,42 +14640,44 @@ section.product-modal {
   -ms-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms; }
-  section.product-modal .product-modal-header {
-    -webkit-transition: 700ms;
-    -moz-transition: 700ms;
-    -ms-transition: 700ms;
-    -o-transition: 700ms;
-    transition: 700ms;
-    -webkit-transform: translateY(-100%);
-    -moz-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    -o-transform: translateY(-100%);
-    transform: translateY(-100%);
-    top: 15px;
-    right: 13px;
-    z-index: 2; }
-    section.product-modal .product-modal-header h2 {
-      font-size: 2.625rem; }
-      @media screen and (max-width: 991px) {
-        section.product-modal .product-modal-header h2 {
-          font-size: 2rem; } }
-      @media screen and (max-width: 767px) {
-        section.product-modal .product-modal-header h2 {
-          font-size: 1.5rem; } }
-  section.product-modal .product-modal-footer {
-    bottom: 15px;
-    z-index: 1;
-    right: 13px;
-    -webkit-transition: 700ms;
-    -moz-transition: 700ms;
-    -ms-transition: 700ms;
-    -o-transition: 700ms;
-    transition: 700ms;
-    -webkit-transform: translateY(100%);
-    -moz-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    -o-transform: translateY(100%);
-    transform: translateY(100%); }
+  section.product-modal .product-modal-header h2 {
+    font-size: 2.625rem; }
+    @media screen and (max-width: 991px) {
+      section.product-modal .product-modal-header h2 {
+        font-size: 2rem; } }
+    @media screen and (max-width: 767px) {
+      section.product-modal .product-modal-header h2 {
+        font-size: 1.5rem; } }
+  @media screen and (min-width: 1200px) {
+    section.product-modal .product-modal-header {
+      -webkit-transition: 700ms;
+      -moz-transition: 700ms;
+      -ms-transition: 700ms;
+      -o-transition: 700ms;
+      transition: 700ms;
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      -o-transform: translateY(-100%);
+      transform: translateY(-100%);
+      top: 15px;
+      right: 13px;
+      z-index: 2; } }
+  @media screen and (min-width: 1200px) {
+    section.product-modal .product-modal-footer {
+      bottom: 15px;
+      z-index: 1;
+      right: 13px;
+      -webkit-transition: 700ms;
+      -moz-transition: 700ms;
+      -ms-transition: 700ms;
+      -o-transition: 700ms;
+      transition: 700ms;
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -o-transform: translateY(100%);
+      transform: translateY(100%); } }
   section.product-modal .product-summary {
     padding-top: 0 !important; }
   @media screen and (min-width: 1200px) {
