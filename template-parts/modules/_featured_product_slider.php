@@ -30,7 +30,7 @@ $featured_products = $module['featured_products'];
                                     <div class="col-lg-5">
                                         <div class="column-holder">
                                             <div class="image-box">
-                                                <img class="main-image <?= $image ? '' : 'image-cover' ?>" src="<?= $image_url ?>"
+                                                <img decoding="async" class="main-image jetpack-lazy-image <?= $image ? '' : 'image-cover' ?>" src="<?= $image_url ?>"
                                                     alt="<?= $product->get_name() ?>">
                                              
                                             </div>
@@ -39,7 +39,7 @@ $featured_products = $module['featured_products'];
                                     <div class="col-lg-7">
                                         
                                         <div class="column-holder content-margin ">
-                                               <img class="image-icon"
+                                               <img decoding="async" class="image-icon jetpack-lazy-image"
                                                     src="<?= wp_get_attachment_image_url($vendor_image, 'medium') ?>">
                                             <?php
                                             $DisplayData->heading(

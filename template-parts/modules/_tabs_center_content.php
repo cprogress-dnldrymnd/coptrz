@@ -55,8 +55,8 @@ $items = $module['items'];
                             );
                             ?>
                             <div class="image-box image-center">
-                                <img src="<?= wp_get_attachment_image_url($item['image'], 'large') ?>" alt="">
-                                <img src="<?= wp_get_attachment_image_url($item['image_top_right'], 'large') ?>" alt=""
+                                <img decoding="async" class="jetpack-lazy-image" src="<?= wp_get_attachment_image_url($item['image'], 'large') ?>" alt="">
+                                <img decoding="async" class="jetpack-lazy-image" src="<?= wp_get_attachment_image_url($item['image_top_right'], 'large') ?>" alt=""
                                     class="drone-image">
                             </div>
                         </div>
@@ -141,8 +141,8 @@ $items = $module['items'];
                             <div class="tab-pane fade <?= $key == 0 ? 'show active' : '' ?>" id="nav-<?= $key ?>"
                                 role="tabpanel" aria-labelledby="nav-<?= $key ?>-tab">
                                 <div class="image-box image-center">
-                                    <img src="<?= wp_get_attachment_image_url($item['image'], 'large') ?>" alt="">
-                                    <img src="<?= wp_get_attachment_image_url($item['image_top_right'], 'large') ?>" alt=""
+                                    <img decoding="async" class="jetpack-lazy-image" src="<?= wp_get_attachment_image_url($item['image'], 'large') ?>" alt="">
+                                    <img decoding="async" class="jetpack-lazy-image" src="<?= wp_get_attachment_image_url($item['image_top_right'], 'large') ?>" alt=""
                                         class="dr<?= $key ?>-image">
                                 </div>
                             </div>
