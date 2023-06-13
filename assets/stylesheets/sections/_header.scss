@@ -443,6 +443,7 @@ header {
 		}
 
 		&.background-transparent {
+			color: var(--white-color);
 			.site-logo {
 				svg {
 					fill: var(--white-color);
@@ -556,7 +557,7 @@ header {
 
 	.background-transparent {
 		background-color: var(--black-color);
-
+		
 		.navbar-nav {
 			color: var(--white-color) !important;
 		}
