@@ -495,7 +495,7 @@ class GetData
 					}
 					else {
 						$button_link = '#product-tabs';
-						$button_text = 'ENQUIRE NOW';
+						$button_text = 'REQUEST INFO';
 					}
 					?>
 					<div class="button-box  button-secondary button-small">
