@@ -241,7 +241,7 @@ function product_slider($is_shop = false)
 
             $products = new WP_Query($args);
 
-            echo product_slider_section($products, $product_slider_items_width);
+            echo product_slider_section($products, $product_slider_items_width, $display_type);
 
             ?>
 
@@ -315,7 +315,7 @@ function product_slider_category($is_category = false)
 }
 
 
-function product_slider_section($products, $product_slider_items_width)
+function product_slider_section($products, $product_slider_items_width, $display_type)
 {
     $DisplayData = new DisplayData;
     $SVG = new SVG;
