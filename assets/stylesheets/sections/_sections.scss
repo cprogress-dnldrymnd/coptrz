@@ -902,7 +902,7 @@ section.product-modal {
                 padding-left: 2.5vw;
                 padding-right: 2.5vw;
 
-                @include responsive(xs-md) {
+                @include responsive(lg) {
                     margin-top: 65px;
                     padding-bottom: 200px;
                     padding-top: 120px;
@@ -947,7 +947,7 @@ section.product-modal {
     .product-modal-header,
     .product-modal-footer,
     .product-modal-body {
-        @include responsive(md-lg) {
+        @include responsive(lg) {
             position: fixed;
             left: 0;
         }
@@ -1099,7 +1099,7 @@ html {
 
             .product-modal-header,
             .product-modal-footer {
-                @include responsive(md-lg) {
+                @include responsive(lg) {
                     @include transform(translateY(0));
                 }
 

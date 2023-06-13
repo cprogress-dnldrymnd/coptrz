@@ -14720,7 +14720,7 @@ section.product-modal {
       section.product-modal .product-modal-body > .container > .inner {
         padding-left: 2.5vw;
         padding-right: 2.5vw; }
-        @media screen and (max-width: 1199px) {
+        @media screen and (min-width: 1200px) {
           section.product-modal .product-modal-body > .container > .inner {
             margin-top: 65px;
             padding-bottom: 200px;
@@ -14749,7 +14749,7 @@ section.product-modal {
     section.product-modal .product-modal-header,
     section.product-modal .product-modal-footer {
       z-index: 2; } }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1200px) {
     section.product-modal .product-modal-header,
     section.product-modal .product-modal-footer,
     section.product-modal .product-modal-body {
@@ -14860,7 +14860,7 @@ html.product-modal-active {
   html.product-modal-active section.product-modal {
     opacity: 1;
     visibility: visible; }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1200px) {
       html.product-modal-active section.product-modal .product-modal-header,
       html.product-modal-active section.product-modal .product-modal-footer {
         -webkit-transform: translateY(0);
