@@ -38,8 +38,9 @@ add_action('woocommerce_after_quantity_input_field', 'bbloomer_display_quantity_
 
 function bbloomer_display_quantity_plus()
 {
+    global $product;
 
-    if (!is_cart()) {
+    if (!is_cart() && !$product->is_sold_individually()) {
         echo '<button type="button" class="plus">+</button>';
     }
 
@@ -53,7 +54,8 @@ add_action('woocommerce_before_quantity_input_field', 'bbloomer_display_quantity
 
 function bbloomer_display_quantity_minus()
 {
-    if (!is_cart()) {
+    global $product;
+    if (!is_cart() && !$product->is_sold_individually()) {
 
         echo '<button type="button" class="minus">-</button>';
 
