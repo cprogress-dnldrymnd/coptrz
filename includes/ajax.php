@@ -238,6 +238,10 @@ function product_modal_ajax()
 			<?php foreach ($variations as $variation) { ?>
 				var $variation_name = '<?= $variation['attributes']['attribute_course-type'] ?>';
 				var $variation_id = '<?= $variation['variation_id']; ?>';
+
+				console.log($variation_name);
+				console.log('xxxxx');
+
 				jQuery('.variations_form option[value="' + $variation_name + '"]').attr('id', $variation_id);
 
 				jQuery('.variations_form select').change(function (e) {
