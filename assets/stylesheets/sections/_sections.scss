@@ -882,7 +882,14 @@ section.product-modal {
             @include transform(translateY(100%));
         }
     }
-
+  .product-modal-backdrop {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+  }
     .product-summary {
         padding-top: 0 !important;
     }
@@ -914,14 +921,7 @@ section.product-modal {
             }
         }
 
-        .product-modal-backdrop {
-            position: fixed;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
+      
 
         .container {
             @include responsive(xs-md) {
