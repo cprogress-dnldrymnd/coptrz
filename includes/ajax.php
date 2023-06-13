@@ -244,8 +244,6 @@ function product_modal_ajax()
 				<?php } ?>
 				var $variation_id = '<?= $variation['variation_id']; ?>';
 
-				console.log($variation_name);
-				console.log('xxxxx');
 
 				jQuery('.variations_form option[value="' + $variation_name + '"]').attr('id', $variation_id);
 
