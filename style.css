@@ -14562,11 +14562,11 @@ section.product-slider .product-holder .product-box {
         section.product-slider .product-holder .product-box .inner.style-2 .content-box {
           padding: 1.5rem 1.5rem calc(80px + 1.5rem); } }
     section.product-slider .product-holder .product-box .inner:hover .image-box img, section.product-slider .product-holder .product-box .inner:active .image-box img, section.product-slider .product-holder .product-box .inner:focus .image-box img {
-      -webkit-transform: translate(-50%, -50%) scale(1.2);
-      -moz-transform: translate(-50%, -50%) scale(1.2);
-      -ms-transform: translate(-50%, -50%) scale(1.2);
-      -o-transform: translate(-50%, -50%) scale(1.2);
-      transform: translate(-50%, -50%) scale(1.2); }
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
 section.product-slider .product-holder.mySwiper-productSwiperPost {
   padding-right: 0; }
   section.product-slider .product-holder.mySwiper-productSwiperPost .product-box {
