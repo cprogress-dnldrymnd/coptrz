@@ -416,13 +416,14 @@ function add_to_cart_form_shortcode($atts)
 
 	$wp_query = $single_product;
 
-	if(get_current_user_id() == 1) {
-		var_dump($wp_query);
-	}
 
 	wp_enqueue_script('wc-single-product');
 	while ($single_product->have_posts()) {
-		$single_product->the_post()
+		$single_product->the_post();
+		if (get_current_user_id() == 1) {
+			var_dump($wp_query);
+		}
+
 			?>
 		<div class="single-product" data-product-page-preselected-id="<?php echo esc_attr($preselected_id); ?>">
 			<?php woocommerce_template_single_add_to_cart(); ?>
