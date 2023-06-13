@@ -384,11 +384,11 @@ class GetData
 								<div class="add-to-cart-box">
 									<?php
 									if ($product->is_downloadable('yes')) {
-										echo do_shortcode('[add_to_cart_form id="' . $product_id . '"]');
+										echo do_shortcode('[add_to_cart id="' . $product_id . '"]');
 
 									}
 									else {
-										echo do_shortcode('[add_to_cart id="' . $product_id . '"]');
+										echo do_shortcode('[add_to_cart_form id="' . $product_id . '"]');
 									}
 									?>
 								</div>
