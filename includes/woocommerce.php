@@ -351,7 +351,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
     if ($products->have_posts()) {
         ob_start();
         ?>
-        <section class="product-slider md-padding">
+        <section class="product-slider md-padding" id="<?= $category ? 'term-'.$category->slug : 'product-slider' ?>">
             <?php if ($category != false) { ?>
                 <div class="container mb-7">
 
@@ -754,8 +754,10 @@ function display_filter($post_count, $display_type, $class = '', $param = '')
 {
     if ($post_count > 4) {
         ob_start();
+        if(!is_product_category()) {
+            $display_type = 
+        }
         ?>
-
         <div class="display-filter <?= $class ?>">
             <ul class="list-inline d-flex justify-content-end">
                 <li class="me-2 display-grid <?= $display_type == 'grid' ? 'active' : '' ?>">
