@@ -418,10 +418,8 @@ function add_to_cart_form_shortcode($atts)
 
 
 	wp_enqueue_script('wc-single-product');
-	while ($wp_query->have_posts()) {
-
-
-		$wp_query->the_post();
+	while ($single_product->have_posts()) {
+		$single_product->the_post();
 
 
 			?>
