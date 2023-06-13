@@ -233,11 +233,11 @@ function product_modal_ajax()
 	<?php
 	if ($type == 'variable') {
 		$variations = $product->get_available_variations();
-		if(get_current_user_id(  ) ==1) {
-				foreach ($variations as $variation) {
-					echo '<pre>';
-					var_dump($variation);
-					echo '</pre>';
+		if (get_current_user_id() == 1) {
+			foreach ($variations as $variation) {
+				echo '<pre>';
+				var_dump($variation);
+				echo '</pre>';
 			}
 		}
 		?>
