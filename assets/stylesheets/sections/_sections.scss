@@ -849,6 +849,8 @@ section.product-modal {
     visibility: hidden;
     @include transition(500ms);
 
+    #productModalDetails {}
+
     .product-modal-header {
         h2 {
             font-size: 2.625rem;
@@ -920,13 +922,17 @@ section.product-modal {
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.8);
         }
+
+        .container {
+            @include responsive(xs-md) {
+                background-color: var(--white-color);
+            }
+        }
     }
 
     .product-modal-header,
     .product-modal-footer {
         .container {
-            border-radius: 50px;
-            @include box-shadow(0px 14px 25px #0000001c);
 
             .col-add-to-cart {
                 .column-holder {
@@ -938,6 +944,11 @@ section.product-modal {
 
             .inner {
                 padding: 2.125rem 3vw;
+            }
+
+            @include responsive(lg) {
+                border-radius: 50px;
+                @include box-shadow(0px 14px 25px #0000001c);
             }
         }
 

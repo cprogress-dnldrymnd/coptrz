@@ -14734,19 +14734,23 @@ section.product-modal {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8); }
-  section.product-modal .product-modal-header .container,
-  section.product-modal .product-modal-footer .container {
-    border-radius: 50px;
-    -webkit-box-shadow: 0px 14px 25px #0000001c;
-    -moz-box-shadow: 0px 14px 25px #0000001c;
-    box-shadow: 0px 14px 25px #0000001c; }
-    @media screen and (max-width: 1199px) {
-      section.product-modal .product-modal-header .container .col-add-to-cart .column-holder,
-      section.product-modal .product-modal-footer .container .col-add-to-cart .column-holder {
-        flex-direction: column; } }
-    section.product-modal .product-modal-header .container .inner,
-    section.product-modal .product-modal-footer .container .inner {
-      padding: 2.125rem 3vw; }
+  @media screen and (max-width: 1199px) {
+    section.product-modal .product-modal-body .container {
+      background-color: var(--white-color); } }
+  @media screen and (max-width: 1199px) {
+    section.product-modal .product-modal-header .container .col-add-to-cart .column-holder,
+    section.product-modal .product-modal-footer .container .col-add-to-cart .column-holder {
+      flex-direction: column; } }
+  section.product-modal .product-modal-header .container .inner,
+  section.product-modal .product-modal-footer .container .inner {
+    padding: 2.125rem 3vw; }
+  @media screen and (min-width: 1200px) {
+    section.product-modal .product-modal-header .container,
+    section.product-modal .product-modal-footer .container {
+      border-radius: 50px;
+      -webkit-box-shadow: 0px 14px 25px #0000001c;
+      -moz-box-shadow: 0px 14px 25px #0000001c;
+      box-shadow: 0px 14px 25px #0000001c; } }
   @media screen and (max-width: 1199px) {
     section.product-modal .product-modal-header,
     section.product-modal .product-modal-footer {
