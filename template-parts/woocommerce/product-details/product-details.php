@@ -11,6 +11,11 @@ if ($images) {
     $wrapper_class_2 = 'swiper-wrapper';
     $wrapper_class_3 = 'swiper-slide';
 }
+else {
+    $wrapper_class_1 = '';
+    $wrapper_class_2 = '';
+    $wrapper_class_3 = '';
+}
 ?>
 
 
