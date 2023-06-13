@@ -59,7 +59,7 @@ $DisplayData = new DisplayData;
 							<div class="heading-box ">
 								<span class="prefix">COPTRZ ACADEMY</span>
 								<h2>
-									<strong> World-class CAA drone training </strong>
+									<strong> Expertly created e-learning drone courses </strong>
 								</h2>
 							</div>
 							<div class="description-box">
@@ -71,9 +71,9 @@ $DisplayData = new DisplayData;
 
 							<div class="button-group-box d-flex flex-wrap">
 								<div class="button-box button-accent">
-									<a href="">ENROL NOW</a>
+									<a href="https://coptrz.com/product-category/e-learning-courses/">EXPLORE COURSE</a>
 								</div>
-								<div class="button-box button-bordered">
+								<div class="button-box button-bordered d-none">
 									<a href="">FIND OUT MORE</a>
 								</div>
 							</div>
