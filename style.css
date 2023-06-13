@@ -14537,6 +14537,12 @@ section.product-slider .product-holder .product-box {
       @media screen and (max-width: 767px) {
         section.product-slider .product-holder .product-box .inner:not(.style-2) {
           padding: 1.5rem 1.5rem calc(60px + 1.5rem); } }
+      section.product-slider .product-holder .product-box .inner:not(.style-2):hover, section.product-slider .product-holder .product-box .inner:not(.style-2):active, section.product-slider .product-holder .product-box .inner:not(.style-2):focus {
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        transform: translateY(-10px); }
     section.product-slider .product-holder .product-box .inner.style-2 > .button-group-box {
       position: absolute;
       bottom: 2rem;
