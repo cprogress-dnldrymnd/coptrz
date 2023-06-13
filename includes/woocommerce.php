@@ -125,13 +125,10 @@ function product_slider($is_shop = false)
 
         'orderby'    => '_menu_order',
 
-
-
     );
 
 
     if ($is_shop) {
-
 
 
         $product_categories = get_terms($args);
@@ -160,7 +157,7 @@ function product_slider($is_shop = false)
 
         $args['include'] = $array;
 
-
+        echo 'is_shop';
 
     }
     else {
@@ -168,6 +165,8 @@ function product_slider($is_shop = false)
         $term = get_queried_object();
 
         $args['parent'] = false;
+
+        echo 'is_vendors';
 
     }
 
