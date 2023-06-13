@@ -14774,8 +14774,7 @@ section.product-modal {
     section.product-modal .product-modal-body .container {
       background-color: var(--white-color); } }
   @media screen and (max-width: 1199px) {
-    section.product-modal .product-modal-header .container .col-add-to-cart .column-holder,
-    section.product-modal .product-modal-footer .container .col-add-to-cart .column-holder {
+    section.product-modal .col-add-to-cart .column-holder {
       flex-direction: column; } }
   section.product-modal .product-modal-header .container .inner,
   section.product-modal .product-modal-footer .container .inner {

@@ -943,18 +943,17 @@ section.product-modal {
         }
     }
 
+    .col-add-to-cart {
+        .column-holder {
+            @include responsive(xs-md) {
+                flex-direction: column;
+            }
+        }
+    }
+
     .product-modal-header,
     .product-modal-footer {
         .container {
-
-            .col-add-to-cart {
-                .column-holder {
-                    @include responsive(xs-md) {
-                        flex-direction: column;
-                    }
-                }
-            }
-
             .inner {
                 padding: 2.125rem 3vw;
             }
