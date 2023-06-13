@@ -239,9 +239,9 @@ function product_slider($is_shop = false)
 
             }
 
-            $products = new WP_Query($args);
 
-            echo product_slider_section($products, $product_slider_items_width, $display_type);
+
+            echo product_slider_section($args, $product_slider_items_width, $display_type);
 
             ?>
 
@@ -308,18 +308,20 @@ function product_slider_category($is_category = false)
 
     );
 
-    $products = new WP_Query($args);
     $product_slider_items_width = get__term_meta($term->term_id, 'product_slider_items_width');
     $display_type = get__term_meta($term->term_id, 'display_type');
-    echo product_slider_section($products, $product_slider_items_width, $display_type);
+    echo product_slider_section($args, $product_slider_items_width, $display_type);
 }
 
 
-function product_slider_section($products, $product_slider_items_width, $display_type)
+function product_slider_section($args, $product_slider_items_width, $display_type)
 {
     $DisplayData = new DisplayData;
     $SVG = new SVG;
     $GetData = new GetData;
+
+    $products = new WP_Query($args);
+
     if ($products->found_posts > 4) {
         if (!isset($_GET['display'])) {
             $display_type = $display_type;
