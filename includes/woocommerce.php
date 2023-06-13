@@ -204,9 +204,9 @@ function product_slider($is_shop = false)
 
                         'taxonomy' => 'product_cat',
 
-                        'field'    => 'slug',
+                        'field'    => 'term_id',
 
-                        'terms'    => array($category->slug),
+                        'terms'    => array($category->term_id),
 
                         'operator' => 'IN',
 
@@ -231,7 +231,7 @@ function product_slider($is_shop = false)
 
                     'field'    => 'term_id',
 
-                    'terms'    => array($term->slug),
+                    'terms'    => array($term->term_id),
 
                     'operator' => 'IN',
 
