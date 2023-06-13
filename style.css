@@ -14246,6 +14246,8 @@ section.featured-product-slider .image-box {
   @media screen and (max-width: 991px) {
     section.featured-product-slider .image-box {
       padding: 50%; } }
+section.featured-product-slider .product-add-to-cart-holder.sold-individually .quantity {
+  display: none !important; }
 section.featured-product-slider .product-add-to-cart-holder .variation-radio {
   border-radius: 0 !important; }
   section.featured-product-slider .product-add-to-cart-holder .variation-radio label {

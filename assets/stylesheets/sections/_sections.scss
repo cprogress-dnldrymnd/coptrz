@@ -183,6 +183,11 @@ section.featured-product-slider {
 
 
     .product-add-to-cart-holder {
+        &.sold-individually {
+            .quantity {
+                display: none !important;
+            }
+        }
         .variation-radio {
             border-radius: 0 !important;
 
