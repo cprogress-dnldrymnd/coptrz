@@ -11523,15 +11523,21 @@ section.featured-boxes .featured-boxes-holder .column-holder {
     color: var(--accent-color);
     font-weight: bold; }
 
+.product-modal-trigger:not(.close-button) .text {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms; }
 .product-modal-trigger:not(.close-button) .icon {
   margin: 0 !important;
-  width: 0;
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -ms-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
-  overflow: hidden; }
+  position: absolute;
+  opacity: 0; }
 .product-modal-trigger:not(.close-button) svg {
   border: 2px solid;
   border-radius: 50%;
@@ -11543,9 +11549,10 @@ section.featured-boxes .featured-boxes-holder .column-holder {
     stroke-width: 5 !important; }
 .product-modal-trigger:not(.close-button).loading {
   pointer-events: none; }
+  .product-modal-trigger:not(.close-button).loading .text {
+    opacity: 0; }
   .product-modal-trigger:not(.close-button).loading .icon {
-    margin-left: 1rem !important;
-    width: 24px; }
+    opacity: 1; }
     .product-modal-trigger:not(.close-button).loading .icon svg {
       animation-name: spin;
       animation-duration: 5000ms;

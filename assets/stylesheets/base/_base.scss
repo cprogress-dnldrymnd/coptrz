@@ -1754,11 +1754,15 @@ section.featured-boxes {
 }
 
 .product-modal-trigger:not(.close-button) {
+    .text {
+        @include transition(300ms);
+    }
+
     .icon {
         margin: 0 !important;
-        width: 0;
         @include transition(300ms);
-        overflow: hidden;
+        position: absolute;
+        opacity: 0;
     }
 
     svg {
@@ -1777,9 +1781,12 @@ section.featured-boxes {
     &.loading {
         pointer-events: none;
 
+        .text {
+            opacity: 0;
+        }
+
         .icon {
-            margin-left: 1rem !important;
-            width: 24px;
+            opacity: 1;
 
             svg {
                 animation-name: spin;
