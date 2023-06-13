@@ -216,9 +216,7 @@ function product_modal_ajax()
 		<div class="product-modal-backdrop d-none d-lg-block product-modal-trigger close-button"></div>
 		<div class="container position-relative">
 			<div class="inner">
-				<div class="d-block d-xl-none">
-					<?= $GetData->add_to_cart($product_id) ?>
-				</div>
+		
 				<?php
 				include(get_stylesheet_directory() . '/template-parts/woocommerce/product-details/product-details.php');
 				include(get_stylesheet_directory() . '/template-parts/woocommerce/product-details/product-featured-video.php');
