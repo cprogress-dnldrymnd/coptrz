@@ -13,6 +13,7 @@ section.tabs-center-content {
                 .heading-box {
                     h4 {
                         margin-bottom: 0;
+
                         @include responsive(mobile) {
                             font-size: 18px;
                         }
@@ -183,11 +184,7 @@ section.featured-product-slider {
 
 
     .product-add-to-cart-holder {
-        &.sold-individually {
-            .quantity {
-                display: none !important;
-            }
-        }
+
         .variation-radio {
             border-radius: 0 !important;
 
@@ -918,6 +915,11 @@ section.product-modal {
 
 .product-add-to-cart-holder.product-add-to-cart-holder {
 
+    &.sold-individually {
+        .quantity {
+            display: none !important;
+        }
+    }
 
     .is-variation-radio {
         .variations {

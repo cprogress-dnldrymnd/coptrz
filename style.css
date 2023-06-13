@@ -14246,8 +14246,6 @@ section.featured-product-slider .image-box {
   @media screen and (max-width: 991px) {
     section.featured-product-slider .image-box {
       padding: 50%; } }
-section.featured-product-slider .product-add-to-cart-holder.sold-individually .quantity {
-  display: none !important; }
 section.featured-product-slider .product-add-to-cart-holder .variation-radio {
   border-radius: 0 !important; }
   section.featured-product-slider .product-add-to-cart-holder .variation-radio label {
@@ -14726,6 +14724,8 @@ section.product-modal {
     position: fixed;
     left: 0; }
 
+.product-add-to-cart-holder.product-add-to-cart-holder.sold-individually .quantity {
+  display: none !important; }
 .product-add-to-cart-holder.product-add-to-cart-holder .is-variation-radio .variations {
   display: none; }
 .product-add-to-cart-holder.product-add-to-cart-holder .is-variation-radio .woocommerce-variation {
