@@ -41,7 +41,11 @@ $DisplayData = new DisplayData;
 	$post_is_global = true;
 	include(locate_template('/template-parts/modules/_cta.php'));
 	?>
-	<?= product_slider(true); ?>
+	<?php
+	echo 'sdsdsds';
+	product_slider(true); 
+	
+	?>
 
 	<section class="two-columns two-columns-v2 xl-padding-bottom">
 		<div class="container">

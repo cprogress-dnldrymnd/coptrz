@@ -129,10 +129,6 @@ function product_slider($is_shop = false)
 
     );
 
-    echo $is_shop;
-
-    echo 'sdsdsds';
-
 
     if ($is_shop) {
 
