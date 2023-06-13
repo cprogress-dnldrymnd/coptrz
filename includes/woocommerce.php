@@ -475,7 +475,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                                             ?>
                                             <div class="price-box">
-                                                <p>
+                                                <p class="fw-bold">
                                                     <?= $GetData->product_price(get_the_ID()); ?>
                                                 </p>
                                             </div>
