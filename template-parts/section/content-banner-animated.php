@@ -44,7 +44,7 @@ $vide_background = get__post_meta('vide_background');
                     false
                 );
                 ?>
-                <div class="button-group-box">
+                <div class="button-group-box justify-content-center">
                     <?php
                     if ($cta_button_type) {
                         $DisplayData->button(
