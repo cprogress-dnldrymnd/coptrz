@@ -454,7 +454,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                                                 'image_id' => $main_image,
 
-                                                'size'     => 'medium'
+                                                'size'     => 'large'
 
                                             ),
 
