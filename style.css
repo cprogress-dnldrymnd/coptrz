@@ -15038,7 +15038,7 @@ section.add-to-cart-section .single_add_to_cart_button.single_add_to_cart_button
   margin-bottom: 1.5rem; }
 .single-product .product-add-to-cart-holder.product-add-to-cart-holder .add-to-cart-box .cart {
   flex-wrap: wrap; }
-  .single-product .product-add-to-cart-holder.product-add-to-cart-holder .add-to-cart-box .cart > *:not(:last-child) {
+  .single-product .product-add-to-cart-holder.product-add-to-cart-holder .add-to-cart-box .cart > * {
     margin-bottom: 1rem; }
   .single-product .product-add-to-cart-holder.product-add-to-cart-holder .add-to-cart-box .cart .woocommerce-variation-description {
     margin-bottom: 2rem; }
