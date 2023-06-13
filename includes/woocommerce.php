@@ -818,35 +818,36 @@ function request_info_button()
     $button_type = get__post_meta_by_id($product->get_id(), 'button_type');
     $cst_btn_link = get__post_meta_by_id($product->get_id(), 'cst_btn_text');
     $cst_btn_text = get__post_meta_by_id($product->get_id(), 'cst_btn_link');
-
-    if ($button_type) {
-        if ($button_type == 'replace_enquire_button') {
-            $button_link = $cst_btn_link;
-            $button_text = $cst_btn_text;
+    if (is_product()) {
+        if ($button_type) {
+            if ($button_type == 'replace_enquire_button') {
+                $button_link = $cst_btn_link;
+                $button_text = $cst_btn_text;
+            }
+            else {
+                $button_link = '#product-tabs';
+                $button_text = 'REQUEST INFO';
+            }
+            ?>
+            <div class="button-box  button-secondary">
+                <a href="<?= $button_link ?>" class="<?= $button_type == 'link_to_form' ? 'open-enquire-tab' : '' ?>">
+                    <span class="text"><?= $button_text ?></span>
+                </a>
+            </div>
+            <?php
         }
         else {
-            $button_link = '#product-tabs';
-            $button_text = 'REQUEST INFO';
-        }
-        ?>
-        <div class="button-box  button-secondary">
-            <a href="<?= $button_link ?>" class="<?= $button_type == 'link_to_form' ? 'open-enquire-tab' : '' ?>">
-                <span class="text"><?= $button_text ?></span>
-            </a>
-        </div>
-        <?php
-    }
-    else {
-        if (get__theme_option('product_enquire_button_button_type')) {
-            $DisplayData->button(
-                get__theme_option('product_enquire_button_button_text'),
-                get__theme_option('product_enquire_button_' . get__theme_option('product_enquire_button_button_type')),
-                get__theme_option('product_enquire_button_button_action'),
-                get__theme_option('product_enquire_button_button_icon'),
-                'button-secondary',
-                false,
-                get__theme_option('product_enquire_button_button_attribute'),
-            );
+            if (get__theme_option('product_enquire_button_button_type')) {
+                $DisplayData->button(
+                    get__theme_option('product_enquire_button_button_text'),
+                    get__theme_option('product_enquire_button_' . get__theme_option('product_enquire_button_button_type')),
+                    get__theme_option('product_enquire_button_button_action'),
+                    get__theme_option('product_enquire_button_button_icon'),
+                    'button-secondary',
+                    false,
+                    get__theme_option('product_enquire_button_button_attribute'),
+                );
+            }
         }
     }
 }
