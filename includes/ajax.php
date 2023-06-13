@@ -225,7 +225,7 @@ function product_modal_ajax()
 			</div>
 		</div>
 	</div>
-	<div class="product-modal-footer d-none d-xl-block">
+	<div class="product-modal-footer d-none d-">
 		<div class="container background-white">
 			<?= $GetData->add_to_cart($product_id) ?>
 		</div>
