@@ -13595,6 +13595,9 @@ header {
             height: 25px; } }
     header .col-right .header-icons ul li:not(:last-child) {
       margin-right: 1.5vw; }
+      @media (max-width: 1100px) and (min-width: 992px) {
+        header .col-right .header-icons ul li:not(:last-child) {
+          margin-right: 8px; } }
       @media screen and (max-width: 991px) {
         header .col-right .header-icons ul li:not(:last-child) {
           margin-right: 1.5rem; } }
