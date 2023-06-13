@@ -157,7 +157,6 @@ function product_slider($is_shop = false)
 
         $args['include'] = $array;
 
-        echo 'is_shop';
 
     }
     else {
@@ -166,7 +165,6 @@ function product_slider($is_shop = false)
 
         $args['parent'] = false;
 
-        echo 'is_vendors';
 
     }
 
