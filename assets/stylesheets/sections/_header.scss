@@ -443,7 +443,7 @@ header {
 		}
 
 		&.background-transparent {
-			color: var(--white-color);
+			color: var(--white-color) !important;
 			.site-logo {
 				svg {
 					fill: var(--white-color);
