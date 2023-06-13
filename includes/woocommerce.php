@@ -154,13 +154,10 @@ function product_slider($is_shop = false)
 
 
 
-
         }
 
 
-
-        $args['include'] = $array;
-
+        //$args['include'] = $array;
 
 
     }
@@ -242,8 +239,6 @@ function product_slider($is_shop = false)
                 );
 
                 $args['posts_per_page'] = -1;
-
-
 
             }
 

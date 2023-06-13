@@ -9,8 +9,6 @@ else if (is_tax()) {
     $description = $term->description;
     $image = get__term_meta($term->term_id, 'image');
 }
-
-
 ?>
 
 
