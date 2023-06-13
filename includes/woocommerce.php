@@ -348,8 +348,6 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
         $wrapper_class_4 = 'extend-right';
     }
 
- 
-
     if ($products->have_posts()) {
         ob_start();
         ?>
