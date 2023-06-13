@@ -95,24 +95,6 @@ $SVG = new SVG;
 
 
 
-
-
-    <div class="load-more load-more-box text-center xl-padding-top">
-
-      <a href="#"
-        class="load-more d-inline-flex flex-column link-underline fw-medium justify-content-center align-items-center"
-        id="load-more">
-
-        <?= $SVG->load_more ?>
-
-        <span class="text">Load more</span>
-
-      </a>
-
-    </div>
-
-
-
   </div>
 
 </section>
