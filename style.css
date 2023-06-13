@@ -13538,6 +13538,9 @@ header {
   @media (max-width: 1399px) {
     header .col-right .column-holder .button-group-box .button-box {
       margin-right: 5px; } }
+  @media (max-width: 1100px) {
+    header .col-right .column-holder .button-group-box .button-box {
+      margin-right: 0; } }
   header .col-right .column-holder .button-box.button-accent a,
   header .col-right .column-holder .button-box.button-accent button {
     color: var(--white-color) !important; }
@@ -13601,6 +13604,9 @@ header {
       @media screen and (max-width: 991px) {
         header .col-right .header-icons ul li:not(:last-child) {
           margin-right: 1.5rem; } }
+    @media (max-width: 1100px) {
+      header .col-right .header-icons {
+        margin-right: 10px !important; } }
   @media screen and (max-width: 1199px) {
     header .col-right .button-box.button-box a {
       padding-left: 1rem;
@@ -13902,6 +13908,9 @@ body.hero-banner-revealing_heading header .header-main:before {
           #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
             padding-left: 5px;
             padding-right: 5px; } }
+        @media (max-width: 1100px) and (min-width: 992px) {
+          #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
+            font-size: 12px; } }
       #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item.mega-menu-flyout > ul.mega-sub-menu {
         padding-top: 0;
         padding-bottom: 0; }
