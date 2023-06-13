@@ -118,6 +118,22 @@ function archive_ajax()
 										$post_type_val = get_post_type();
 
 									}
+
+									if (get_post_type() == 'post') {
+										$button_text = 'Read more';
+									}
+									else if (get_post_type() == 'webinars') {
+										$button_text = 'Watch webinar';
+									}
+									else if (get_post_type() == 'product') {
+										$button_text = 'View product';
+									}
+									else if (get_post_type() == 'page') {
+										$button_text = 'View page';
+									}
+									else if (get_post_type() == 'events') {
+										$button_text = 'View events';
+									}
 									echo '<span class="badge"> ' . $post_type_val . ' </span>';
 								}
 								?>
@@ -150,7 +166,7 @@ function archive_ajax()
 
 								<div class="link-box">
 									<a href="<?= get_permalink() ?>" class="link-underline fw-medium">
-										Read more
+										<?= $button_text ?>
 									</a>
 								</div>
 							</div>
@@ -227,7 +243,7 @@ function product_modal_ajax()
 	</div>
 	<div class="product-modal-footer d-none d-xl-block">
 		<div class="container background-white">
-		
+
 			<?= $GetData->add_to_cart($product_id) ?>
 		</div>
 	</div>
