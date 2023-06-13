@@ -213,7 +213,7 @@ function product_modal_ajax()
 		</div>
 	</div>
 	<div class="product-modal-body">
-		<div class="product-modal-backdrop d-none d-lg-block product-modal-trigger block"></div>
+		<div class="product-modal-backdrop d-none d-lg-block product-modal-trigger close-button"></div>
 		<div class="container position-relative">
 			<div class="inner">
 				<?php
