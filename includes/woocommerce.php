@@ -348,11 +348,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
         $wrapper_class_4 = 'extend-right';
     }
 
-    if (get_current_user_id() == 1) {
-        echo '<pre>';
-        var_dump($args);
-        echo '</pre>';
-    }
+ 
 
     if ($products->have_posts()) {
         ob_start();
