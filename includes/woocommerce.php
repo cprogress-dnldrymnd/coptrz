@@ -129,6 +129,9 @@ function product_slider($is_shop = false)
 
     );
 
+    echo $is_shop;
+
+    echo 'sdsdsds';
 
 
     if ($is_shop) {
@@ -154,10 +157,13 @@ function product_slider($is_shop = false)
 
 
 
+
         }
 
 
-        //$args['include'] = $array;
+
+        $args['include'] = $array;
+
 
 
     }
@@ -239,6 +245,8 @@ function product_slider($is_shop = false)
                 );
 
                 $args['posts_per_page'] = -1;
+
+
 
             }
 
