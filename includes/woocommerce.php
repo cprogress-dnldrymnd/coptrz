@@ -360,17 +360,6 @@ function product_slider($is_shop = false)
 
                                         $main_image = $product->get_image_id() ? $product->get_image_id() : get__theme_option('placeholder_image');
 
-                                        $products_array = array(
-
-                                            'product_id'          => get_the_ID(),
-
-                                            'product_title'       => $product->get_name(),
-
-                                            'product_description' => esc_html($product->get_description()),
-
-                                        );
-
-
 
                                         ?>
 
@@ -595,15 +584,8 @@ function product_slider_category($is_category = false)
 
                                 $product = wc_get_product(get_the_ID());
 
-                                $products_array = array(
+                                $main_image = $product->get_image_id() ? $product->get_image_id() : get__theme_option('placeholder_image');
 
-                                    'product_id'          => get_the_ID(),
-
-                                    'product_title'       => $product->get_name(),
-
-                                    'product_description' => esc_html($product->get_description()),
-
-                                );
 
                                 ?>
 
@@ -630,7 +612,7 @@ function product_slider_category($is_category = false)
 
                                             array(
 
-                                                'image_id' => $product->get_image_id(),
+                                                'image_id' => $main_image,
 
                                                 'size'     => 'medium'
 
