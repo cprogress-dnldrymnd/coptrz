@@ -13,9 +13,13 @@ else {
 }
 ?>
 
+
+
 <section class="product-summary <?= is_single() ? 'sm-padding' : '' ?>" id="product-summary">
 
     <div class="container">
+
+        <?php wc_print_notices(); ?>
 
         <div class="row gy-4">
 
