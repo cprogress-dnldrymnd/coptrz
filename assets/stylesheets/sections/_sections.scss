@@ -1380,10 +1380,13 @@ section.add-to-cart-section {
 
 .single-product {
 
+    #wc-stripe-payment-request-wrapper,
+    .wc-stripe-payment-request-button {
+        display: none !important;
+    }
+
     .product-add-to-cart-holder.product-add-to-cart-holder {
-        #wc-stripe-payment-request-wrapper, .wc-stripe-payment-request-button {
-            display: none !important;
-        }
+
         .quantity {
             border: 2px solid var(--gray-color);
         }
