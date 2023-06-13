@@ -457,6 +457,12 @@ class GetData
 						</p>
 					</div>
 			<?php } ?>
+			
+			<?php
+			if(!$price) {
+				echo request_info_button();
+			}
+			?>
 
 		<?php } ?>
 		<?php
