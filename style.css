@@ -13886,16 +13886,18 @@ body.hero-banner-revealing_heading header .header-main:before {
             padding-left: 1vw;
             padding-right: 1vw;
             font-size: 15px; } }
-        @media (max-width: 1499px) {
+        @media (max-width: 1499px) and (min-width: 1400px) {
           #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
             padding-left: 8px;
             padding-right: 8px; } }
         @media (max-width: 1399px) {
           #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
             font-size: 14px; } }
-        @media (max-width: 1250px) {
+        @media (max-width: 1299px) {
           #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
-            font-size: 13px; } }
+            font-size: 13px;
+            padding-left: 8px;
+            padding-right: 8px; } }
         @media screen and (max-width: 1199px) {
           #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
             padding-left: 5px;
