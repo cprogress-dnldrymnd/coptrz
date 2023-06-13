@@ -1515,7 +1515,7 @@ section.featured-boxes {
 }
 
 .woocommerce {
-    .single_add_to_cart_button.single_add_to_cart_button {
+    .ajax_add_to_cart.ajax_add_to_cart {
         @include button-style;
         background-color: var(--accent-color) !important;
         text-transform: uppercase;

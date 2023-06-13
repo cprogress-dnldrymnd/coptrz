@@ -11302,7 +11302,7 @@ section.featured-boxes .featured-boxes-holder .column-holder {
       border-radius: 0;
       width: 100%; } }
 
-.woocommerce .single_add_to_cart_button.single_add_to_cart_button {
+.woocommerce .ajax_add_to_cart.ajax_add_to_cart {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -11334,30 +11334,30 @@ section.featured-boxes .featured-boxes-holder .column-holder {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 1.25rem 2rem !important; }
-  .woocommerce .single_add_to_cart_button.single_add_to_cart_button span {
+  .woocommerce .ajax_add_to_cart.ajax_add_to_cart span {
     position: relative;
     z-index: 1; }
-    .woocommerce .single_add_to_cart_button.single_add_to_cart_button span.icon {
+    .woocommerce .ajax_add_to_cart.ajax_add_to_cart span.icon {
       margin-top: -3px; }
   @media screen and (min-width: 992px) {
-    .woocommerce .single_add_to_cart_button.single_add_to_cart_button {
+    .woocommerce .ajax_add_to_cart.ajax_add_to_cart {
       white-space: nowrap; } }
   @media screen and (max-width: 767px) {
-    .woocommerce .single_add_to_cart_button.single_add_to_cart_button {
+    .woocommerce .ajax_add_to_cart.ajax_add_to_cart {
       padding: 1rem 1.5rem; } }
-  .woocommerce .single_add_to_cart_button.single_add_to_cart_button:hover, .woocommerce .single_add_to_cart_button.single_add_to_cart_button:active, .woocommerce .single_add_to_cart_button.single_add_to_cart_button:focus {
+  .woocommerce .ajax_add_to_cart.ajax_add_to_cart:hover, .woocommerce .ajax_add_to_cart.ajax_add_to_cart:active, .woocommerce .ajax_add_to_cart.ajax_add_to_cart:focus {
     background-color: var(--white-color) !important;
     border-color: var(--accent-color) !important;
     color: var(--accent-color) !important; }
   @media screen and (max-width: 480px) {
-    .woocommerce .single_add_to_cart_button.single_add_to_cart_button {
+    .woocommerce .ajax_add_to_cart.ajax_add_to_cart {
       padding: 1rem !important;
       font-size: 15px;
       letter-spacing: 0; } }
   @media screen and (max-width: 360px) {
-    .woocommerce .single_add_to_cart_button.single_add_to_cart_button {
+    .woocommerce .ajax_add_to_cart.ajax_add_to_cart {
       font-size: 13px; } }
-  .woocommerce .single_add_to_cart_button.single_add_to_cart_button:after {
+  .woocommerce .ajax_add_to_cart.ajax_add_to_cart:after {
     top: 20px !important;
     right: 0.5rem !important; }
 
