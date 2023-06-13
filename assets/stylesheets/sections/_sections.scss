@@ -1393,12 +1393,14 @@ section.add-to-cart-section {
 
         .add-to-cart-box .cart {
             flex-wrap: wrap;
-
+            > * {
+                @include not-last-child {
+                    margin-bottom: 1rem;
+                }
+            }
             .woocommerce-variation-description {
                 margin-bottom: 2rem;
             }
-
-
 
             .variations {
                 margin-top: 1.5rem;
