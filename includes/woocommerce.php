@@ -351,7 +351,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
     if ($products->have_posts()) {
         ob_start();
         ?>
-        <section class="product-slider md-padding" >
+        <section class="product-slider md-padding">
             <?php if ($category != false) { ?>
                 <div class="container mb-7">
 
