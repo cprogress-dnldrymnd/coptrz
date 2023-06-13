@@ -395,6 +395,7 @@ class GetData
 				<?php }
 				else { ?>
 					<?php if (!is_product()) { ?>
+						<?php $Theme_Options = new Theme_Options; ?>
 						<div class="button-group-box">
 							<?php
 							$DisplayData = new DisplayData;
@@ -457,12 +458,6 @@ class GetData
 						</p>
 					</div>
 			<?php } ?>
-			
-			<?php
-			if(!$price) {
-				echo request_info_button();
-			}
-			?>
 
 		<?php } ?>
 		<?php
@@ -471,11 +466,15 @@ class GetData
 
 	function need_help($product_id)
 	{
+		$DisplayData = new DisplayData;
 		$Theme_Options = new Theme_Options;
 		$SVG = new SVG;
-
+		$button_type = get__post_meta_by_id($product_id, 'button_type');
+		$cst_btn_link = get__post_meta_by_id($product_id, 'cst_btn_text');
+		$cst_btn_text = get__post_meta_by_id($product_id, 'cst_btn_link');
 		$finance_available = get__post_meta_by_id($product_id, 'finance_available');
 		$business_invoicing = get__post_meta_by_id($product_id, 'business_invoicing');
+		$product = wc_get_product($product_id);
 		?>
 		<div class="need-help text-center content-margin">
 			<div class="heading-box">
@@ -488,6 +487,40 @@ class GetData
 				<div class="button-box  button-bordered button-small">
 					<?= $Theme_Options->contact_number ?>
 				</div>
+				<?php
+				if (!$product->get_price()) {
+					if ($button_type) {
+						if ($button_type == 'replace_enquire_button') {
+							$button_link = $cst_btn_link;
+							$button_text = $cst_btn_text;
+						}
+						else {
+							$button_link = '#product-tabs';
+							$button_text = 'REQUEST INFO';
+						}
+						?>
+						<div class="button-box  button-secondary button-small">
+							<a href="<?= $button_link ?>" class="<?= $button_type == 'link_to_form' ? 'open-enquire-tab' : '' ?>">
+								<span class="text"><?= $button_text ?></span>
+							</a>
+						</div>
+						<?php
+					}
+					else {
+						if (get__theme_option('product_enquire_button_button_type')) {
+							$DisplayData->button(
+								get__theme_option('product_enquire_button_button_text'),
+								get__theme_option('product_enquire_button_' . get__theme_option('product_enquire_button_button_type')),
+								get__theme_option('product_enquire_button_button_action'),
+								get__theme_option('product_enquire_button_button_icon'),
+								'button-secondary button-small',
+								false,
+								get__theme_option('product_enquire_button_button_attribute'),
+							);
+						}
+					}
+				}
+				?>
 			</div>
 
 			<div class="list-icon-box">
