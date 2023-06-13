@@ -14678,6 +14678,13 @@ section.product-modal {
       -ms-transform: translateY(100%);
       -o-transform: translateY(100%);
       transform: translateY(100%); } }
+  section.product-modal .product-modal-backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); }
   section.product-modal .product-summary {
     padding-top: 0 !important; }
   @media screen and (min-width: 1200px) {
@@ -14727,13 +14734,6 @@ section.product-modal {
           margin-top: 65px;
           padding-bottom: 200px;
           padding-top: 120px; } }
-  section.product-modal .product-modal-body .product-modal-backdrop {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8); }
   @media screen and (max-width: 1199px) {
     section.product-modal .product-modal-body .container {
       background-color: var(--white-color); } }
