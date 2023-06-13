@@ -922,7 +922,13 @@ section.product-modal {
     }
 
     &.downloadable {
-        
+        .woocommerce {
+            border: none !important;
+            padding: 0 !important;
+            .woocommerce-Price-amount, .woocommerce-price-suffix{
+                display: none;
+            }
+        }
     }
 
     .is-variation-radio {

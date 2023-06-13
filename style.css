@@ -14727,6 +14727,11 @@ section.product-modal {
 
 .product-add-to-cart-holder.product-add-to-cart-holder.sold-individually .quantity {
   display: none !important; }
+.product-add-to-cart-holder.product-add-to-cart-holder.downloadable .woocommerce {
+  border: none !important;
+  padding: 0 !important; }
+  .product-add-to-cart-holder.product-add-to-cart-holder.downloadable .woocommerce .woocommerce-Price-amount, .product-add-to-cart-holder.product-add-to-cart-holder.downloadable .woocommerce .woocommerce-price-suffix {
+    display: none; }
 .product-add-to-cart-holder.product-add-to-cart-holder .is-variation-radio .variations {
   display: none; }
 .product-add-to-cart-holder.product-add-to-cart-holder .is-variation-radio .woocommerce-variation {
