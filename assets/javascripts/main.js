@@ -254,17 +254,16 @@ function ajax_product($product_id, $button) {
 			$result_holder.html(response);
 			image_to_svg();
 
-
+			if (window.innerWidth > 1199) {
+			} else {
+				jQuery('.product-modal-footer').appendTo('.product-summary .col-lg-7 .column-holder');
+			}
 
 			setTimeout(function () {
 				thumb_swiper();
 				variation_radio();
 				jQuery('html').addClass('product-modal-active');
 				$button.removeClass('loading');
-				if (window.innerWidth > 1199) {
-				} else {
-					jQuery('.product-modal-footer').appendTo('.product-summary .col-lg-7 .column-holder');
-				}
 			}, 1000);
 		},
 		error: function (e) {
