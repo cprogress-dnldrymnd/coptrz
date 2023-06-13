@@ -811,7 +811,7 @@ function display_filter($post_count, $display_type, $class = '', $param = '')
     }
 }
 
-function action_woocommerce_after_add_to_cart_form()
+function request_info_button()
 {
     global $product;
     $DisplayData = new DisplayData;
@@ -851,4 +851,4 @@ function action_woocommerce_after_add_to_cart_form()
 }
 
 
-add_action('woocommerce_after_add_to_cart_form', 'action_woocommerce_after_add_to_cart_form');
+add_action('woocommerce_after_add_to_cart_form', 'request_info_button');
