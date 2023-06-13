@@ -473,7 +473,13 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                                             );
 
-                                            echo $GetData->product_price(get_the_ID());
+                                            ?>
+                                            <div class="price-box">
+                                                <p>
+                                                    <?= $GetData->product_price(get_the_ID()); ?>
+                                                </p>
+                                            </div>
+                                            <?php
                                             $DisplayData->description(
 
                                                 array(
