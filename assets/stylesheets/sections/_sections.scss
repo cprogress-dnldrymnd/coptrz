@@ -940,8 +940,10 @@ section.product-modal {
     .product-modal-header,
     .product-modal-footer,
     .product-modal-body {
-        position: fixed;
-        left: 0;
+        @include responsive(md-lg) {
+            position: fixed;
+            left: 0;
+        }
     }
 
     .ajax_add_to_cart {
@@ -1086,7 +1088,14 @@ html {
 
             .product-modal-header,
             .product-modal-footer {
-                @include transform(translateY(0));
+                @include responsive(md-lg) {
+                    @include transform(translateY(0));
+                }
+
+                @include responsive(xs-md) {
+                    z-index: 1;
+                    position: relative;
+                }
             }
         }
     }
