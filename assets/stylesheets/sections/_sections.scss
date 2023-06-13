@@ -613,7 +613,6 @@ section.product-slider {
             height: auto !important;
 
             .inner {
-                padding: 2.625rem 2.625rem calc(60px + 2.625rem);
                 border-radius: 20px;
                 @include transition(300ms);
                 height: 100%;
@@ -645,6 +644,20 @@ section.product-slider {
                         bottom: 1.5rem;
                         left: 1.5rem;
                         right: 1.5rem;
+                    }
+                }
+
+                &:not(.style-2) {
+                    padding: 2.625rem 2.625rem calc(60px + 2.625rem);
+                }
+
+                &.style-2 {
+                    .content-box {
+                        padding: 2.625rem 2.625rem calc(60px + 2.625rem);
+
+                        @include responsive(xs) {
+                            padding: 1.5rem 1.5rem calc(60px + 1.5rem);
+                        }
                     }
                 }
 
@@ -925,7 +938,9 @@ section.product-modal {
         .woocommerce {
             border: none !important;
             padding: 0 !important;
-            .woocommerce-Price-amount, .woocommerce-price-suffix{
+
+            .woocommerce-Price-amount,
+            .woocommerce-price-suffix {
                 display: none;
             }
         }
