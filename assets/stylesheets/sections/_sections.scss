@@ -935,6 +935,10 @@ section.product-modal {
                 padding: 2.125rem 3vw;
             }
         }
+
+        @include responsive(xs-md) {
+            z-index: 2;
+        }
     }
 
     .product-modal-header,
@@ -943,6 +947,10 @@ section.product-modal {
         @include responsive(md-lg) {
             position: fixed;
             left: 0;
+        }
+
+        @include responsive(xs-md) {
+            position: relative;
         }
     }
 
@@ -1092,10 +1100,6 @@ html {
                     @include transform(translateY(0));
                 }
 
-                @include responsive(xs-md) {
-                    z-index: 1;
-                    position: relative;
-                }
             }
         }
     }
