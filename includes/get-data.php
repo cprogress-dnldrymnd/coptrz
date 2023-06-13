@@ -255,7 +255,7 @@ class GetData
 		$product = wc_get_product($product_id);
 
 		if ($product->get_price()) {
-			echo $product->get_price();
+			
 
 			if ($customer_type == 'consumer') {
 				if ($product->get_type() == 'simple') {
@@ -282,6 +282,9 @@ class GetData
 			else {
 				$price = $product->get_price_html();
 
+			}
+			if($product->get_price() == '0.00') {
+				$price = 'FREE';
 			}
 			return $price;
 		}
