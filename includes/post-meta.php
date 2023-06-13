@@ -108,15 +108,15 @@ class PostMeta extends GetData
 				->set_classes('select-button-icon ')
 				->set_width(10),
 			/*Field::make('html',  $id . '_button_select_icon', 'Select Icon')
-																																																							 ->set_html('<a class="button button-primary button-large thickbox select-icon" href="#TB_inline?width=600&height=550&inlineId=modal-svg-" >SELECT ICON</a>')
-																																																							 ->set_conditional_logic(array(
-																																																							 array(
-																																																							 'field' => $id . '_button_type',
-																																																							 'value' => array('page_button', 'post_button', 'services_button', 'custom_button'),
-																																																							 'compare' => 'IN'
-																																																							 )
-																																																							 ))
-																																																							 ->set_width(20)*/
+																																																									->set_html('<a class="button button-primary button-large thickbox select-icon" href="#TB_inline?width=600&height=550&inlineId=modal-svg-" >SELECT ICON</a>')
+																																																									->set_conditional_logic(array(
+																																																									array(
+																																																									'field' => $id . '_button_type',
+																																																									'value' => array('page_button', 'post_button', 'services_button', 'custom_button'),
+																																																									'compare' => 'IN'
+																																																									)
+																																																									))
+																																																									->set_width(20)*/
 
 		);
 
@@ -919,110 +919,112 @@ Container::make('post_meta', 'Page Banner')
 	->set_priority('high')
 	->add_fields(
 		array_merge(
-			array(
-				Field::make('select', 'hero_banner_type', 'Hero Type')
-					->set_options(
+			array_merge(
+				array(
+					Field::make('select', 'hero_banner_type', 'Hero Type')
+						->set_options(
+							array(
+								'default'           => 'Default',
+								'animated'          => 'Video with animated images',
+								'revealing_heading' => 'Revealing Heading',
+								'none'              => 'None',
+							)
+						),
+					Field::make('text', 'heading', 'Heading'),
+					Field::make('textarea', 'description', 'Description')->set_conditional_logic(
 						array(
-							'default'           => 'Default',
-							'animated'          => 'Video with animated images',
-							'revealing_heading' => 'Revealing Heading',
-							'none'              => 'None',
+							array(
+								'field'   => 'hero_banner_type',
+								'value'   => array('animated'),
+								'compare' => 'IN'
+							)
 						)
 					),
-				Field::make('text', 'heading', 'Heading'),
-				Field::make('textarea', 'description', 'Description')->set_conditional_logic(
-					array(
-						array(
-							'field'   => 'hero_banner_type',
-							'value'   => array('animated'),
-							'compare' => 'IN'
-						)
-					)
+					Field::make('file', 'vide_background', 'Video Background')->set_width(20)
+						->set_conditional_logic(
+							array(
+								array(
+									'field'   => 'hero_banner_type',
+									'value'   => array('animated'),
+									'compare' => 'IN'
+								)
+							)
+						),
+					Field::make('image', 'floating_image_1', 'Floating Image[1]')->set_width(20)
+						->set_conditional_logic(
+							array(
+								array(
+									'field'   => 'hero_banner_type',
+									'value'   => array('animated'),
+									'compare' => 'IN'
+								)
+							)
+						),
+					Field::make('image', 'floating_image_2', 'Floating Image[2]')->set_width(20)
+						->set_conditional_logic(
+							array(
+								array(
+									'field'   => 'hero_banner_type',
+									'value'   => array('animated'),
+									'compare' => 'IN'
+								)
+							)
+						),
+					Field::make('image', 'logo_image_1', 'Logo Image[1]')->set_width(20)
+						->set_conditional_logic(
+							array(
+								array(
+									'field'   => 'hero_banner_type',
+									'value'   => array('animated'),
+									'compare' => 'IN'
+								)
+							)
+						),
+					Field::make('image', 'logo_image_2', 'Logo Image[2]')->set_width(20)
+						->set_conditional_logic(
+							array(
+								array(
+									'field'   => 'hero_banner_type',
+									'value'   => array('animated'),
+									'compare' => 'IN'
+								)
+							)
+						),
+					Field::make('image', 'logo_image_3', 'Logo Image[3]')->set_width(20)
+						->set_conditional_logic(
+							array(
+								array(
+									'field'   => 'hero_banner_type',
+									'value'   => array('animated'),
+									'compare' => 'IN'
+								)
+							)
+						),
+
+					Field::make('image', 'revealing_bg_1', 'Background Image 1')->set_width(20)
+						->set_conditional_logic(
+							array(
+								array(
+									'field'   => 'hero_banner_type',
+									'value'   => array('revealing_heading'),
+									'compare' => 'IN'
+								)
+							)
+						),
+					Field::make('image', 'revealing_bg_2', 'Background Image 2')->set_width(20)
+						->set_conditional_logic(
+							array(
+								array(
+									'field'   => 'hero_banner_type',
+									'value'   => array('revealing_heading'),
+									'compare' => 'IN'
+								)
+							)
+						),
+
 				),
-				Field::make('file', 'vide_background', 'Video Background')->set_width(20)
-					->set_conditional_logic(
-						array(
-							array(
-								'field'   => 'hero_banner_type',
-								'value'   => array('animated'),
-								'compare' => 'IN'
-							)
-						)
-					),
-				Field::make('image', 'floating_image_1', 'Floating Image[1]')->set_width(20)
-					->set_conditional_logic(
-						array(
-							array(
-								'field'   => 'hero_banner_type',
-								'value'   => array('animated'),
-								'compare' => 'IN'
-							)
-						)
-					),
-				Field::make('image', 'floating_image_2', 'Floating Image[2]')->set_width(20)
-					->set_conditional_logic(
-						array(
-							array(
-								'field'   => 'hero_banner_type',
-								'value'   => array('animated'),
-								'compare' => 'IN'
-							)
-						)
-					),
-				Field::make('image', 'logo_image_1', 'Logo Image[1]')->set_width(20)
-					->set_conditional_logic(
-						array(
-							array(
-								'field'   => 'hero_banner_type',
-								'value'   => array('animated'),
-								'compare' => 'IN'
-							)
-						)
-					),
-				Field::make('image', 'logo_image_2', 'Logo Image[2]')->set_width(20)
-					->set_conditional_logic(
-						array(
-							array(
-								'field'   => 'hero_banner_type',
-								'value'   => array('animated'),
-								'compare' => 'IN'
-							)
-						)
-					),
-				Field::make('image', 'logo_image_3', 'Logo Image[3]')->set_width(20)
-					->set_conditional_logic(
-						array(
-							array(
-								'field'   => 'hero_banner_type',
-								'value'   => array('animated'),
-								'compare' => 'IN'
-							)
-						)
-					),
-
-				Field::make('image', 'revealing_bg_1', 'Background Image 1')->set_width(20)
-					->set_conditional_logic(
-						array(
-							array(
-								'field'   => 'hero_banner_type',
-								'value'   => array('revealing_heading'),
-								'compare' => 'IN'
-							)
-						)
-					),
-				Field::make('image', 'revealing_bg_2', 'Background Image 2')->set_width(20)
-					->set_conditional_logic(
-						array(
-							array(
-								'field'   => 'hero_banner_type',
-								'value'   => array('revealing_heading'),
-								'compare' => 'IN'
-							)
-						)
-					),
-
-			),
-			$PostMeta->_button('cta', 'Button')
+				$PostMeta->_button('cta', 'BUTTON[1]')
+			), $PostMeta->_button('cta_2', 'BUTTON[2]')
 		)
 	);
 
