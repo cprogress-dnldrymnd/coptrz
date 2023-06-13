@@ -10,7 +10,7 @@ $Modules = new Modules();
 
 <section class="product-modal" id="productModal">
 
-    <div id="productModalDetails">
+    <div id="productModalDetails" class="container">
 
 
        
