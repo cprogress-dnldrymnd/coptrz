@@ -472,6 +472,8 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
                                                 )
 
                                             );
+
+                                            echo $GetData->product_price(get_the_ID());
                                             $DisplayData->description(
 
                                                 array(
