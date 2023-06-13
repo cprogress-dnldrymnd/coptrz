@@ -321,11 +321,7 @@ function modal_trigger() {
 	jQuery(document).on("click", '.product-modal-trigger-open', function (event) {
 		event.preventDefault();
 		$product = jQuery(this).attr('product');
-		console.log($product);
 		ajax_product($product, jQuery(this));
-
-
-
 	});
 
 	jQuery(document).on("click", '.close-button', function (event) {
@@ -803,8 +799,6 @@ function variation_radio() {
 	jQuery('.is-variation-radio .variations select option:eq(1)').attr('selected', 'selected');
 	$val = jQuery('.variation-radio input:first-child').val();
 
-	console.log($val);
-
 	jQuery('.ajax_add_to_cart').attr('data-product_id', $val);
 
 
@@ -866,7 +860,6 @@ function parallax() {
 			var $bgobj = jQuery(this); // assigning the object
 			var $transform = 0;
 			var $lastScrollTop = 0;
-			//console.log($image_position);
 			jQuery(window).scroll(function () {
 				if ($screen > 991) {
 					$scroll = jQuery(this).scrollTop();
@@ -911,7 +904,6 @@ function website_spacings() {
 	if ($hero_banner.length > 0) {
 		if (window.innerWidth > 991) {
 			$hero_banner_height = jQuery('.hero-banner-animated .hero-banner').outerHeight();
-			console.log($hero_banner_height);
 			jQuery('.hero-banner-animated main').css('padding-top', $hero_banner_height);
 		}
 	} else {
