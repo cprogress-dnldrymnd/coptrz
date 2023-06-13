@@ -92,7 +92,7 @@ else { ?>
 		echo 'product-cat';
 	}
 	else {
-		echo product_slider();
+		echo product_slider(false);
 		echo 'product-vendrs';
 	}
 	get_template_part('template-parts/woocommerce/archive', 'modules');
