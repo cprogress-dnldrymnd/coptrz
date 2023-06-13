@@ -229,7 +229,7 @@ function product_slider($is_shop = false)
 
                     'taxonomy' => 'pa_vendors',
 
-                    'field'    => 'slug',
+                    'field'    => 'term_id',
 
                     'terms'    => array($term->slug),
 
