@@ -754,9 +754,6 @@ function display_filter($post_count, $display_type, $class = '', $param = '')
 {
     if ($post_count > 4) {
         ob_start();
-        if(!is_product_category()) {
-            $display_type = 
-        }
         ?>
         <div class="display-filter <?= $class ?>">
             <ul class="list-inline d-flex justify-content-end">
