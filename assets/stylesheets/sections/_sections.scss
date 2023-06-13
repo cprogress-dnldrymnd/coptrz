@@ -662,10 +662,10 @@ section.product-slider {
                     }
 
                     .content-box {
-                        padding: 2.625rem 2vw calc(60px + 2.625rem);
+                        padding: 2rem 2vw calc(60px + 2rem);
 
                         @include responsive(xs) {
-                            padding: 1.5rem 1.5rem calc(60px + 1.5rem);
+                            padding: 1.5rem 1.5rem calc(80px + 1.5rem);
                         }
                     }
                 }
