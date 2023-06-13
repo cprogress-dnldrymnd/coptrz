@@ -423,7 +423,7 @@ function add_to_cart_form_shortcode($atts)
 			var_dump($wp_query);
 		}
 
-		$single_product->the_post();
+		$wp_query->the_post();
 
 
 			?>
