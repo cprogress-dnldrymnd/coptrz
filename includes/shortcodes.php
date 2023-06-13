@@ -416,7 +416,7 @@ function add_to_cart_form_shortcode($atts)
 
 	$wp_query = $single_product;
 
-	if(get_current_user_id == 1) {
+	if(get_current_user_id() == 1) {
 		var_dump($wp_query);
 	}
 
