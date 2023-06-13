@@ -242,7 +242,13 @@ function product_slider($is_shop = false)
 
 
             }
-          echo get_current_user_id( );
+           
+            if(get_current_user_id() == 1) {
+                echo '<pre>';
+                var_dump($args);
+                echo '</pre>';
+
+            }
 
 
 
