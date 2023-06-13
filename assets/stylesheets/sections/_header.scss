@@ -310,15 +310,7 @@ header {
 						padding-right: 10px;
 					}
 
-					@media(max-width: 1250px) {
-						letter-spacing: 0;
-						font-size: 13px;
-						padding-left: 0.5rem;
-						padding-right: 0.5rem;
-						padding-top: 10px;
-						padding-bottom: 10px;
-					}
-
+		
 					@include responsive(xs-md) {
 						padding-left: 5px !important;
 						padding-right: 5px !important;
