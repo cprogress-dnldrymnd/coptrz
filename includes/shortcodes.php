@@ -418,7 +418,7 @@ function add_to_cart_form_shortcode($atts)
 
 
 	wp_enqueue_script('wc-single-product');
-	while ($single_product->have_posts()) {
+	while ($wp_query->have_posts()) {
 		if (get_current_user_id() == 1) {
 			var_dump($wp_query);
 		}
