@@ -452,7 +452,7 @@ class GetData
 					</div>
 			<?php }
 			else { ?>
-					<div class="out-of-stock">
+					<div class="on-backorder">
 						<p>
 							ON BACKORDER
 						</p>
