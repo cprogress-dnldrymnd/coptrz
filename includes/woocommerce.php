@@ -454,7 +454,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                                             ),
 
-                                            'position-relative image-cover-transform over'
+                                            'position-relative image-cover-transform overflow-hidden'
 
                                         );
                                         ?>
