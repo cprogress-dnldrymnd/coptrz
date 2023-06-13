@@ -442,7 +442,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                                 <div class="product-box <?= $wrapper_class_3 ?>">
 
-                                    <div class="inner background-white d-block content-margin style-2"
+                                    <div class="inner background-white d-block content-margin style-2 overflow-hidden"
                                         href="<?= get_permalink(get_the_ID()) ?>">
 
                                         <?php
