@@ -448,7 +448,6 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
                                         <?php
 
 
-
                                         $DisplayData->image(
 
                                             array(
@@ -459,7 +458,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                                             ),
 
-                                            'position-relative mb-3 ' . $image_class
+                                            'position-relative ' . $image_class
 
                                         );
                                         ?>
