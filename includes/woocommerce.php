@@ -177,6 +177,13 @@ function product_slider($is_shop = false)
 
 
 
+    if (get_current_user_id() == 1) {
+        echo '<pre>';
+        var_dump($args);
+        echo '</pre>';
+
+    }
+
 
     if (!empty($product_categories)) {
 
@@ -187,7 +194,6 @@ function product_slider($is_shop = false)
 
 
             $product_slider_items_width = get__term_meta($category->term_id, 'product_slider_items_width');
-
 
 
 
@@ -242,14 +248,7 @@ function product_slider($is_shop = false)
 
 
             }
-           
-            if(get_current_user_id() == 1) {
-                echo '<pre>';
-                var_dump($args);
-                echo '</pre>';
-
-            }
-
+         
 
 
             $products = new WP_Query($args);
