@@ -296,6 +296,7 @@ header {
 					color: inherit;
 					font-weight: 500;
 					line-height: 1;
+					text-decoration: none !important;
 
 					@media(max-width: 1599px) {
 						padding-left: 1rem;
@@ -345,6 +346,7 @@ header {
 		.header-icons {
 			position: relative;
 			z-index: 1;
+
 			ul {
 				li {
 					a {
@@ -362,15 +364,15 @@ header {
 
 						}
 
-				
+
 					}
 
 					@include not-last-child {
 						margin-right: 1.5vw;
 
-						@media(max-width: 1699px) {
-							margin-right: 8px;
-						}
+						//@media(max-width: 1699px) {
+						//margin-right: 8px;
+						//	}
 
 						@include responsive(xs-sm) {
 							margin-right: 1.5rem;

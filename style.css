@@ -13551,7 +13551,8 @@ header {
     text-transform: initial !important;
     color: inherit;
     font-weight: 500;
-    line-height: 1; }
+    line-height: 1;
+    text-decoration: none !important; }
     @media (max-width: 1599px) {
       header .col-right .column-holder .button-box a,
       header .col-right .column-holder .button-box button {
@@ -13602,9 +13603,6 @@ header {
             height: 25px; } }
     header .col-right .header-icons ul li:not(:last-child) {
       margin-right: 1.5vw; }
-      @media (max-width: 1699px) {
-        header .col-right .header-icons ul li:not(:last-child) {
-          margin-right: 8px; } }
       @media screen and (max-width: 991px) {
         header .col-right .header-icons ul li:not(:last-child) {
           margin-right: 1.5rem; } }
