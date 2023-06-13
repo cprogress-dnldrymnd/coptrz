@@ -814,7 +814,7 @@ function display_filter($post_count, $display_type, $class = '', $param = '')
 
         <?php if (isset($_GET['id'])) { ?>
             <script>
-                jQuery(document).animate({
+                jQuery('body').animate({
                     scrollTop: jQuery("#<?= $_GET['id'] ?>").offset().top
                 }, 2000);
             </script>
