@@ -884,25 +884,25 @@ section.product-modal {
     }
 
     .product-modal-body {
-        top: 0;
-        bottom: 0;
-        z-index: 1;
-        height: auto;
-        min-height: 100vh;
-        overflow-x: hidden;
-        overflow-y: auto;
-        right: 0;
-        @include scrollbar_style;
+        @include responsive(lg) {
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            height: auto;
+            min-height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            right: 0;
+            @include scrollbar_style;
 
-        >.container {
-            min-height: calc(100vh - 65px);
-            background-color: var(--white-color);
+            >.container {
+                min-height: calc(100vh - 65px);
+                background-color: var(--white-color);
 
-            >.inner {
-                padding-left: 2.5vw;
-                padding-right: 2.5vw;
+                >.inner {
+                    padding-left: 2.5vw;
+                    padding-right: 2.5vw;
 
-                @include responsive(lg) {
                     margin-top: 65px;
                     padding-bottom: 200px;
                     padding-top: 120px;
