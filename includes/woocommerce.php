@@ -412,7 +412,7 @@ function product_slider_section($args, $product_slider_items_width, $display_typ
 
                     </div>
 
-                    <?= display_filter($products->found_posts, $display_type, 'col-auto mt-3', '#term-' . $category->slug); ?>
+                    <?= display_filter($products->found_posts, $display_type, 'col-auto mt-3', '?id=term-' . $category->slug); ?>
 
                 </div>
 
