@@ -233,17 +233,17 @@ function product_modal_ajax()
 	<?php
 	if ($type == 'variable') {
 		$variations = $product->get_available_variations();
-		if (get_current_user_id() == 1) {
-			foreach ($variations as $variation) {
-				echo '<pre>';
-				var_dump($variation);
-				echo '</pre>';
+		if(get_current_user_id(  ) ==1) {
+				foreach ($variations as $variation) {
+					echo '<pre>';
+					var_dump($variation);
+					echo '</pre>';
 			}
 		}
 		?>
 		<script>
 			<?php foreach ($variations as $variation) { ?>
-				var $variation_name = '<?= $variation['attributes']['attribute_course-type'] ?>';
+				var $variation_name = '<?= $variation['attributes'][0] ?>';
 				var $variation_id = '<?= $variation['variation_id']; ?>';
 
 				console.log($variation_name);
