@@ -950,12 +950,6 @@ section.product-modal {
         }
     }
 
-    .woocommerce-variation-add-to-cart {
-        flex-wrap: wrap !important;
-        >* {
-            margin-bottom: 1rem;
-        }
-    }
 }
 
 .product-add-to-cart-holder.product-add-to-cart-holder {
@@ -1391,11 +1385,19 @@ section.add-to-cart-section {
     }
 }
 
-.single-product {
+body.single-product {
 
     #wc-stripe-payment-request-wrapper,
     .wc-stripe-payment-request-button {
         display: none !important;
+    }
+
+    .woocommerce-variation-add-to-cart {
+        flex-wrap: wrap !important;
+
+        >* {
+            margin-bottom: 1rem;
+        }
     }
 
     .product-add-to-cart-holder.product-add-to-cart-holder {
