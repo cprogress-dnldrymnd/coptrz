@@ -336,7 +336,8 @@ class GetData
 		?>
 		<?php if ($stock_status == 'instock') { ?>
 
-			<div class="inner product-add-to-cart-holder product-<?= $type ?> <?= $product->is_sold_individually() ? 'sold-individually' : '' ?>">
+			<div
+				class="inner product-add-to-cart-holder product-<?= $type ?> <?= $product->is_sold_individually() ? 'sold-individually' : '' ?>">
 				<?php if ($price) { ?>
 					<div
 						class="row g-3 align-items-center justify-content-between <?= $variation_radio ? 'is-variation-radio' : 'is-not-variation-radio' ?>">
@@ -382,12 +383,7 @@ class GetData
 								<?php } ?>
 								<div class="add-to-cart-box">
 									<?php
-									if ($type == 'variable') {
-										echo do_shortcode('[add_to_cart_form id="' . $product_id . '"]');
-									}
-									else {
-										echo do_shortcode('[add_to_cart_form  id="' . $product_id . '"]');
-									}
+									echo do_shortcode('[add_to_cart_form id="' . $product_id . '"]');
 									?>
 								</div>
 							</div>
