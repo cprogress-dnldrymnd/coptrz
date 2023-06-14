@@ -281,8 +281,6 @@ add_filter('register_post_type_args', 'modify_cpt_slug', 10, 2);
 
 function action_wp_footer_scripts()
 {
-
-
 	$ms_tag = get__post_meta('use_microsoft_ads_uet_tag');
 	$linkedin_tag = get__post_meta('use_linkedin_insight_tag');
 	if ($ms_tag) {
@@ -317,7 +315,6 @@ function action_wp_footer_scripts()
 	?>
 	<script>
 		jQuery(document).ready(function () {
-			mega_menu();
 			<?php if (is_user_logged_in()) { ?>
 				<?php if (!isset($_GET['customer_type'])) { ?>
 					customer_type_modal();
@@ -326,14 +323,14 @@ function action_wp_footer_scripts()
 		});
 
 
-		function mega_menu() {
+		jQuery(document).ready(function () {
 			jQuery('li.mega-menu-item').on('open_panel', function () {
 				jQuery('header').addClass('mega-menu-opened');
 			});
 			jQuery('li.mega-menu-item').on('close_panel', function () {
 				jQuery('header').removeClass('mega-menu-opened');
 			});
-		}
+		});
 
 		<?php if (is_user_logged_in()) { ?>
 			function customer_type_modal() {
