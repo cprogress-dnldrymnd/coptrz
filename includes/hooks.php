@@ -322,6 +322,8 @@ function action_wp_footer_scripts()
 			<?php } ?>
 		});
 
+
+
 		<?php if (is_user_logged_in()) { ?>
 			function customer_type_modal() {
 				if (jQuery('#customerType').length > 0) {

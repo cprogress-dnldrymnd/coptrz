@@ -62,5 +62,14 @@ get_template_part('template-parts/woocommerce/sidecart');
 <?php wp_footer(); ?>
 </body>
 </html>
-
 <?php do_action('wp_footer_scripts') ?>
+<script>
+	jQuery(document).ready(function () {
+		jQuery('li.mega-menu-item').on('open_panel', function () {
+			jQuery('header').addClass('mega-menu-opened');
+		});
+		jQuery('li.mega-menu-item').on('close_panel', function () {
+			jQuery('header').removeClass('mega-menu-opened');
+		});
+	});
+</script>
