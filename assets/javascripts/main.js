@@ -31,6 +31,13 @@ jQuery(document).ready(function ($) {
 	sidecart();
 
 	heyflow_button();
+
+	jQuery('li.mega-menu-item').on('open_panel', function () {
+		jQuery('header').addClass('mega-menu-opened');
+	});
+	jQuery('li.mega-menu-item').on('close_panel', function () {
+		jQuery('header').removeClass('mega-menu-opened');
+	});
 });
 
 function image_center_tab() {
