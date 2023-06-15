@@ -428,8 +428,7 @@ class ModulesFields extends GetData
 			$this->module_fields(
 				array(
 					Field::make('html', 'seperator_1')->set_html('<label>CONTENTS</label>')->set_classes('seperator '),
-					Field::make('multiselect', 'template', 'Template')
-						->set_options($this->get_posts('product', 'Select Template')),
+					Field::make('html', 'seperator_2')->set_html('<h2> This section will display featured products </h2>'),
 				),
 			)
 		);
