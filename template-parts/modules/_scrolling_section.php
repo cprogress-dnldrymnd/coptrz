@@ -67,7 +67,7 @@ else {
 
                                             <div class="image-box d-block d-lg-none">
 
-                                                <img src="<?= get_the_post_thumbnail_url($featured_post, 'large') ?>" alt="<?= get_the_title($featured_post) ?>">
+                                                <img decoding="async" class="jetpack-lazy-image" src="<?= get_the_post_thumbnail_url($featured_post, 'large') ?>" alt="<?= get_the_title($featured_post) ?>">
 
                                             </div>
 
@@ -129,7 +129,7 @@ else {
 
                             <div class="image-box featured-post-image" data-target="#featured-post-<?= $key ?>">
 
-                                <img src="<?= get_the_post_thumbnail_url($featured_post, 'large') ?>"
+                                <img decoding="async" class="jetpack-lazy-image" src="<?= get_the_post_thumbnail_url($featured_post, 'large') ?>"
                                     alt="<?= get_the_title($featured_post) ?>">
 
                             </div>
