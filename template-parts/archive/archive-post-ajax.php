@@ -3,23 +3,16 @@
 $DisplayData = new DisplayData;
 
 $SVG = new SVG;
-
-$suggested_articles = get__theme_option('suggested_articles');
-
 $taxonomy = 'category';
-
 if (is_home()) {
 
     $post_type = 'post';
 
 }
-
 else {
 
     $term = get_queried_object();
-
 }
-
 ?>
 
 

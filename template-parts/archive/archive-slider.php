@@ -86,7 +86,7 @@ else if (is_post_type_archive('events')) {
 
                         if (is_home()) {
 
-                            $post_id = $item['id'];
+                            $post_id = $item;
 
                             $meta1 = get_the_date('m/d/Y', $post_id);
 
