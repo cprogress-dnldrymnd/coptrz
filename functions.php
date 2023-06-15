@@ -5,7 +5,7 @@ if (!session_id()) {
 /*-----------------------------------------------------------------------------------*/
 /* Define the version so we can easily replace it throughout the theme
 /*-----------------------------------------------------------------------------------*/
-define('TISSUE-PAPER', 1.0);
+define('coptz', 1.0);
 define('theme_dir', get_template_directory_uri() . '/');
 define('assets_dir', theme_dir . '/assets/');
 define('image_dir', assets_dir . '/images/');
@@ -186,18 +186,21 @@ function get__post_thumbnail_id($post_id)
 /*-----------------------------------------------------------------------------------*/
 function enqueue_scripts()
 {
-	wp_enqueue_style('tissue-paper-swiper-css', vendor_dir . 'swiper/swiper-bundle.min.css');
-	wp_enqueue_style('tissue-paper-data-fancybox-css', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css');
-	wp_enqueue_style('tissue-paper-style', theme_dir . 'style.css');
+	wp_enqueue_style('coptz-swiper-css', vendor_dir . 'swiper/swiper-bundle.min.css');
+	wp_enqueue_style('coptz-data-fancybox-css', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css');
+	wp_enqueue_style('coptz-style', theme_dir . 'style.css');
 
 	wp_enqueue_script('jquery');
-	wp_enqueue_script('tissue-paper-bootstrap-js', vendor_dir . 'bootstrap/bootstrap.min.js');
-	wp_enqueue_script('tissue-paper-swiper-js', vendor_dir . 'swiper/swiper-bundle.min.js');
-	//wp_enqueue_script('tissue-paper-main-fontawesome-js', vendor_dir . 'fontawesome/all.min.js');
-	wp_enqueue_script('tissue-paper-aos-js', vendor_dir . 'aos/aos.js');
-	wp_enqueue_script('tissue-paper-gsap-js', vendor_dir . 'gsap/gsap.min.js');
-	wp_enqueue_script('tissue-paper-data-fancybox-js', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js');
-	wp_enqueue_script('tissue-paper-js', assets_dir . 'javascripts/main.js');
+	wp_enqueue_script('coptz-bootstrap-js', vendor_dir . 'bootstrap/bootstrap.min.js');
+	wp_enqueue_script('coptz-swiper-js', vendor_dir . 'swiper/swiper-bundle.min.js');
+	//wp_enqueue_script('coptz-main-fontawesome-js', vendor_dir . 'fontawesome/all.min.js');
+	//wp_enqueue_script('coptz-aos-js', vendor_dir . 'aos/aos.js');
+	if (is_front_page()) {
+		wp_enqueue_script('coptz-gsap-js', vendor_dir . 'gsap/gsap.min.js');
+
+	}
+	wp_enqueue_script('coptz-data-fancybox-js', vendor_dir . 'fancybox/jquery.fancybox.min.js');
+	wp_enqueue_script('coptz-js', assets_dir . 'javascripts/main.js');
 
 	$Theme_Options = new Theme_Options();
 	if ($Theme_Options->disable_gutenberg) {
