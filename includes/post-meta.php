@@ -1158,6 +1158,7 @@ Container::make('term_meta', __('Category Properties'))
 						Field::make('textarea', 'description', 'Description'),
 						Field::make('text', 'link', 'Link'),
 						Field::make('image', 'image', 'Image'),
+						Field::make('checkbox', 'hide_vendor', 'Hide Vendor On Slider'),
 
 					)
 				)
