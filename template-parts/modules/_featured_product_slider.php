@@ -6,7 +6,7 @@ $Helpers = new Helpers;
 
 $GetData = new GetData;
 
-$featured_products = $module['featured_products'];
+$featured_products = wc_get_featured_product_ids();
 ?>
 <?php if ($featured_products) { ?>
     <div class="container-fluid p-0">
@@ -15,13 +15,13 @@ $featured_products = $module['featured_products'];
                 <div class="swiper-wrapper align-items-center">
                     <?php foreach ($featured_products as $key => $featured_product) { ?>
                         <?php
-                        $product = wc_get_product($featured_product['id']);
+                        $product = wc_get_product($featured_product);
                         $vendor = get_the_terms($product->get_id(), 'pa_vendors');
                         if($vendor) {
                            $vendor_id = $vendor[0]->term_id;
                         }
                         $vendor_image = get__term_meta($vendor_id, 'featured_product_image');
-                        $image = get_the_post_thumbnail_url($featured_product['id'], 'large');
+                        $image = get_the_post_thumbnail_url($featured_product, 'large');
                         $image_url = $image ? $image : wp_get_attachment_image_url(get__theme_option('placeholder_image'), 'large');
                         ?>
                         <div class="swiper-slide">
@@ -56,12 +56,12 @@ $featured_products = $module['featured_products'];
                                                 'content-margin'
                                             );
                                             global $product_id_global;
-                                            $product_id_global = $featured_product['id'];
+                                            $product_id_global = $featured_product;
                                             ?>
-                                            <?= $GetData->add_to_cart($featured_product['id']) ?>
+                                            <?= $GetData->add_to_cart($featured_product) ?>
                                             <?php if($product->get_price_html()) { ?>
                                             <div class="button-box button-accent">
-                                                <a href="<?= get_permalink($featured_product['id']) ?>">VIEW PRODUCT</a>
+                                                <a href="<?= get_permalink($featured_product) ?>">VIEW PRODUCT</a>
                                             </div>
                                             <?php } ?>
                                         </div>
