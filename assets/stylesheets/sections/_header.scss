@@ -444,6 +444,7 @@ header {
 
 		&.background-transparent {
 			color: var(--white-color);
+
 			.site-logo {
 				svg {
 					fill: var(--white-color);
@@ -557,7 +558,7 @@ header {
 
 	.background-transparent {
 		background-color: var(--black-color);
-		
+
 		.navbar-nav {
 			color: var(--white-color) !important;
 		}
@@ -909,7 +910,6 @@ body {
 
 		>li.mega-menu-item {
 			flex: 0 0 auto;
-			max-width: 33.33333% !important;
 			padding-top: 0 !important;
 			padding-bottom: 0 !important;
 
@@ -927,6 +927,10 @@ body {
 					height: auto;
 				}
 			}
+
+			@include responsive(md-lg) {
+				max-width: 33.33333% !important;
+			}
 		}
 	}
 }
@@ -939,7 +943,9 @@ body {
 
 			.col-right .column-holder .button-box,
 			.col-right .header-icons ul li {
-				a, button {
+
+				a,
+				button {
 					color: var(--primary-color);
 				}
 			}
@@ -1108,5 +1114,12 @@ body {
 
 	@media(max-width: 1100px) {
 		margin-left: 4px !important;
+	}
+}
+
+#mega-menu-wrap-mobile-menu #mega-menu-mobile-menu li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu ul.mega-sub-menu {
+	@include responsive(xs-sm) {
+		flex-direction: column;
+
 	}
 }
