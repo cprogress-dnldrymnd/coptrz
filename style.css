@@ -14095,7 +14095,15 @@ body.hero-banner-revealing_heading header .header-main:before {
 
 @media screen and (max-width: 991px) {
   #mega-menu-wrap-mobile-menu #mega-menu-mobile-menu li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu ul.mega-sub-menu {
-    flex-direction: column; } }
+    flex-direction: column; }
+    #mega-menu-wrap-mobile-menu #mega-menu-mobile-menu li.mega-menu-item.mega-menu-megamenu ul.mega-sub-menu ul.mega-sub-menu img {
+      max-width: 150px; } }
+
+.mega-block-title {
+  font-size: 14px !important;
+  color: var(--black-color) !important;
+  font-weight: 500 !important;
+  text-align: center !important; }
 
 footer {
   position: relative;
