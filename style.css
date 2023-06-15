@@ -11210,28 +11210,6 @@ select option {
     background-position: center;
     background-repeat: no-repeat; }
 
-section.featured-boxes .featured-boxes-holder .column-holder {
-  padding: 5% 10% 37% 10%;
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
-  -ms-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms; }
-  section.featured-boxes .featured-boxes-holder .column-holder > div:not(:last-child) {
-    margin-bottom: 10px; }
-  section.featured-boxes .featured-boxes-holder .column-holder .heading-box .prefix,
-  section.featured-boxes .featured-boxes-holder .column-holder .heading-box h4 {
-    margin-bottom: 10px; }
-  section.featured-boxes .featured-boxes-holder .column-holder:hover, section.featured-boxes .featured-boxes-holder .column-holder:active, section.featured-boxes .featured-boxes-holder .column-holder:focus {
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    transform: translateY(-10px); }
-
 .close-button {
   border: none;
   background-color: transparent;
@@ -15324,5 +15302,27 @@ section.search-section .filter-holder {
     background-color: var(--accent-color); }
     .login-form .nav-tabs .nav-link.active h3 {
       color: var(--white-color) !important; }
+
+section.featured-boxes .featured-boxes-holder .column-holder {
+  padding: 5% 10% 37% 10%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms; }
+  section.featured-boxes .featured-boxes-holder .column-holder > div:not(:last-child) {
+    margin-bottom: 10px; }
+  section.featured-boxes .featured-boxes-holder .column-holder .heading-box .prefix,
+  section.featured-boxes .featured-boxes-holder .column-holder .heading-box h4 {
+    margin-bottom: 10px; }
+  section.featured-boxes .featured-boxes-holder .column-holder:hover, section.featured-boxes .featured-boxes-holder .column-holder:active, section.featured-boxes .featured-boxes-holder .column-holder:focus {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px); }
 
 /*# sourceMappingURL=style.css.map */

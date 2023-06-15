@@ -1392,36 +1392,6 @@ select option {
     }
 }
 
-section.featured-boxes {
-    .featured-boxes-holder {
-        .column-holder {
-            padding: 5% 10% 37% 10%;
-            border-radius: 20px;
-            overflow: hidden;
-            position: relative;
-            @include transition(300ms);
-
-            >div {
-                @include not-last-child {
-                    margin-bottom: 10px;
-                }
-            }
-
-            .heading-box {
-
-                .prefix,
-                h4 {
-                    margin-bottom: 10px;
-                }
-            }
-
-
-            @include on-event {
-                @include transform(translateY(-10px));
-            }
-        }
-    }
-}
 
 .close-button {
     border: none;

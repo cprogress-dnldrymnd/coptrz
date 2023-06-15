@@ -186,11 +186,12 @@ section.featured-product-slider {
     .product-add-to-cart-holder {
         .is-variation-radio {
             flex-direction: column;
-            > div {
+
+            >div {
                 width: 100%;
             }
         }
-    
+
 
         .price-box {
             color: var(--white-color) !important;
@@ -1706,6 +1707,37 @@ section.search-section {
                 }
             }
 
+        }
+    }
+}
+
+section.featured-boxes {
+    .featured-boxes-holder {
+        .column-holder {
+            padding: 5% 10% 37% 10%;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            @include transition(300ms);
+
+            >div {
+                @include not-last-child {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .heading-box {
+
+                .prefix,
+                h4 {
+                    margin-bottom: 10px;
+                }
+            }
+
+
+            @include on-event {
+                @include transform(translateY(-10px));
+            }
         }
     }
 }
