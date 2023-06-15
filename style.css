@@ -15313,16 +15313,12 @@ section.featured-boxes .featured-boxes-holder .column-holder {
   -ms-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms; }
+  section.featured-boxes .featured-boxes-holder .column-holder h4, section.featured-boxes .featured-boxes-holder .column-holder p {
+    color: var(--primary-color) !important; }
   section.featured-boxes .featured-boxes-holder .column-holder > div:not(:last-child) {
     margin-bottom: 10px; }
   section.featured-boxes .featured-boxes-holder .column-holder .heading-box .prefix,
   section.featured-boxes .featured-boxes-holder .column-holder .heading-box h4 {
     margin-bottom: 10px; }
-  section.featured-boxes .featured-boxes-holder .column-holder:hover, section.featured-boxes .featured-boxes-holder .column-holder:active, section.featured-boxes .featured-boxes-holder .column-holder:focus {
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    transform: translateY(-10px); }
 
 /*# sourceMappingURL=style.css.map */

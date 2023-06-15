@@ -1713,13 +1713,16 @@ section.search-section {
 
 section.featured-boxes {
     .featured-boxes-holder {
+      
         .column-holder {
             padding: 5% 10% 37% 10%;
             border-radius: 20px;
             overflow: hidden;
             position: relative;
             @include transition(300ms);
-
+            h4, p {
+                color: var(--primary-color) !important;
+            }
             >div {
                 @include not-last-child {
                     margin-bottom: 10px;
@@ -1735,9 +1738,7 @@ section.featured-boxes {
             }
 
 
-            @include on-event {
-                @include transform(translateY(-10px));
-            }
+            
         }
     }
 }
