@@ -219,16 +219,6 @@ function action_wp_footer()
 		echo $page_footer_scripts;
 	}
 	?>
-	<script>
-		jQuery(document).ready(function ($) {
-			setTimeout(function () {
-				AOS.init({
-					duration: 1000,
-					once: true,
-				});
-			}, 1000);
-		});
-	</script>
 	<?php
 }
 add_action('wp_footer', 'action_wp_footer');
