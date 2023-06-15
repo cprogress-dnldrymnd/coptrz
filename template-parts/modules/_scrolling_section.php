@@ -62,12 +62,12 @@ else {
                                     <li class="<?= $key == 0 ? 'active' : '' ?> transition-300 featured-post"
                                         id="featured-post-<?= $key ?>">
 
-                                        <a href="<?= get_permalink($featured_post['id']) ?>"
+                                        <a href="<?= get_permalink($featured_post) ?>"
                                             class="content-margin d-flex d-lg-block align-items-center">
 
                                             <div class="image-box d-block d-lg-none">
 
-                                                <img src="<?= get_the_post_thumbnail_url($featured_post['id'], 'large') ?>" alt="<?= get_the_title($featured_post['id']) ?>">
+                                                <img src="<?= get_the_post_thumbnail_url($featured_post, 'large') ?>" alt="<?= get_the_title($featured_post) ?>">
 
                                             </div>
 
@@ -79,7 +79,7 @@ else {
 
                                                     array(
 
-                                                        'heading' => get_the_title($featured_post['id']),
+                                                        'heading' => get_the_title($featured_post),
 
                                                         'tag'     => 'h3'
 
@@ -91,7 +91,7 @@ else {
 
                                                     array(
 
-                                                        'description' => get_the_excerpt($featured_post['id'])
+                                                        'description' => get_the_excerpt($featured_post)
 
                                                     ),
 
@@ -129,8 +129,8 @@ else {
 
                             <div class="image-box featured-post-image" data-target="#featured-post-<?= $key ?>">
 
-                                <img src="<?= get_the_post_thumbnail_url($featured_post['id'], 'large') ?>"
-                                    alt="<?= get_the_title($featured_post['id']) ?>">
+                                <img src="<?= get_the_post_thumbnail_url($featured_post, 'large') ?>"
+                                    alt="<?= get_the_title($featured_post) ?>">
 
                             </div>
 
