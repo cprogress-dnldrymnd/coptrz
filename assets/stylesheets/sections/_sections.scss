@@ -1713,7 +1713,6 @@ section.search-section {
 
 section.featured-boxes {
     .featured-boxes-holder {
-
         .column-holder {
             padding: 5% 10% 37% 10%;
             border-radius: 20px;
@@ -1741,7 +1740,9 @@ section.featured-boxes {
             }
 
 
-
+            @include on-event {
+                @include transform(translateY(-10px));
+            }
         }
     }
 }
