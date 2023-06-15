@@ -14272,10 +14272,10 @@ section.featured-product-slider .image-box {
   @media screen and (max-width: 991px) {
     section.featured-product-slider .image-box {
       padding: 50%; } }
-section.featured-product-slider .product-add-to-cart-holder .variation-radio {
-  border-radius: 0 !important; }
-  section.featured-product-slider .product-add-to-cart-holder .variation-radio label {
-    border-radius: 0 !important; }
+section.featured-product-slider .product-add-to-cart-holder .is-variation-radio {
+  flex-direction: column; }
+  section.featured-product-slider .product-add-to-cart-holder .is-variation-radio > div {
+    width: 100%; }
 section.featured-product-slider .product-add-to-cart-holder .price-box {
   color: var(--white-color) !important; }
 section.featured-product-slider .product-add-to-cart-holder.product-variable {

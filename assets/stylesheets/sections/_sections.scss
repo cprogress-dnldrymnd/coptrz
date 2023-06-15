@@ -184,14 +184,13 @@ section.featured-product-slider {
 
 
     .product-add-to-cart-holder {
-
-        .variation-radio {
-            border-radius: 0 !important;
-
-            label {
-                border-radius: 0 !important;
+        .is-variation-radio {
+            flex-direction: column;
+            > div {
+                width: 100%;
             }
         }
+    
 
         .price-box {
             color: var(--white-color) !important;
