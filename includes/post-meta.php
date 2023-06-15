@@ -457,7 +457,7 @@ class ModulesFields extends GetData
 				array(
 					Field::make('html', 'seperator_1')->set_html('<label>CONTENTS</label>')->set_classes('seperator '),
 
-					Field::make('multiselect', 'featured_posts', 'Template')
+					Field::make('multiselect', 'featured_posts', 'Featured Posts')
 						->set_options($PostMeta->get_posts('post', 'Select Posts')),
 
 				)
