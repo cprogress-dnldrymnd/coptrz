@@ -37,7 +37,7 @@ if ($post_is_global) {
                 </video>
             <?php }
             else { ?>
-                <img src="<?= wp_get_attachment_image_url($background, 'full') ?>" />
+                <img decoding="async" class="jetpack-lazy-image" src="<?= wp_get_attachment_image_url($background, 'full') ?>" />
             <?php } ?>
         </div>
         <div class="row align-items-end gy-4 position-relative">
