@@ -14805,7 +14805,8 @@ section.featured-boxes .featured-boxes-holder .column-holder {
   -ms-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms; }
-  section.featured-boxes .featured-boxes-holder .column-holder h4, section.featured-boxes .featured-boxes-holder .column-holder p {
+  section.featured-boxes .featured-boxes-holder .column-holder h4,
+  section.featured-boxes .featured-boxes-holder .column-holder p {
     color: var(--primary-color) !important; }
   section.featured-boxes .featured-boxes-holder .column-holder > div:not(:last-child) {
     margin-bottom: 10px; }
