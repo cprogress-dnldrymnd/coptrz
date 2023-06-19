@@ -189,6 +189,7 @@ function enqueue_scripts()
 	wp_enqueue_style('coptz-swiper-css', vendor_dir . 'swiper/swiper-bundle.min.css');
 	wp_enqueue_style('coptz-data-fancybox-css', vendor_dir . 'fancybox/jquery.fancybox.min.css');
 	wp_enqueue_style('coptz-style', theme_dir . 'style.css');
+	wp_enqueue_style('coptz-style2', theme_dir . 'style.min.css');
 
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('coptz-bootstrap-js', vendor_dir . 'bootstrap/bootstrap.min.js');
