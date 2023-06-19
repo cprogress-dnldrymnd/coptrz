@@ -13524,12 +13524,7 @@ body.hero-banner-revealing_heading header .header-main:before {
     -webkit-align-items: center;
     align-items: center; }
     .mega-menu-columns-3-of-12 > ul.mega-sub-menu > li.mega-menu-item a.mega-menu-link:before {
-      content: '';
-      display: inline-block !important;
-      width: 6px !important;
-      height: 6px !important;
-      background-color: var(--primary-color) !important;
-      margin: 0 1rem 0 0 !important; }
+      content: none !important; }
     .mega-menu-columns-3-of-12 > ul.mega-sub-menu > li.mega-menu-item a.mega-menu-link:hover, .mega-menu-columns-3-of-12 > ul.mega-sub-menu > li.mega-menu-item a.mega-menu-link:active, .mega-menu-columns-3-of-12 > ul.mega-sub-menu > li.mega-menu-item a.mega-menu-link:focus {
       color: var(--accent-color) !important; }
   .mega-menu-columns-3-of-12 > ul.mega-sub-menu > li.mega-menu-item:not(:last-child) {
