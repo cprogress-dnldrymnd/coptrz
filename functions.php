@@ -188,7 +188,7 @@ function enqueue_scripts()
 {
 	wp_enqueue_style('coptz-swiper-css', vendor_dir . 'swiper/swiper-bundle.min.css');
 	wp_enqueue_style('coptz-data-fancybox-css', vendor_dir . 'fancybox/jquery.fancybox.min.css');
-	wp_enqueue_style('coptz-style', theme_dir . 'style.css');
+	wp_enqueue_style('coptz-style', theme_dir . 'style.min.css');
 
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('coptz-bootstrap-js', vendor_dir . 'bootstrap/bootstrap.min.js');
@@ -199,7 +199,7 @@ function enqueue_scripts()
 		wp_enqueue_script('coptz-gsap-js', vendor_dir . 'gsap/gsap.min.js');
 	}
 	wp_enqueue_script('coptz-data-fancybox-js', vendor_dir . 'fancybox/jquery.fancybox.min.js');
-	wp_enqueue_script('coptz-js', assets_dir . 'javascripts/main.js');
+	wp_enqueue_script('coptz-js', assets_dir . 'javascripts/main.min.js');
 
 	$Theme_Options = new Theme_Options();
 	if ($Theme_Options->disable_gutenberg) {
