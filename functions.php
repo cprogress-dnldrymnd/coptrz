@@ -197,7 +197,6 @@ function enqueue_scripts()
 	//wp_enqueue_script('coptz-aos-js', vendor_dir . 'aos/aos.js');
 	if (is_front_page()) {
 		wp_enqueue_script('coptz-gsap-js', vendor_dir . 'gsap/gsap.min.js');
-
 	}
 	wp_enqueue_script('coptz-data-fancybox-js', vendor_dir . 'fancybox/jquery.fancybox.min.js');
 	wp_enqueue_script('coptz-js', assets_dir . 'javascripts/main.js');
