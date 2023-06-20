@@ -13549,7 +13549,7 @@ body.hero-banner-revealing_heading header .header-main:before {
   font-weight: 500 !important;
   text-align: center !important; }
 
-#mega-menu-wrap-mobile-menu .mega-menu-toggle.mega-menu-open + #mega-menu-mobile-menu {
+#mega-menu-wrap-mobile-menu .mega-menu-toggle + #mega-menu-mobile-menu {
   top: 112px; }
 
 footer {
