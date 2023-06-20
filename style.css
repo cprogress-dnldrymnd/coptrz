@@ -13206,8 +13206,9 @@ header {
   -o-transform: translateY(0);
   transform: translateY(0); }
 
-.scrolled-up header .header-inner {
-  margin-top: 0; }
+@media screen and (min-width: 992px) {
+  .scrolled-up header .header-inner {
+    margin-top: 0; } }
 @media screen and (min-width: 992px) {
   .scrolled-up .top-bar {
     visibility: hidden;
