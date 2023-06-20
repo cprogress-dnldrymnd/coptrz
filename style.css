@@ -13455,6 +13455,10 @@ body.hero-banner-revealing_heading header .header-main:before {
     @media screen and (min-width: 992px) {
       .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item {
         max-width: 33.33333% !important; } }
+    @media screen and (max-width: 991px) {
+      .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item {
+        padding-left: 0 !important;
+        padding-right: 0 !important; } }
 @media screen and (max-width: 991px) {
   .mega-menu-custom-boxes {
     margin-top: 1rem; } }
@@ -13614,8 +13618,10 @@ body.hero-banner-revealing_heading header .header-main:before {
   #mega-menu-wrap-header-menu #mega-menu-header-menu a.mega-menu-link .mega-description-group .mega-menu-title,
   #mega-menu-wrap-header-menu #mega-menu-header-menu a.mega-menu-link .mega-description-group .mega-menu-description,
   #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link,
-  #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
-    color: var(--white-color); } }
+  #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link,
+  #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title,
+  #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title {
+    color: var(--white-color) !important; } }
 
 footer {
   position: relative;
