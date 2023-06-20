@@ -13236,8 +13236,6 @@ header {
   .scrolled-up .background-transparent .header-icons {
     color: var(--white-color); }
 
-.scrolled-down #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
-  top: 100.3px; }
 @media screen and (min-width: 992px) {
   .scrolled-down .top-bar {
     -webkit-transform: translateY(-100%);
