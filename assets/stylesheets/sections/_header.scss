@@ -586,13 +586,6 @@ header {
 }
 
 .scrolled-down {
-	#mega-menu-wrap-header-menu .mega-menu-toggle {
-
-		&+#mega-menu-header-menu {
-			top: 100.3px;
-		}
-	}
-
 	.top-bar {
 		@include responsive(md-lg) {
 			@include transform(translateY(-100%));
