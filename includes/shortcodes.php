@@ -314,7 +314,7 @@ class Shortcodes
 			$login_link = '/login';
 			$login_text = 'Login';
 		}
-		return '<a class="px-0" style="text-decoration: underline" href="' . $login_link . '" >' . $login_text . '</a>';
+		return '<div class="button-box button-white"><a class="px-0" style="text-decoration: underline" href="' . $login_link . '" >' . $login_text . '</a></div>';
 
 	}
 
