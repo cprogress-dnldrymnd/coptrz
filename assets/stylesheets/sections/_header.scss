@@ -449,7 +449,16 @@ header {
 			padding-bottom: 2rem;
 		}
 
+		@include responsive(xs-sm) {
+			background-color: var(--primary-color) !important;
+			color: var(--white-color) !important;
 
+			.site-logo {
+				svg {
+					fill: var(--white-color);
+				}
+			}
+		}
 
 		@include responsive(xs) {
 			padding-top: 1rem;
@@ -1094,12 +1103,6 @@ body {
 				svg {
 					fill: var(--white-color);
 				}
-			}
-
-			@include responsive(xs-sm) {
-				background-color: var(--primary-color);
-				color: var(--white-color) !important;
-
 			}
 		}
 	}
