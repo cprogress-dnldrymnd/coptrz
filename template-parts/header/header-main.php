@@ -56,7 +56,7 @@ if (is_active_sidebar('top_bar_left') || is_active_sidebar('top_bar_right')) {
                 </div>
                 <div class="col-auto col-menu d-flex align-self-stretch align-items-center justify-content-end">
                     <div class="column-holder h-lg-100">
-                        <div class="d-none d-lg-block h-lg-100">
+                        <div class="h-lg-100">
                             <?php
                             wp_nav_menu(
                                 array(
