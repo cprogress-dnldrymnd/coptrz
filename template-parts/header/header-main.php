@@ -72,18 +72,6 @@ if (is_active_sidebar('top_bar_left') || is_active_sidebar('top_bar_right')) {
                             ?>
                         </div>
                     </div>
-
-                    <div class="d-none">
-                        <button class="navbar-toggler toggler-menu" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#coptrzMenu" aria-controls="coptrzMenu">
-                            <span class="navbar-toggler-icon">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </span>
-                        </button>
-                    </div>
-
                 </div>
                 <div class="col-auto col-right">
                     <div class="column-holder d-inline-flex align-items-center">
