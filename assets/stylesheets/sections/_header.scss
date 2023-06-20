@@ -867,7 +867,7 @@ body {
 					padding-left: calc(0.75rem + 10px);
 					padding-right: calc(0.75rem + 10px);
 					justify-content: space-between;
-					font-size: 15px !important;
+					font-size: 14px !important;
 					font-weight: 400 !important;
 					height: auto !important;
 					line-height: 1.4 !important;
@@ -1265,9 +1265,8 @@ body {
 #mega-menu-wrap-header-menu #mega-menu-header-menu>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item h4.mega-block-title {
 	@include responsive(xs-sm) {
 		color: var(--white-color) !important;
-		color: var(--white-color) !important;
 		font-weight: 400 !important;
-		font-size: 15px !important;
+		font-size: 12px !important;
 		text-align: left !important;
 	}
 }
