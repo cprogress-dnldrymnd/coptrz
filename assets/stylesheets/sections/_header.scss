@@ -886,6 +886,7 @@ body {
 					margin-left: auto;
 					margin-right: auto;
 				}
+
 				@include responsive(xs-sm) {
 					background-color: var(--black-color);
 				}
@@ -948,6 +949,7 @@ body {
 			}
 		}
 	}
+
 	@include responsive(xs-sm) {
 		margin-top: 1rem;
 	}
@@ -1158,7 +1160,7 @@ body {
 		}
 
 		&+#mega-menu-header-menu {
-					overflow: auto;
+			overflow: auto;
 			background: var(--black-color);
 			@include transition(500ms);
 			top: 0;
@@ -1173,7 +1175,9 @@ body {
 }
 
 #mega-menu-wrap-header-menu #mega-menu-header-menu a.mega-menu-link .mega-description-group .mega-menu-title,
-#mega-menu-wrap-header-menu #mega-menu-header-menu a.mega-menu-link .mega-description-group .mega-menu-description {
+#mega-menu-wrap-header-menu #mega-menu-header-menu a.mega-menu-link .mega-description-group .mega-menu-description,
+#mega-menu-wrap-header-menu #mega-menu-header-menu>li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link,
+#mega-menu-wrap-header-menu #mega-menu-header-menu>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link {
 	@include responsive(xs-sm) {
 		color: var(--white-color);
 	}
