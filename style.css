@@ -13457,8 +13457,8 @@ body.hero-banner-revealing_heading header .header-main:before {
       fill: var(--black-color); } }
 @media screen and (max-width: 991px) {
   .header-background-transparent header .header-main {
-    background-color: var(--white-color);
-    color: var(--primary-color); } }
+    background-color: var(--primary-color);
+    color: var(--white-color); } }
 
 .mega-menu-toggle {
   background-color: transparent !important; }

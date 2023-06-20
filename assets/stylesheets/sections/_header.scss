@@ -437,6 +437,8 @@ header {
 			padding-bottom: 2rem;
 		}
 
+	
+
 		@include responsive(xs) {
 			padding-top: 1rem;
 			padding-bottom: 1rem;
@@ -693,7 +695,7 @@ body {
 			width: 100%;
 			font-size: 16px;
 			line-height: 1;
-				border-radius: 0;
+			border-radius: 0;
 		}
 	}
 
@@ -978,8 +980,8 @@ body {
 			}
 
 			@include responsive(xs-sm) {
-				background-color: var(--white-color);
-				color: var(--primary-color);
+				background-color: var(--primary-color);
+				color: var(--white-color);
 
 			}
 		}
