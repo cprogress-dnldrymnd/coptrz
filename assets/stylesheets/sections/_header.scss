@@ -1225,7 +1225,7 @@ body {
 		&.mega-menu-open {
 			&+#mega-menu-header-menu {
 				@include transform(translateY(0));
-				top: 146.03;
+				top: 155.53px;
 
 				@include responsive(xs) {
 					top: 114px;
