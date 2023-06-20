@@ -1111,15 +1111,19 @@ body {
 #mega-menu-wrap-header-menu .mega-menu-toggle {
 
 	&.mega-menu-open {
-		&+#mega-menu-header-menu {}
+		&+#mega-menu-header-menu {
+			@include transform(translateY(0));
+		}
 	}
 
 	&+#mega-menu-header-menu {
 		@include transition(500ms);
-		top: 157.33px;
+		top: 0;
 		position: fixed;
 		left: 0;
 		right: 0;
-		bottom: 0;
+		height: 100vh;
+		display: block !important;
+		@include transform(translateY(-100%));
 	}
 }
