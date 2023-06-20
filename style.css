@@ -13294,9 +13294,16 @@ body.hero-banner-revealing_heading header .header-main:before {
   -ms-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms; }
+  .top-bar .button-box a,
+  .top-bar .button-box button {
+    text-decoration: none !important;
+    width: 100%; }
   @media screen and (max-width: 1199px) {
     .top-bar .container {
       max-width: 100%; } }
+  @media screen and (max-width: 991px) {
+    .top-bar .container {
+      padding: 0; } }
   .top-bar ul {
     margin-bottom: 0;
     list-style: none;

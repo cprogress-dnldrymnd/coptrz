@@ -686,9 +686,22 @@ body {
 	padding-bottom: 10px;
 	@include transition(500ms);
 
+	.button-box {
+
+		a,
+		button {
+			text-decoration: none !important;
+			width: 100%;
+		}
+	}
+
 	.container {
 		@include responsive(xs-md) {
 			max-width: 100%;
+		}
+
+		@include responsive(xs-sm) {
+			padding: 0;
 		}
 	}
 
