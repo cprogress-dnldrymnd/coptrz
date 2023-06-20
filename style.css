@@ -13357,11 +13357,11 @@ body.hero-banner-revealing_heading header .header-main:before {
         #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item {
           border-bottom: 1px solid #1b1b1b;
           line-height: 1.4 !important;
-          -webkit-transition: 300ms;
-          -moz-transition: 300ms;
-          -ms-transition: 300ms;
-          -o-transition: 300ms;
-          transition: 300ms;
+          -webkit-transition: opacity 300ms;
+          -moz-transition: opacity 300ms;
+          -ms-transition: opacity 300ms;
+          -o-transition: opacity 300ms;
+          transition: opacity 300ms;
           opacity: 0; } }
       #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item:nth-child(1) {
         transition-delay: 500ms; }
