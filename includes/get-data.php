@@ -249,7 +249,7 @@ class GetData
 			$customer_type = carbon_get_user_meta(get_current_user_id(), 'customer_type');
 		}
 		else {
-			$customer_type = $_SESSION['customer_type'];
+			$customer_type = 'business';
 		}
 
 		$product = wc_get_product($product_id);
@@ -286,7 +286,7 @@ class GetData
 			if ($product->get_price() == '0.00') {
 				$price = 'FREE';
 			}
-			return $price;
+			return $price . $c;
 		}
 	}
 

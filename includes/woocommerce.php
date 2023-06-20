@@ -67,6 +67,7 @@ function bbloomer_display_quantity_minus()
  * @how-to        Get CustomizeWoo.com FREE
  * @author        Rodolfo Melogli
  * @testedwith    WooCommerce 6
+ * 
  * @donate $9     https://businessbloomer.com/bloomer-armada/
  */
 
@@ -721,7 +722,7 @@ function action_woocommerce_cart_item_subtotal($old_display, $cart_item, $cart_i
         return $GetData->product_price_cart($cart_item['data']->get_id(), $cart_item['quantity']);
     }
     else {
-        return $old_display . ' Incl. VAT';
+        return $old_display . ' Excl. VAT';
     }
 }
 

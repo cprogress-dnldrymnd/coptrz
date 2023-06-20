@@ -1065,7 +1065,12 @@ body {
 				@include align-items(center);
 
 				@include before {
-					content: none !important;
+					content: '';
+					display: inline-block !important;
+					width: 6px !important;
+					height: 6px !important;
+					background-color: var(--primary-color) !important;
+					margin: 0 1rem 0 0 !important;
 				}
 
 				@include on-event {
