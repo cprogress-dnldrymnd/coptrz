@@ -308,11 +308,11 @@ class Shortcodes
 	{
 		if (is_user_logged_in()) {
 			$login_link = 'https://www.coptrzacademy-usp.io/';
-			$login_text = 'LOGIN';
+			$login_text = 'LOG IN';
 		}
 		else {
 			$login_link = '/login';
-			$login_text = 'LOGIN';
+			$login_text = 'LOG IN';
 		}
 		return '<div class="button-box button-white"><a class="px-0" style="text-decoration: underline" href="' . $login_link . '" >' . $login_text . '</a></div>';
 
