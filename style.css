@@ -13352,8 +13352,8 @@ body.hero-banner-revealing_heading header .header-main:before {
       position: static; }
       @media screen and (max-width: 991px) {
         #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item {
-          padding-top: 5px;
-          padding-bottom: 5px;
+          padding-top: 15px;
+          padding-bottom: 15px;
           border-bottom: 1px solid #1b1b1b;
           line-height: 1.4 !important; } }
       #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
