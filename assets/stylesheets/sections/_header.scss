@@ -548,8 +548,10 @@ header {
 .scrolled-up {
 
 	header {
-		.header-inner {
-			margin-top: 0;
+		@include responsive(md-lg) {
+			.header-inner {
+				margin-top: 0;
+			}
 		}
 	}
 
