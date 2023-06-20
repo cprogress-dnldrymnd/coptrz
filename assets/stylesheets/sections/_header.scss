@@ -727,6 +727,12 @@ body {
 		}
 	}
 
+	.top-bar-mobile {
+		p {
+			display: none;
+		}
+	}
+
 
 
 	@include responsive(xs-sm) {

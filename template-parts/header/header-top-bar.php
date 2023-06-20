@@ -7,7 +7,7 @@
                 </div>
             </div>
             <div class="col-sm-4 text-center">
-                <div class="column-holder top-bar-left">
+                <div class="column-holder top-bar-middle">
                     <?php dynamic_sidebar('top_bar_middle') ?>
                 </div>
             </div>
@@ -18,12 +18,12 @@
         </div>
         <div class="row d-flex d-lg-none g-0">
             <div class="col-6">
-                <div class="column-holder top-bar-left">
+                <div class="column-holder top-bar-left top-bar-mobile">
                     <?php dynamic_sidebar('top_bar_left_mobile') ?>
                 </div>
             </div>
             <div class="col-6 text-center">
-                <div class="column-holder top-bar-left">
+                <div class="column-holder top-bar-right top-bar-mobile">
                     <?php dynamic_sidebar('top_bar_right_mobile') ?>
                 </div>
             </div>
