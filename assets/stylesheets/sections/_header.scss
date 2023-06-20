@@ -571,10 +571,6 @@ header {
 
 		.header-icons {
 			color: var(--white-color);
-
-			@include responsive(xs-sm) {
-				color: var(--black-color);
-			}
 		}
 	}
 }

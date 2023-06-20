@@ -13227,9 +13227,6 @@ header {
     color: var(--white-color) !important; }
   .scrolled-up .background-transparent .header-icons {
     color: var(--white-color); }
-    @media screen and (max-width: 991px) {
-      .scrolled-up .background-transparent .header-icons {
-        color: var(--black-color); } }
 
 .scrolled-down #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
   top: 100.3px; }
@@ -13552,6 +13549,11 @@ body.hero-banner-revealing_heading header .header-main:before {
   text-align: center !important; }
 
 #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
   top: 157.33px;
   position: fixed;
   left: 0;
