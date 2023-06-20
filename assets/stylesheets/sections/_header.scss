@@ -1099,7 +1099,11 @@ body {
 		display: none !important;
 	}
 
-	@include responsive(xs-sm) {}
+	@include responsive(xs-sm) {
+		font-size: 14px !important;
+		font-style: normal;
+		margin-top: 1rem;
+	}
 }
 
 .mega-menu-columns-3-of-12 {
