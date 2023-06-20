@@ -13549,7 +13549,8 @@ body.hero-banner-revealing_heading header .header-main:before {
   #mega-menu-wrap-header-menu #mega-menu-header-menu a.mega-menu-link .mega-description-group .mega-menu-description {
     font-size: 14px !important;
     font-style: normal;
-    margin-top: 1rem; } }
+    margin-top: 1rem;
+    padding-right: 15vw; } }
 
 .mega-menu-columns-3-of-12 > ul.mega-sub-menu > li.mega-menu-item {
   padding: 0 !important; }
