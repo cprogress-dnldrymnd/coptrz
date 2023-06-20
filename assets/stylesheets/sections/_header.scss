@@ -775,7 +775,11 @@ body {
 
 	#mega-menu-header-menu {
 		position: static;
-
+		a {
+			@include responsive(xs-sm) {
+				color: var(--white-color) !important;
+			}
+		}
 		>li.mega-menu-item {
 			position: static;
 
@@ -1230,5 +1234,11 @@ body {
 		font-weight: 400 !important;
 		font-size: 15px !important;
 		text-align: left !important;
+	}
+}
+
+#mega-menu-wrap-header-menu #mega-menu-header-menu li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row .mega-menu-column {
+	@include responsive(xs-sm) {
+		margin-bottom: 1rem;
 	}
 }

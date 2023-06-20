@@ -13348,6 +13348,9 @@ body.hero-banner-revealing_heading header .header-main:before {
   height: 100%; }
   #mega-menu-wrap-header-menu #mega-menu-header-menu {
     position: static; }
+    @media screen and (max-width: 991px) {
+      #mega-menu-wrap-header-menu #mega-menu-header-menu a {
+        color: var(--white-color) !important; } }
     #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item {
       position: static; }
       @media screen and (max-width: 991px) {
@@ -13650,6 +13653,10 @@ body.hero-banner-revealing_heading header .header-main:before {
     font-weight: 400 !important;
     font-size: 15px !important;
     text-align: left !important; } }
+
+@media screen and (max-width: 991px) {
+  #mega-menu-wrap-header-menu #mega-menu-header-menu li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row .mega-menu-column {
+    margin-bottom: 1rem; } }
 
 footer {
   position: relative;
