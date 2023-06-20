@@ -783,6 +783,7 @@ body {
 				padding-top: 5px;
 				padding-bottom: 5px;
 				border-bottom: 1px solid #1b1b1b;
+				line-height: 1.4 !important;
 
 			}
 
@@ -835,6 +836,7 @@ body {
 					font-size: 15px !important;
 					font-weight: 400 !important;
 					height: auto !important;
+					line-height: 1.4 !important;
 
 				}
 
@@ -1096,6 +1098,8 @@ body {
 	@include responsive(md-lg) {
 		display: none !important;
 	}
+
+	@include responsive(xs-sm) {}
 }
 
 .mega-menu-columns-3-of-12 {
