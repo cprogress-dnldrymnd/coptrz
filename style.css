@@ -13455,9 +13455,6 @@ body.hero-banner-revealing_heading header .header-main:before {
 
 .header-background-transparent header .header-main .site-logo svg {
   fill: var(--white-color); }
-  @media screen and (max-width: 991px) {
-    .header-background-transparent header .header-main .site-logo svg {
-      fill: var(--black-color); } }
 @media screen and (max-width: 991px) {
   .header-background-transparent header .header-main {
     background-color: var(--primary-color);
