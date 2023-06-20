@@ -12843,7 +12843,7 @@ header {
           margin-top: var(--top-bar-height, 48px); } }
       @media screen and (max-width: 575px) {
         header .header-inner.has-top-bar {
-          margin-top: var(--top-bar-height, 46px); } }
+          margin-top: var(--top-bar-height, 40px); } }
   header .site-logo img,
   header .site-logo svg {
     max-width: 241px;
@@ -13311,6 +13311,11 @@ body.hero-banner-revealing_heading header .header-main:before {
     font-size: 16px;
     line-height: 1;
     border-radius: 0; }
+    @media screen and (max-width: 575px) {
+      .top-bar .button-box a,
+      .top-bar .button-box button {
+        padding-top: 10px;
+        padding-bottom: 10px; } }
   @media screen and (max-width: 1199px) {
     .top-bar .container {
       max-width: 100%; } }
