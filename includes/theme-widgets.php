@@ -83,7 +83,7 @@ function action_widgets_init()
 
 	register_sidebar(
 		array(
-			'name'          => 'Top Bar Left',
+			'name'          => 'Top Bar Left[Desktop]',
 			'id'            => 'top_bar_left',
 			'before_widget' => '<div>',
 			'after_widget'  => '</div>',
@@ -94,7 +94,7 @@ function action_widgets_init()
 
 	register_sidebar(
 		array(
-			'name'          => 'Top Bar Middle',
+			'name'          => 'Top Bar Middle[Desktop]',
 			'id'            => 'top_bar_middle',
 			'before_widget' => '<div>',
 			'after_widget'  => '</div>',
@@ -104,8 +104,28 @@ function action_widgets_init()
 	);
 	register_sidebar(
 		array(
-			'name'          => 'Top Bar Right',
+			'name'          => 'Top Bar Right[Desktop]',
 			'id'            => 'top_bar_right',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => 'Top Bar Left[Mobile]',
+			'id'            => 'top_bar_left_mobile',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => 'Top Bar Right[Mobile]',
+			'id'            => 'top_bar_right_mobile',
 			'before_widget' => '<div>',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h5 class="widget-title">',
