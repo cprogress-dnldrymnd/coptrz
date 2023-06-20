@@ -13475,7 +13475,7 @@ body.hero-banner-revealing_heading header .header-main:before {
         flex-direction: column-reverse;
         justify-content: flex-end; }
         .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item .mega-block-title {
-          margin-top: 1rem !important; } }
+          display: none !important; } }
   @media screen and (max-width: 991px) {
     .mega-menu-custom-boxes > ul.mega-sub-menu {
       padding-left: calc(0.75rem + 10px);
