@@ -692,6 +692,8 @@ body {
 			text-decoration: none !important;
 			width: 100%;
 			font-size: 16px;
+			line-height: 1;
+				border-radius: 0;
 		}
 	}
 
@@ -731,14 +733,6 @@ body {
 		p {
 			display: none;
 		}
-	}
-
-
-
-	@include responsive(xs-sm) {
-		font-size: 12px;
-		padding-top: 5px;
-		padding-bottom: 5px;
 	}
 }
 
