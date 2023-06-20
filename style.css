@@ -13437,7 +13437,7 @@ body.hero-banner-revealing_heading header .header-main:before {
       @media (min-width: 992px) {
         #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item {
           height: 100%; } }
-      #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item.mega-toggle-on a.mega-menu-link {
+      #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
         background-color: var(--accent-color) !important; }
     @media (min-width: 992px) {
       #mega-menu-wrap-header-menu #mega-menu-header-menu {
