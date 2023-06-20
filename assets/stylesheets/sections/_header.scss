@@ -1250,7 +1250,7 @@ body {
 			position: fixed;
 			left: 0;
 			right: 0;
-			height: 100vh;
+			bottom: 0;
 			display: block !important;
 			@include transform(translateY(-100%));
 		}
