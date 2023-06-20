@@ -976,10 +976,6 @@ body {
 			.site-logo {
 				svg {
 					fill: var(--white-color);
-
-					@include responsive(xs-sm) {
-						fill: var(--black-color);
-					}
 				}
 			}
 
