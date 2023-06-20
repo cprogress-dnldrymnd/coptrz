@@ -308,6 +308,21 @@ class Shortcodes
 	{
 		if (is_user_logged_in()) {
 			$login_link = 'https://www.coptrzacademy-usp.io/';
+			$login_text = 'Login';
+		}
+		else {
+			$login_link = '/login';
+			$login_text = 'Login';
+		}
+		return '<a class="px-0" style="text-decoration: underline" href="' . $login_link . '" >' . $login_text . '</a>';
+
+	}
+
+
+	function login_button()
+	{
+		if (is_user_logged_in()) {
+			$login_link = 'https://www.coptrzacademy-usp.io/';
 			$login_text = 'LOG IN';
 		}
 		else {
@@ -317,6 +332,7 @@ class Shortcodes
 		return '<div class="button-box button-white"><a class="px-0" style="text-decoration: underline" href="' . $login_link . '" >' . $login_text . '</a></div>';
 
 	}
+
 
 }
 $Shortcodes = new Shortcodes;
@@ -338,6 +354,7 @@ add_shortcode('site_url', array($Shortcodes, 'site_url'));
 add_shortcode('webinar_box', array($Shortcodes, 'webinar_box'));
 add_shortcode('webinar_date_time', array($Shortcodes, 'webinar_date_time'));
 add_shortcode('login_link', array($Shortcodes, 'login_link'));
+add_shortcode('login_button', array($Shortcodes, 'login_button'));
 
 
 function add_to_cart_form_shortcode($atts)
