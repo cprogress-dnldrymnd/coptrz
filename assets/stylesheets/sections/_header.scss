@@ -790,7 +790,7 @@ body {
 				border-bottom: 1px solid #1b1b1b;
 				line-height: 1.4 !important;
 				@include transition(300ms);
-				@include transform(translateY(-20px));
+				opacity: 0;
 			}
 
 			&:nth-child(1) {
@@ -1237,7 +1237,7 @@ body {
 				}
 
 				>li.mega-menu-item {
-					@include transform(translateY(0))
+					opacity: 1;
 				}
 			}
 		}
