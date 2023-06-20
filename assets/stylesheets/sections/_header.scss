@@ -602,8 +602,10 @@ header {
 			opacity: 0;
 		}
 
-		.header-inner.has-top-bar {
-			margin-top: 0 !important;
+		@include responsive(md-lg) {
+			.header-inner.has-top-bar {
+				margin-top: 0 !important;
+			}
 		}
 	}
 }
