@@ -908,7 +908,7 @@ body {
 			}
 
 			&.mega-toggle-on {
-				a.mega-menu-link {
+				> a.mega-menu-link {
 					background-color: var(--accent-color) !important;
 				}
 			}
