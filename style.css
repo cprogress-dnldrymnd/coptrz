@@ -13287,8 +13287,6 @@ body.hero-banner-revealing_heading header .header-main:before {
   right: 0;
   font-size: 13px;
   color: var(--white-color);
-  padding-top: 10px;
-  padding-bottom: 10px;
   -webkit-transition: 500ms;
   -moz-transition: 500ms;
   -ms-transition: 500ms;
@@ -13297,7 +13295,8 @@ body.hero-banner-revealing_heading header .header-main:before {
   .top-bar .button-box a,
   .top-bar .button-box button {
     text-decoration: none !important;
-    width: 100%; }
+    width: 100%;
+    font-size: 16px; }
   @media screen and (max-width: 1199px) {
     .top-bar .container {
       max-width: 100%; } }
@@ -13315,6 +13314,10 @@ body.hero-banner-revealing_heading header .header-main:before {
       color: inherit; }
     .top-bar ul li:not(:last-child) {
       margin-right: 1.5rem; }
+    @media screen and (min-width: 992px) {
+      .top-bar ul {
+        padding-top: 10px;
+        padding-bottom: 10px; } }
   @media screen and (max-width: 991px) {
     .top-bar {
       font-size: 12px;
