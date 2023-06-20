@@ -1092,7 +1092,9 @@ body {
 
 
 #mega-menu-wrap-header-menu #mega-menu-header-menu a.mega-menu-link .mega-description-group .mega-menu-description {
-	display: none !important;
+	@include responsive(md-lg) {
+		display: none !important;
+	}
 }
 
 .mega-menu-columns-3-of-12 {
