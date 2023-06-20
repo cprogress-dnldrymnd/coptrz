@@ -71,21 +71,6 @@ if (is_active_sidebar('top_bar_left') || is_active_sidebar('top_bar_right')) {
                             );
                             ?>
                         </div>
-                        <div class="d-block d-lg-none mobile-menu-holder">
-                            <?php
-                            wp_nav_menu(
-                                array(
-                                    'theme_location' => 'mobile-menu',
-                                    'container'      => false,
-                                    'menu_class'     => '',
-                                    'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
-                                    'items_wrap'     => '<ul id="%1$s" class="navbar-nav d-flex d-lg-none align-items-center h-100 %2$s">%3$s</ul>',
-                                    'depth'          => 3,
-                                    'walker'         => new bootstrap_5_wp_nav_menu_walker()
-                                )
-                            );
-                            ?>
-                        </div>
                     </div>
 
                     <div class="d-none">
