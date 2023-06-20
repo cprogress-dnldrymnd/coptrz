@@ -13356,7 +13356,27 @@ body.hero-banner-revealing_heading header .header-main:before {
       @media screen and (max-width: 991px) {
         #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item {
           border-bottom: 1px solid #1b1b1b;
-          line-height: 1.4 !important; } }
+          line-height: 1.4 !important;
+          -webkit-transition: 300ms;
+          -moz-transition: 300ms;
+          -ms-transition: 300ms;
+          -o-transition: 300ms;
+          transition: 300ms;
+          opacity: 0; } }
+      #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item:nth-child(1) {
+        transition-delay: 500ms; }
+      #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item:nth-child(2) {
+        transition-delay: 600ms; }
+      #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item:nth-child(2) {
+        transition-delay: 700ms; }
+      #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item:nth-child(4) {
+        transition-delay: 800ms; }
+      #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item:nth-child(5) {
+        transition-delay: 900ms; }
+      #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item:nth-child(6) {
+        transition-delay: 1000ms; }
+      #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item:nth-child(7) {
+        transition-delay: 1200ms; }
       #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
         font-weight: 500 !important;
         display: flex;
@@ -13622,6 +13642,8 @@ body.hero-banner-revealing_heading header .header-main:before {
       #mega-menu-wrap-header-menu .mega-menu-toggle.mega-menu-open + #mega-menu-header-menu {
         top: 106px; } }
 @media screen and (max-width: 991px) {
+      #mega-menu-wrap-header-menu .mega-menu-toggle.mega-menu-open + #mega-menu-header-menu > li.mega-menu-item {
+        opacity: 1; }
     #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
       overflow: auto;
       background: var(--black-color);

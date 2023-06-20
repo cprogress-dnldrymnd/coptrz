@@ -775,11 +775,13 @@ body {
 
 	#mega-menu-header-menu {
 		position: static;
+
 		a {
 			@include responsive(xs-sm) {
 				color: var(--white-color) !important;
 			}
 		}
+
 		>li.mega-menu-item {
 			position: static;
 
@@ -787,7 +789,36 @@ body {
 
 				border-bottom: 1px solid #1b1b1b;
 				line-height: 1.4 !important;
+				@include transition(300ms);
+				opacity: 0;
+			}
 
+			&:nth-child(1) {
+				transition-delay: 500ms;
+			}
+
+			&:nth-child(2) {
+				transition-delay: 600ms;
+			}
+
+			&:nth-child(2) {
+				transition-delay: 700ms;
+			}
+
+			&:nth-child(4) {
+				transition-delay: 800ms;
+			}
+
+			&:nth-child(5) {
+				transition-delay: 900ms;
+			}
+
+			&:nth-child(6) {
+				transition-delay: 1000ms;
+			}
+
+			&:nth-child(7) {
+				transition-delay: 1200ms;
 			}
 
 			>a.mega-menu-link {
@@ -1203,6 +1234,10 @@ body {
 
 				@include responsive(mobile) {
 					top: 106px;
+				}
+
+				>li.mega-menu-item {
+					opacity: 1;
 				}
 			}
 		}
