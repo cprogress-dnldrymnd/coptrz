@@ -780,8 +780,7 @@ body {
 			position: static;
 
 			@include responsive(xs-sm) {
-				padding-top: 15px;
-				padding-bottom: 15px;
+
 				border-bottom: 1px solid #1b1b1b;
 				line-height: 1.4 !important;
 
@@ -837,6 +836,8 @@ body {
 					font-weight: 400 !important;
 					height: auto !important;
 					line-height: 1.4 !important;
+					padding-top: 15px;
+					padding-bottom: 15px;
 
 				}
 
@@ -938,7 +939,8 @@ body {
 			flex: 0 0 auto;
 			padding-top: 0 !important;
 			padding-bottom: 0 !important;
-				max-width: 33.33333% !important;
+			max-width: 33.33333% !important;
+
 			.textwidget {
 				text-align: center;
 				font-weight: 400;
@@ -952,11 +954,11 @@ body {
 				img {
 					height: auto;
 
-					
+
 				}
 			}
 
-			
+
 			@include responsive(xs-sm) {
 				padding-left: 0 !important;
 				padding-right: 0 !important;
