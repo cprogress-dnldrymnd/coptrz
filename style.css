@@ -13325,6 +13325,9 @@ body.hero-banner-revealing_heading header .header-main:before {
     .top-bar {
       padding-top: 10px;
       padding-bottom: 10px; } }
+  @media screen and (max-width: 991px) {
+    .top-bar {
+      z-index: 99999; } }
   .top-bar .top-bar-mobile p {
     display: none; }
 
@@ -13558,7 +13561,8 @@ body.hero-banner-revealing_heading header .header-main:before {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
-    transform: translateY(0); }
+    transform: translateY(0);
+    top: 157.33px; }
   #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
     -webkit-transition: 500ms;
     -moz-transition: 500ms;

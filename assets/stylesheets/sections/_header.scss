@@ -742,6 +742,10 @@ body {
 		padding-bottom: 10px;
 	}
 
+	@include responsive(xs-sm) {
+		z-index: 99999;
+	}
+
 	.top-bar-mobile {
 		p {
 			display: none;
@@ -1113,9 +1117,11 @@ body {
 
 #mega-menu-wrap-header-menu .mega-menu-toggle {
 	position: relative;
+
 	&.mega-menu-open {
 		&+#mega-menu-header-menu {
 			@include transform(translateY(0));
+			top: 157.33px;
 		}
 	}
 
