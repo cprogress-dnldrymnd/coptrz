@@ -810,6 +810,12 @@ body {
 					padding-right: 5px;
 				}
 
+
+				@include responsive(xs-sm) {
+					padding-left: 0.75rem;
+					padding-right: 0.75rem;
+				}
+
 				@media(max-width: 1100px) and (min-width: 992px) {
 					font-size: 12px;
 				}
