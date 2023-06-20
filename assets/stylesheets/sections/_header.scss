@@ -1077,15 +1077,6 @@ body {
 				display: flex !important;
 				@include align-items(center);
 
-				@include before {
-					content: '';
-					display: inline-block !important;
-					width: 6px !important;
-					height: 6px !important;
-					background-color: var(--primary-color) !important;
-					margin: 0 1rem 0 0 !important;
-				}
-
 				@include on-event {
 					color: var(--accent-color) !important;
 				}
