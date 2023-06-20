@@ -12886,7 +12886,7 @@ header {
         align-items: flex-start; } }
   @media screen and (max-width: 991px) {
     header .col-menu {
-      padding-right: 1rem;
+      padding-right: 0;
       -webkit-box-ordinal-group: 3;
       -moz-box-ordinal-group: 3;
       -ms-flex-order: 3;
@@ -13117,6 +13117,10 @@ header {
     @media (max-width: 1399px) {
       header .header-main .container {
         max-width: 100%; } }
+    @media screen and (max-width: 991px) {
+      header .header-main .container {
+        padding-left: calc(0.75rem + 10px);
+        padding-right: calc(0.75rem + 10px); } }
     @media screen and (min-width: 992px) {
       header .header-main:before {
         content: "";
@@ -13373,8 +13377,9 @@ body.hero-banner-revealing_heading header .header-main:before {
             padding-right: 5px; } }
         @media screen and (max-width: 991px) {
           #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
-            padding-left: 0.75rem;
-            padding-right: 0.75rem; } }
+            padding-left: calc(0.75rem + 10px);
+            padding-right: calc(0.75rem + 10px);
+            justify-content: space-between; } }
         @media (max-width: 1100px) and (min-width: 992px) {
           #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
             font-size: 12px; } }
