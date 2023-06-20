@@ -12837,10 +12837,13 @@ header {
       margin-top: var(--top-bar-height, 38px); }
       @media screen and (max-width: 991px) {
         header .header-inner.has-top-bar {
-          margin-top: var(--top-bar-height, 28px); } }
+          margin-top: var(--top-bar-height, 57.5px); } }
+      @media screen and (max-width: 767px) {
+        header .header-inner.has-top-bar {
+          margin-top: var(--top-bar-height, 48px); } }
       @media screen and (max-width: 575px) {
         header .header-inner.has-top-bar {
-          margin-top: var(--top-bar-height, 32.39px); } }
+          margin-top: var(--top-bar-height, 46px); } }
   header .site-logo img,
   header .site-logo svg {
     max-width: 241px;

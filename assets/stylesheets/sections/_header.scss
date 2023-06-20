@@ -17,11 +17,15 @@ header {
 			margin-top: var(--top-bar-height, 38px);
 
 			@include responsive(xs-sm) {
-				margin-top: var(--top-bar-height, 28px);
+				margin-top: var(--top-bar-height, 57.5px);
+			}
+
+			@include responsive(xs) {
+				margin-top: var(--top-bar-height, 48px);
 			}
 
 			@include responsive(mobile) {
-				margin-top: var(--top-bar-height, 32.39px);
+				margin-top: var(--top-bar-height, 46px);
 			}
 		}
 	}
@@ -437,7 +441,7 @@ header {
 			padding-bottom: 2rem;
 		}
 
-	
+
 
 		@include responsive(xs) {
 			padding-top: 1rem;
