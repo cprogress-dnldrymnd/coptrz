@@ -1106,6 +1106,12 @@ body {
 	text-align: center !important;
 }
 
-#mega-menu-wrap-mobile-menu .mega-menu-toggle.mega-menu-open+#mega-menu-mobile-menu {
-	top: 112px;
+#mega-menu-wrap-mobile-menu .mega-menu-toggle {
+	&.mega-menu-open {
+		&+#mega-menu-mobile-menu {}
+	}
+
+	&+#mega-menu-mobile-menu {
+		top: 112px;
+	}
 }
