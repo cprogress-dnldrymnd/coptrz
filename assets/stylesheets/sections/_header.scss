@@ -1113,11 +1113,13 @@ body {
 }
 
 #mega-menu-wrap-header-menu .mega-menu-toggle {
+
 	&.mega-menu-open {
 		&+#mega-menu-header-menu {}
 	}
 
 	&+#mega-menu-header-menu {
+		@include transition(500ms);
 		top: 157.33px;
 		position: fixed;
 		left: 0;
