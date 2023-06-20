@@ -729,10 +729,12 @@ body {
 			}
 		}
 
-		@include responsive(md-lg) {
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
+
+	}
+
+	@include responsive(md-lg) {
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
 	.top-bar-mobile {
@@ -1000,6 +1002,7 @@ body {
 #mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before,
 #mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after {
 	background-color: var(--primary-color);
+
 	@include responsive(xs-sm) {
 		background-color: var(--white-color);
 	}
@@ -1101,4 +1104,9 @@ body {
 	color: var(--black-color) !important;
 	font-weight: 500 !important;
 	text-align: center !important;
+}
+
+#mega-menu-wrap-mobile-menu .mega-menu-toggle.mega-menu-open+#mega-menu-mobile-menu {
+	top: 112px;
+	right: ;
 }
