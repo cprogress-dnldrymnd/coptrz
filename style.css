@@ -13401,15 +13401,16 @@ body.hero-banner-revealing_heading header .header-main:before {
           padding-bottom: 10px !important;
           text-transform: uppercase !important;
           font-size: inherit !important; }
-      #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item.mega-menu-grid > ul.mega-sub-menu:before {
-        content: '';
-        display: block !important;
-        position: absolute;
-        background-color: #fff;
-        top: -100px;
-        left: 0;
-        right: 0;
-        bottom: 0; }
+      @media screen and (min-width: 992px) {
+        #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item.mega-menu-grid > ul.mega-sub-menu:before {
+          content: '';
+          display: block !important;
+          position: absolute;
+          background-color: #fff;
+          top: -100px;
+          left: 0;
+          right: 0;
+          bottom: 0; } }
       #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > ul.mega-sub-menu {
         left: 0;
         padding-top: 2.875rem;

@@ -856,16 +856,18 @@ body {
 			}
 
 			&.mega-menu-grid {
-				>ul.mega-sub-menu {
-					@include before {
-						content: '';
-						display: block !important;
-						position: absolute;
-						background-color: #fff;
-						top: -100px;
-						left: 0;
-						right: 0;
-						bottom: 0;
+				@include responsive(md-lg) {
+					>ul.mega-sub-menu {
+						@include before {
+							content: '';
+							display: block !important;
+							position: absolute;
+							background-color: #fff;
+							top: -100px;
+							left: 0;
+							right: 0;
+							bottom: 0;
+						}
 					}
 				}
 			}
