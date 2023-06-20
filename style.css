@@ -13231,6 +13231,8 @@ header {
       .scrolled-up .background-transparent .header-icons {
         color: var(--black-color); } }
 
+.scrolled-down #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
+  top: 100.3px; }
 .scrolled-down .top-bar {
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
@@ -13550,7 +13552,11 @@ body.hero-banner-revealing_heading header .header-main:before {
   text-align: center !important; }
 
 #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
-  top: 112px; }
+  top: 157.33px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 footer {
   position: relative;

@@ -580,6 +580,12 @@ header {
 }
 
 .scrolled-down {
+	#mega-menu-wrap-header-menu .mega-menu-toggle {
+
+		&+#mega-menu-header-menu {
+			top: 100.3px;
+		}
+	}
 
 	.top-bar {
 		@include transform(translateY(-100%));
@@ -1112,6 +1118,10 @@ body {
 	}
 
 	&+#mega-menu-header-menu {
-		top: 112px;
+		top: 157.33px;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 }
