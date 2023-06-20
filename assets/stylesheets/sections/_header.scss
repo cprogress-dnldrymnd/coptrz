@@ -780,8 +780,8 @@ body {
 			position: static;
 
 			@include responsive(xs-sm) {
-				padding-top: 5px;
-				padding-bottom: 5px;
+				padding-top: 15px;
+				padding-bottom: 15px;
 				border-bottom: 1px solid #1b1b1b;
 				line-height: 1.4 !important;
 
