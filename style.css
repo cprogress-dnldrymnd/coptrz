@@ -13013,11 +13013,14 @@ header {
       font-weight: 500; }
       header .dropdown-menu li .dropdown-item.active {
         background-color: var(--accent-color); }
-  header .col-logo .site-logo {
-    display: inline-block; }
-    @media screen and (max-width: 1199px) {
-      header .col-logo .site-logo {
-        max-width: 200px; } }
+  header .col-logo {
+    position: relative;
+    z-index: 1; }
+    header .col-logo .site-logo {
+      display: inline-block; }
+      @media screen and (max-width: 1199px) {
+        header .col-logo .site-logo {
+          max-width: 200px; } }
   @media (max-width: 1399px) {
     header .col-right .column-holder .button-group-box .button-box {
       margin-right: 5px; } }
@@ -13548,29 +13551,31 @@ body.hero-banner-revealing_heading header .header-main:before {
   font-weight: 500 !important;
   text-align: center !important; }
 
-#mega-menu-wrap-header-menu .mega-menu-toggle.mega-menu-open + #mega-menu-header-menu {
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0); }
-#mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
-  -webkit-transition: 500ms;
-  -moz-transition: 500ms;
-  -ms-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
-  top: 0;
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  display: block !important;
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%); }
+#mega-menu-wrap-header-menu .mega-menu-toggle {
+  position: relative; }
+  #mega-menu-wrap-header-menu .mega-menu-toggle.mega-menu-open + #mega-menu-header-menu {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
+  #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: block !important;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%); }
 
 footer {
   position: relative;

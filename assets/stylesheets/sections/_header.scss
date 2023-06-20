@@ -262,6 +262,9 @@ header {
 	}
 
 	.col-logo {
+		position: relative;
+		z-index: 1;
+
 		.site-logo {
 			display: inline-block;
 
@@ -1109,7 +1112,7 @@ body {
 }
 
 #mega-menu-wrap-header-menu .mega-menu-toggle {
-
+	position: relative;
 	&.mega-menu-open {
 		&+#mega-menu-header-menu {
 			@include transform(translateY(0));
