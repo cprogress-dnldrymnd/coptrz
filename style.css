@@ -13458,7 +13458,7 @@ body.hero-banner-revealing_heading header .header-main:before {
 @media screen and (max-width: 991px) {
   .header-background-transparent header .header-main {
     background-color: var(--primary-color);
-    color: var(--white-color); } }
+    color: var(--white-color) !important; } }
 
 .mega-menu-toggle {
   background-color: transparent !important; }
@@ -13469,6 +13469,11 @@ body.hero-banner-revealing_heading header .header-main:before {
 #mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before,
 #mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after {
   background-color: var(--primary-color); }
+  @media screen and (max-width: 991px) {
+    #mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner,
+    #mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before,
+    #mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after {
+      background-color: var(--white-color); } }
 
 #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item:not(.mega-menu-grid) {
   position: relative; }

@@ -981,7 +981,7 @@ body {
 
 			@include responsive(xs-sm) {
 				background-color: var(--primary-color);
-				color: var(--white-color);
+				color: var(--white-color) !important;
 
 			}
 		}
@@ -1000,6 +1000,9 @@ body {
 #mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before,
 #mega-menu-wrap-mobile-menu .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after {
 	background-color: var(--primary-color);
+	@include responsive(xs-sm) {
+		background-color: var(--white-color);
+	}
 }
 
 #mega-menu-wrap-header-menu #mega-menu-header-menu>li.mega-menu-item:not(.mega-menu-grid) {
