@@ -97,7 +97,7 @@ if ( is_checkout() && !empty( is_wc_endpoint_url('order-received') ) ) {
 
                 <span class="date">
 
-                    <?= get_the_date('m/d/Y', get_the_ID()) ?>
+                    <?= get_the_date('d/m/Y', get_the_ID()) ?>
 
                 </span>
 

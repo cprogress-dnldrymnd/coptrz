@@ -88,7 +88,7 @@ else if (is_post_type_archive('events')) {
 
                             $post_id = $item;
 
-                            $meta1 = get_the_date('m/d/Y', $post_id);
+                            $meta1 = get_the_date('d/m/Y', $post_id);
 
                             $author_id = get_post_field('post_author', $post_id);
 

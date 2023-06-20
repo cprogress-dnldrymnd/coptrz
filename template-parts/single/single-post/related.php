@@ -68,7 +68,7 @@ $categories = get_the_category(get_the_ID());
                                     <div class="bottom-box">
                                         <div class="meta-box d-flex">
                                             <span class="date">
-                                                <?= get_the_date('m/d/Y', $post_id) ?>
+                                                <?= get_the_date('d/m/Y', $post_id) ?>
                                             </span>
                                             <div class="bull">&bull;</div>
                                             <span class="author">

@@ -151,7 +151,7 @@ function archive_ajax()
 								<?php if (get_post_type() === 'post') { ?>
 									<div class="meta-box d-flex">
 										<span class="date">
-											<?= get_the_date('m/d/Y', get_the_ID()) ?>
+											<?= get_the_date('d/m/Y', get_the_ID()) ?>
 										</span>
 										<div class="bull">&bull;</div>
 										<span class="author">
