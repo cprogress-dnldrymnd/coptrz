@@ -13354,7 +13354,9 @@ body.hero-banner-revealing_heading header .header-main:before {
         #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item {
           padding-top: 5px;
           padding-bottom: 5px;
-          border-bottom: 1px solid #1b1b1b; } }
+          border-bottom: 1px solid #1b1b1b;
+          margin-top: 1rem !important;
+          margin-bottom: 1rem !important; } }
       #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > a.mega-menu-link {
         font-weight: 500 !important;
         display: flex;
@@ -13427,7 +13429,10 @@ body.hero-banner-revealing_heading header .header-main:before {
           margin-right: auto; }
         @media screen and (max-width: 991px) {
           #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > ul.mega-sub-menu {
-            background-color: var(--black-color); } }
+            background-color: var(--black-color);
+            padding-left: calc(0.75rem + 10px);
+            padding-right: calc(0.75rem + 10px);
+            padding-top: 0; } }
       @media (min-width: 992px) {
         #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item {
           height: 100%; } }
@@ -13454,6 +13459,9 @@ body.hero-banner-revealing_heading header .header-main:before {
         margin-bottom: 0 !important; }
       .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item .textwidget img {
         height: auto; }
+        @media screen and (max-width: 991px) {
+          .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item .textwidget img {
+            display: none; } }
     @media screen and (min-width: 992px) {
       .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item {
         max-width: 33.33333% !important; } }
@@ -13630,7 +13638,8 @@ body.hero-banner-revealing_heading header .header-main:before {
     color: var(--white-color) !important;
     color: var(--white-color) !important;
     font-weight: 400 !important;
-    font-size: 15px !important; } }
+    font-size: 15px !important;
+    text-align: left !important; } }
 
 footer {
   position: relative;

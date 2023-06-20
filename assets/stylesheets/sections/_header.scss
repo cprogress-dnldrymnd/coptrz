@@ -783,6 +783,8 @@ body {
 				padding-top: 5px;
 				padding-bottom: 5px;
 				border-bottom: 1px solid #1b1b1b;
+				margin-top: 1rem !important;
+				margin-bottom: 1rem !important;
 			}
 
 			>a.mega-menu-link {
@@ -892,6 +894,9 @@ body {
 
 				@include responsive(xs-sm) {
 					background-color: var(--black-color);
+					padding-left: calc(0.75rem + 10px);
+					padding-right: calc(0.75rem + 10px);
+					padding-top: 0;
 				}
 			}
 
@@ -944,6 +949,10 @@ body {
 
 				img {
 					height: auto;
+
+					@include responsive(xs-sm) {
+						display: none;
+					}
 				}
 			}
 
@@ -1198,5 +1207,6 @@ body {
 		color: var(--white-color) !important;
 		font-weight: 400 !important;
 		font-size: 15px !important;
+		text-align: left !important;
 	}
 }
