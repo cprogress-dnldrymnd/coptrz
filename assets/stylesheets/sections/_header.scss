@@ -587,7 +587,9 @@ header {
 	}
 
 	.top-bar {
-		@include transform(translateY(-100%));
+		@include responsive(md-lg) {
+			@include transform(translateY(-100%));
+		}
 	}
 
 	header {
@@ -1126,6 +1128,7 @@ body {
 	}
 
 	&+#mega-menu-header-menu {
+		background: var(--black-color);
 		@include transition(500ms);
 		top: 0;
 		position: fixed;

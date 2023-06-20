@@ -13233,12 +13233,13 @@ header {
 
 .scrolled-down #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
   top: 100.3px; }
-.scrolled-down .top-bar {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%); }
+@media screen and (min-width: 992px) {
+  .scrolled-down .top-bar {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%); } }
 @media screen and (min-width: 992px) {
   .scrolled-down header {
     -webkit-transform: translateY(-100%);
@@ -13564,6 +13565,7 @@ body.hero-banner-revealing_heading header .header-main:before {
     transform: translateY(0);
     top: 157.33px; }
   #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
+    background: var(--black-color);
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -ms-transition: 500ms;
