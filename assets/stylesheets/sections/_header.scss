@@ -938,7 +938,7 @@ body {
 			flex: 0 0 auto;
 			padding-top: 0 !important;
 			padding-bottom: 0 !important;
-
+				max-width: 33.33333% !important;
 			.textwidget {
 				text-align: center;
 				font-weight: 400;
@@ -952,16 +952,11 @@ body {
 				img {
 					height: auto;
 
-					@include responsive(xs-sm) {
-						display: none;
-					}
+					
 				}
 			}
 
-			@include responsive(md-lg) {
-				max-width: 33.33333% !important;
-			}
-
+			
 			@include responsive(xs-sm) {
 				padding-left: 0 !important;
 				padding-right: 0 !important;

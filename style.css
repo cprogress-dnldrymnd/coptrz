@@ -13452,7 +13452,8 @@ body.hero-banner-revealing_heading header .header-main:before {
   .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item {
     flex: 0 0 auto;
     padding-top: 0 !important;
-    padding-bottom: 0 !important; }
+    padding-bottom: 0 !important;
+    max-width: 33.33333% !important; }
     .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item .textwidget {
       text-align: center;
       font-weight: 400; }
@@ -13460,12 +13461,6 @@ body.hero-banner-revealing_heading header .header-main:before {
         margin-bottom: 0 !important; }
       .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item .textwidget img {
         height: auto; }
-        @media screen and (max-width: 991px) {
-          .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item .textwidget img {
-            display: none; } }
-    @media screen and (min-width: 992px) {
-      .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item {
-        max-width: 33.33333% !important; } }
     @media screen and (max-width: 991px) {
       .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item {
         padding-left: 0 !important;
