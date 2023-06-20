@@ -900,6 +900,7 @@ body {
 					padding-left: 3rem;
 					padding-right: 3rem;
 					padding-top: 1rem;
+					border-bottom: 1px solid #1b1b1b;
 
 					.mega-menu-description {
 						display: none !important;
@@ -974,9 +975,6 @@ body {
 				padding-right: 5px !important;
 				margin-top: 1rem !important;
 				margin-bottom: 1rem !important;
-				display: flex !important;
-				flex-direction: column-reverse;
-				justify-content: flex-end;
 
 				.mega-block-title {
 					display: none !important;

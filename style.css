@@ -13433,7 +13433,8 @@ body.hero-banner-revealing_heading header .header-main:before {
             background-color: var(--black-color);
             padding-left: 3rem;
             padding-right: 3rem;
-            padding-top: 1rem; }
+            padding-top: 1rem;
+            border-bottom: 1px solid #1b1b1b; }
             #mega-menu-wrap-header-menu #mega-menu-header-menu > li.mega-menu-item > ul.mega-sub-menu .mega-menu-description {
               display: none !important; } }
       @media (min-width: 992px) {
@@ -13470,10 +13471,7 @@ body.hero-banner-revealing_heading header .header-main:before {
         padding-left: 5px !important;
         padding-right: 5px !important;
         margin-top: 1rem !important;
-        margin-bottom: 1rem !important;
-        display: flex !important;
-        flex-direction: column-reverse;
-        justify-content: flex-end; }
+        margin-bottom: 1rem !important; }
         .mega-menu-custom-boxes > ul.mega-sub-menu > li.mega-menu-item .mega-block-title {
           display: none !important; } }
   @media screen and (max-width: 991px) {
