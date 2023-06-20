@@ -21,7 +21,7 @@ $testimonials = $GetData->get_posts_ids('testimonials');
             </div>
             <div class="review-score d-flex align-items-center">
                 <div class="score">
-                    4.7
+                    4.8
                 </div>
                 <div class="stars-holder">
                     <div class="stars d-flex">
