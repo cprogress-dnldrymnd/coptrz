@@ -13250,8 +13250,9 @@ header {
 .scrolled-down header .header-main:before {
   visibility: hidden;
   opacity: 0; }
-.scrolled-down header .header-inner.has-top-bar {
-  margin-top: 0 !important; }
+@media screen and (min-width: 992px) {
+  .scrolled-down header .header-inner.has-top-bar {
+    margin-top: 0 !important; } }
 
 .admin-bar header {
   top: 32px; }
