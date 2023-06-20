@@ -13585,7 +13585,7 @@ body.hero-banner-revealing_heading header .header-main:before {
         top: 116px; } }
     @media screen and (max-width: 991px) and (max-width: 575px) {
       #mega-menu-wrap-header-menu .mega-menu-toggle.mega-menu-open + #mega-menu-header-menu {
-        top: 114px; } }
+        top: 106px; } }
 @media screen and (max-width: 991px) {
     #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
       background: var(--black-color);
