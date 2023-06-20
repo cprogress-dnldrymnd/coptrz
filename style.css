@@ -13294,45 +13294,6 @@ body.hero-banner-revealing_heading header .header-main:before {
   -ms-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms; }
-  @media screen and (max-width: 991px) {
-    .top-bar a,
-    .top-bar button {
-      font-size: 12px !important; }
-      .top-bar a:hover, .top-bar a:active, .top-bar a:focus,
-      .top-bar button:hover,
-      .top-bar button:active,
-      .top-bar button:focus {
-        color: var(--accent-color); } }
-  .top-bar button {
-    border: none !important;
-    text-decoration: underline;
-    background-color: transparent !important;
-    color: var(--white-color) !important;
-    text-transform: initial !important;
-    padding: 0 !important; }
-  .top-bar .wp-block-button__link {
-    border-radius: 0 !important;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px; }
-    .top-bar .wp-block-button__link:hover, .top-bar .wp-block-button__link:active, .top-bar .wp-block-button__link:focus {
-      background-color: var(--accent-color) !important; }
-    .top-bar .wp-block-button__link[href="https://www.coptrzacademy-usp.io/"] {
-      display: none !important;
-      background-color: transparent !important;
-      letter-spacing: 0;
-      font-size: 12px;
-      font-weight: 400;
-      text-decoration: underline; }
-      @media screen and (max-width: 991px) {
-        .top-bar .wp-block-button__link[href="https://www.coptrzacademy-usp.io/"] {
-          display: block !important; } }
-    @media (max-width: 400px) {
-      .top-bar .wp-block-button__link {
-        font-size: 12px;
-        letter-spacing: 0;
-        padding-left: 15px;
-        padding-right: 15px; } }
   @media screen and (max-width: 1199px) {
     .top-bar .container {
       max-width: 100%; } }

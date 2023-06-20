@@ -686,59 +686,6 @@ body {
 	padding-bottom: 10px;
 	@include transition(500ms);
 
-	a,
-	button {
-		@include responsive(xs-sm) {
-			font-size: 12px !important;
-
-			@include on-event {
-				color: var(--accent-color);
-			}
-		}
-	}
-
-	button {
-		border: none !important;
-		text-decoration: underline;
-		background-color: transparent !important;
-		color: var(--white-color) !important;
-		text-transform: initial !important;
-		padding: 0 !important;
-	}
-
-	.wp-block-button__link {
-		border-radius: 0 !important;
-		font-weight: 500;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-
-		@include on-event {
-			background-color: var(--accent-color) !important;
-		}
-
-
-
-		&[href="https://www.coptrzacademy-usp.io/"] {
-			display: none !important;
-			background-color: transparent !important;
-			letter-spacing: 0;
-			font-size: 12px;
-			font-weight: 400;
-			text-decoration: underline;
-
-			@include responsive(xs-sm) {
-				display: block !important;
-			}
-		}
-
-		@media(max-width: 400px) {
-			font-size: 12px;
-			letter-spacing: 0;
-			padding-left: 15px;
-			padding-right: 15px;
-		}
-	}
-
 	.container {
 		@include responsive(xs-md) {
 			max-width: 100%;
