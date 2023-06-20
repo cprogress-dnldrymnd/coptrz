@@ -783,8 +783,7 @@ body {
 				padding-top: 5px;
 				padding-bottom: 5px;
 				border-bottom: 1px solid #1b1b1b;
-				margin-top: 1rem !important;
-				margin-bottom: 1rem !important;
+
 			}
 
 			>a.mega-menu-link {
@@ -963,6 +962,8 @@ body {
 			@include responsive(xs-sm) {
 				padding-left: 0 !important;
 				padding-right: 0 !important;
+				margin-top: 1rem !important;
+				margin-bottom: 1rem !important;
 			}
 		}
 
