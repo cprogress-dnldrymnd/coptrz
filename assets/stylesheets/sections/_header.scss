@@ -1145,6 +1145,14 @@ body {
 			&+#mega-menu-header-menu {
 				@include transform(translateY(0));
 				top: 157.33px;
+
+				@include responsive(xs) {
+					top: 116px;
+				}
+
+				@include responsive(mobile) {
+					top: 114px;
+				}
 			}
 		}
 

@@ -13579,7 +13579,14 @@ body.hero-banner-revealing_heading header .header-main:before {
       -ms-transform: translateY(0);
       -o-transform: translateY(0);
       transform: translateY(0);
-      top: 157.33px; }
+      top: 157.33px; } }
+    @media screen and (max-width: 991px) and (max-width: 767px) {
+      #mega-menu-wrap-header-menu .mega-menu-toggle.mega-menu-open + #mega-menu-header-menu {
+        top: 116px; } }
+    @media screen and (max-width: 991px) and (max-width: 575px) {
+      #mega-menu-wrap-header-menu .mega-menu-toggle.mega-menu-open + #mega-menu-header-menu {
+        top: 114px; } }
+@media screen and (max-width: 991px) {
     #mega-menu-wrap-header-menu .mega-menu-toggle + #mega-menu-header-menu {
       background: var(--black-color);
       -webkit-transition: 500ms;
