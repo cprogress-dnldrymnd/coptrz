@@ -100,6 +100,7 @@ function archive_ajax()
 			<div class="<?= $class ?> col-sm-6 post-item">
 				<div class="swiper-slide product-box">
 					<div class="inner background-white d-block ">
+						<a href="<?= get_permalink() ?>" class="box-link"></a>
 						<div class="image-holder position-relative">
 							<?php
 							$DisplayData->image(
