@@ -148,7 +148,7 @@ function archive_ajax()
 								)
 							);
 							?>
-							<div class="bottom-box">
+							<div class="bottom-box <?= get_post_type() ?>">
 								<?php if (get_post_type() === 'post') { ?>
 									<div class="meta-box d-flex">
 										<span class="date">
@@ -165,7 +165,7 @@ function archive_ajax()
 									</div>
 								<?php } ?>
 
-								<div class="link-box ccccsdsd">
+								<div class="link-box">
 									<a href="<?= get_permalink() ?>" class="link-underline fw-medium">
 										<?= $button_text ?>
 									</a>
