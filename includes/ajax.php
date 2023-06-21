@@ -148,7 +148,7 @@ function archive_ajax()
 								)
 							);
 							?>
-							<div class="bottom-box <?= get_post_type() ?>">
+							<div class="bottom-box <?= $button_text ?>">
 								<?php if (get_post_type() === 'post') { ?>
 									<div class="meta-box d-flex">
 										<span class="date">
