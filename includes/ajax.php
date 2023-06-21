@@ -92,106 +92,105 @@ function archive_ajax()
 	<?php if (!$offset) { ?>
 		<div class="row gy-3 product-holder product-grid post-box-PostSlider">
 		<?php } ?>
-		<?php
-		if ($the_query->have_posts()) {
-			while ($the_query->have_posts()) {
-				$the_query->the_post();
-				?>
-				<div class="<?= $class ?> col-sm-6 post-item">
-					<div class="swiper-slide product-box">
-						<div class="inner background-white d-block ">
-							<div class="image-holder position-relative">
-								<?php
-								$DisplayData->image(
-									array(
-										'image_id'    => get_post_thumbnail_id(),
-										'size'        => 'medium',
-										'placeholder' => true
-									),
-									'position-relative image-cover-transform'
-								);
-								if ($is_search) {
-									if (get_post_type() == 'post') {
-										$post_type_val = 'blog';
-									}
-									else {
-										$post_type_val = get_post_type();
-
-									}
-									$button_text = 'Read more';
-
-									if (get_post_type() == 'post') {
-										$button_text = 'Read more';
-									}
-									else if (get_post_type() == 'webinars') {
-										$button_text = 'Watch webinar';
-									}
-									else if (get_post_type() == 'product') {
-										$button_text = 'View product';
-									}
-									else if (get_post_type() == 'page') {
-										$button_text = 'View page';
-									}
-									else if (get_post_type() == 'events') {
-										$button_text = 'View events';
-									}
-									echo '<span class="badge"> ' . $post_type_val . ' </span>';
-								}
-								?>
-							</div>
-
+	<?php
+	if ($the_query->have_posts()) {
+		while ($the_query->have_posts()) {
+			$the_query->the_post();
+			?>
+			<div class="<?= $class ?> col-sm-6 post-item">
+				<div class="swiper-slide product-box">
+					<div class="inner background-white d-block ">
+						<div class="image-holder position-relative">
 							<?php
-							$DisplayData->heading(
+							$DisplayData->image(
 								array(
-									'heading' => get_the_title(),
-									'tag'     => 'h4'
-								)
+									'image_id'    => get_post_thumbnail_id(),
+									'size'        => 'medium',
+									'placeholder' => true
+								),
+								'position-relative image-cover-transform'
 							);
+							if ($is_search) {
+								if (get_post_type() == 'post') {
+									$post_type_val = 'blog';
+								}
+								else {
+									$post_type_val = get_post_type();
+
+								}
+
+								if (get_post_type() == 'post') {
+									$button_text = 'Read more';
+								}
+								else if (get_post_type() == 'webinars') {
+									$button_text = 'Watch webinar';
+								}
+								else if (get_post_type() == 'product') {
+									$button_text = 'View product';
+								}
+								else if (get_post_type() == 'page') {
+									$button_text = 'View page';
+								}
+								else if (get_post_type() == 'events') {
+									$button_text = 'View events';
+								}
+								echo '<span class="badge"> ' . $post_type_val . ' </span>';
+							}
 							?>
-							<div class="bottom-box <?= $button_text ?>">
-								<?php if (get_post_type() == 'post') { ?>
-									<div class="meta-box d-flex">
-										<span class="date">
-											<?= get_the_date('d/m/Y', get_the_ID()) ?>
-										</span>
-										<div class="bull">&bull;</div>
-										<span class="author">
-											<?php
-											$author_id = get_post_field('post_author', get_the_ID());
-											$author_name = get_the_author_meta('display_name', $author_id);
-											?>
-											<?= $author_name ?>
-										</span>
-									</div>
-								<?php } ?>
-
-								<div class="link-box">
-									<a href="<?= get_permalink() ?>" class="link-underline fw-medium">
-										<?php echo $button_text ?>
-									</a>
-								</div>
-							</div>
-
 						</div>
+
+						<?php
+						$DisplayData->heading(
+							array(
+								'heading' => get_the_title(),
+								'tag'     => 'h4'
+							)
+						);
+						?>
+						<div class="bottom-box">
+							<?php if (get_post_type() == 'post') { ?>
+								<div class="meta-box d-flex">
+									<span class="date">
+										<?= get_the_date('d/m/Y', get_the_ID()) ?>
+									</span>
+									<div class="bull">&bull;</div>
+									<span class="author">
+										<?php
+										$author_id = get_post_field('post_author', get_the_ID());
+										$author_name = get_the_author_meta('display_name', $author_id);
+										?>
+										<?= $author_name ?>
+									</span>
+								</div>
+							<?php } ?>
+
+							<div class="link-box">
+								<a href="<?= get_permalink() ?>" class="link-underline fw-medium">
+									<?php echo $button_text ?>
+								</a>
+							</div>
+						</div>
+
 					</div>
 				</div>
-			<?php }
-		}
-		else {
-			?>
-			<h2>No Results Found</h2>
-			<?php
-		}
-		wp_reset_postdata();
+			</div>
+		<?php }
+	}
+	else {
 		?>
-		<?php if (!$offset) { ?>
+	<h2>No Results Found</h2>
+	<?php
+	}
+	wp_reset_postdata();
+	?>
+	<?php if (!$offset) { ?>
 		</div>
 	<?php } ?>
 
 
-	<?php
+<?php
 
-	die();
+		die();
 }
 
 function hide_load_more($count, $offset, $posts_per_page)
@@ -217,62 +216,62 @@ function product_modal_ajax()
 	$type = $product->get_type();
 
 	?>
-	<div class="product-modal-backdrop d-block d-lg-none product-modal-trigger close-button"></div>
-	<div class="product-modal-header">
-		<div class="container background-white">
-			<div class="inner d-flex justify-content-between align-items-center">
-				<h2 class="m-0 fw-bold"><?= $name ?> </h2>
-				<button type="button" class="product-modal-trigger d-flex close-button align-items-center">
-					<span class="close-text">CLOSE</span>
-					<span class="close-icon background-body d-flex justify-content-center"><?= $SVG->close ?></span>
-				</button>
-			</div>
+<div class="product-modal-backdrop d-block d-lg-none product-modal-trigger close-button"></div>
+<div class="product-modal-header">
+	<div class="container background-white">
+		<div class="inner d-flex justify-content-between align-items-center">
+			<h2 class="m-0 fw-bold"><?= $name ?> </h2>
+			<button type="button" class="product-modal-trigger d-flex close-button align-items-center">
+				<span class="close-text">CLOSE</span>
+				<span class="close-icon background-body d-flex justify-content-center"><?= $SVG->close ?></span>
+			</button>
 		</div>
 	</div>
-	<div class="product-modal-body">
-		<div class="product-modal-backdrop d-none d-lg-block product-modal-trigger close-button"></div>
-		<div class="container position-relative">
-			<div class="inner">
-				<?php
-				include(get_stylesheet_directory() . '/template-parts/woocommerce/product-details/product-details.php');
-				include(get_stylesheet_directory() . '/template-parts/woocommerce/product-details/product-featured-video.php');
-				include(get_stylesheet_directory() . '/template-parts/woocommerce/product-details/product-specifications.php');
-				$Modules->modules_section($product_id);
-				?>
-			</div>
+</div>
+<div class="product-modal-body">
+	<div class="product-modal-backdrop d-none d-lg-block product-modal-trigger close-button"></div>
+	<div class="container position-relative">
+		<div class="inner">
+			<?php
+			include(get_stylesheet_directory() . '/template-parts/woocommerce/product-details/product-details.php');
+			include(get_stylesheet_directory() . '/template-parts/woocommerce/product-details/product-featured-video.php');
+			include(get_stylesheet_directory() . '/template-parts/woocommerce/product-details/product-specifications.php');
+			$Modules->modules_section($product_id);
+			?>
 		</div>
 	</div>
-	<div class="product-modal-footer d-none d-xl-block">
-		<div class="container background-white">
+</div>
+<div class="product-modal-footer d-none d-xl-block">
+	<div class="container background-white">
 
-			<?= $GetData->add_to_cart($product_id) ?>
-		</div>
+		<?= $GetData->add_to_cart($product_id) ?>
 	</div>
-	<?php
-	if ($type == 'variable') {
-		$variations = $product->get_available_variations();
+</div>
+<?php
+		if ($type == 'variable') {
+			$variations = $product->get_available_variations();
 
-		?>
-		<script>
-			<?php foreach ($variations as $variation) { ?>
-				<?php foreach ($variation['attributes'] as $attribute) { ?>
-					var $variation_name = '<?= $attribute ?>';
+			?>
+	<script>
+		<?php foreach ($variations as $variation) { ?>
+			<?php foreach ($variation['attributes'] as $attribute) { ?>
+				var $variation_name = '<?= $attribute ?>';
 
-				<?php } ?>
-				var $variation_id = '<?= $variation['variation_id']; ?>';
-
-
-				jQuery('.variations_form option[value="' + $variation_name + '"]').attr('id', $variation_id);
-
-				jQuery('.variations_form select').change(function (e) {
-					$val = jQuery(this).find(':selected').attr('id')
-					jQuery('.ajax_add_to_cart').attr('data-product_id', $val);
-
-				});
 			<?php } ?>
-		</script>
-	<?php } ?>
+			var $variation_id = '<?= $variation['variation_id']; ?>';
 
-	<?php
-	die();
+
+			jQuery('.variations_form option[value="' + $variation_name + '"]').attr('id', $variation_id);
+
+			jQuery('.variations_form select').change(function (e) {
+				$val = jQuery(this).find(':selected').attr('id')
+				jQuery('.ajax_add_to_cart').attr('data-product_id', $val);
+
+			});
+		<?php } ?>
+	</script>
+<?php } ?>
+
+<?php
+		die();
 }
