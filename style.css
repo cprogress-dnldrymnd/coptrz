@@ -14111,6 +14111,12 @@ section.product-slider .product-holder .product-box {
     transition: 300ms;
     height: 100%;
     position: relative; }
+    section.product-slider .product-holder .product-box .inner .box-link {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0; }
     section.product-slider .product-holder .product-box .inner .image-box {
       padding: 40%; }
     section.product-slider .product-holder .product-box .inner h4 {
