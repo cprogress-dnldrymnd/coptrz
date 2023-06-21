@@ -118,6 +118,7 @@ function archive_ajax()
 										$post_type_val = get_post_type();
 
 									}
+									$button_text = 'Read more';
 
 									if (get_post_type() == 'post') {
 										$button_text = 'Read more';
