@@ -167,7 +167,7 @@ function archive_ajax()
 
 								<div class="link-box">
 									<a href="<?= get_permalink() ?>" class="link-underline fw-medium">
-										<?= $button_text ?>
+										<?php echo $button_text ?>
 									</a>
 								</div>
 							</div>
