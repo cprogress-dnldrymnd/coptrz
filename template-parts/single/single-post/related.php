@@ -46,6 +46,7 @@ $categories = get_the_category(get_the_ID());
                             ?>
                             <div class="swiper-slide product-box">
                                 <div class="inner background-white d-block ">
+                                    <a href="<?= get_permalink($post_id) ?>" class="box-link"></a>
                                     <?php
                                     $DisplayData->image(
                                         array(

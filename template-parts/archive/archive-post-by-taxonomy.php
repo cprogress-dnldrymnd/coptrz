@@ -61,6 +61,7 @@ if (!empty($eventscategory)) {
                                     <div class="col-xl-3 col-lg-4 col-sm-6 post-item">
                                         <div class="swiper-slide">
                                             <div class="inner background-white d-block ">
+                                                <a href="<?= get_permalink() ?>" class="box-link"></a>
                                                 <?php
                                                 $DisplayData->image(
                                                     array(
@@ -110,6 +111,10 @@ if (!empty($eventscategory)) {
                                         <div class="swiper-slide">
                                             <div
                                                 class="inner-cta h-100 background-accent content-margin d-flex flex-column justify-content-between">
+                                                <?php if ($link_text) { ?>
+                                                    <a href="<?= $link_url ?>" class="box-link"></a>
+                                                <?php } ?>
+
                                                 <div class="heading-box">
                                                     <h4>
                                                         <?= $heading ?>

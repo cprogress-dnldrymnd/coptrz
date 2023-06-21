@@ -30,6 +30,7 @@ $SVG = new SVG;
                   <div class="product-box col-lg-4 col-sm-6 post-item">
                     <div class="swiper-slide">
                       <div class="inner background-white d-block ">
+                        <a href="<?= get_permalink() ?>" class="box-link"></a>
                         <div class="image-holder position-relative">
                           <?php
                           $DisplayData->image(

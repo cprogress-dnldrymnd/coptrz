@@ -13,7 +13,6 @@ if (is_home()) {
     $button_text = 'Read more';
 
 }
-
 else if (is_post_type_archive('events')) {
 
     $getItems = $GetData->get_posts_details('events');
@@ -95,7 +94,6 @@ else if (is_post_type_archive('events')) {
                             $meta2 = get_the_author_meta('display_name', $author_id);
 
                         }
-
                         else if (is_post_type_archive('events')) {
 
                             $post_id = $key;
@@ -111,6 +109,7 @@ else if (is_post_type_archive('events')) {
                         <div class="swiper-slide product-box">
 
                             <div class="inner background-white d-block ">
+                                <a href="<?= get_permalink($post_id) ?>" class="box-link"></a>
 
                                 <?php
 
