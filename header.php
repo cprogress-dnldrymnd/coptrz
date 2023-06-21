@@ -72,6 +72,14 @@ if (is_page()) {
 	<?php
 	//get_template_part('template-parts/header/header', 'modal');
 	?>
+
+	<heyflow-modal-element modal-id="9npbleZmTQmuV3CmsLi8q"><heyflow-wrapper flow-id="customer-support-f45af7" dynamic-height style-config='{"width": "800px"}' modal-id="9npbleZmTQmuV3CmsLi8q"></heyflow-wrapper></heyflow-modal-element>
+
+<heyflow-modal-element modal-id="uXa4D8wfqygIKfamkEoOY"><heyflow-wrapper flow-id="drone-quote" dynamic-height style-config='{"width": "800px"}' modal-id="uXa4D8wfqygIKfamkEoOY"></heyflow-wrapper></heyflow-modal-element>
+
+<heyflow-modal-element modal-id="hw_LlZ6tfVqYOzCI6TT5n"><heyflow-wrapper flow-id="become-a-partner" dynamic-height style-config='{"width": "800px"}' modal-id="hw_LlZ6tfVqYOzCI6TT5n"></heyflow-wrapper></heyflow-modal-element>
+
+<heyflow-modal-element modal-id="SzrU9jJlZZ-PNcULpWk4S"><heyflow-wrapper flow-id="product-enquiry" dynamic-height style-config='{"width": "800px"}' modal-id="SzrU9jJlZZ-PNcULpWk4S"></heyflow-wrapper></heyflow-modal-element>
 	<main id="main" class="<?= $page_theme ?>">
 
 		<?= single_product_summary(get_the_ID()) ?>
