@@ -3,7 +3,7 @@
 $DisplayData = new DisplayData;
 
 $GetData = new GetData;
-
+$button_text = 'Read more';
 if (is_home()) {
 
     $items = get__theme_option('suggested_articles');
