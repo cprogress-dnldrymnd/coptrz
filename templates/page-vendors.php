@@ -58,7 +58,6 @@ foreach ($terms as $term) {
 
 }
 $DisplayData = new DisplayData;
-
 ?>
 <?php
 if (!get__post_meta('hide_page_banner')) {
@@ -69,7 +68,7 @@ get_template_part('template-parts/section/content', 'after-banner');
 
 <section class="vendors-nav">
   <div class="container">
-    <ul class="list-inline">
+    <ul class="list-inline d-flex">
       <li><a href="#featured-vendors">Featured Vendors</a></li>
       <li><a href="#a-e">A-E</a></li>
       <li><a href="#f-p">F-P</a></li>
