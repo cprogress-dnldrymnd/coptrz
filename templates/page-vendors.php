@@ -11,10 +11,13 @@ $terms = get_terms(
   array(
     'taxonomy'   => 'pa_vendors',
     'hide_empty' => false,
+    'orderby'    => 'name',
+    'order'      => 'ASC',
   )
 );
 
 $featured_vendor_arr = array();
+$a_f_array = array();
 foreach ($terms as $term) {
   $image = get__term_meta($term->term_id, 'image');
   $hide_vendor = get__term_meta($term->term_id, 'hide_vendor');
@@ -25,6 +28,15 @@ foreach ($terms as $term) {
       'image' => $image,
       'name'  => $term->name
     );
+  }
+
+  if (!$hide_vendor) {
+    if (str_starts_with($term->name, 'A')) {
+      $a_f_array[$term->term_id] = array(
+        'image' => $image,
+        'name'  => $term->name
+      );
+    }
   }
 }
 $DisplayData = new DisplayData;
