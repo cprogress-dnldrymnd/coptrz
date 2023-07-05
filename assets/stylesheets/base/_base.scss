@@ -2841,5 +2841,9 @@ heyflow-modal-element {
         padding: 2rem;
         border-radius: 10px;
         @include box-shadow(0px 14px 25px #00000005);
+        @include transition(300ms);
+        @include on-event {
+            @include transform(translateY(-10px));
+        }
     }
 }
