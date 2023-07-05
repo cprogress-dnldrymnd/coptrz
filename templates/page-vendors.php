@@ -79,7 +79,7 @@ get_template_part('template-parts/section/content', 'after-banner');
 <section class="vendors md-padding-bottom overflow-visible" id="featured-vendors">
   <div class="container">
     <div class="heading-box mb-3">
-      <h3>Featured Vendors</h3>
+      <h3>Featured Brands</h3>
     </div>
     <div class="vendor-slider-box">
       <div class="row g-3 text-center">
