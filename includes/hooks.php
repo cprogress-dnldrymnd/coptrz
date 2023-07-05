@@ -374,7 +374,7 @@ function vendors_submenu()
 		__('Vendors', 'textdomain'),
 		__('Vendors', 'textdomain'),
 		'manage_options',
-		'/edit-tags.php?taxonomy=pa_vendors&post_type=product',
+		'/edit-tags.php?taxonomy=pa_brands&post_type=product',
 	);
 }
 

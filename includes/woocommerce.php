@@ -224,7 +224,7 @@ function product_slider($is_shop = false)
 
                 $args['tax_query'][] = array(
 
-                    'taxonomy' => 'pa_vendors',
+                    'taxonomy' => 'pa_brands',
 
                     'field'    => 'term_id',
 
@@ -274,7 +274,7 @@ function product_slider_category($is_category = false)
     if ($vendor) {
         $tax_query[] = array(
 
-            'taxonomy' => 'pa_vendors',
+            'taxonomy' => 'pa_brands',
 
             'field'    => 'slug',
 

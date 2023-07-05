@@ -16,7 +16,7 @@ $featured_products = wc_get_featured_product_ids();
                     <?php foreach ($featured_products as $key => $featured_product) { ?>
                         <?php
                         $product = wc_get_product($featured_product);
-                        $vendor = get_the_terms($product->get_id(), 'pa_vendors');
+                        $vendor = get_the_terms($product->get_id(), 'pa_brands');
                         if($vendor) {
                            $vendor_id = $vendor[0]->term_id;
                         }

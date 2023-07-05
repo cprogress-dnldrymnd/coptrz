@@ -9,7 +9,7 @@
 <?php
 $terms = get_terms(
   array(
-    'taxonomy'   => 'pa_vendors',
+    'taxonomy'   => 'pa_brands',
     'hide_empty' => false,
     'orderby'    => 'name',
     'order'      => 'ASC',

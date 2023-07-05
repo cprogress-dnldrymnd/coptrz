@@ -7,7 +7,7 @@ $DisplayData = new DisplayData;
     $Helpers = new Helpers;
     echo '<div class="edit-holder-box">';
     echo $Helpers->get_edit_url('edit.php?post_type=product&page=crb_carbon_fields_container_vendor_settings.php', 'Edit Vendor Description');
-    echo $Helpers->get_edit_url('edit-tags.php?taxonomy=pa_vendors&post_type=product', 'Manage Vendors');
+    echo $Helpers->get_edit_url('edit-tags.php?taxonomy=pa_brands&post_type=product', 'Manage Vendors');
     echo '</div>';
   }
   ?>
@@ -30,7 +30,7 @@ $DisplayData = new DisplayData;
       <?php
       $terms = get_terms(
         array(
-          'taxonomy'   => 'pa_vendors',
+          'taxonomy'   => 'pa_brands',
           'hide_empty' => false,
         )
       );
