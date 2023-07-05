@@ -21,7 +21,7 @@ $DisplayData = new DisplayData;
 <section class="vendors">
   <div class="container">
     <div class="vendor-slider-box md-padding">
-      <div class="row text-center align-items-center">
+      <div class="row g-5 text-center">
         <?php foreach ($terms as $term) { ?>
           <?php
           $image = get__term_meta($term->term_id, 'image');
@@ -29,7 +29,7 @@ $DisplayData = new DisplayData;
           if (!$hide_vendor) {
             ?>
             <div class="col-md-3 vendor-box">
-              <a class="inner background-white d-block" href="<?= get_term_link($term->term_id) ?>">
+              <a class="inner h-100 background-white d-block" href="<?= get_term_link($term->term_id) ?>">
                 <?php
                 $DisplayData->image(
                   array(

@@ -11834,6 +11834,9 @@ heyflow-modal-element {
 .display-filter ul li.display-slider.active svg #Rectangle_255 {
   fill: var(--accent-color); }
 
+.vendor-box .image-box {
+  padding: 20%; }
+
 @font-face {
   font-family: "HKNovaR";
   src: url("./assets/fonts/hknova/HKNovaR-Light.eot");
