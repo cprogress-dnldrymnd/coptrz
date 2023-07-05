@@ -21,7 +21,7 @@ $DisplayData = new DisplayData;
 <section class="vendors">
   <div class="container">
     <div class="vendor-slider-box md-padding">
-      <div class="row g-5 text-center">
+      <div class="row g-3 text-center">
         <?php foreach ($terms as $term) { ?>
           <?php
           $image = get__term_meta($term->term_id, 'image');
