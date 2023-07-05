@@ -23,15 +23,19 @@ if (!get__post_meta('hide_page_banner')) {
 }
 get_template_part('template-parts/section/content', 'after-banner');
 ?>
-<section class="vendors md-padding-bottom overflow-visible">
+<section class="vendors md-padding-bottom overflow-visible" id="featured-vendors">
   <div class="container">
+    <div class="heading-box">
+      <h2>Featured Vendors</h2>
+    </div>
     <div class="vendor-slider-box">
       <div class="row g-3 text-center">
         <?php foreach ($terms as $term) { ?>
           <?php
           $image = get__term_meta($term->term_id, 'image');
           $hide_vendor = get__term_meta($term->term_id, 'hide_vendor');
-          if (!$hide_vendor) {
+          $featured_vendor = get__term_meta($term->term_id, 'featured_vendor');
+          if ($featured_vendor) {
             ?>
             <div class="col-xl-3 col-lg-4 col-sm-6 col-6 vendor-box">
               <a class="inner h-100 background-white d-block" href="<?= get_term_link($term->term_id) ?>">
