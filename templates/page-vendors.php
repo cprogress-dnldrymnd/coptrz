@@ -173,39 +173,4 @@ get_template_part('template-parts/section/content', 'after-banner');
   </div>
 </section>
 
-<section class="vendors md-padding-bottom overflow-visible" id="q-z">
-  <div class="container">
-    <div class="heading-box mb-3">
-      <h3>Q-Z</h3>
-    </div>
-    <div class="vendor-slider-box">
-      <div class="row g-3 text-center">
-        <?php foreach ($q_z_array as $key => $vendor) { ?>
-          <?php
-          ?>
-          <div class="col-xl-3 col-lg-4 col-sm-6 col-6 vendor-box">
-            <a class="inner h-100 background-white d-block" href="<?= get_term_link($key) ?>">
-              <?php
-              $DisplayData->image(
-                array(
-                  'image_id' => $vendor['image'],
-                  'size'     => 'medium'
-                ),
-                'position-relative image-contain-transform mb-3'
-              );
-              ?>
-              <div class="vendor-title">
-                <h4 class="mb-0">
-                  <?= $vendor['name'] ?>
-                </h4>
-              </div>
-            </a>
-          </div>
-        <?php } ?>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <?php get_footer(); ?>
