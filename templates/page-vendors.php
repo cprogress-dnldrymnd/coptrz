@@ -66,6 +66,17 @@ if (!get__post_meta('hide_page_banner')) {
 }
 get_template_part('template-parts/section/content', 'after-banner');
 ?>
+
+<section class="vendors-nav">
+  <div class="container">
+    <ul class="list-inline">
+      <li><a href="#featured-vendors">Featured Vendors</a></li>
+      <li><a href="#a-e">A-E</a></li>
+      <li><a href="#f-p">F-P</a></li>
+      <li><a href="#q-z">Q-Z</a></li>
+    </ul>
+  </div>
+</section>
 <section class="vendors md-padding-bottom overflow-visible" id="featured-vendors">
   <div class="container">
     <div class="heading-box mb-3">
