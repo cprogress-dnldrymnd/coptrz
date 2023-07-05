@@ -2836,4 +2836,14 @@ heyflow-modal-element {
     .image-box {
         padding: 20%;
     }
+
+    .inner {
+        padding: 2rem 0;
+        border-radius: 10px;
+
+        .vendor-title {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
 }
