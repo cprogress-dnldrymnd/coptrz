@@ -39,19 +39,15 @@ foreach ($terms as $term) {
         'name'  => $term->name
       );
     }
-  }
 
 
-  if (!$hide_vendor) {
     if (str_starts_with($term->name, 'F') || str_starts_with($term->name, 'G') || str_starts_with($term->name, 'H') || str_starts_with($term->name, 'I') || str_starts_with($term->name, 'J') || str_starts_with($term->name, 'K') || str_starts_with($term->name, 'L') || str_starts_with($term->name, 'M') || str_starts_with($term->name, 'N') || str_starts_with($term->name, 'O') || str_starts_with($term->name, 'P')) {
       $f_p_array[$term->term_id] = array(
         'image' => $image,
         'name'  => $term->name
       );
     }
-  }
 
-  if (!$hide_vendor) {
     if (str_starts_with($term->name, 'Q') || str_starts_with($term->name, 'R') || str_starts_with($term->name, 'S') || str_starts_with($term->name, 'T') || str_starts_with($term->name, 'U') || str_starts_with($term->name, 'V') || str_starts_with($term->name, 'W') || str_starts_with($term->name, 'X') || str_starts_with($term->name, 'Y') || str_starts_with($term->name, 'Z')) {
       $q_z_array[$term->term_id] = array(
         'image' => $image,
