@@ -23,9 +23,9 @@ if (!get__post_meta('hide_page_banner')) {
 }
 get_template_part('template-parts/section/content', 'after-banner');
 ?>
-<section class="vendors">
+<section class="vendors md-padding-bottom">
   <div class="container">
-    <div class="vendor-slider-box md-padding">
+    <div class="vendor-slider-box">
       <div class="row g-3 text-center">
         <?php foreach ($terms as $term) { ?>
           <?php
