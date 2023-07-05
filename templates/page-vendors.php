@@ -69,7 +69,7 @@ get_template_part('template-parts/section/content', 'after-banner');
 <section class="vendors-nav sm-padding-bottom overflow-visible">
   <div class="container">
     <ul class="list-inline d-flex">
-      <li><a href="#featured-vendors">Featured Vendors</a></li>
+      <li><a href="#featured-vendors">Featured Brands</a></li>
       <li><a href="#a-e">A-E</a></li>
       <li><a href="#f-p">F-P</a></li>
       <li><a href="#q-z">Q-Z</a></li>
