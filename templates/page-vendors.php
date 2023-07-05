@@ -55,7 +55,7 @@ get_template_part('template-parts/section/content', 'after-banner');
     </div>
     <div class="vendor-slider-box">
       <div class="row g-3 text-center">
-        <?php foreach ($featured_vendor_arr as $key => $featured_vendor_val) { ?>
+        <?php foreach ($featured_vendor_arr as $key => $vendor) { ?>
           <?php
           ?>
           <div class="col-xl-3 col-lg-4 col-sm-6 col-6 vendor-box">
@@ -63,7 +63,7 @@ get_template_part('template-parts/section/content', 'after-banner');
               <?php
               $DisplayData->image(
                 array(
-                  'image_id' => $featured_vendor_val['image'],
+                  'image_id' => $vendor['image'],
                   'size'     => 'medium'
                 ),
                 'position-relative image-contain-transform mb-3'
@@ -71,7 +71,42 @@ get_template_part('template-parts/section/content', 'after-banner');
               ?>
               <div class="vendor-title">
                 <h4 class="mb-0">
-                  <?= $featured_vendor_val['name'] ?>
+                  <?= $vendor['name'] ?>
+                </h4>
+              </div>
+            </a>
+          </div>
+        <?php } ?>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="vendors md-padding-bottom overflow-visible" id="a-f">
+  <div class="container">
+    <div class="heading-box">
+      <h3>Featured Vendors</h3>
+    </div>
+    <div class="vendor-slider-box">
+      <div class="row g-3 text-center">
+        <?php foreach ($a_f_array as $key => $vendor) { ?>
+          <?php
+          ?>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-6 vendor-box">
+            <a class="inner h-100 background-white d-block" href="<?= get_term_link($key) ?>">
+              <?php
+              $DisplayData->image(
+                array(
+                  'image_id' => $vendor['image'],
+                  'size'     => 'medium'
+                ),
+                'position-relative image-contain-transform mb-3'
+              );
+              ?>
+              <div class="vendor-title">
+                <h4 class="mb-0">
+                  <?= $vendor['name'] ?>
                 </h4>
               </div>
             </a>
