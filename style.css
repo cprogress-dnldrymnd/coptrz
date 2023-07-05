@@ -11848,11 +11848,11 @@ heyflow-modal-element {
   -o-transition: 300ms;
   transition: 300ms; }
   .vendor-box .inner:hover, .vendor-box .inner:active, .vendor-box .inner:focus {
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    transform: translateY(-10px); }
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px); }
 
 @font-face {
   font-family: "HKNovaR";
