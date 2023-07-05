@@ -33,7 +33,7 @@ get_template_part('template-parts/section/content', 'after-banner');
           $hide_vendor = get__term_meta($term->term_id, 'hide_vendor');
           if (!$hide_vendor) {
             ?>
-            <div class="col-md-3 vendor-box">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 vendor-box">
               <a class="inner h-100 background-white d-block" href="<?= get_term_link($term->term_id) ?>">
                 <?php
                 $DisplayData->image(
