@@ -15,7 +15,7 @@ $DisplayData = new DisplayData;
     <div class="row line-title line-title-v2 d-flex align-items-start fw-medium">
       <div class="col d-flex align-items-center pt-3">
         <span class="text">
-          VENDORS
+          BRANDS
         </span>
         <span class="line"></span>
       </div>
