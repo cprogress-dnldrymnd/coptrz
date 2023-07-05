@@ -31,7 +31,7 @@ foreach ($terms as $term) {
   }
 
   if (!$hide_vendor) {
-    if (str_starts_with($term->name, 'A')) {
+    if (str_starts_with($term->name, 'A') || str_starts_with($term->name, 'B') || str_starts_with($term->name, 'C') || str_starts_with($term->name, 'D') || str_starts_with($term->name, 'E') ) {
       $a_f_array[$term->term_id] = array(
         'image' => $image,
         'name'  => $term->name
