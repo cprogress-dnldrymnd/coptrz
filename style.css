@@ -11837,11 +11837,11 @@ heyflow-modal-element {
 .vendor-box .image-box {
   padding: 20%; }
 .vendor-box .inner {
-  padding: 2rem 0;
-  border-radius: 10px; }
-  .vendor-box .inner .vendor-title {
-    padding-left: 1rem;
-    padding-right: 1rem; }
+  padding: 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 14px 25px #00000005;
+  -moz-box-shadow: 0px 14px 25px #00000005;
+  box-shadow: 0px 14px 25px #00000005; }
 
 @font-face {
   font-family: "HKNovaR";

@@ -2838,12 +2838,8 @@ heyflow-modal-element {
     }
 
     .inner {
-        padding: 2rem 0;
+        padding: 2rem;
         border-radius: 10px;
-
-        .vendor-title {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
+        @include box-shadow(0px 14px 25px #00000005);
     }
 }
