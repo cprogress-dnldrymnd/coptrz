@@ -17,7 +17,12 @@ $terms = get_terms(
 $DisplayData = new DisplayData;
 
 ?>
-
+<?php
+if (!get__post_meta('hide_page_banner')) {
+  get_template_part('template-parts/section/content', 'banner');
+}
+get_template_part('template-parts/section/content', 'after-banner');
+?>
 <section class="vendors">
   <div class="container">
     <div class="vendor-slider-box md-padding">
