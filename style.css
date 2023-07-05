@@ -11841,7 +11841,18 @@ heyflow-modal-element {
   border-radius: 10px;
   -webkit-box-shadow: 0px 14px 25px #00000005;
   -moz-box-shadow: 0px 14px 25px #00000005;
-  box-shadow: 0px 14px 25px #00000005; }
+  box-shadow: 0px 14px 25px #00000005;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms; }
+  .vendor-box .inner:hover, .vendor-box .inner:active, .vendor-box .inner:focus {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px); }
 
 @font-face {
   font-family: "HKNovaR";
