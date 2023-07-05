@@ -66,7 +66,7 @@ if (!get__post_meta('hide_page_banner')) {
 get_template_part('template-parts/section/content', 'after-banner');
 ?>
 
-<section class="vendors-nav">
+<section class="vendors-nav sm-padding-bottom overflow-visible">
   <div class="container">
     <ul class="list-inline d-flex">
       <li><a href="#featured-vendors">Featured Vendors</a></li>

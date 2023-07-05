@@ -14956,8 +14956,14 @@ section.featured-boxes .featured-boxes-holder .column-holder {
 
 section.vendors-nav ul li a {
   font-weight: 500;
-  font-size: 1.5rem; }
+  font-size: 1rem;
+  background-color: var(--accent-color);
+  border-radius: 50px;
+  padding: 0.5rem 2rem !important;
+  color: var(--white-color); }
+  section.vendors-nav ul li a:hover, section.vendors-nav ul li a:active, section.vendors-nav ul li a:focus {
+    background-color: var(--black-color); }
 section.vendors-nav ul li:not(:last-child) {
-  margin-right: 1rem; }
+  margin-right: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */
