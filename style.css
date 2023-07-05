@@ -14954,4 +14954,10 @@ section.featured-boxes .featured-boxes-holder .column-holder {
     -o-transform: translateY(-10px);
     transform: translateY(-10px); }
 
+section.vendors-nav ul li a {
+  font-weight: 500;
+  font-size: 1.5rem; }
+section.vendors-nav ul li:not(:last-child) {
+  margin-right: 1rem; }
+
 /*# sourceMappingURL=style.css.map */

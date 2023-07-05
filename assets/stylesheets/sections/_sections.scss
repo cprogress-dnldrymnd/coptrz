@@ -1755,3 +1755,18 @@ section.featured-boxes {
         }
     }
 }
+
+section.vendors-nav {
+    ul {
+        li {
+            a {
+                font-weight: 500;
+                font-size: 1.5rem;
+            }
+
+            @include not-last-child {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
