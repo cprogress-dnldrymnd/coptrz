@@ -437,7 +437,6 @@ add_shortcode('webinar_box', array($Shortcodes, 'webinar_box'));
 add_shortcode('webinar_date_time', array($Shortcodes, 'webinar_date_time'));
 add_shortcode('login_link', array($Shortcodes, 'login_link'));
 add_shortcode('login_button', array($Shortcodes, 'login_button'));
-add_shortcode('brands', array($Shortcodes, 'brands'));
 
 
 function add_to_cart_form_shortcode($atts)
