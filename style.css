@@ -13709,9 +13709,14 @@ body.hero-banner-revealing_heading header .header-main:before {
     flex: 0 0 60px;
     background-color: var(--white-color); }
     .image-box-menu .inner .image-box img {
-      width: 100%; }
+      width: 95%; }
   .image-box-menu .inner .brands-details {
     padding-left: 10px; }
+    .image-box-menu .inner .brands-details .description-box {
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden !important;
+      display: -webkit-box; }
     .image-box-menu .inner .brands-details h5,
     .image-box-menu .inner .brands-details .description-box {
       font-size: 14px; }
