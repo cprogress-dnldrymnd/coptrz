@@ -13701,9 +13701,16 @@ body.hero-banner-revealing_heading header .header-main:before {
   #mega-menu-wrap-header-menu #mega-menu-header-menu li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-row .mega-menu-column {
     margin-bottom: 1rem; } }
 
-.image-box-menu .inner .image-box {
-  width: 60px;
-  height: 60px; }
+.image-box-menu .inner {
+  color: var(--black-color); }
+  .image-box-menu .inner .image-box {
+    width: 80px;
+    height: 80px;
+    flex: 0 0 80px; }
+    .image-box-menu .inner .image-box img {
+      width: 100%; }
+  .image-box-menu .inner .brands-details h5, .image-box-menu .inner .brands-details .description-box {
+    font-size: 14px; }
 
 footer {
   position: relative;
