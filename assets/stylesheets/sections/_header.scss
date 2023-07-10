@@ -1279,19 +1279,26 @@ body {
 
 .image-box-menu {
 	.inner {
-				color: var(--black-color);
+		color: var(--black-color);
+
 		.image-box {
 			width: 60px;
 			height: 60px;
 			flex: 0 0 60px;
+			background-color: var(--white-color);
+
 			img {
-				width: 100%;
+				width: 95%;
 			}
 		}
+
 		.brands-details {
 			padding-left: 10px;
-			h5, .description-box {
-				font-size: 14px;;
+
+			h5,
+			.description-box {
+				font-size: 14px;
+				;
 			}
 		}
 	}
