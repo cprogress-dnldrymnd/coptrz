@@ -361,15 +361,15 @@ class Shortcodes
 		foreach ($terms as $term) {
 			$image = get__term_meta($term->term_id, 'image');
 			$hide_vendor = get__term_meta($term->term_id, 'hide_vendor');
+			$menu_description = get__term_meta($term->term_id, 'menu_description');
 
 			if (!$hide_vendor) {
-
 				foreach ($letters_arr as $letter) {
 					if (str_starts_with($term->name, $letter)) {
 						$brands_arr[$term->term_id] = array(
 							'image'       => $image,
 							'name'        => $term->name,
-							'description' => $term->description
+							'description' => $menu_description ? $menu_description : $term->description
 						);
 					}
 				}
