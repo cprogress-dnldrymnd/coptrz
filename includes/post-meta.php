@@ -108,15 +108,15 @@ class PostMeta extends GetData
 				->set_classes('select-button-icon ')
 				->set_width(10),
 			/*Field::make('html',  $id . '_button_select_icon', 'Select Icon')
-																																																																					->set_html('<a class="button button-primary button-large thickbox select-icon" href="#TB_inline?width=600&height=550&inlineId=modal-svg-" >SELECT ICON</a>')
-																																																																					->set_conditional_logic(array(
-																																																																					array(
-																																																																					'field' => $id . '_button_type',
-																																																																					'value' => array('page_button', 'post_button', 'services_button', 'custom_button'),
-																																																																					'compare' => 'IN'
-																																																																					)
-																																																																					))
-																																																																					->set_width(20)*/
+																																																																									 ->set_html('<a class="button button-primary button-large thickbox select-icon" href="#TB_inline?width=600&height=550&inlineId=modal-svg-" >SELECT ICON</a>')
+																																																																									 ->set_conditional_logic(array(
+																																																																									 array(
+																																																																									 'field' => $id . '_button_type',
+																																																																									 'value' => array('page_button', 'post_button', 'services_button', 'custom_button'),
+																																																																									 'compare' => 'IN'
+																																																																									 )
+																																																																									 ))
+																																																																									 ->set_width(20)*/
 
 		);
 
@@ -1476,6 +1476,9 @@ Container::make('theme_options', __('Settings'))
 		array_merge(
 			array_merge(
 				array(
+					Field::make('html', 'html_0')->set_html('<label>FEATURED DRONES</label>')->set_classes('seperator '),
+					Field::make('multiselect', 'featured_drones', 'Featured Drones')
+						->set_options($PostMeta->get_posts('product', 'Select Product')),
 					Field::make('html', 'html_1')->set_html('<label>PRODUCT ARCHIVE PAGE CTA</label>')->set_classes('seperator '),
 					Field::make('text', 'product_archive_cta_heading', 'Heading'),
 					Field::make('textarea', 'product_archive_cta_description', 'Description'),
@@ -1495,7 +1498,7 @@ Container::make('theme_options', __('Settings'))
 				$PostMeta->_button('product_archive_cta', 'PRODUCT ARCHIVE PAGE CTA BUTTON')
 			),
 
-			$PostMeta->_button('product_enquire_button', 'PRODUCT ENQUIRE  BUTTON')
+			$PostMeta->_button('product_enquire_button', 'PRODUCT ENQUIRE BUTTON')
 
 		)
 
