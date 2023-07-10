@@ -355,8 +355,8 @@ class Shortcodes
 			)
 		);
 		$brands_arr = array();
-		
-		$letters_arr = explode(' ', $letters);
+
+		$letters_arr = explode(',', $letters);
 
 		var_dump($letters_arr);
 		foreach ($terms as $term) {
