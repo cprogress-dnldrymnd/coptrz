@@ -334,6 +334,7 @@ class Shortcodes
 	}
 	function brands($atts, $content = null)
 	{
+		$DisplayData = new DisplayData;
 		extract(
 			shortcode_atts(
 				array(
@@ -362,7 +363,7 @@ class Shortcodes
 			if (!$hide_vendor) {
 
 				foreach ($letters_arr as $letter) {
-					if (str_starts_with($term->name, $A)) {
+					if (str_starts_with($term->name, $letter)) {
 						$brands_arr[$term->term_id] = array(
 							'image'       => $image,
 							'name'        => $term->name,
@@ -437,6 +438,7 @@ add_shortcode('webinar_box', array($Shortcodes, 'webinar_box'));
 add_shortcode('webinar_date_time', array($Shortcodes, 'webinar_date_time'));
 add_shortcode('login_link', array($Shortcodes, 'login_link'));
 add_shortcode('login_button', array($Shortcodes, 'login_button'));
+add_shortcode('brands', array($Shortcodes, 'brands'));
 
 
 function add_to_cart_form_shortcode($atts)
