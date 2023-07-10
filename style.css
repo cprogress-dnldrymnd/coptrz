@@ -13712,7 +13712,7 @@ body.hero-banner-revealing_heading header .header-main:before {
       width: 95%; }
   .image-box-menu .inner .brands-details {
     padding-left: 10px; }
-    .image-box-menu .inner .brands-details .description-box {
+    .image-box-menu .inner .brands-details .description-box.term-desc {
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden !important;
