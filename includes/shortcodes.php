@@ -420,7 +420,7 @@ class Shortcodes
 		return ob_get_clean();
 	}
 
-	function prorudcts($atts, $content = null)
+	function featured_drones($atts, $content = null)
 	{
 		ob_start();
 		$DisplayData = new DisplayData;
@@ -501,7 +501,7 @@ add_shortcode('webinar_date_time', array($Shortcodes, 'webinar_date_time'));
 add_shortcode('login_link', array($Shortcodes, 'login_link'));
 add_shortcode('login_button', array($Shortcodes, 'login_button'));
 add_shortcode('brands', array($Shortcodes, 'brands'));
-add_shortcode('products', array($Shortcodes, 'products'));
+add_shortcode('featured_drones', array($Shortcodes, 'featured_drones'));
 
 
 function add_to_cart_form_shortcode($atts)
