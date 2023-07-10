@@ -369,7 +369,8 @@ class Shortcodes
 						$brands_arr[$term->term_id] = array(
 							'image'       => $image,
 							'name'        => $term->name,
-							'description' => $menu_description ? $menu_description : $term->description
+							'description' => $menu_description ? $menu_description : $term->description,
+							'class' => $menu_description ? 'menu-desc' : 'term-desc',
 						);
 					}
 				}
@@ -407,7 +408,7 @@ class Shortcodes
 								$DisplayData->description(
 									array(
 										'description' => $brand['description'],
-									)
+									), $brand['class']
 								);
 								?>
 							</div>
