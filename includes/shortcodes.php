@@ -386,7 +386,7 @@ class Shortcodes
 					<?php
 					?>
 					<div class="<?= $class ?>">
-						<a class="inner" href="<?= get_term_link($key) ?>">
+						<a class="inner d-flex" href="<?= get_term_link($key) ?>">
 							<?php
 							$DisplayData->image(
 								array(

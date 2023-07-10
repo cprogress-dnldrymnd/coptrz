@@ -1278,5 +1278,10 @@ body {
 }
 
 .image-box-menu {
-	
+	.inner {
+		.image-box {
+			width: 60px;
+			height: 60px;
+		}
+	}
 }
