@@ -380,7 +380,7 @@ class Shortcodes
 
 		?>
 		<div class="image-box-menu">
-			<div class="row g-3">
+			<div class="row gx-3 gy-4">
 
 				<?php foreach ($brands_arr as $key => $brand) { ?>
 					<?php
