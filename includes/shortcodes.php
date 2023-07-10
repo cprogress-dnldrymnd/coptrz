@@ -355,8 +355,10 @@ class Shortcodes
 			)
 		);
 		$brands_arr = array();
-
+		
 		$letters_arr = explode(' ', $letters);
+
+		var_dump($letters_arr);
 		foreach ($terms as $term) {
 			$image = get__term_meta($term->term_id, 'image');
 			$hide_vendor = get__term_meta($term->term_id, 'hide_vendor');
