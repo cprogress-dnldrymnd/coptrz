@@ -1296,10 +1296,12 @@ body {
 			padding-left: 10px;
 
 			.description-box {
-				-webkit-line-clamp: 2;
-				-webkit-box-orient: vertical;
-				overflow: hidden !important;
-				display: -webkit-box;
+				&.term-desc {
+					-webkit-line-clamp: 2;
+					-webkit-box-orient: vertical;
+					overflow: hidden !important;
+					display: -webkit-box;
+				}
 			}
 
 			h5,
