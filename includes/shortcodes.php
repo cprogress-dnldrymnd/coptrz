@@ -334,6 +334,7 @@ class Shortcodes
 	}
 	function brands($atts, $content = null)
 	{
+		ob_start();
 		$DisplayData = new DisplayData;
 		extract(
 			shortcode_atts(
@@ -414,7 +415,7 @@ class Shortcodes
 			<?php } ?>
 		</div>
 		<?php
-
+		return ob_get_clean();
 	}
 
 }
