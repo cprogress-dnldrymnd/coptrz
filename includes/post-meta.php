@@ -1147,7 +1147,7 @@ Container::make('term_meta', __('Category Properties'))
 	->where('term_taxonomy', '=', 'pa_brands')
 	->add_fields(
 		array(
-			Field::make('textara', 'menu_description', __('Menu Description')),
+			Field::make('textarea', 'menu_description', __('Menu Description')),
 			Field::make('image', 'image', __('Logo')),
 			Field::make('image', 'featured_product_image', 'Featured Product Logo'),
 
