@@ -332,7 +332,89 @@ class Shortcodes
 		return '<div class="button-box button-white"><a class="px-0" style="text-decoration: underline" href="' . $login_link . '" >' . $login_text . '</a></div>';
 
 	}
+	function brands($atts, $content = null)
+	{
+		extract(
+			shortcode_atts(
+				array(
+					'letters' => '',
+					'class'   => 'col-lg-6'
+				),
+				$atts
+			)
+		);
 
+		$terms = get_terms(
+			array(
+				'taxonomy'   => 'pa_brands',
+				'hide_empty' => false,
+				'orderby'    => 'name',
+				'order'      => 'ASC',
+			)
+		);
+		$brands_arr = array();
+
+		$letters_arr = explode(' ', $letters);
+		foreach ($terms as $term) {
+			$image = get__term_meta($term->term_id, 'image');
+			$hide_vendor = get__term_meta($term->term_id, 'hide_vendor');
+
+			if (!$hide_vendor) {
+
+				foreach ($letters_arr as $letter) {
+					if (str_starts_with($term->name, $A)) {
+						$brands_arr[$term->term_id] = array(
+							'image'       => $image,
+							'name'        => $term->name,
+							'description' => $term->description
+						);
+					}
+				}
+
+			}
+
+		}
+
+		?>
+		<div class="image-box-menu">
+			<?php foreach ($brands_arr as $key => $brand) { ?>
+				<div class="row">
+					<?php
+					?>
+					<div class="<?= $class ?>">
+						<a class="inner" href="<?= get_term_link($key) ?>">
+							<?php
+							$DisplayData->image(
+								array(
+									'image_id' => $brand['image'],
+									'size'     => 'medium'
+								),
+								'position-relative image-contain-transform mb-3'
+							);
+							?>
+							<div class="brands-details">
+								<?php
+								$DisplayData->heading(
+									array(
+										'heading' => $brand['name'],
+										'tag'     => 'h5'
+									)
+								);
+								$DisplayData->description(
+									array(
+										'description' => $brand['description'],
+									)
+								);
+								?>
+							</div>
+						</a>
+					</div>
+				</div>
+			<?php } ?>
+		</div>
+		<?php
+
+	}
 
 }
 $Shortcodes = new Shortcodes;
@@ -355,6 +437,7 @@ add_shortcode('webinar_box', array($Shortcodes, 'webinar_box'));
 add_shortcode('webinar_date_time', array($Shortcodes, 'webinar_date_time'));
 add_shortcode('login_link', array($Shortcodes, 'login_link'));
 add_shortcode('login_button', array($Shortcodes, 'login_button'));
+add_shortcode('brands', array($Shortcodes, 'brands'));
 
 
 function add_to_cart_form_shortcode($atts)
