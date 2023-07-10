@@ -370,7 +370,7 @@ class Shortcodes
 							'image'       => $image,
 							'name'        => $term->name,
 							'description' => $menu_description ? $menu_description : $term->description,
-							'class' => $menu_description ? 'menu-desc' : 'term-desc',
+							'class'       => $menu_description ? 'long-desc' : 'short-desc',
 						);
 					}
 				}
@@ -443,6 +443,16 @@ class Shortcodes
 
 				<?php foreach ($featured_drones as $drones) { ?>
 					<?php
+					$menu_description = get__post_meta_by_id($drones, 'menu_description');
+
+					if ($menu_description) {
+						$description = $menu_description;
+						$class = 'long-desc';
+					}
+					else {
+						$description = get_the_excerpt($drones);
+						$class = 'short-desc';
+					}
 					?>
 					<div class="<?= $class ?>">
 						<a class="inner d-flex" href="<?= get_permalink($drones) ?>">
@@ -465,7 +475,7 @@ class Shortcodes
 								);
 								$DisplayData->description(
 									array(
-										'description' => get_the_excerpt($drones)
+										'description' => $description
 									)
 								);
 								?>
