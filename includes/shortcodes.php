@@ -420,7 +420,66 @@ class Shortcodes
 		return ob_get_clean();
 	}
 
+	function prorudcts($atts, $content = null)
+	{
+		ob_start();
+		$DisplayData = new DisplayData;
+		extract(
+			shortcode_atts(
+				array(
+					'class' => 'col-lg-12'
+				),
+				$atts
+			)
+		);
+
+		$featured_drones = get__theme_option('featured_drones');
+
+
+		?>
+		<div class="image-box-menu">
+			<div class="row gx-3 gy-4">
+
+				<?php foreach ($featured_drones as $drones) { ?>
+					<?php
+					?>
+					<div class="<?= $class ?>">
+						<a class="inner d-flex" href="<?= get_permalink($drones) ?>">
+							<?php
+							$DisplayData->image(
+								array(
+									'image_id' => get_post_thumbnail_id($drones),
+									'size'     => 'medium'
+								),
+								'position-relative image-contain-transform mb-3'
+							);
+							?>
+							<div class="brands-details">
+								<?php
+								$DisplayData->heading(
+									array(
+										'heading' => get_the_title($drones),
+										'tag'     => 'h5'
+									)
+								);
+								$DisplayData->description(
+									array(
+										'description' => get_the_excerpt($drones)
+									)
+								);
+								?>
+							</div>
+						</a>
+					</div>
+				<?php } ?>
+			</div>
+		</div>
+		<?php
+		return ob_get_clean();
+	}
 }
+
+
 $Shortcodes = new Shortcodes;
 add_shortcode('contact_number', array($Shortcodes, 'contact_number'));
 add_shortcode('email_address', array($Shortcodes, 'email_address'));
@@ -442,6 +501,7 @@ add_shortcode('webinar_date_time', array($Shortcodes, 'webinar_date_time'));
 add_shortcode('login_link', array($Shortcodes, 'login_link'));
 add_shortcode('login_button', array($Shortcodes, 'login_button'));
 add_shortcode('brands', array($Shortcodes, 'brands'));
+add_shortcode('products', array($Shortcodes, 'products'));
 
 
 function add_to_cart_form_shortcode($atts)
