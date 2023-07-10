@@ -380,8 +380,9 @@ class Shortcodes
 
 		?>
 		<div class="image-box-menu">
-			<?php foreach ($brands_arr as $key => $brand) { ?>
-				<div class="row">
+			<div class="row">
+
+				<?php foreach ($brands_arr as $key => $brand) { ?>
 					<?php
 					?>
 					<div class="<?= $class ?>">
@@ -412,8 +413,8 @@ class Shortcodes
 							</div>
 						</a>
 					</div>
-				</div>
-			<?php } ?>
+				<?php } ?>
+			</div>
 		</div>
 		<?php
 		return ob_get_clean();
