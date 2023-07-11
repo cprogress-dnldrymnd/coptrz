@@ -32,7 +32,13 @@ jQuery(document).ready(function ($) {
 
 	heyflow_button();
 	
+	cf7();
+	
 });
+
+function cf7() {
+	jQuery('select[name="sector"] option:first-child').val('');
+}
 
 function image_center_tab() {
 	if (window.innerWidth < 992) {
