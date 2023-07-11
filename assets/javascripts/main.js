@@ -31,13 +31,13 @@ jQuery(document).ready(function ($) {
 	sidecart();
 
 	heyflow_button();
-	
+
 	cf7();
 	
 });
 
 function cf7() {
-	jQuery('select[name="sector"] option:first-child').val('');
+	jQuery('select[name="sector"] option:first-child').attr('value', '');
 }
 
 function image_center_tab() {
