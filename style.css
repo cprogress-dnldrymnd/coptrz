@@ -13704,9 +13704,9 @@ body.hero-banner-revealing_heading header .header-main:before {
 .image-box-menu .inner {
   color: var(--black-color); }
   .image-box-menu .inner .image-box {
-    width: 60px;
-    height: 60px;
-    flex: 0 0 60px;
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
     background-color: var(--white-color); }
     .image-box-menu .inner .image-box img, .image-box-menu .inner .image-box svg {
       width: auto;
