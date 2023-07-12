@@ -1148,6 +1148,7 @@ Container::make('term_meta', __('Category Properties'))
 	->add_fields(
 		array(
 			Field::make('textarea', 'menu_description', __('Menu Description')),
+			Field::make('image', 'menu_icon', 'Menu Icon'),
 			Field::make('image', 'image', __('Logo')),
 			Field::make('image', 'featured_product_image', 'Featured Product Logo'),
 
