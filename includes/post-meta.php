@@ -1463,7 +1463,7 @@ Container::make('theme_options', __('Brand Settings'))
 	->set_page_parent('edit.php?post_type=product')
 	->add_fields(
 		array(
-			Field::make('rich_text', 'vendor_description', 'Vendor Description'),
+			Field::make('rich_text', 'vendor_description', 'Brand Description'),
 
 		)
 	);
