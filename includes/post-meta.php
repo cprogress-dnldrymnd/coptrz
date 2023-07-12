@@ -1459,7 +1459,7 @@ Container::make('post_meta', 'Career Settings')
 /*-----------------------------------------------------------------------------------*/
 /* Vendor Settings
 /*-----------------------------------------------------------------------------------*/
-Container::make('theme_options', __('Vendor Settings'))
+Container::make('theme_options', __('Brand Settings'))
 	->set_page_parent('edit.php?post_type=product')
 	->add_fields(
 		array(
