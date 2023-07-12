@@ -339,47 +339,54 @@ class Shortcodes
 		extract(
 			shortcode_atts(
 				array(
-					'letters' => '',
-					'class'   => 'col-lg-6',
-					'is_featured' => false
+					'letters'     => '',
+					'class'       => 'col-lg-6',
+					'is_featured' => 'false'
 				),
 				$atts
 			)
 		);
 
-		$terms = get_terms(
-			array(
-				'taxonomy'   => 'pa_brands',
-				'hide_empty' => false,
-				'orderby'    => 'name',
-				'order'      => 'ASC',
-			)
-		);
 		$brands_arr = array();
 
-		$letters_arr = explode(',', $letters);
 
-		foreach ($terms as $term) {
-			$image = get__term_meta($term->term_id, 'image');
-			$hide_vendor = get__term_meta($term->term_id, 'hide_vendor');
-			$menu_description = get__term_meta($term->term_id, 'menu_description');
-			$menu_icon = get__term_meta($term->term_id, 'menu_icon');
-			$hide_vendor_on_menu = get__term_meta($term->term_id, 'hide_vendor_on_menu');
+		if ($is_featured == 'true') {
 
-			if (!$hide_vendor && !$hide_vendor_on_menu) {
-				foreach ($letters_arr as $letter) {
-					if (str_starts_with($term->name, $letter)) {
-						$brands_arr[$term->term_id] = array(
-							'image'       => $menu_icon ? $menu_icon : $image,
-							'name'        => $term->name,
-							'description' => $menu_description ? $menu_description : $term->description,
-							'class'       => $menu_description ? 'long-desc' : 'short-desc',
-						);
+		}
+		else {
+			$terms = get_terms(
+				array(
+					'taxonomy'   => 'pa_brands',
+					'hide_empty' => false,
+					'orderby'    => 'name',
+					'order'      => 'ASC',
+				)
+			);
+
+			$letters_arr = explode(',', $letters);
+
+			foreach ($terms as $term) {
+				$image = get__term_meta($term->term_id, 'image');
+				$hide_vendor = get__term_meta($term->term_id, 'hide_vendor');
+				$menu_description = get__term_meta($term->term_id, 'menu_description');
+				$menu_icon = get__term_meta($term->term_id, 'menu_icon');
+				$hide_vendor_on_menu = get__term_meta($term->term_id, 'hide_vendor_on_menu');
+
+				if (!$hide_vendor && !$hide_vendor_on_menu) {
+					foreach ($letters_arr as $letter) {
+						if (str_starts_with($term->name, $letter)) {
+							$brands_arr[$term->term_id] = array(
+								'image'       => $menu_icon ? $menu_icon : $image,
+								'name'        => $term->name,
+								'description' => $menu_description ? $menu_description : $term->description,
+								'class'       => $menu_description ? 'long-desc' : 'short-desc',
+							);
+						}
 					}
+
 				}
 
 			}
-
 		}
 
 		?>
