@@ -1166,6 +1166,7 @@ Container::make('term_meta', __('Category Properties'))
 				->set_layout('grid')
 				->set_header_template('<%- heading  %>'),
 			Field::make('checkbox', 'hide_vendor', 'Hide Vendor On Slider'),
+			Field::make('checkbox', 'hide_vendor_on_menu', 'Hide Vendor On Menu'),
 			Field::make('checkbox', 'featured_vendor', 'Featured Vendor'),
 
 		)

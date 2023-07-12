@@ -340,7 +340,8 @@ class Shortcodes
 			shortcode_atts(
 				array(
 					'letters' => '',
-					'class'   => 'col-lg-6'
+					'class'   => 'col-lg-6',
+					'is_featured' => false
 				),
 				$atts
 			)
@@ -363,8 +364,9 @@ class Shortcodes
 			$hide_vendor = get__term_meta($term->term_id, 'hide_vendor');
 			$menu_description = get__term_meta($term->term_id, 'menu_description');
 			$menu_icon = get__term_meta($term->term_id, 'menu_icon');
+			$hide_vendor_on_menu = get__term_meta($term->term_id, 'hide_vendor_on_menu');
 
-			if (!$hide_vendor) {
+			if (!$hide_vendor || !$hide_vendor_on_menu) {
 				foreach ($letters_arr as $letter) {
 					if (str_starts_with($term->name, $letter)) {
 						$brands_arr[$term->term_id] = array(
@@ -434,9 +436,7 @@ class Shortcodes
 				$atts
 			)
 		);
-
 		$featured_drones = get__theme_option('featured_drones');
-
 
 		?>
 		<div class="image-box-menu">
