@@ -1474,8 +1474,6 @@ Container::make('theme_options', __('Brand Settings'))
 							'taxonomy' => 'pa_brands',
 						)
 					)),
-			Field::make('multiselect', 'featured_brands', 'Featured Brands')
-				->set_options($PostMeta->get_posts('product', 'Select Brand')),
 
 		)
 	);
