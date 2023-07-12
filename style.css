@@ -13708,7 +13708,7 @@ body.hero-banner-revealing_heading header .header-main:before {
     height: 60px;
     flex: 0 0 60px;
     background-color: var(--white-color); }
-    .image-box-menu .inner .image-box img {
+    .image-box-menu .inner .image-box img, .image-box-menu .inner .image-box svg {
       width: auto;
       max-width: 32px !important; }
   .image-box-menu .inner .brands-details {
