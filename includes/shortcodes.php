@@ -366,7 +366,7 @@ class Shortcodes
 			$menu_icon = get__term_meta($term->term_id, 'menu_icon');
 			$hide_vendor_on_menu = get__term_meta($term->term_id, 'hide_vendor_on_menu');
 
-			if (!$hide_vendor || !$hide_vendor_on_menu) {
+			if (!$hide_vendor && !$hide_vendor_on_menu) {
 				foreach ($letters_arr as $letter) {
 					if (str_starts_with($term->name, $letter)) {
 						$brands_arr[$term->term_id] = array(
