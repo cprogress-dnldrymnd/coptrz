@@ -13710,7 +13710,7 @@ body.hero-banner-revealing_heading header .header-main:before {
     background-color: var(--white-color); }
     .image-box-menu .inner .image-box img {
       width: auto;
-      max-width: 32px; }
+      max-width: 32px !important; }
   .image-box-menu .inner .brands-details {
     padding-left: 10px; }
     .image-box-menu .inner .brands-details .description-box.short-desc {
