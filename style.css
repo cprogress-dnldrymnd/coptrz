@@ -13709,7 +13709,7 @@ body.hero-banner-revealing_heading header .header-main:before {
     flex: 0 0 60px;
     background-color: var(--white-color); }
     .image-box-menu .inner .image-box img {
-      width: 95%; }
+      width: auto; }
   .image-box-menu .inner .brands-details {
     padding-left: 10px; }
     .image-box-menu .inner .brands-details .description-box.short-desc {
