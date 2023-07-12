@@ -362,12 +362,13 @@ class Shortcodes
 			$image = get__term_meta($term->term_id, 'image');
 			$hide_vendor = get__term_meta($term->term_id, 'hide_vendor');
 			$menu_description = get__term_meta($term->term_id, 'menu_description');
+			$menu_icon = get__term_meta($term->term_id, 'menu_icon');
 
 			if (!$hide_vendor) {
 				foreach ($letters_arr as $letter) {
 					if (str_starts_with($term->name, $letter)) {
 						$brands_arr[$term->term_id] = array(
-							'image'       => $image,
+							'image'       => $menu_icon ? $menu_icon : $image,
 							'name'        => $term->name,
 							'description' => $menu_description ? $menu_description : $term->description,
 							'class'       => $menu_description ? 'long-desc' : 'short-desc',
