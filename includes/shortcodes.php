@@ -354,11 +354,12 @@ class Shortcodes
 			$featured_brands = get__theme_option('featured_brands');
 			foreach ($featured_brands as $brand) {
 				$id = $brand['id'];
+				$term = get_term($id);
 				$image = get__term_meta($id, 'image');
 				$menu_description = get__term_meta($id, 'menu_description');
 				$menu_icon = get__term_meta($id, 'menu_icon');
 
-				$brands_arr[$id] = array(
+				$brands_arr[$term->term_id] = array(
 					'image'       => $menu_icon ? $menu_icon : $image,
 					'name'        => $term->name,
 					'description' => $menu_description ? $menu_description : $term->description,
