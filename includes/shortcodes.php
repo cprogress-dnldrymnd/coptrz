@@ -351,7 +351,23 @@ class Shortcodes
 
 
 		if ($is_featured == 'true') {
+			$featured_brands = get__theme_option('featured_brands');
 
+			foreach ($featured_brands as $brand) {
+				$id = $brand['id'];
+				$image = get__term_meta($id, 'image');
+				$hide_vendor = get__term_meta($id, 'hide_vendor');
+				$menu_description = get__term_meta($id, 'menu_description');
+				$menu_icon = get__term_meta($id, 'menu_icon');
+				$hide_vendor_on_menu = get__term_meta($id, 'hide_vendor_on_menu');
+
+				$brands_arr[$term->term_id] = array(
+					'image'       => $menu_icon ? $menu_icon : $image,
+					'name'        => $term->name,
+					'description' => $menu_description ? $menu_description : $term->description,
+					'class'       => $menu_description ? 'long-desc' : 'short-desc',
+				);
+			}
 		}
 		else {
 			$terms = get_terms(
