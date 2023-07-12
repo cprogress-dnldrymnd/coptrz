@@ -371,8 +371,8 @@ function vendors_submenu()
 {
 	add_submenu_page(
 		'edit.php?post_type=product',
-		__('Vendors', 'textdomain'),
-		__('Vendors', 'textdomain'),
+		__('Brands', 'textdomain'),
+		__('Brands', 'textdomain'),
 		'manage_options',
 		'/edit-tags.php?taxonomy=pa_brands&post_type=product',
 	);
