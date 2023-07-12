@@ -1285,7 +1285,6 @@ body {
 			width: 32px;
 			height: 32px;
 			flex: 0 0 32px;
-			
 			background-color: var(--white-color);
 
 			img, svg {
@@ -1295,6 +1294,7 @@ body {
 		}
 
 		.brands-details {
+			padding-left: 10px;
 			padding-left: 10px;
 
 			.description-box {
