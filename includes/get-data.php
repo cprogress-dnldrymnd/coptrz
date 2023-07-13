@@ -35,10 +35,11 @@ class GetData
 	}
 	function get_post_terms($taxonomy)
 	{
+		ob_start();
+
 		$terms = $this->get_post_terms_id($taxonomy);
 		if (!$terms)
 			return;
-		ob_start();
 		foreach ($terms as $term) {
 			?>
 			<span><?= $term ?></span>
@@ -450,14 +451,14 @@ class GetData
 							OUT OF STOCK
 						</p>
 					</div>
-			<?php }
+				<?php }
 			else { ?>
 					<div class="on-backorder">
 						<p>
 							ON BACKORDER
 						</p>
 					</div>
-			<?php } ?>
+				<?php } ?>
 
 		<?php } ?>
 		<?php
@@ -485,62 +486,62 @@ class GetData
 
 			<div class="button-group-box justify-content-center">
 				<div class="button-box  button-bordered button-small">
-					<?= $Theme_Options->contact_number ?>
-				</div>
-				<?php
-				if (!$product->get_price()) {
-					if ($button_type) {
-						if ($button_type == 'replace_enquire_button') {
-							$button_link = $cst_btn_link;
-							$button_text = $cst_btn_text;
-						}
-						else {
-							$button_link = '#product-tabs';
-							$button_text = 'REQUEST INFO';
-						}
-						?>
-						<div class="button-box  button-secondary button-small">
-							<a href="<?= $button_link ?>" class="<?= $button_type == 'link_to_form' ? 'open-enquire-tab' : '' ?>">
-								<span class="text"><?= $button_text ?></span>
-							</a>
-						</div>
-						<?php
-					}
-					else {
-						if (get__theme_option('product_enquire_button_button_type')) {
-							$DisplayData->button(
-								get__theme_option('product_enquire_button_button_text'),
-								get__theme_option('product_enquire_button_' . get__theme_option('product_enquire_button_button_type')),
-								get__theme_option('product_enquire_button_button_action'),
-								get__theme_option('product_enquire_button_button_icon'),
-								'button-secondary button-small',
-								false,
-								get__theme_option('product_enquire_button_button_attribute'),
-							);
-						}
-					}
-				}
-				?>
-			</div>
-
-			<div class="list-icon-box">
-				<ul class="list-icon d-flex justify-content-center flex-wrap">
-					<?php if ($finance_available) { ?>
-						<li>
-							<span class="icon"><?= $SVG->check ?></span>
-							<span class="text">0% financing available</span>
-						</li>
-					<?php } ?>
-					<?php if ($business_invoicing) { ?>
-						<li>
-							<span class="icon"><?= $SVG->check ?></span>
-							<span class="text">Business invoicing</span>
-						</li>
-					<?php } ?>
-				</ul>
-			</div>
+			<?= $Theme_Options->contact_number ?>
 		</div>
 		<?php
+		if (!$product->get_price()) {
+			if ($button_type) {
+				if ($button_type == 'replace_enquire_button') {
+					$button_link = $cst_btn_link;
+					$button_text = $cst_btn_text;
+				}
+				else {
+					$button_link = '#product-tabs';
+					$button_text = 'REQUEST INFO';
+				}
+				?>
+				<div class="button-box  button-secondary button-small">
+					<a href="<?= $button_link ?>" class="<?= $button_type == 'link_to_form' ? 'open-enquire-tab' : '' ?>">
+						<span class="text"><?= $button_text ?></span>
+					</a>
+				</div>
+				<?php
+			}
+			else {
+				if (get__theme_option('product_enquire_button_button_type')) {
+					$DisplayData->button(
+						get__theme_option('product_enquire_button_button_text'),
+						get__theme_option('product_enquire_button_' . get__theme_option('product_enquire_button_button_type')),
+						get__theme_option('product_enquire_button_button_action'),
+						get__theme_option('product_enquire_button_button_icon'),
+						'button-secondary button-small',
+						false,
+						get__theme_option('product_enquire_button_button_attribute'),
+					);
+				}
+			}
+		}
+		?>
+		</div>
+
+		<div class="list-icon-box">
+			<ul class="list-icon d-flex justify-content-center flex-wrap">
+			<?php if ($finance_available) { ?>
+				<li>
+					<span class="icon"><?= $SVG->check ?></span>
+					<span class="text">0% financing available</span>
+				</li>
+			<?php } ?>
+			<?php if ($business_invoicing) { ?>
+				<li>
+					<span class="icon"><?= $SVG->check ?></span>
+					<span class="text">Business invoicing</span>
+				</li>
+			<?php } ?>
+		</ul>
+	</div>
+</div>
+<?php
 	}
 
 }
