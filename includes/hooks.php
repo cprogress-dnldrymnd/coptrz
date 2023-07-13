@@ -284,16 +284,6 @@ function modify_cpt_slug($args, $post_type)
 add_filter('register_post_type_args', 'modify_cpt_slug', 10, 2);
 
 
-function modify_taxonomy_slug($args, $taxonomy)
-{
-	if ($taxonomy == 'case_study_category') {
-		$args['rewrite'] = array('with_front' => false, 'slug' => 'case-studies');
-
-	}
-	return $args;
-}
-add_filter('register_taxonomy_args', 'modify_taxonomy_slug', 10, 2);
-
 
 function casestudies_cpt_generating_rule($wp_rewrite)
 {
