@@ -359,7 +359,7 @@ new newPostType(
 		'name'          => 'Case Studies',
 		'singular_name' => 'Case Study',
 		'icon'          => 'dashicons-media-text',
-		'rewrite'       => array('slug' => 'events'),
+		'rewrite'       => array('slug' => 'case-studies'),
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => true,
