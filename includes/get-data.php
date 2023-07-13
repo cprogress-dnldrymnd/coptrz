@@ -37,7 +37,6 @@ class GetData
 	{
 		ob_start();
 		$terms = $this->get_post_terms_id($taxonomy);
-
 		if ($terms) {
 			foreach ($terms as $term) {
 				?>
