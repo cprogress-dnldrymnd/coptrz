@@ -170,7 +170,7 @@ new newPostType(
 		'supports'      => array('title', 'revisions'),
 	)
 );
-
+/*
 new newPostType(
 	array(
 		'name'          => 'Services',
@@ -182,7 +182,7 @@ new newPostType(
 		'show_in_rest'  => true,
 	)
 );
-
+*/
 /*
 new newTaxonomy(array(
 'taxonomy'=> 'services_category',
@@ -195,16 +195,6 @@ new newTaxonomy(array(
 'rewrite' => array('slug' => 'services')
 )
 ));*/
-
-add_action('template_redirect', 'redirect_equipment_single');
-
-function redirect_equipment_single()
-{
-	if (is_singular('equipments')) {
-		wp_redirect(get_post_type_archive_link('equipments'), 301);
-		exit;
-	}
-}
 
 
 new newPostType(
@@ -359,6 +349,19 @@ new newPostType(
 		'icon'          => 'dashicons-businessman',
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'thumbnail', 'editor', 'excerpt'),
+		'show_in_rest'  => true,
+	)
+);
+
+
+new newPostType(
+	array(
+		'name'          => 'Case Studies',
+		'singular_name' => 'Case Study',
+		'icon'          => 'dashicons-media-text',
+		'rewrite'       => array('slug' => 'events'),
+		'has_archive'   => true,
+		'supports'      => array('title', 'revisions', 'editor', 'thumbnail'),
 		'show_in_rest'  => true,
 	)
 );
