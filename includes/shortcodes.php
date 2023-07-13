@@ -372,8 +372,7 @@ class Shortcodes
 
 	function post_term($atts)
 	{
-		$GetData = new GetData;
-
+		ob_start();
 		extract(
 			shortcode_atts(
 				array(
@@ -383,8 +382,16 @@ class Shortcodes
 			)
 		);
 
+		$terms = get_the_terms(get_the_ID(), $taxonomy);
 
-		return $GetData->get_post_terms($taxonomy);
+		if ($terms) {
+			foreach ($terms as $term) {
+				?>
+				<span><?= $term->name ?></span>
+				<?php
+			}
+		}
+		return ob_get_clean();
 	}
 	function brands($atts, $content = null)
 	{
