@@ -284,6 +284,17 @@ function modify_cpt_slug($args, $post_type)
 add_filter('register_post_type_args', 'modify_cpt_slug', 10, 2);
 
 
+function modify_taxonomy_slug($args, $taxonomy)
+{
+	if ($taxonomy == 'case_study_category') {
+		$args['rewrite'] = array('with_front' => false, 'slug' => 'case-study-category');
+
+	}
+	return $args;
+}
+add_filter('register_taxonomy_args', 'modify_taxonomy_slug', 10, 2);
+
+
 function action_wp_footer_scripts()
 {
 
