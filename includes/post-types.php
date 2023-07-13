@@ -361,7 +361,7 @@ new newPostType(
 		'icon'          => 'dashicons-media-text',
 		'rewrite'       => array('slug' => 'events'),
 		'has_archive'   => true,
-		'supports'      => array('title', 'revisions', 'editor', 'thumbnail'),
+		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => true,
 	)
 );
