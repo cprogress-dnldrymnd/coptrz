@@ -39,9 +39,9 @@ class GetData
 		if (!$terms)
 			return;
 		ob_start();
-		foreach ($terms as $key => $term) {
+		foreach ($terms as $term) {
 			?>
-			<a class="button primary-button small" href="<?= get_term_link($key); ?>"><?= $term ?></a>
+			<span><?= $term ?></span>
 			<?php
 		}
 		return ob_get_clean();
