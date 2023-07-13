@@ -227,6 +227,11 @@ a {
             letter-spacing: 0.8px;
         }
     }
+    &.button-r-10 {
+        @include button {
+            border-radius: 10px
+        }
+    }
 }
 
 .wpcf7-submit {
