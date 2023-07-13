@@ -365,3 +365,17 @@ new newPostType(
 		'show_in_rest'  => true,
 	)
 );
+
+
+new newTaxonomy(
+	array(
+		'taxonomy'  => 'case_study_category',
+		'post_type' => 'casestudies',
+		'args'      => array(
+			'hierarchical' => true,
+			'label'        => 'Case Study Categories',
+			'query_var'    => false,
+			'has_archive'  => false,
+		)
+	)
+);
