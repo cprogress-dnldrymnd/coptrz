@@ -2857,6 +2857,9 @@ heyflow-modal-element {
     li {
         a {
             color: var(--primary-color);
+            @include on-event {
+                color: var(--accent-color);
+            }
         }
         @include not-last-child {
             margin-bottom: 10px;
