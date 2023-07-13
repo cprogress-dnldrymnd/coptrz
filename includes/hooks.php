@@ -295,7 +295,7 @@ function casestudies_cpt_generating_rule($wp_rewrite)
 		)
 	);
 
-	$post_type = 'casestudies_post_type';
+	$post_type = 'casestudies';
 
 	foreach ($terms as $term) {
 
