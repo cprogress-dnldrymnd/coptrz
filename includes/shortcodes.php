@@ -381,9 +381,9 @@ class Shortcodes
 			)
 		);
 
-		$DisplayData = new DisplayData;
+		$GetData = new GetData;
 
-		return $DisplayData->get_post_terms($taxonomy);
+		return $GetData->get_post_terms($taxonomy);
 	}
 	function brands($atts, $content = null)
 	{
