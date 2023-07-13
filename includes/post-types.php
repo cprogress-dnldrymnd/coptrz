@@ -374,8 +374,10 @@ new newTaxonomy(
 		'args'      => array(
 			'hierarchical' => true,
 			'label'        => 'Case Study Categories',
-			'query_var'    => false,
-			'has_archive'  => false,
+			'query_var'    => true,
+			'rewrite'      => array(
+				'slug'         => 'case-study-category',
+			)
 		)
 	)
 );
