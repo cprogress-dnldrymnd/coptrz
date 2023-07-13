@@ -287,13 +287,36 @@ add_filter('register_post_type_args', 'modify_cpt_slug', 10, 2);
 function modify_taxonomy_slug($args, $taxonomy)
 {
 	if ($taxonomy == 'case_study_category') {
-		$args['rewrite'] = array('with_front' => false, 'slug' => 'case-study-category');
+		$args['rewrite'] = array('with_front' => false, 'slug' => 'case-studies');
 
 	}
 	return $args;
 }
 add_filter('register_taxonomy_args', 'modify_taxonomy_slug', 10, 2);
 
+
+function casestudies_cpt_generating_rule($wp_rewrite)
+{
+	$rules = array();
+	$terms = get_terms(
+		array(
+			'taxonomy'   => 'case_study_category',
+			'hide_empty' => false,
+		)
+	);
+
+	$post_type = 'casestudies_post_type';
+
+	foreach ($terms as $term) {
+
+		$rules['casestudies/' . $term->slug . '/([^/]*)$'] = 'index.php?post_type=' . $post_type . '&casestudies_post_type=$matches[1]&name=$matches[1]';
+
+	}
+
+	// merge with global rules
+	$wp_rewrite->rules = $rules + $wp_rewrite->rules;
+}
+add_filter('generate_rewrite_rules', 'casestudies_cpt_generating_rule');
 
 function action_wp_footer_scripts()
 {
