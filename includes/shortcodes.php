@@ -332,6 +332,43 @@ class Shortcodes
 		return '<div class="button-box button-white"><a class="px-0" style="text-decoration: underline" href="' . $login_link . '" >' . $login_text . '</a></div>';
 
 	}
+
+	function terms($atts)
+	{
+		ob_start();
+		extract(
+			shortcode_atts(
+				array(
+					'taxonomy' => '',
+				),
+				$atts
+			)
+		);
+
+		$terms = get_terms(
+			array(
+				'taxonomy'   => 'pa_brands',
+				'hide_empty' => false,
+				'orderby'    => 'name',
+				'order'      => 'ASC',
+			)
+		);
+		?>
+		<ul class="term-list list-unstyled">
+			<?php
+			foreach ($terms as $term) {
+				?>
+				<li>
+					<a href="<?= get_term_link($term->term_id) ?>"> <?= $term->name ?></a>
+				</li>
+				<?php
+			}
+
+			?>
+		</ul>
+		<?php
+		return ob_get_clean();
+	}
 	function brands($atts, $content = null)
 	{
 		ob_start();
