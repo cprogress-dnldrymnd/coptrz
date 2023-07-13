@@ -11861,6 +11861,8 @@ heyflow-modal-element {
 
 .term-list li a {
   color: var(--primary-color); }
+  .term-list li a:hover, .term-list li a:active, .term-list li a:focus {
+    color: var(--accent-color); }
 .term-list li:not(:last-child) {
   margin-bottom: 10px; }
 
