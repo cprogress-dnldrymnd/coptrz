@@ -354,7 +354,7 @@ class Shortcodes
 			)
 		);
 		?>
-		<ul class="term-list list-unstyled">
+		<ul class="term-list">
 			<?php
 			foreach ($terms as $term) {
 				?>
@@ -573,7 +573,7 @@ add_shortcode('login_button', array($Shortcodes, 'login_button'));
 add_shortcode('brands', array($Shortcodes, 'brands'));
 add_shortcode('featured_drones', array($Shortcodes, 'featured_drones'));
 add_shortcode('terms', array($Shortcodes, 'terms'));
- 
+
 
 function add_to_cart_form_shortcode($atts)
 {
