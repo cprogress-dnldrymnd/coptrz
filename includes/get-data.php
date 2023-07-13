@@ -44,6 +44,8 @@ class GetData
 				<?php
 			}
 			return ob_get_clean();
+		} else {
+			return '';
 		}
 	}
 	function get_posts($post_type, $label = 'Select Post', $posts_per_page = -1, $post_status = 'publish')
