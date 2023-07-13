@@ -36,16 +36,16 @@ class GetData
 	function get_post_terms($taxonomy)
 	{
 		ob_start();
-
 		$terms = $this->get_post_terms_id($taxonomy);
-		if (!$terms)
-			return;
-		foreach ($terms as $term) {
-			?>
-			<span><?= $term ?></span>
-			<?php
+
+		if ($terms) {
+			foreach ($terms as $term) {
+				?>
+				<span><?= $term ?></span>
+				<?php
+			}
+			return ob_get_clean();
 		}
-		return ob_get_clean();
 	}
 	function get_posts($post_type, $label = 'Select Post', $posts_per_page = -1, $post_status = 'publish')
 	{
@@ -151,10 +151,10 @@ class GetData
 			ob_start();
 			?>
 			<div class="contact-form-box" data-aos="fade-up">
-				<?= do_shortcode($contact_form) ?>
+	<?= do_shortcode($contact_form) ?>
 			</div>
-			<?php
-			return ob_get_clean();
+<?php
+						return ob_get_clean();
 		}
 	}
 
