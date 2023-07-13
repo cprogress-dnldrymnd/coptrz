@@ -11859,6 +11859,11 @@ heyflow-modal-element {
     -o-transform: translateY(-5px);
     transform: translateY(-5px); }
 
+.term-list li a {
+  color: var(--primary-color); }
+.term-list li:not(:last-child) {
+  margin-bottom: 10px; }
+
 @font-face {
   font-family: "HKNovaR";
   src: url("./assets/fonts/hknova/HKNovaR-Light.eot");
