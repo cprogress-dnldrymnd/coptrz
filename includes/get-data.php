@@ -35,7 +35,7 @@ class GetData
 	}
 	function get_post_terms($taxonomy)
 	{
-		$terms = get_post_terms_id($taxonomy);
+		$terms = $this->get_post_terms_id($taxonomy);
 		if (!$terms)
 			return;
 		ob_start();
