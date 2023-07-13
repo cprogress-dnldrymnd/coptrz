@@ -572,7 +572,8 @@ add_shortcode('login_link', array($Shortcodes, 'login_link'));
 add_shortcode('login_button', array($Shortcodes, 'login_button'));
 add_shortcode('brands', array($Shortcodes, 'brands'));
 add_shortcode('featured_drones', array($Shortcodes, 'featured_drones'));
-
+add_shortcode('terms', array($Shortcodes, 'terms'));
+ 
 
 function add_to_cart_form_shortcode($atts)
 {
