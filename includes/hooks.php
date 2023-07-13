@@ -287,7 +287,7 @@ add_filter('register_post_type_args', 'modify_cpt_slug', 10, 2);
 function modify_taxonomy_slug($args, $taxonomy)
 {
 	if ($taxonomy == 'case_study_category') {
-		$args['rewrite'] = array('with_front' => 'case-studies', 'slug' => 'case-study-category');
+		$args['rewrite'] = array('with_front' => false, 'slug' => 'case-studies');
 
 	}
 	return $args;
