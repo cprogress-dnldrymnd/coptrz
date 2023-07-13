@@ -387,7 +387,7 @@ class Shortcodes
 		if ($terms) {
 			foreach ($terms as $term) {
 				?>
-				<span><?= $term->name ?></span>
+				<span class="fw-bold"><?= $term->name ?></span>
 				<?php
 			}
 		}
