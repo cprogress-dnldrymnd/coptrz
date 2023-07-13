@@ -347,7 +347,7 @@ class Shortcodes
 
 		$terms = get_terms(
 			array(
-				'taxonomy'   => 'pa_brands',
+				'taxonomy'   => $taxonomy,
 				'hide_empty' => false,
 				'orderby'    => 'name',
 				'order'      => 'ASC',
