@@ -369,6 +369,22 @@ class Shortcodes
 		<?php
 		return ob_get_clean();
 	}
+
+	function post_term($atts)
+	{
+		extract(
+			shortcode_atts(
+				array(
+					'taxonomy' => '',
+				),
+				$atts
+			)
+		);
+
+		$DisplayData = new DisplayData;
+
+		return $DisplayData->get_post_terms($taxonomy);
+	}
 	function brands($atts, $content = null)
 	{
 		ob_start();
@@ -573,6 +589,7 @@ add_shortcode('login_button', array($Shortcodes, 'login_button'));
 add_shortcode('brands', array($Shortcodes, 'brands'));
 add_shortcode('featured_drones', array($Shortcodes, 'featured_drones'));
 add_shortcode('terms', array($Shortcodes, 'terms'));
+add_shortcode('post_term', array($Shortcodes, 'post_term'));
 
 
 function add_to_cart_form_shortcode($atts)
