@@ -183,14 +183,14 @@ function action_admin_head()
 
 		<?php } ?>
 
-		<script>
-			jQuery(document).ready(function ($) {
-				setTimeout(function () {
-					jQuery('body').removeClass('is-fullscreen-mode');
-				});
+	<script>
+		jQuery(document).ready(function ($) {
+			setTimeout(function () {
+				jQuery('body').removeClass('is-fullscreen-mode');
 			});
-		</script>
-	<?php } ?>
+		});
+	</script>
+<?php } ?>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
 		integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -271,8 +271,13 @@ add_filter('get_the_archive_title', function ($title) {
 function modify_cpt_slug($args, $post_type)
 {
 
-	if ($post_type == 'solutions' || $post_type == 'careers' || $post_type == 'career-paths' || $post_type == 'events' || $post_type == 'webinars' || $post_type == 'casestudies') {
+	if ($post_type == 'solutions' || $post_type == 'careers' || $post_type == 'career-paths' || $post_type == 'events' || $post_type == 'webinars') {
 		$args['rewrite'] = array('with_front' => false);
+	}
+
+	if ($post_type == 'casestudies') {
+		$args['rewrite'] = array('with_front' => false, 'slug' => 'case-studies');
+
 	}
 	return $args;
 }
