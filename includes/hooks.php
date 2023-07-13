@@ -271,7 +271,7 @@ add_filter('get_the_archive_title', function ($title) {
 function modify_cpt_slug($args, $post_type)
 {
 
-	if ($post_type == 'solutions' || $post_type == 'careers' || $post_type == 'career-paths' || $post_type == 'events' || $post_type == 'webinars') {
+	if ($post_type == 'solutions' || $post_type == 'careers' || $post_type == 'career-paths' || $post_type == 'events' || $post_type == 'webinars' || $post_type == 'casestudies') {
 		$args['rewrite'] = array('with_front' => false);
 	}
 	return $args;
