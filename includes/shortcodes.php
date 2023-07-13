@@ -383,7 +383,7 @@ class Shortcodes
 
 		$GetData = new GetData;
 
-		return $GetData->get_post_terms($taxonomy);
+		 $GetData->get_post_terms($taxonomy);
 	}
 	function brands($atts, $content = null)
 	{
