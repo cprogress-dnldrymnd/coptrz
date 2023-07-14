@@ -40,6 +40,9 @@
 			.payment_method_wpfi_test {
 				display: none !important;
 			}
+			.payment_method_omni_finance {
+				display: none !important;
+			}
 		</style>
 	<?php } ?>
 
